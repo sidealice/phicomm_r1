@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Prejsť na plochu</string>
+    <string name="abc_action_bar_up_description">Prejsť hore</string>
+    <string name="abc_action_menu_overflow_description">Ďalšie možnosti</string>
+    <string name="abc_action_mode_done">Hotovo</string>
+    <string name="abc_activity_chooser_view_see_all">Zobraziť všetko</string>
+    <string name="abc_activitychooserview_choose_application">Zvoľte aplikáciu</string>
+    <string name="abc_capital_off">VYPNUTÉ</string>
+    <string name="abc_capital_on">ZAPNUTÉ</string>
+    <string name="abc_search_hint">Vyhľadať…</string>
+    <string name="abc_searchview_description_clear">Vymazať dopyt</string>
+    <string name="abc_searchview_description_query">Vyhľadávací dopyt</string>
+    <string name="abc_searchview_description_search">Hľadať</string>
+    <string name="abc_searchview_description_submit">Odoslať dopyt</string>
+    <string name="abc_searchview_description_voice">Hlasové vyhľadávanie</string>
+    <string name="abc_shareactionprovider_share_with">Zdieľať pomocou</string>
+    <string name="abc_shareactionprovider_share_with_application">Zdieľať s aplikáciou %s</string>
+    <string name="abc_toolbar_collapse_description">Zbaliť</string>
+    <string name="hms_abort">Zastaviť</string>
+    <string name="hms_abort_message">Zastaviť preberanie?</string>
+    <string name="hms_cancel">Zrušiť</string>
+    <string name="hms_check_failure">Vyhľadanie aktualizácií sa nepodarilo.</string>
+    <string name="hms_check_no_update">Už používate najnovšiu verziu.</string>
+    <string name="hms_checking">Kontrolujú sa aktualizácie…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Balík Mobilné služby Huawei sa nepodarilo prevziať.</string>
+    <string name="hms_download_no_space">Nedostatok voľného miesta. Preberanie nemožno dokončiť.</string>
+    <string name="hms_download_retry">Preberanie zlyhalo. Skúsiť to znova?</string>
+    <string name="hms_downloading">Preberanie balíka Mobilné služby Huawei | priebeh: %d%%</string>
+    <string name="hms_install">Inštalovať</string>
+    <string name="hms_install_message">Ak chcete používať túto funkciu, musíte mať nainštalovanú aplikáciu Mobilné služby Huawei. Inštalovať?</string>
+    <string name="hms_retry">Skúsiť znova</string>
+    <string name="hms_update">Aktualizovať</string>
+    <string name="hms_update_message">Ak chcete používať túto funkciu, aktualizujte Mobilné služby Huawei na najnovšiu verziu. Aktualizovať teraz?</string>
+    <string name="hms_update_title">Mobilné služby Huawei</string>
+    <string name="search_menu_title">Vyhľadávanie</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

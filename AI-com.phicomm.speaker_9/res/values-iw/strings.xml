@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">נווט לדף הבית</string>
+    <string name="abc_action_bar_up_description">נווט למעלה</string>
+    <string name="abc_action_menu_overflow_description">עוד אפשרויות</string>
+    <string name="abc_action_mode_done">בוצע</string>
+    <string name="abc_activity_chooser_view_see_all">ראה הכל</string>
+    <string name="abc_activitychooserview_choose_application">בחר אפליקציה</string>
+    <string name="abc_capital_off">כבוי</string>
+    <string name="abc_capital_on">פועל</string>
+    <string name="abc_search_hint">חיפוש…</string>
+    <string name="abc_searchview_description_clear">מחק שאילתה</string>
+    <string name="abc_searchview_description_query">שאילתת חיפוש</string>
+    <string name="abc_searchview_description_search">חיפוש</string>
+    <string name="abc_searchview_description_submit">שלח שאילתה</string>
+    <string name="abc_searchview_description_voice">חיפוש קולי</string>
+    <string name="abc_shareactionprovider_share_with">שתף עם</string>
+    <string name="abc_shareactionprovider_share_with_application">שתף עם %s</string>
+    <string name="abc_toolbar_collapse_description">כווץ</string>
+    <string name="hms_abort">עצור</string>
+    <string name="hms_abort_message">להפסיק את ההורדה?</string>
+    <string name="hms_cancel">ביטול</string>
+    <string name="hms_check_failure">חיפוש העדכונים נכשל.</string>
+    <string name="hms_check_no_update">אתה כבר משתמש בגרסה העדכנית ביותר.</string>
+    <string name="hms_checking">מחפש עדכונים…</string>
+    <string name="hms_confirm">אישור</string>
+    <string name="hms_download_failure">נכשלה ההורדה של חבילת Huawei Mobile Services.</string>
+    <string name="hms_download_no_space">אין מספיק מקום פנוי. אין אפשרות להשלים את ההורדה.</string>
+    <string name="hms_download_retry">ההורדה נכשלה. האם לנסות שנית?</string>
+    <string name="hms_downloading">מוריד את Huawei Mobile Services | התקדמות: ‪‎%d%%‬</string>
+    <string name="hms_install">התקן</string>
+    <string name="hms_install_message">יש להתקין את השירותים הניידים של Huawei כדי להשתמש בתכונה זו. להתקין?</string>
+    <string name="hms_retry">נסה שנית</string>
+    <string name="hms_update">עדכון</string>
+    <string name="hms_update_message">עדכן לגרסה העדכנית ביותר של Huawei Mobile Services כדי להשתמש בתכונה זו. לעדכן עכשיו?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">חיפוש</string>
+    <string name="status_bar_notification_info_overflow">‎999+‎</string>
+</resources>

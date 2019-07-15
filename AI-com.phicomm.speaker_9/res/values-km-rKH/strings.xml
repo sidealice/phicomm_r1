@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">បញ្ឈប់</string>
+    <string name="hms_abort_message">បញ្ឈប់ការទាញយក?</string>
+    <string name="hms_cancel">បោះបង់</string>
+    <string name="hms_check_failure">បានបរាជ័យពិនិត្យមើលក្នុងការធ្វើបច្ចុប្បន្នភាព។</string>
+    <string name="hms_check_no_update">អ្នកកំពុងប្រើកំណែចុងក្រោយបង្អស់រួចហើយ។</string>
+    <string name="hms_checking">កំពុងពិនិត្យមើលក្នុងការធ្វើបច្ចុប្បន្នភាព…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">បានបរាជ័យទាញយកកញ្ចប់សេវាទូរស័ព្ទចល័ត Huawei។</string>
+    <string name="hms_download_no_space">មិនមានលំហទំនេរគ្រប់គ្រាន់។ មិនអាចបញ្ចប់ការទាញយក។</string>
+    <string name="hms_download_retry">បានបរាជ័យទាញយក។ ព្យាយាមម្តងទៀត?</string>
+    <string name="hms_downloading">កំពុងទាញយកសេវាទូរស័ព្ទចល័ត Huawei | កំពុងដំណើរការ៖ %d%%</string>
+    <string name="hms_install">ដំឡើង</string>
+    <string name="hms_install_message">ត្រូវដំឡើងសេវាកម្មទូរស័ព្ទចល័ត Huawei ដើម្បីប្រើលក្ខណៈពិសេសនេះ។ ដំឡើងឬ?</string>
+    <string name="hms_retry">ព្យាយាមម្តងទៀត</string>
+    <string name="hms_update">ធ្វើបច្ចុប្បន្នភាព</string>
+    <string name="hms_update_message">ធ្វើបច្ចុប្បន្នភាពទៅកំណែចុងក្រោយបង្អស់របស់សេវាទូរស័ព្ទចល័ត Huawei ដើម្បីប្រើលក្ខណៈពិសេសនេះ។ ធ្វើបច្ចុប្បន្នភាពឥឡូវនេះ?</string>
+    <string name="hms_update_title">សេវាទូរស័ព្ទចល័ត Huawei</string>
+</resources>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Vai alla home page</string>
+    <string name="abc_action_bar_up_description">Vai in alto</string>
+    <string name="abc_action_menu_overflow_description">Altre opzioni</string>
+    <string name="abc_action_mode_done">Fine</string>
+    <string name="abc_activity_chooser_view_see_all">Visualizza tutte</string>
+    <string name="abc_activitychooserview_choose_application">"Scegli un'applicazione"</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Cerca…</string>
+    <string name="abc_searchview_description_clear">Cancella query</string>
+    <string name="abc_searchview_description_query">Query di ricerca</string>
+    <string name="abc_searchview_description_search">Cerca</string>
+    <string name="abc_searchview_description_submit">Invia query</string>
+    <string name="abc_searchview_description_voice">Ricerca vocale</string>
+    <string name="abc_shareactionprovider_share_with">Condividi con</string>
+    <string name="abc_shareactionprovider_share_with_application">Condividi tramite %s</string>
+    <string name="abc_toolbar_collapse_description">Comprimi</string>
+    <string name="crop__cancel">ANNULLA</string>
+    <string name="crop__done">ACCETTA</string>
+    <string name="crop__pick_error">Nessuna immagine disponibile</string>
+    <string name="crop__saving">Salvataggio immagine…</string>
+    <string name="crop__wait">Attendere prego…</string>
+    <string name="hms_abort">Interrompi</string>
+    <string name="hms_abort_message">Vuoi interrompere il download?</string>
+    <string name="hms_cancel">Annulla</string>
+    <string name="hms_check_failure">Ricerca aggiornamenti non riuscita.</string>
+    <string name="hms_check_no_update">La versione più aggiornata è già in uso.</string>
+    <string name="hms_checking">Ricerca aggiornamenti...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Impossibile scaricare il pacchetto Huawei Mobile Services.</string>
+    <string name="hms_download_no_space">Spazio insufficiente. Impossibile completare il download.</string>
+    <string name="hms_download_retry">Download non riuscito. Vuoi riprovare?</string>
+    <string name="hms_downloading">Download Huawei Mobile Services | avanzamento: %d%%</string>
+    <string name="hms_install">Installa</string>
+    <string name="hms_install_message">"Per l'utilizzo della funzione occorre installare Servizi mobili Huawei. Vuoi installare?"</string>
+    <string name="hms_retry">Riprova</string>
+    <string name="hms_update">Aggiorna</string>
+    <string name="hms_update_message">"Aggiorna Huawei Mobile Services all'ultima versione per utilizzare questa funzione. Vuoi aggiornare ora?"</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Ricerca</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

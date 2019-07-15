@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">Тоқтату</string>
+    <string name="hms_abort_message">Жүктеп алуды тоқтату керек пе?</string>
+    <string name="hms_cancel">Болдырмау</string>
+    <string name="hms_check_failure">Жаңартулар тексерілмеді.</string>
+    <string name="hms_check_no_update">Ең соңғы нұсқасын бұрыннан пайдаланудасыз.</string>
+    <string name="hms_checking">Жаңартулар тексерілуде…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei Mobile Services бумасы жүктеп алынбады.</string>
+    <string name="hms_download_no_space">Бос орын жеткіліксіз. Жүктеп алуды аяқтау мүмкін емес.</string>
+    <string name="hms_download_retry">Жүктеп алынбады. Әрекетті қайталау керек пе?</string>
+    <string name="hms_downloading">Huawei Mobile Services жүктеп алынуда | орындалу барысы: %d%%</string>
+    <string name="hms_install">Орнату</string>
+    <string name="hms_install_message">Осы мүмкіндікті пайдалану үшін Huawei Ұялы қызметтерін орнату керек. Орнатылсын ба?</string>
+    <string name="hms_retry">Әрекетті қайталау</string>
+    <string name="hms_update">Жаңарту</string>
+    <string name="hms_update_message">Бұл мүмкіндікті пайдалану үшін Huawei Mobile Services бумасының соңғы нұсқасына дейін жаңартыңыз. Қазір жаңарту керек пе?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+</resources>

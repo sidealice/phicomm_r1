@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.phicomm.speaker.views.widget.RequestLayout android:id="@id/request" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.phicomm.speaker.views.refresh.RefreshLayout>
+</com.phicomm.speaker.views.widget.RequestLayout>

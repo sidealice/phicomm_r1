@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">შეწყვეტა</string>
+    <string name="hms_abort_message">შევწყვიტოთ ჩამოტვირთვა?</string>
+    <string name="hms_cancel">გაუქმება</string>
+    <string name="hms_check_failure">განახლებების შემოწმება ვერ მოხერხდა.</string>
+    <string name="hms_check_no_update">თქვენ უკვე იყენებთ უახლეს ვერსიას.</string>
+    <string name="hms_checking">განახლებების შემოწმება...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei Mobile სერვისების პაკეტი ვერ ჩამოიტვირთა.</string>
+    <string name="hms_download_no_space">საკმარისი თავისუფალი სივრცე არ არის. ჩამოტვირთვის დასრულება შეუძლებელია.</string>
+    <string name="hms_download_retry">ვერ ჩამოიტვირთა. გსურთ, სცადოთ ხელახლა?</string>
+    <string name="hms_downloading">მიმდინარეობს Huawei Mobile სერვისების ჩამოტვირთვა | პროგრესი: %d%%</string>
+    <string name="hms_install">დაინსტალირება</string>
+    <string name="hms_install_message">Huawei Mobile Services უნდა იყოს დაინსტალირებული ამ ფუნქციის გამოსაყენებლად. დაინსტალირდეს?</string>
+    <string name="hms_retry">გამეორება</string>
+    <string name="hms_update">განახლება</string>
+    <string name="hms_update_message">განაახლეთ Huawei Mobile სერვისების უახლესი ვერსიით, ამ ფუნქციის გამოსაყენებლად. გსურთ ახლავე განახლება?</string>
+    <string name="hms_update_title">Huawei Mobile სერვისები</string>
+</resources>

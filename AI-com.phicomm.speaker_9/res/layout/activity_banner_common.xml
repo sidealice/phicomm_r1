@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/banner_header_layout" layout="@layout/include_common_header" />
+    <com.davemorrissey.labs.subscaleview.SubsamplingScaleImageView android:id="@id/iv_banner_common" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/banner_header_layout" />
+</RelativeLayout>

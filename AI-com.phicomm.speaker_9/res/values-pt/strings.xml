@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navegar para a página inicial</string>
+    <string name="abc_action_bar_up_description">Navegar para cima</string>
+    <string name="abc_action_menu_overflow_description">Mais opções</string>
+    <string name="abc_action_mode_done">Concluído</string>
+    <string name="abc_activity_chooser_view_see_all">Ver tudo</string>
+    <string name="abc_activitychooserview_choose_application">Selecione um app</string>
+    <string name="abc_capital_off">DESATIVAR</string>
+    <string name="abc_capital_on">ATIVAR</string>
+    <string name="abc_search_hint">Pesquisar...</string>
+    <string name="abc_searchview_description_clear">Limpar consulta</string>
+    <string name="abc_searchview_description_query">Consulta de pesquisa</string>
+    <string name="abc_searchview_description_search">Pesquisar</string>
+    <string name="abc_searchview_description_submit">Enviar consulta</string>
+    <string name="abc_searchview_description_voice">Pesquisa por voz</string>
+    <string name="abc_shareactionprovider_share_with">Compartilhar com</string>
+    <string name="abc_shareactionprovider_share_with_application">Compartilhar com %s</string>
+    <string name="abc_toolbar_collapse_description">Recolher</string>
+    <string name="crop__cancel">CANCELAR</string>
+    <string name="crop__done">FINALIZADO</string>
+    <string name="crop__pick_error">Sem fontes de imagem disponíveis</string>
+    <string name="crop__saving">Salvando imagem…</string>
+    <string name="crop__wait">Por favor, aguarde…</string>
+    <string name="hms_abort">Parar</string>
+    <string name="hms_abort_message">Parar o download?</string>
+    <string name="hms_cancel">Cancelar</string>
+    <string name="hms_check_failure">Falha ao verificar atualizações.</string>
+    <string name="hms_check_no_update">Você já está usando a versão mais recente.</string>
+    <string name="hms_checking">Verificando atualizações...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Falha no download do pacote de serviços móveis da Huawei.</string>
+    <string name="hms_download_no_space">Não há espaço livre suficiente. O download não pode ser concluído.</string>
+    <string name="hms_download_retry">Falha no download. Tentar novamente?</string>
+    <string name="hms_downloading">Fazendo o download dos serviços móveis da Huawei | progresso: %d%%</string>
+    <string name="hms_install">Instalar</string>
+    <string name="hms_install_message">Os serviços móveis da Huawei deve ser instalados para usar este recurso. Instalar?</string>
+    <string name="hms_retry">Tentar novam.</string>
+    <string name="hms_update">Atualizar</string>
+    <string name="hms_update_message">Para usar este recurso, faça a atualização para a versão mais recente dos serviços móveis da Huawei. Atualizar agora?</string>
+    <string name="hms_update_title">Serviços móveis da Huawei</string>
+    <string name="search_menu_title">Pesquisar</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

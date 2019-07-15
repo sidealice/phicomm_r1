@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_loading" />
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/main_color" android:layout_gravity="center_horizontal" android:id="@id/tv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dp_11.5" android:text="@string/loading" />
+</LinearLayout>

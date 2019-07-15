@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/ali_feedback_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ali_feedback_ic_element_noresult" />
+    <TextView android:textSize="16.0sp" android:textColor="@color/ali_feedback_grey_btn_default" android:id="@id/errorMsg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="加载失败" />
+    <Button android:textSize="16.0sp" android:textColor="@color/ali_feedback_wxtribe_title_color" android:id="@id/error_view_refresh_btn" android:background="@drawable/ali_feedback_pub_btn_white_nor" android:layout_width="95.0dip" android:layout_height="40.0dip" android:layout_marginTop="25.0dip" android:text="确认" />
+</LinearLayout>

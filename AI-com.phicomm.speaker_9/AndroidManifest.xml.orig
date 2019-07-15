@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.phicomm.speaker">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="com.phicomm.speaker.permission.MIPUSH_RECEIVE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.phicomm.speaker.permission.MIPUSH_RECEIVE"/>
+    <uses-feature android:name="android.hardware.bluetooth_le" android:required="true"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <application android:allowBackup="false" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:name="com.phicomm.speaker.PhApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <meta-data android:name="android.max_aspect" android:value="2.2"/>
+        <meta-data android:name="com.phicomm.speaker.manager.imageloader.GlideConfig" android:value="GlideModule"/>
+        <meta-data android:name="BUGLY_APPID" android:value="def9798027"/>
+        <meta-data android:name="BUGLY_APP_CHANNEL" android:value="MZFML"/>
+        <meta-data android:name="UMENG_APPKEY" android:value="59b63238c62dca27ca000b0e"/>
+        <meta-data android:name="UMENG_CHANNEL" android:value="MZFML"/>
+        <meta-data android:name="com.huawei.hms.client.appid" android:value="100133601"/>
+        <provider android:authorities="com.phicomm.speaker.hms.update.provider" android:exported="false" android:grantUriPermissions="true" android:name="com.huawei.hms.update.provider.UpdateProvider"/>
+        <receiver android:name="com.unisound.lib.msgcenter.netmodule.NetworkConnectChangedReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.phicomm.speaker.activity.SplashActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.phicomm.speaker.activity.LoginCloudActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTask" android:name="com.phicomm.speaker.activity.MainActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.phicomm.speaker.activity.X5WebActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name="com.phicomm.speaker.activity.RegisterCodeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.AccountRegisterActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.PersonalInformationActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.CropImageActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ChangeNicknameActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ModifyPasswordActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.BindingPhoneActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.SecurityVerificationActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.ChangePhoneNumberActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.ForgotPwdCodeActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.ResetPwdActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysVisible|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.AboutActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.zxing.CaptureActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.zxing.PreferencesActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.UserInfoRegisterActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.player.MediaPlayerActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/translucent"/>
+        <activity android:name="com.phicomm.speaker.activity.ChangeSexActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.PowerGuideActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.BindGuideActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ScanSpeakerActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.NoSpeakerFindActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ConfigNetActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.SpeakerWifiListActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.WifiConnectActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ApOpenWifiActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ApConnectActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ConfigNetSuccessActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.MySpeakerActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.SpeakerSettingActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.SelectVoiceActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ChangeSpeakerNameActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ChangeSpeakerIconActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.FactoryActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.MyFavoriteActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.FavoriteManageActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.player.PlayListActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/translucent"/>
+        <activity android:name="com.phicomm.speaker.activity.ProtocolActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.JsBridgeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.WebViewActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.phicomm.speaker.receiver.NetworkConnectionReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:exported="true" android:name="com.phicomm.speaker.receiver.NetworkStateReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <provider android:authorities="com.phicomm.speaker.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <service android:name="org.eclipse.paho.android.service.MqttService"/>
+        <activity android:name="com.phicomm.speaker.activity.IntroductionActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.UpdateDetailActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <service android:name="com.phicomm.speaker.model.confignet.wifi.ReenableAllApsWhenNetworkStateChanged$BackgroundService"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.MusicActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.confignet.ChangeNetSuccessActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.FmAlbumActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <service android:name="com.phicomm.speaker.service.CommonService"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.ReminderActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.MemoActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.MemoDetailActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.WikiActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.EditCalendarActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.EditAlarmActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.SelectRepeatActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.SelectRingtoneActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.EditCountdownActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.OtaCheckActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.OtaCheckResultActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.OtaDownloadActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.OtaUpgradeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.OtaUpgradeResultActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.ota.monitor.OtaMonitorUpgradeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:launchMode="singleTop" android:name="com.phicomm.speaker.activity.ota.monitor.OtaMonitorUpgradeResultActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.function.FmEpisodeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.SelectWakeNameActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.phicomm.speaker.activity.yanry.CustomWakeNameActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.SpeakerRebootActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.VoiceCommandActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.VoiceCommandDetailActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:name="com.phicomm.speaker.activity.BannerCommonActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.SmartHomeActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.philink.PhiLinkActivity" android:resizeableActivity="true" android:screenOrientation="portrait" android:theme="@style/translucent"/>
+        <activity android:name="com.phicomm.speaker.activity.philink.PhiLinkBindActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.philink.PhiLinkSuccessActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.quesandans.UserDefinedQaActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.quesandans.CreateUserDefinedQuesAnsActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.quesandans.AddSimilarQuestionActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:name="com.phicomm.speaker.activity.quesandans.ChoicenessQuesAnsActivity" android:resizeableActivity="true" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.alibaba.sdk.android.feedback.windvane.CustomHybirdActivity" android:screenOrientation="portrait" android:theme="@style/ali_feedback_contentoverlay" android:windowSoftInputMode="adjustResize"/>
+        <activity android:configChanges="keyboardHidden|orientation" android:launchMode="singleTop" android:name="com.alibaba.sdk.android.feedback.impl.ErrorPageActivity" android:screenOrientation="portrait" android:theme="@style/ali_feedback_contentoverlay"/>
+        <service android:name="com.alibaba.mtl.appmonitor.AppMonitorService"/>
+        <provider android:authorities="com.phicomm.speaker.alifb_fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="com.alibaba.sdk.android.feedback.util.FBFileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/alifb_provider_paths"/>
+        </provider>
+        <receiver android:name="com.unisound.lib.push.hms.HwPushClient">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION"/>
+                <action android:name="com.huawei.android.push.intent.RECEIVE"/>
+                <action android:name="com.huawei.android.push.intent.CLICK"/>
+                <action android:name="com.huawei.intent.action.PUSH_STATE"/>
+            </intent-filter>
+            <meta-data android:name="CS_cloud_ablitity" android:value="@string/hwpush_ability_value"/>
+        </receiver>
+        <receiver android:name="com.huawei.hms.support.api.push.PushEventReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.intent.action.PUSH"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.unisound.lib.push.hms.HwBaseActivity"/>
+        <service android:enabled="true" android:name="com.xiaomi.push.service.XMPushService" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="false" android:name="com.xiaomi.push.service.XMJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:process=":pushservice"/>
+        <service android:enabled="true" android:exported="true" android:name="com.xiaomi.mipush.sdk.PushMessageHandler"/>
+        <service android:enabled="true" android:name="com.xiaomi.mipush.sdk.MessageHandleService"/>
+        <receiver android:exported="true" android:name="com.xiaomi.push.service.receivers.NetworkStatusReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.xiaomi.push.service.receivers.PingReceiver" android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.xiaomi.push.PING_TIMER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="true" android:name="com.unisound.lib.push.xiaomi.MiMsgPushClient">
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.RECEIVE_MESSAGE"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.MESSAGE_ARRIVED"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.xiaomi.mipush.ERROR"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.soundcloud.android.crop.CropImageActivity"/>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.AlbumSelectActivity" android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="orientation|screenSize" android:label="@string/app_name" android:name="com.darsh.multipleimageselect.activities.ImageSelectActivity" android:theme="@style/MultipleImageSelectTheme">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <service android:name="com.lzy.okserver.download.DownloadService"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.blankj.utilcode.util.PermissionUtils$PermissionActivity" android:taskAffinity="com.blankj.utilcode.util.PermissionUtils.PermissionActivity" android:windowSoftInputMode="stateAlwaysHidden"/>
+    </application>
+</manifest>

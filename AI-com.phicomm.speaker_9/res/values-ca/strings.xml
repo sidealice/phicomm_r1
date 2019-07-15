@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">"Navega a la pàgina d'inici"</string>
+    <string name="abc_action_bar_up_description">Navega cap a dalt</string>
+    <string name="abc_action_menu_overflow_description">Més opcions</string>
+    <string name="abc_action_mode_done">Fet</string>
+    <string name="abc_activity_chooser_view_see_all">"Mostra'ls tots"</string>
+    <string name="abc_activitychooserview_choose_application">Selecciona una aplicació</string>
+    <string name="abc_capital_off">DESACTIVAT</string>
+    <string name="abc_capital_on">ACTIVAT</string>
+    <string name="abc_search_hint">Cerca...</string>
+    <string name="abc_searchview_description_clear">Esborra la consulta</string>
+    <string name="abc_searchview_description_query">Consulta de cerca</string>
+    <string name="abc_searchview_description_search">Cerca</string>
+    <string name="abc_searchview_description_submit">Envia la consulta</string>
+    <string name="abc_searchview_description_voice">Cerca per veu</string>
+    <string name="abc_shareactionprovider_share_with">Comparteix amb</string>
+    <string name="abc_shareactionprovider_share_with_application">Comparteix amb %s</string>
+    <string name="abc_toolbar_collapse_description">Replega</string>
+    <string name="crop__cancel">CANCEL·LAR</string>
+    <string name="crop__done">ACCEPTAR</string>
+    <string name="crop__pick_error">No hi ha imatges disponibles</string>
+    <string name="crop__saving">Guardant imatge…</string>
+    <string name="crop__wait">Si us plau esperi…</string>
+    <string name="hms_abort">Aturar</string>
+    <string name="hms_abort_message">Voleu aturar la baixada?</string>
+    <string name="hms_cancel">Cancel·lar</string>
+    <string name="hms_check_failure">"No s'ha pogut comprovar si hi ha actualitzacions."</string>
+    <string name="hms_check_no_update">Ja esteu utilitzant la darrera versió.</string>
+    <string name="hms_checking">"S'estan cercant actualitzacions…"</string>
+    <string name="hms_confirm">"D'acord"</string>
+    <string name="hms_download_failure">"No s'ha pogut baixar el paquet de Huawei Mobile Services."</string>
+    <string name="hms_download_no_space">No hi ha prou espai lliure. La baixada no es pot efectuar.</string>
+    <string name="hms_download_retry">Ha fallat la baixada. Voleu tornar-ho a provar?</string>
+    <string name="hms_downloading">"S'està baixant Huawei Mobile Services | progrés: %d%%"</string>
+    <string name="hms_install">Instal·lar</string>
+    <string name="hms_install_message">Cal tenir instal·lat Huawei Mobile Services per utilitzar aquesta funció. Voleu instal·lar-lo?</string>
+    <string name="hms_retry">Tornar-hi</string>
+    <string name="hms_update">Actualitzar</string>
+    <string name="hms_update_message">Per utilitzar aquesta funció, actualitzeu a la darrera versió de Huawei Mobile Services. Voleu actualitzar-la ara?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Cerca</string>
+    <string name="status_bar_notification_info_overflow">+999</string>
+</resources>

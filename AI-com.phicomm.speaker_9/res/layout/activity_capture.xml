@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/layoutToolbar" layout="@layout/include_common_header" />
+    <SurfaceView android:id="@id/preview_view" android:padding="0.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/layoutToolbar" />
+    <com.phicomm.speaker.zxing.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="0.0dip" android:layout_below="@id/layoutToolbar" />
+</RelativeLayout>

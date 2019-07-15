@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Gå til startsiden</string>
+    <string name="abc_action_bar_up_description">Gå opp</string>
+    <string name="abc_action_menu_overflow_description">Flere alternativer</string>
+    <string name="abc_action_mode_done">Ferdig</string>
+    <string name="abc_activity_chooser_view_see_all">Se alle</string>
+    <string name="abc_activitychooserview_choose_application">Velg en app</string>
+    <string name="abc_capital_off">AV</string>
+    <string name="abc_capital_on">PÅ</string>
+    <string name="abc_search_hint">Søk …</string>
+    <string name="abc_searchview_description_clear">Slett søket</string>
+    <string name="abc_searchview_description_query">Søkeord</string>
+    <string name="abc_searchview_description_search">Søk</string>
+    <string name="abc_searchview_description_submit">Utfør søket</string>
+    <string name="abc_searchview_description_voice">Talesøk</string>
+    <string name="abc_shareactionprovider_share_with">Del med</string>
+    <string name="abc_shareactionprovider_share_with_application">Del med %s</string>
+    <string name="abc_toolbar_collapse_description">Skjul</string>
+    <string name="hms_abort">Stopp</string>
+    <string name="hms_abort_message">Stoppe nedlastingen?</string>
+    <string name="hms_cancel">Avbryt</string>
+    <string name="hms_check_failure">Kunne ikke se etter oppdateringer.</string>
+    <string name="hms_check_no_update">Du bruker allerede den nyeste versjonen.</string>
+    <string name="hms_checking">Ser etter oppdateringer...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Kunne ikke laste ned Huawei Mobile Services-pakken.</string>
+    <string name="hms_download_no_space">Ikke nok ledig plass. Nedlastingen kan ikke fullføres.</string>
+    <string name="hms_download_retry">Nedlastingen mislyktes. Prøve på nytt?</string>
+    <string name="hms_downloading">Laster ned Huawei Mobile Services | fremdrift: %d%%</string>
+    <string name="hms_install">Installer</string>
+    <string name="hms_install_message">Huawei-mobiltjenester må være installert for å bruke denne tjenesten. Vil du installere?</string>
+    <string name="hms_retry">Prøv på nytt</string>
+    <string name="hms_update">Oppdater</string>
+    <string name="hms_update_message">Du må oppdatere til nyeste versjon av Huawei Mobile Services for å kunne bruke denne funksjonen. Oppdatere nå?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Søk</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

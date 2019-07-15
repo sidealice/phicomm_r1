@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Krmarjenje domov</string>
+    <string name="abc_action_bar_up_description">Krmarjenje navzgor</string>
+    <string name="abc_action_menu_overflow_description">Več možnosti</string>
+    <string name="abc_action_mode_done">Končano</string>
+    <string name="abc_activity_chooser_view_see_all">Pokaži vse</string>
+    <string name="abc_activitychooserview_choose_application">Izbira aplikacije</string>
+    <string name="abc_capital_off">IZKLOPLJENO</string>
+    <string name="abc_capital_on">VKLOPLJENO</string>
+    <string name="abc_search_hint">Iskanje …</string>
+    <string name="abc_searchview_description_clear">Izbris poizvedbe</string>
+    <string name="abc_searchview_description_query">Iskalna poizvedba</string>
+    <string name="abc_searchview_description_search">Iskanje</string>
+    <string name="abc_searchview_description_submit">Pošiljanje poizvedbe</string>
+    <string name="abc_searchview_description_voice">Glasovno iskanje</string>
+    <string name="abc_shareactionprovider_share_with">Deljenje z</string>
+    <string name="abc_shareactionprovider_share_with_application">Deljenje z drugimi prek aplikacije %s</string>
+    <string name="abc_toolbar_collapse_description">Strni</string>
+    <string name="hms_abort">Ustavi</string>
+    <string name="hms_abort_message">Ali želite ustaviti prenos?</string>
+    <string name="hms_cancel">Prekliči</string>
+    <string name="hms_check_failure">Iskanje posodobitev ni uspelo.</string>
+    <string name="hms_check_no_update">Najnovejšo različico že uporabljate.</string>
+    <string name="hms_checking">Iskanje posodobitev ...</string>
+    <string name="hms_confirm">V redu</string>
+    <string name="hms_download_failure">Prenos paketa storitev Huawei Mobile ni uspel.</string>
+    <string name="hms_download_no_space">Ni dovolj nezasedenega prostora. Prenosa ni mogoče zaključiti.</string>
+    <string name="hms_download_retry">Prenos ni uspel. Želite poskusiti znova?</string>
+    <string name="hms_downloading">Prenašanje storitev Huawei Mobile | napredovanje: %d%%</string>
+    <string name="hms_install">Namesti</string>
+    <string name="hms_install_message">Za uporabo te funkcije je treba namestiti program Mobilne storitve Huawei. Ga želite namestiti?</string>
+    <string name="hms_retry">Poskusi znova</string>
+    <string name="hms_update">Posodobi</string>
+    <string name="hms_update_message">Za uporabo te funkcije posodobite na najnovejšo različico storitev Huawei Mobile. Želite posodobiti zdaj?</string>
+    <string name="hms_update_title">Storitve Huawei Mobile</string>
+    <string name="search_menu_title">Iskanje</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

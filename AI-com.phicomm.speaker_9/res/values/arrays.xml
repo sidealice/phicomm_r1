@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_codes">
+        <item>-</item>
+        <item>AR</item>
+        <item>AU</item>
+        <item>BR</item>
+        <item>BG</item>
+        <item>CA</item>
+        <item>CH</item>
+        <item>CN</item>
+        <item>CZ</item>
+        <item>DE</item>
+        <item>DK</item>
+        <item>ES</item>
+        <item>FI</item>
+        <item>FR</item>
+        <item>GB</item>
+        <item>GR</item>
+        <item>HU</item>
+        <item>ID</item>
+        <item>IT</item>
+        <item>JP</item>
+        <item>KR</item>
+        <item>NL</item>
+        <item>PL</item>
+        <item>PT</item>
+        <item>RO</item>
+        <item>RU</item>
+        <item>SE</item>
+        <item>SK</item>
+        <item>SI</item>
+        <item>TR</item>
+        <item>TW</item>
+        <item>US</item>
+    </string-array>
+    <string-array name="factory_info_items">
+        <item>@string/h5_test</item>
+        <item>@string/version_name</item>
+        <item>@string/build_number</item>
+        <item>@string/build_type</item>
+        <item>@string/host_cloud_account</item>
+        <item>@string/host_sz</item>
+        <item>@string/unisoud_env</item>
+        <item>@string/mqtt_host</item>
+        <item>@string/mqtt_ssl_port</item>
+        <item>@string/target_sdk</item>
+        <item>@string/umeng_key</item>
+        <item>@string/umeng_channel</item>
+        <item>@string/buggly_id</item>
+        <item>@string/mqtt_app_unisound</item>
+        <item>@string/mqtt_device_unisound</item>
+    </string-array>
+    <string-array name="job_items">
+        <item>学生</item>
+        <item>文化/艺术</item>
+        <item>影视/娱乐</item>
+        <item>金融</item>
+        <item>医药/健康</item>
+        <item>教育/科研</item>
+        <item>IT/互联网/通信</item>
+        <item>工业/制造业</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="permissions">
+        <item>@string/permission_recode_audio_hint</item>
+        <item>@string/permission_get_accounts_hint</item>
+        <item>@string/permission_read_phone_hint</item>
+        <item>@string/permission_call_phone_hint</item>
+        <item>@string/permission_camera_hint</item>
+        <item>@string/permission_access_fine_location_hint</item>
+        <item>@string/permission_access_coarse_location_hint</item>
+        <item>@string/permission_read_external_hint</item>
+        <item>@string/permission_white_external_hint</item>
+    </string-array>
+    <string-array name="preferences_front_light_options">
+        <item>@string/preferences_front_light_on</item>
+        <item>@string/preferences_front_light_auto</item>
+        <item>@string/preferences_front_light_off</item>
+    </string-array>
+    <string-array name="preferences_front_light_values">
+        <item>ON</item>
+        <item>AUTO</item>
+        <item>OFF</item>
+    </string-array>
+    <string-array name="speaker_voices">
+        <item>佳人细语</item>
+        <item>娓娓女声</item>
+        <item>磁性男声</item>
+        <item>萌趣童声</item>
+    </string-array>
+    <string-array name="tts_player">
+        <item>FEMALE</item>
+        <item>MALE</item>
+        <item>CHILDREN</item>
+        <item>SWEET</item>
+        <item>LZL</item>
+    </string-array>
+</resources>

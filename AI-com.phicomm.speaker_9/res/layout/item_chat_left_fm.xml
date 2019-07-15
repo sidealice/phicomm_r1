@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/color_898989" android:layout_gravity="center_horizontal" android:id="@id/tv_chat_left_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="今天17:35" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <RelativeLayout android:id="@id/ll_chat_view" android:background="@drawable/shape_chat_left_bg" android:layout_width="239.5dip" android:layout_height="wrap_content" android:layout_marginLeft="25.0dip" android:layout_marginTop="25.0dip">
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_content_view" android:paddingBottom="15.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_494949" android:id="@id/tv_chat_left_fm_content" android:paddingLeft="30.0dip" android:paddingTop="15.0dip" android:paddingRight="14.5dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="即将播放段子我来了" />
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_chat_left_joke_bg" android:background="@drawable/fm_item_bg_1" android:layout_width="185.0dip" android:layout_height="104.0dip" />
+                <TextView android:textSize="15.0sp" android:textColor="@color/color_494949" android:ellipsize="end" android:id="@id/tv_chat_left_fm_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="9.5dip" android:layout_marginRight="30.0dip" android:text="段子我来了" android:maxLines="1" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/loding_view" android:background="@drawable/shape_chat_left_mask_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignBottom="@id/ll_content_view" android:layout_alignParentTop="true">
+                <ImageView android:id="@id/loading_animator_view" android:layout_width="22.0dip" android:layout_height="23.0dip" android:src="@drawable/blue_circle_loading" android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/iv_chat_left_head" android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/head_portrait" android:scaleType="fitXY" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+</LinearLayout>

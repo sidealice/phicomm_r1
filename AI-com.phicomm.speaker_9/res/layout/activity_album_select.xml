@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/toolbar" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/toolbar" />
+    <TextView android:id="@id/text_view_request_permission" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/permission_denied_albums" android:layout_centerInParent="true" />
+    <ProgressBar android:id="@id/progress_bar_album_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+    <TextView android:id="@id/text_view_error" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_null_cursor" android:layout_centerInParent="true" />
+    <GridView android:id="@id/grid_view_album_select" android:paddingLeft="1.0dip" android:paddingTop="1.0dip" android:paddingRight="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stretchMode="columnWidth" android:layout_below="@id/toolbar" />
+    <Button android:textSize="20.0sp" android:textColor="@color/multiple_image_select_buttonText" android:id="@id/button_grant_permission" android:background="@color/multiple_image_select_accent" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/grant_permission" android:layout_alignParentBottom="true" android:textAllCaps="true" />
+</RelativeLayout>

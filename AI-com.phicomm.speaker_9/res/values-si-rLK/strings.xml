@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">නවත්වන්න</string>
+    <string name="hms_abort_message">බාගැනීම නවත්වන්නද?</string>
+    <string name="hms_cancel">අවලංගු කරන්න</string>
+    <string name="hms_check_failure">යාවත් කිරීම් පරීක්ෂා කිරීමට අසමත් විය.</string>
+    <string name="hms_check_no_update">ඔබ දැනටමත් නවතම අනුවාදය භාවිතා කරමින් සිටී.</string>
+    <string name="hms_checking">යාවත් කිරීම් පරීක්ෂා කරමින්...</string>
+    <string name="hms_confirm">හරි</string>
+    <string name="hms_download_failure">Huawei ජංගම සේවා පැකේජ බාගැනීමට අසමත් විය.</string>
+    <string name="hms_download_no_space">ප්‍රමාණවත් නිදහස් ඉඩ නැත. බාගැනීම සම්පූර්ණ කළ නොහැක.</string>
+    <string name="hms_download_retry">බාගැනීම අසමත් විය. නැවත උත්සාහ කරන්නද?</string>
+    <string name="hms_downloading">Huawei ජංගම සේවා බාගනිමින් | ප්‍රගතිය: %d%%</string>
+    <string name="hms_install">ස්ථාපනය කරන්න</string>
+    <string name="hms_install_message">මෙම විශේෂාංගය භාවිත කිරීමට Huawei ජංගම සේවාවත් ස්ථාපිත කළ යුතුයි. ස්ථාපනය කරන්න?</string>
+    <string name="hms_retry">යළි තැත් කරන්න</string>
+    <string name="hms_update">යාවත් කරන්න</string>
+    <string name="hms_update_message">මෙම විශේෂාංගය භාවිතා කිරීමට Huawei ජංගම සේවාවල නවතම අනුවාදය යාවත් කරන්න. දැන් යාවත් කරන්නද?</string>
+    <string name="hms_update_title">Huawei ජංගම සේවා</string>
+</resources>

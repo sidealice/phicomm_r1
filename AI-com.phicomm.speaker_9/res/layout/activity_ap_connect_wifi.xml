@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_ap_connect_wifi_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.0dip" android:text="@string/ap_open_connect_title" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_ap_connect_wifi_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="44.5dip" android:src="@drawable/anim_ap_connect" />
+</LinearLayout>

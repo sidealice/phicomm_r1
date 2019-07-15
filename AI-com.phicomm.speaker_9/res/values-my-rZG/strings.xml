@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">ရပ္</string>
+    <string name="hms_abort_message">ေဒါင္းလုဒ္ကိုရပ္မည္လား?</string>
+    <string name="hms_cancel">ပယ္ဖ်က္ပါ</string>
+    <string name="hms_check_failure">အသစ္မြမ္းမံမႈမ်ားကို စစ္ေဆးျခင္း မေအာင္ျမင္ခဲ့ပါ။</string>
+    <string name="hms_check_no_update">သင္သည္ေနာက္ဆံုးဗား႐ွင္းကို အသံုးျပဳေနၿပီးျဖစ္သည္။</string>
+    <string name="hms_checking">အသစ္မြမ္းမံမႈမ်ား ျပဳလုပ္ရန္ စစ္ေဆးေနသည္...</string>
+    <string name="hms_confirm">အိုေက</string>
+    <string name="hms_download_failure">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားပက္ေက့ခ်္ကို ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။</string>
+    <string name="hms_download_no_space">ေနရာလြတ္ မေလာက္ပါ။ ေဒါင္းလုဒ္မၿပီးစီးႏုိင္ပါ။</string>
+    <string name="hms_download_retry">ေဒါင္းလုဒ္ဆြဲျခင္း မေအာင္ျမင္ခဲ့ပါ။ ထပ္ႀကိဳးစားမည္လား?</string>
+    <string name="hms_downloading">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ားကို ေဒါင္းလုဒ္ဆြဲေနသည္ | တိုးတက္မႈ- %d%%</string>
+    <string name="hms_install">ထည့္သြင္းပါ</string>
+    <string name="hms_install_message">ဤအဂၤါရပ္ကိုသံုးရန္ Huawei မိုဘိုင္းဝန္ေဆာင္မႈမ်ားကို ထည့္သြင္းထားရမည္။ ထည့္သြင္းမည္လား?</string>
+    <string name="hms_retry">ျပန္ႀကိဳးစား</string>
+    <string name="hms_update">အသစ္မြမ္းမံပါ</string>
+    <string name="hms_update_message">ဤအဂၤါရပ္ကိုအသံုးျပဳရန္ Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား၏ ေနာက္ဆံုးထြက္ဗား႐ွင္းသို႔ အသစ္မြမ္းမံပါ။ ယခုအသစ္မြမ္းမံမည္လား?</string>
+    <string name="hms_update_title">Huawei မိုဘုိင္းဝန္ေဆာင္မႈမ်ား</string>
+</resources>

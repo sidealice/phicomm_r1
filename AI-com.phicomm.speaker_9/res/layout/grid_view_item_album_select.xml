@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/frame_layout_album_select" android:paddingLeft="1.0dip" android:paddingTop="1.0dip" android:paddingRight="1.0dip" android:paddingBottom="1.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/image_view_album_image" android:layout_width="fill_parent" android:layout_height="fill_parent" android:scaleType="centerCrop" />
+    <TextView android:textSize="20.0dip" android:textColor="@color/multiple_image_select_primaryText" android:gravity="center" android:layout_gravity="bottom" android:id="@id/text_view_album_name" android:background="@color/multiple_image_select_albumTextBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" />
+</FrameLayout>

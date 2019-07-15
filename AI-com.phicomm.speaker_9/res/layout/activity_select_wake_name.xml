@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_common_header" />
+    <com.phicomm.speaker.views.widget.RequestLayout android:id="@id/request" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/lv" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+        <TextView android:textSize="17.0sp" android:textColor="@color/color_73" android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/btn_custom" android:background="@drawable/shape_function_gray_round_corner" android:layout_width="275.0dip" android:layout_height="45.0dip" android:layout_marginBottom="223.0dip" android:text="@string/custom_wake_name" />
+    </com.phicomm.speaker.views.widget.RequestLayout>
+</LinearLayout>

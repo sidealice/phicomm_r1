@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">হোম এ নেভিগেট করুন</string>
+    <string name="abc_action_bar_up_description">উপরের দিকে নেভিগেট করুন</string>
+    <string name="abc_action_menu_overflow_description">আরও বিকল্প</string>
+    <string name="abc_action_mode_done">সম্পন্ন হয়েছে</string>
+    <string name="abc_activity_chooser_view_see_all">সবগুলো দেখুন</string>
+    <string name="abc_activitychooserview_choose_application">একটি অ্যাপ্লিকেশান বেছে নিন</string>
+    <string name="abc_capital_off">বন্ধ</string>
+    <string name="abc_capital_on">চালু</string>
+    <string name="abc_search_hint">অনুসন্ধান...</string>
+    <string name="abc_searchview_description_clear">ক্যোয়ারী সাফ করুন</string>
+    <string name="abc_searchview_description_query">ক্যোয়ারী খুঁজুন</string>
+    <string name="abc_searchview_description_search">খুঁজুন</string>
+    <string name="abc_searchview_description_submit">ক্যোয়ারী জমা দিন</string>
+    <string name="abc_searchview_description_voice">ভয়েস অনুসন্ধান</string>
+    <string name="abc_shareactionprovider_share_with">এর সাথে শেয়ার করুন</string>
+    <string name="abc_shareactionprovider_share_with_application">%s এর সাথে শেয়ার করুন</string>
+    <string name="abc_toolbar_collapse_description">সঙ্কুচিত করুন</string>
+    <string name="hms_abort">থামুন</string>
+    <string name="hms_abort_message">ডাউনলোড থামাবেন?</string>
+    <string name="hms_cancel">বাতিল করুন</string>
+    <string name="hms_check_failure">আপডেট আছে কিনা পরীক্ষা করা গেল না।</string>
+    <string name="hms_check_no_update">আপনি ইতিমধ্যেই সাম্প্রতিক সংস্করণটি ব্যবহার করছেন।</string>
+    <string name="hms_checking">আপডেট আছে কিনা দেখা হচ্ছে...</string>
+    <string name="hms_confirm">ওকে</string>
+    <string name="hms_download_failure">Huawei মোবাইল পরিষেবা প্যাকেজ ডাউনলোড করা গেল না।</string>
+    <string name="hms_download_no_space">পর্যাপ্ত মুক্ত স্থান নেই। ডাউনলোড শেষ করতে পারা যাবে না।</string>
+    <string name="hms_download_retry">ডাউনলোড করা গেল না। আবার চেষ্টা করবেন?</string>
+    <string name="hms_downloading">Huawei মোবাইল পরিষেবা ডাউনলোড হচ্ছে | প্রগতি: %d%%</string>
+    <string name="hms_install">ইন্সটল করুন</string>
+    <string name="hms_install_message">এই বৈশিষ্ট্য ব্যবহার করতে, Huawei মোবাইল পরিষেবা অবশ্যই ইন্সটল করতে হবে। ইন্সটল করবেন?</string>
+    <string name="hms_retry">পুনরায় চেষ্টা করুন</string>
+    <string name="hms_update">আপডেট করুন</string>
+    <string name="hms_update_message">এই বৈশিষ্ট্যটি ব্যবহার করতে, Huawei মোবাইল পরিষেবার সাম্প্রতিক সংস্করণে আপডেট করুন। এখন আপডেট করবেন?</string>
+    <string name="hms_update_title">Huawei মোবাইল পরিষেবা</string>
+    <string name="search_menu_title">খুঁজুন</string>
+    <string name="status_bar_notification_info_overflow">৯৯৯+</string>
+</resources>

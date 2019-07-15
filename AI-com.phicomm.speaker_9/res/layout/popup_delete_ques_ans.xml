@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_delete" android:background="@drawable/selector_delete_cancel" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/delete" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_cancel" android:background="@drawable/selector_delete_cancel" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/cancel" />
+</LinearLayout>

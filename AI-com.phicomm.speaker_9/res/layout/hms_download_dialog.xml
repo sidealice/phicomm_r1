@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="90.0dip" android:layout_marginLeft="@dimen/hms_dialog_padding" android:layout_marginRight="@dimen/hms_dialog_padding" android:layout_marginStart="@dimen/hms_dialog_padding" android:layout_marginEnd="@dimen/hms_dialog_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="13.0sp" android:textColor="@color/hms_black" android:id="@id/hms_message_text" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="12.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <ProgressBar android:layout_gravity="center" android:id="@id/hms_progress_bar" android:layout_width="0.0dip" android:layout_height="4.0dip" android:layout_marginRight="4.0dip" android:progressDrawable="@drawable/hms_progress_bar" android:layout_weight="1.0" android:layout_marginEnd="4.0dip" style="?android:progressBarStyleHorizontal" />
+        <ImageView android:gravity="center_vertical" android:layout_gravity="center" android:id="@id/hms_cancel_button" android:focusable="true" android:visibility="visible" android:layout_width="32.0dip" android:layout_height="fill_parent" android:src="@drawable/hms_cancel" android:contentDescription="@string/hms_cancel" />
+    </LinearLayout>
+</LinearLayout>

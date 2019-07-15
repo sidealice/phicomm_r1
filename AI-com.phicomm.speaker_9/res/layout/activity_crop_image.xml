@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <com.phicomm.speaker.views.clipview.ClipImageLayout android:id="@id/clip_image_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <RelativeLayout android:layout_gravity="bottom" android:background="#33bfbfbf" android:layout_width="fill_parent" android:layout_height="49.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_cancel" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/cancel" android:layout_alignParentLeft="true" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_alignParentStart="true" />
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/white" android:gravity="center" android:id="@id/tv_complete" android:paddingLeft="24.0dip" android:paddingRight="24.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/complete" android:layout_alignParentRight="true" android:paddingStart="24.0dip" android:paddingEnd="24.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</merge>

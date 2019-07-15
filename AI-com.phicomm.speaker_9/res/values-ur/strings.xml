@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ہوم پر نیویگیٹ کریں</string>
+    <string name="abc_action_bar_up_description">اوپر نیویگیٹ کریں</string>
+    <string name="abc_action_menu_overflow_description">مزید اختیارات</string>
+    <string name="abc_action_mode_done">ہو گیا</string>
+    <string name="abc_activity_chooser_view_see_all">سبھی دیکھیں</string>
+    <string name="abc_activitychooserview_choose_application">ایک ایپ منتخب کریں</string>
+    <string name="abc_capital_off">آف</string>
+    <string name="abc_capital_on">آن</string>
+    <string name="abc_search_hint">تلاش کریں…</string>
+    <string name="abc_searchview_description_clear">استفسار صاف کریں</string>
+    <string name="abc_searchview_description_query">استفسار تلاش کریں</string>
+    <string name="abc_searchview_description_search">تلاش کریں</string>
+    <string name="abc_searchview_description_submit">استفسار جمع کرائیں</string>
+    <string name="abc_searchview_description_voice">صوتی تلاش</string>
+    <string name="abc_shareactionprovider_share_with">اشتراک کریں مع</string>
+    <string name="abc_shareactionprovider_share_with_application">%s کے ساتھ اشتراک کریں</string>
+    <string name="abc_toolbar_collapse_description">سکیڑیں</string>
+    <string name="hms_abort">روکیں</string>
+    <string name="hms_abort_message">ڈاؤن لوڈ روکیں؟</string>
+    <string name="hms_cancel">منسوخ کریں</string>
+    <string name="hms_check_failure">اپ ڈیٹس کے لیے چیک کرنے سے قاصر۔</string>
+    <string name="hms_check_no_update">آپ پہلے سے ہی جدید ترین ورژن استعمال کررہے ہیں۔</string>
+    <string name="hms_checking">اپ ڈیٹس چیک ہو رہی ہیں...</string>
+    <string name="hms_confirm">اوکے</string>
+    <string name="hms_download_failure">Huawei موبائل خدمات کا پیکیج ڈاؤن لوڈ کرنے سے قاصر۔</string>
+    <string name="hms_download_no_space">وافر خالی جگہ نہیں۔ ڈاؤن لوڈ مکمل نہیں کی جا سکتی۔</string>
+    <string name="hms_download_retry">ڈاؤن لوڈ ناکام ہو گئی۔ دوبارہ کوشش کریں؟</string>
+    <string name="hms_downloading">Huawei موبائل خدمات ڈاؤن لوڈ کر رہا ہے | کارکردگی: %d%%</string>
+    <string name="hms_install">انسٹال کریں</string>
+    <string name="hms_install_message">یہ فیچر استعمال کرنے کیلئے Huawei موبائل سروسزانسٹال کرنا ضروری ہے۔ انسٹال کریں؟</string>
+    <string name="hms_retry">دوبارہ کوشش کریں</string>
+    <string name="hms_update">اپ ڈیٹ</string>
+    <string name="hms_update_message">یہ خصوصیت استعمال کرنے کے لیے Huawei موبائل خدمات کے تازہ ترین ورژن پر اپ ڈیٹ کریں۔ ابھی اپ ڈیٹ کریں؟</string>
+    <string name="hms_update_title">"Huaweiموبائل سروسز "</string>
+    <string name="search_menu_title">تلاش</string>
+    <string name="status_bar_notification_info_overflow">‎999+‎</string>
+</resources>

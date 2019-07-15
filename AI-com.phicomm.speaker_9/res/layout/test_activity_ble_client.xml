@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.phicomm.speaker.test.netconfig.view.widget.FlowLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="scan" />
+        <Button android:id="@id/btn_send" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="send" />
+        <Button android:id="@id/btn_disconnect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="disconnect" />
+    </com.phicomm.speaker.test.netconfig.view.widget.FlowLayout>
+    <EditText android:id="@id/et_send" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="send" />
+    <fragment android:name="com.phicomm.speaker.test.netconfig.log.LogFragment" android:id="@id/console" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

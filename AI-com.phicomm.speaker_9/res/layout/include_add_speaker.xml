@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="17.0sp" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_home_speaker_name" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/home_page_title" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/rl_add_speaker" android:background="@drawable/add_speaker_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/iv_add_speaker_logo" android:background="@drawable/add_speaker_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="90.5dip" android:layout_centerHorizontal="true" />
+            <ImageView android:background="@drawable/add_speaker_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23.0dip" android:layout_below="@id/iv_add_speaker_logo" android:layout_centerHorizontal="true" />
+            <TextView android:enabled="true" android:textSize="17.0sp" android:textColor="@color/white" android:id="@id/tv_add_speaker" android:layout_marginLeft="50.0dip" android:layout_marginRight="50.0dip" android:layout_marginBottom="50.0dip" android:text="@string/add_speaker_btn" android:layout_alignParentBottom="true" style="@style/btn_common" />
+        </RelativeLayout>
+        <include android:id="@id/layout_error" android:visibility="gone" layout="@layout/include_common_error" />
+    </FrameLayout>
+</LinearLayout>

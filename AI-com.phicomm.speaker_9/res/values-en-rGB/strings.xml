@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigate home</string>
+    <string name="abc_action_bar_up_description">Navigate up</string>
+    <string name="abc_action_menu_overflow_description">More options</string>
+    <string name="abc_action_mode_done">Done</string>
+    <string name="abc_activity_chooser_view_see_all">See all</string>
+    <string name="abc_activitychooserview_choose_application">Choose an app</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">Search…</string>
+    <string name="abc_searchview_description_clear">Clear query</string>
+    <string name="abc_searchview_description_query">Search query</string>
+    <string name="abc_searchview_description_search">Search</string>
+    <string name="abc_searchview_description_submit">Submit query</string>
+    <string name="abc_searchview_description_voice">Voice search</string>
+    <string name="abc_shareactionprovider_share_with">Share with</string>
+    <string name="abc_shareactionprovider_share_with_application">Share with %s</string>
+    <string name="abc_toolbar_collapse_description">Collapse</string>
+    <string name="hms_abort">Stop</string>
+    <string name="hms_abort_message">Stop the download?</string>
+    <string name="hms_cancel">Cancel</string>
+    <string name="hms_check_failure">Failed to check for updates.</string>
+    <string name="hms_check_no_update">You are already using the latest version.</string>
+    <string name="hms_checking">Checking for updates…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Failed to download Huawei Mobile Services package.</string>
+    <string name="hms_download_no_space">Not enough free space. Download cannot be completed.</string>
+    <string name="hms_download_retry">Download failed. Try again?</string>
+    <string name="hms_downloading">Downloading Huawei Mobile Services | progress: %d%%</string>
+    <string name="hms_install">Install</string>
+    <string name="hms_install_message">Huawei Mobile Services must be installed to use this feature. Install?</string>
+    <string name="hms_retry">Retry</string>
+    <string name="hms_update">Update</string>
+    <string name="hms_update_message">Update to the latest version of Huawei Mobile Services to use this feature. Update now?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Search</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

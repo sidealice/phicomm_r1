@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_function" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="9.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true">
+        <ImageView android:id="@id/iv_delete" android:padding="5.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="1.5dip" android:src="@drawable/delete" />
+        <ImageView android:id="@id/iv_eye" android:padding="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7.0dip" android:src="@drawable/close_eyes" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/fl_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <ImageView android:id="@id/iv_left_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.5dip" android:layout_marginRight="14.5dip" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_left_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="11.5dip" android:layout_marginRight="14.5dip" />
+    </FrameLayout>
+    <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/text_normal" android:textColor="@color/color_494949" android:ellipsize="end" android:id="@id/et_content" android:background="@null" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/ll_function" android:layout_toRightOf="@id/fl_left" android:layout_centerVertical="true" android:layout_toStartOf="@id/ll_function" android:layout_toEndOf="@id/fl_left" style="@style/base_et_style" />
+</RelativeLayout>

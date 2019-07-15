@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/ll_root" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:phi="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="45.0dip">
+            <com.phicomm.speaker.views.PlayModeView android:layout_gravity="center_vertical" android:id="@id/pmv_mode" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:foregroundGravity="center" />
+            <TextView android:textSize="@dimen/text_middle" android:textColor="@color/color_494949" android:layout_gravity="center_vertical" android:id="@id/tv_list_explain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="9.5dip" />
+        </LinearLayout>
+        <View android:background="@color/color_bfbfbf" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_top" />
+        <ListView android:id="@id/lv_music" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_weight="1.0" />
+    </LinearLayout>
+    <com.phicomm.speaker.views.DefaultExceptionView android:id="@id/dev_load_list_failed" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0" android:layout_centerInParent="true" phi:hint_icon="@drawable/player_load_list_failed" phi:hint_txt="@string/load_list_failed_hint1" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_close" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="#59bfbfbf" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/ll_top" />
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_close" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/close" />
+    </LinearLayout>
+    <com.phicomm.speaker.views.LoadingView android:layout_gravity="center" android:id="@id/lv_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

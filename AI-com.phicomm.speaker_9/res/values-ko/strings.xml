@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">홈 탐색</string>
+    <string name="abc_action_bar_up_description">위로 탐색</string>
+    <string name="abc_action_menu_overflow_description">옵션 더보기</string>
+    <string name="abc_action_mode_done">완료</string>
+    <string name="abc_activity_chooser_view_see_all">전체 보기</string>
+    <string name="abc_activitychooserview_choose_application">앱 선택</string>
+    <string name="abc_capital_off">사용 안함</string>
+    <string name="abc_capital_on">사용</string>
+    <string name="abc_search_hint">검색...</string>
+    <string name="abc_searchview_description_clear">검색어 삭제</string>
+    <string name="abc_searchview_description_query">검색어</string>
+    <string name="abc_searchview_description_search">검색</string>
+    <string name="abc_searchview_description_submit">검색어 보내기</string>
+    <string name="abc_searchview_description_voice">음성 검색</string>
+    <string name="abc_shareactionprovider_share_with">공유 대상</string>
+    <string name="abc_shareactionprovider_share_with_application">%s와(과) 공유</string>
+    <string name="abc_toolbar_collapse_description">접기</string>
+    <string name="crop__cancel">취소</string>
+    <string name="crop__done">확인</string>
+    <string name="crop__pick_error">이미지가 존재하지 않습니다.</string>
+    <string name="crop__saving">사진을 저장중입니다…</string>
+    <string name="crop__wait">잠시만 기다려주세요…</string>
+    <string name="hms_abort">중지</string>
+    <string name="hms_abort_message">다운로드를 중지할까요?</string>
+    <string name="hms_cancel">취소</string>
+    <string name="hms_check_failure">업데이트 확인에 실패했습니다.</string>
+    <string name="hms_check_no_update">이미 최신 버전을 사용하고 있습니다.</string>
+    <string name="hms_checking">업데이트 확인 중…</string>
+    <string name="hms_confirm">확인</string>
+    <string name="hms_download_failure">Huawei 모바일 서비스 패키지 다운로드에 실패했습니다.</string>
+    <string name="hms_download_no_space">빈 공간이 부족합니다. 다운로드를 완료할 수 없습니다.</string>
+    <string name="hms_download_retry">다운로드에 실패했습니다. 다시 시도할까요?</string>
+    <string name="hms_downloading">Huawei 모바일 서비스 다운로드 중 | 진행률: %d%%</string>
+    <string name="hms_install">설치</string>
+    <string name="hms_install_message">이 기능을 사용하려면 Huawei 모바일 서비스를 설치해야 합니다. 설치할까요?</string>
+    <string name="hms_retry">재시도</string>
+    <string name="hms_update">업데이트</string>
+    <string name="hms_update_message">이 기능을 사용하려면 Huawei 모바일 서비스를 최신 버전으로 업데이트해야 합니다. 지금 업데이트할까요?</string>
+    <string name="hms_update_title">Huawei 모바일 서비스</string>
+    <string name="search_menu_title">검색</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

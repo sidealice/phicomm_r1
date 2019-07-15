@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">Parar</string>
+    <string name="hms_abort_message">Deter a descarga?</string>
+    <string name="hms_cancel">Cancelar</string>
+    <string name="hms_check_failure">Erro ao comprobar actualizacións.</string>
+    <string name="hms_check_no_update">Xa se está a empregar a última versión.</string>
+    <string name="hms_checking">Comprobando actualizacións...</string>
+    <string name="hms_confirm">Aceptar</string>
+    <string name="hms_download_failure">Erro ao descargar o paquete de Servizos de Huawei Mobile.</string>
+    <string name="hms_download_no_space">Non hai espazo libre suficiente. Non se pode completar a descarga.</string>
+    <string name="hms_download_retry">Erro ao descargar. Tentar de novo?</string>
+    <string name="hms_downloading">Descargando Servizos de Huawei Mobile | progreso: %d%%</string>
+    <string name="hms_install">Instalar</string>
+    <string name="hms_install_message">É preciso ter instalado Huawei Mobile Services para usar esta función. Instalar?</string>
+    <string name="hms_retry">Tentar de novo</string>
+    <string name="hms_update">Actualizar</string>
+    <string name="hms_update_message">Actualice á última versión de Servizos de Huawei Moble para usar esta función. Actualizar agora?</string>
+    <string name="hms_update_title">Servizos de Huawei Mobile</string>
+</resources>

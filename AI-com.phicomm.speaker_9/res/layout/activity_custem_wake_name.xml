@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_common_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="14.5dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.5dip">
+        <EditText android:textSize="15.0sp" android:textColor="@color/color_73" android:id="@id/et_wake_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/hint_wake_name" android:maxLength="6" />
+        <ImageView android:id="@id/iv_clear" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layout_star" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dip">
+        <View android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_marginLeft="14.5dip" />
+        <View android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_marginLeft="14.5dip" />
+        <View android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_marginLeft="14.5dip" />
+        <View android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_marginLeft="14.5dip" />
+        <View android:layout_width="27.0dip" android:layout_height="26.0dip" android:layout_marginLeft="14.5dip" />
+    </LinearLayout>
+    <TextView android:textSize="15.0sp" android:textStyle="bold" android:textColor="@color/color_73" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginTop="30.0dip" android:text="@string/wake_name_advice" />
+    <TextView android:textSize="15.0sp" android:textColor="@color/color_73" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.5dip" android:layout_marginRight="16.5dip" android:text="@string/wake_name_advice_content" />
+</LinearLayout>

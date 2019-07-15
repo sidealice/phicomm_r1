@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.phicomm.speaker.views.widget.RequestLayout android:id="@id/request" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_137" android:ellipsize="end" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="10.0dip" android:maxLines="1" />
+        <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-10.0dip" />
+        </com.phicomm.speaker.views.refresh.RefreshLayout>
+    </LinearLayout>
+</com.phicomm.speaker.views.widget.RequestLayout>

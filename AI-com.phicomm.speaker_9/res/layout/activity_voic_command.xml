@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:phi="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/include_common_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.phicomm.speaker.views.DefaultExceptionView android:layout_gravity="center" android:id="@id/dev_none_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="46.0dip" phi:hint_icon="@drawable/player_load_list_failed" phi:hint_txt="@string/load_music_failed_hint" />
+        <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/refreshLayout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </com.phicomm.speaker.views.refresh.RefreshLayout>
+    </FrameLayout>
+</LinearLayout>

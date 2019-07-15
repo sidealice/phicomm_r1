@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_common_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_494949" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/have_binding_phone_number" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_494949" android:id="@id/tv_binding_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/color_ebeef1" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" style="@style/et_common">
+        <com.phicomm.speaker.views.MyEditText android:id="@id/met_short_message_verification_code" android:paddingLeft="17.0dip" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_weight="1.0" app:has_delete="true" app:hint="@string/captcha_sms" app:max_length="6" />
+        <TextView android:textColor="@color/main_color" android:layout_gravity="center" android:id="@id/tv_send_verification_code" android:layout_marginRight="17.0dip" android:text="@string/get_verification_code" style="@style/text_small_style" />
+    </LinearLayout>
+    <TextView android:id="@id/tv_next_step" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/next_step" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/btn_common" />
+</LinearLayout>

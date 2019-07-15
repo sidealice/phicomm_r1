@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/iv_welcome" android:layout_width="fill_parent" android:layout_height="238.5dip" android:src="@drawable/login_welcome" android:scaleType="centerCrop" />
+        <com.phicomm.speaker.views.MyEditText android:id="@id/myet_user" android:layout_marginTop="50.5dip" app:hint="@string/hint_login_user" app:input_type="1" app:is_phone="true" app:left_icon="@drawable/selector_login_phone_icon" app:max_length="11" style="@style/et_common" />
+        <com.phicomm.speaker.views.MyEditText android:id="@id/myet_pwd" android:layout_marginTop="21.0dip" app:has_eye="true" app:hint="@string/hint_login_password" app:input_type="2" app:left_icon="@drawable/selector_login_pwd_icon" app:max_length="20" style="@style/et_common" />
+        <TextView android:id="@id/tv_login" android:layout_marginTop="39.0dip" android:text="@string/login" style="@style/btn_common" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/text_normal" android:layout_gravity="center" android:id="@id/tv_forget_pwd" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="45.5dip" android:text="@string/forget_pwd" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/main_color" android:layout_gravity="center" android:id="@id/tv_register" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28.5dip" android:text="@string/register_now" />
+    </LinearLayout>
+</LinearLayout>

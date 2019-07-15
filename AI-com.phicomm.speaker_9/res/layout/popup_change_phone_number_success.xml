@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/captcha" android:layout_width="275.0dip" android:layout_height="wrap_content" android:minHeight="185.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="125.0dip">
+        <TextView android:textSize="@dimen/text_middle" android:textStyle="bold" android:textColor="@color/color_494949" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/phone_number_change_success" />
+        <TextView android:textSize="@dimen/text_middle" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_message" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/next_use_new_phone_number" />
+    </LinearLayout>
+    <include layout="@layout/include_common_line" />
+    <TextView android:textSize="@dimen/text_middle" android:textColor="@color/color_494949" android:gravity="center" android:id="@id/tv_complete" android:layout_width="fill_parent" android:layout_height="59.0dip" android:text="@string/i_know" />
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">Endheg</string>
+    <string name="hms_abort_message">Endheg undhuhan?</string>
+    <string name="hms_cancel">Wurung</string>
+    <string name="hms_check_failure">Gagal mriksa panganyaran.</string>
+    <string name="hms_check_no_update">Wis nggunakake versi paling anyar.</string>
+    <string name="hms_checking">Mriksa panganyaran...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Gagal ngundhuh paket Layanan Seluler Huawei.</string>
+    <string name="hms_download_no_space">Spasi bebas ora cukup. Undhuhan ora bisa rampung.</string>
+    <string name="hms_download_retry">Undhuh gagal. Coba maneh?</string>
+    <string name="hms_downloading">Ngundhuh Layanan Seluler Huawei | progres: %d%%</string>
+    <string name="hms_install">Instal</string>
+    <string name="hms_install_message">Layanan Seluler Huawei kudu diinstal nggo nggunakake fitur iki. Instal?</string>
+    <string name="hms_retry">Coba maneh</string>
+    <string name="hms_update">Anyarake</string>
+    <string name="hms_update_message">Anyarake dadi versi paling anyar Layanan Seluler Huawei kanggo nggunakake fitur iki. Anyarake saiki?</string>
+    <string name="hms_update_title">Layanan Seluler Huawei</string>
+</resources>

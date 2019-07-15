@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/feedback_left_up_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="15.0dip" android:textColor="@color/color_494949" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="斐讯AI音箱的回答您满意吗？" android:maxLines="4" android:maxEms="13" />
+    <RadioGroup android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/feedback_rg" android:paddingTop="9.0dip" android:paddingBottom="9.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

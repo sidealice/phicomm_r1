@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigasi ke beranda</string>
+    <string name="abc_action_bar_up_description">Navigasi naik</string>
+    <string name="abc_action_menu_overflow_description">Opsi lain</string>
+    <string name="abc_action_mode_done">Selesai</string>
+    <string name="abc_activity_chooser_view_see_all">Lihat semua</string>
+    <string name="abc_activitychooserview_choose_application">Pilih aplikasi</string>
+    <string name="abc_capital_off">NONAKTIF</string>
+    <string name="abc_capital_on">AKTIF</string>
+    <string name="abc_search_hint">Telusuri...</string>
+    <string name="abc_searchview_description_clear">Hapus kueri</string>
+    <string name="abc_searchview_description_query">Kueri penelusuran</string>
+    <string name="abc_searchview_description_search">Telusuri</string>
+    <string name="abc_searchview_description_submit">Kirim kueri</string>
+    <string name="abc_searchview_description_voice">Penelusuran suara</string>
+    <string name="abc_shareactionprovider_share_with">Bagikan dengan</string>
+    <string name="abc_shareactionprovider_share_with_application">Bagikan ke %s</string>
+    <string name="abc_toolbar_collapse_description">Ciutkan</string>
+    <string name="crop__cancel">BATAL</string>
+    <string name="crop__done">SELESAI</string>
+    <string name="crop__pick_error">Tidak ada sumber gambar yang tersedia</string>
+    <string name="crop__saving">Menyimpan gambar…</string>
+    <string name="crop__wait">Silakan tunggu…</string>
+    <string name="hms_abort">Hentikan</string>
+    <string name="hms_abort_message">Hentikan pengunduhan?</string>
+    <string name="hms_cancel">Batal</string>
+    <string name="hms_check_failure">Gagal memeriksa pembaruan.</string>
+    <string name="hms_check_no_update">Anda sudah menggunakan versi terbaru.</string>
+    <string name="hms_checking">Memeriksa pembaruan...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Gagal mengunduh paket Layanan Seluler Huawei.</string>
+    <string name="hms_download_no_space">Ruang kosong tidak cukup. Pengunduhan tidak dapat diselesaikan.</string>
+    <string name="hms_download_retry">Pengunduhan gagal. Coba lagi?</string>
+    <string name="hms_downloading">Mengunduh Layanan Seluler Huawei | kemajuan: %d%%</string>
+    <string name="hms_install">Pasang</string>
+    <string name="hms_install_message">Layanan Seluler Huawei harus dipasang untuk dapat menggunakan fitur ini. Pasang?</string>
+    <string name="hms_retry">Coba lagi</string>
+    <string name="hms_update">Perbarui</string>
+    <string name="hms_update_message">Perbarui ke versi terbaru Layanan Seluler Huawei untuk menggunakan fitur ini. Perbarui sekarang?</string>
+    <string name="hms_update_title">Layanan Seluler Huawei</string>
+    <string name="search_menu_title">Telusuri</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

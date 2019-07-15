@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">پیمایش به صفحه اصلی</string>
+    <string name="abc_action_bar_up_description">پیمایش به بالا</string>
+    <string name="abc_action_menu_overflow_description">گزینه‌های بیشتر</string>
+    <string name="abc_action_mode_done">تمام</string>
+    <string name="abc_activity_chooser_view_see_all">مشاهده همه</string>
+    <string name="abc_activitychooserview_choose_application">انتخاب برنامه</string>
+    <string name="abc_capital_off">خاموش</string>
+    <string name="abc_capital_on">روشن</string>
+    <string name="abc_search_hint">جستجو…</string>
+    <string name="abc_searchview_description_clear">پاک کردن عبارت جستجو</string>
+    <string name="abc_searchview_description_query">عبارت جستجو</string>
+    <string name="abc_searchview_description_search">جستجو</string>
+    <string name="abc_searchview_description_submit">ارسال عبارت جستجو</string>
+    <string name="abc_searchview_description_voice">جستجوی گفتاری</string>
+    <string name="abc_shareactionprovider_share_with">اشتراک‌گذاری با</string>
+    <string name="abc_shareactionprovider_share_with_application">اشتراک‌گذاری با %s</string>
+    <string name="abc_toolbar_collapse_description">کوچک کردن</string>
+    <string name="crop__cancel">انصراف</string>
+    <string name="crop__done">تأیید</string>
+    <string name="crop__pick_error">تصویری در دسترس نیست</string>
+    <string name="crop__saving">در حال ذخیره سازی</string>
+    <string name="crop__wait">لطفاً صبر کنید ...</string>
+    <string name="hms_abort">توقف</string>
+    <string name="hms_abort_message">دانلود متوقف شود؟</string>
+    <string name="hms_cancel">لغو</string>
+    <string name="hms_check_failure">به‌روزرسانی‌های نرم‌افزار بررسی نشد.</string>
+    <string name="hms_check_no_update">شما از قبل از آخرین نسخه استفاده می‌کنید.</string>
+    <string name="hms_checking">در حال بررسی به‌روزرسانی‌ها...</string>
+    <string name="hms_confirm">تأييد</string>
+    <string name="hms_download_failure">دانلود بسته خدمات موبایل Huawei انجام نشد.</string>
+    <string name="hms_download_no_space">فضای آزاد کافی موجود نيست. تکميل دانلود ممکن نيست.</string>
+    <string name="hms_download_retry">دانلود ناموفق بود. دوباره سعی کنيد؟</string>
+    <string name="hms_downloading">در حال دانلود خدمات موبایل Huawei | پیشرفت: %d%%</string>
+    <string name="hms_install">نصب</string>
+    <string name="hms_install_message">برای استفاده از این ویژگی، Huawei Mobile Services باید نصب شود. نصب شود؟</string>
+    <string name="hms_retry">امتحان مجدد</string>
+    <string name="hms_update">به‌روزرسانى</string>
+    <string name="hms_update_message">برای استفاده از این ویژگی، به آخرین نسخه از خدمات موبایل Huawei به‌روزرسانی کنید. اکنون به‌روزرسانی شود؟</string>
+    <string name="hms_update_title">خدمات موبایل Huawei</string>
+    <string name="search_menu_title">جستجو</string>
+    <string name="status_bar_notification_info_overflow">۹۹۹+</string>
+</resources>

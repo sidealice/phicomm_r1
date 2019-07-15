@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigați la ecranul de pornire</string>
+    <string name="abc_action_bar_up_description">Navigați în sus</string>
+    <string name="abc_action_menu_overflow_description">Mai multe opțiuni</string>
+    <string name="abc_action_mode_done">Terminat</string>
+    <string name="abc_activity_chooser_view_see_all">Afișați-le pe toate</string>
+    <string name="abc_activitychooserview_choose_application">Alegeți o aplicație</string>
+    <string name="abc_capital_off">DEZACTIVAȚI</string>
+    <string name="abc_capital_on">ACTIVAT</string>
+    <string name="abc_search_hint">Căutați…</string>
+    <string name="abc_searchview_description_clear">Ștergeți interogarea</string>
+    <string name="abc_searchview_description_query">Interogare de căutare</string>
+    <string name="abc_searchview_description_search">Căutați</string>
+    <string name="abc_searchview_description_submit">Trimiteți interogarea</string>
+    <string name="abc_searchview_description_voice">Căutare vocală</string>
+    <string name="abc_shareactionprovider_share_with">Trimiteți la</string>
+    <string name="abc_shareactionprovider_share_with_application">Trimiteți folosind %s</string>
+    <string name="abc_toolbar_collapse_description">Restrângeți</string>
+    <string name="hms_abort">Oprire</string>
+    <string name="hms_abort_message">Opriți descărcarea?</string>
+    <string name="hms_cancel">Revocare</string>
+    <string name="hms_check_failure">Nu s-au putut verifica actualizările.</string>
+    <string name="hms_check_no_update">Utilizați deja cea mai recentă versiune.</string>
+    <string name="hms_checking">Se caută actualizări...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Descărcarea pachetului Huawei Mobile Services eșuată.</string>
+    <string name="hms_download_no_space">Nu există suficient spațiu liber. Descărcarea nu poate fi finalizată.</string>
+    <string name="hms_download_retry">Descărcare eșuată. Încercați din nou?</string>
+    <string name="hms_downloading">Se descarcă Huawei Mobile Services | progres: %d%%</string>
+    <string name="hms_install">Instalați</string>
+    <string name="hms_install_message">Trebuie să instalați Serviciile Mobile Huawei pentru a utiliza această funcție. Instalați?</string>
+    <string name="hms_retry">Reîncercare</string>
+    <string name="hms_update">Actualizare</string>
+    <string name="hms_update_message">Pentru a utiliza această funcție, actualizați Huawei Mobile Services la cea mai recentă versiune. Actualizați acum?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Căutați</string>
+    <string name="status_bar_notification_info_overflow">˃999</string>
+</resources>

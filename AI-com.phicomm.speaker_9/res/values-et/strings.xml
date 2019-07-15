@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Navigeerimine avaekraanile</string>
+    <string name="abc_action_bar_up_description">Navigeerimine üles</string>
+    <string name="abc_action_menu_overflow_description">Rohkem valikuid</string>
+    <string name="abc_action_mode_done">Valmis</string>
+    <string name="abc_activity_chooser_view_see_all">Kuva kõik</string>
+    <string name="abc_activitychooserview_choose_application">Valige rakendus</string>
+    <string name="abc_capital_off">VÄLJAS</string>
+    <string name="abc_capital_on">SEES</string>
+    <string name="abc_search_hint">Otsige …</string>
+    <string name="abc_searchview_description_clear">Päringu tühistamine</string>
+    <string name="abc_searchview_description_query">Otsingupäring</string>
+    <string name="abc_searchview_description_search">Otsing</string>
+    <string name="abc_searchview_description_submit">Päringu esitamine</string>
+    <string name="abc_searchview_description_voice">Häälotsing</string>
+    <string name="abc_shareactionprovider_share_with">Jagamine:</string>
+    <string name="abc_shareactionprovider_share_with_application">Jagamine rakendusega %s</string>
+    <string name="abc_toolbar_collapse_description">Ahendamine</string>
+    <string name="hms_abort">Peata</string>
+    <string name="hms_abort_message">Peatada allalaadimine?</string>
+    <string name="hms_cancel">Tühista</string>
+    <string name="hms_check_failure">Värskenduste kontrollimine nurjus.</string>
+    <string name="hms_check_no_update">Kasutate juba uusimat versiooni.</string>
+    <string name="hms_checking">Värskenduste kontrollimine…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei mobiiliteenuste paketi allalaadimine nurjus.</string>
+    <string name="hms_download_no_space">Pole piisavalt vaba ruumi. Allalaadimist ei saa lõpetada.</string>
+    <string name="hms_download_retry">Allalaadimine nurjus. Kas proovida uuesti?</string>
+    <string name="hms_downloading">Huawei mobiiliteenuste allalaadimine | edenemine: %d%%</string>
+    <string name="hms_install">Installi</string>
+    <string name="hms_install_message">Selle funktsiooni kasutamiseks peab Huawei mobiiliteenused olema installitud. Installida?</string>
+    <string name="hms_retry">Proovi uuesti</string>
+    <string name="hms_update">Värskenda</string>
+    <string name="hms_update_message">Selle funktsiooni kasutamiseks värskendage Huawei mobiiliteenused uusimale versioonile. Kas värskendada kohe?</string>
+    <string name="hms_update_title">Huawei mobiiliteenused</string>
+    <string name="search_menu_title">Otsing</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

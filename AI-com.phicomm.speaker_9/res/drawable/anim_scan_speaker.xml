@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:duration="400" android:drawable="@drawable/scan_speaker_1" />
+    <item android:duration="400" android:drawable="@drawable/scan_speaker_2" />
+    <item android:duration="400" android:drawable="@drawable/scan_speaker_3" />
+    <item android:duration="400" android:drawable="@drawable/scan_speaker_4" />
+    <item android:duration="400" android:drawable="@drawable/scan_speaker_5" />
+</animation-list>

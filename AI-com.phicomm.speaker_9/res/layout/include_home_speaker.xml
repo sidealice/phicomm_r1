@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:phi="http://schemas.android.com/apk/res-auto">
+    <com.phicomm.speaker.views.banner.MyBanner android:id="@id/home_speaker_banner" android:layout_width="fill_parent" android:layout_height="100.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.phicomm.speaker.views.DefaultExceptionView android:id="@id/layout_speaker_home_failed" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" phi:hint_icon="@drawable/player_load_list_failed" phi:hint_txt="@string/speaker_home_retry" />
+        <RelativeLayout android:id="@id/layout_speaker_home_recyclerview" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/home_refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.v7.widget.RecyclerView android:id="@id/home_speaker_recyclerview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+            </com.phicomm.speaker.views.refresh.RefreshLayout>
+        </RelativeLayout>
+        <TextView android:textSize="15.0dip" android:textColor="@color/white" android:gravity="center_vertical" android:id="@id/tv_home_warn_tips" android:background="@color/home_warn_bg" android:paddingLeft="15.5dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="45.0dip" android:text="@string/speaker_offline" android:drawableLeft="@drawable/home_warn_icon" android:drawablePadding="10.5dip" />
+    </RelativeLayout>
+</LinearLayout>

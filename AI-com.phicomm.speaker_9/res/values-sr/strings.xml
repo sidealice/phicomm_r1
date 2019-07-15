@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Одлазак на Почетну</string>
+    <string name="abc_action_bar_up_description">Кретање нагоре</string>
+    <string name="abc_action_menu_overflow_description">Још опција</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Прикажи све</string>
+    <string name="abc_activitychooserview_choose_application">Избор апликације</string>
+    <string name="abc_capital_off">ИСКЉУЧИ</string>
+    <string name="abc_capital_on">УКЉУЧИ</string>
+    <string name="abc_search_hint">Претражите...</string>
+    <string name="abc_searchview_description_clear">Брисање упита</string>
+    <string name="abc_searchview_description_query">Упит за претрагу</string>
+    <string name="abc_searchview_description_search">Претрага</string>
+    <string name="abc_searchview_description_submit">Слање упита</string>
+    <string name="abc_searchview_description_voice">Гласовна претрага</string>
+    <string name="abc_shareactionprovider_share_with">Дели са</string>
+    <string name="abc_shareactionprovider_share_with_application">Дељење са апликацијом %s</string>
+    <string name="abc_toolbar_collapse_description">Скупи</string>
+    <string name="hms_abort">Заустави</string>
+    <string name="hms_abort_message">Зауставити преузимање?</string>
+    <string name="hms_cancel">Откажи</string>
+    <string name="hms_check_failure">Проверавање ажурирања није успело.</string>
+    <string name="hms_check_no_update">Већ користите најновију верзију.</string>
+    <string name="hms_checking">Проверавају се ажурирања…</string>
+    <string name="hms_confirm">У реду</string>
+    <string name="hms_download_failure">Преузимање пакета Huawei Мобиле Сервицес није успело.</string>
+    <string name="hms_download_no_space">Недовољно слободног простора. Преузимање не може да се доврши.</string>
+    <string name="hms_download_retry">Преузимање није успело. Покушати поново?</string>
+    <string name="hms_downloading">Преузимање апликације Huawei оквир за услуге | напредак: %d%%</string>
+    <string name="hms_install">Инсталирај</string>
+    <string name="hms_install_message">Апликација Huawei мобилне услуге мора да се инсталира да би се користила ова функција. Инсталирати?</string>
+    <string name="hms_retry">Покуш. пон.</string>
+    <string name="hms_update">Ажурирај</string>
+    <string name="hms_update_message">Да бисте користили ову функцију, ажурирајте на најновију верзију апликације Huawei Мобиле Сервицес. Ажурирати одмах?</string>
+    <string name="hms_update_title">Huawei Мобиле Сервицес</string>
+    <string name="search_menu_title">Претражи</string>
+    <string name="status_bar_notification_info_overflow">>999</string>
+</resources>

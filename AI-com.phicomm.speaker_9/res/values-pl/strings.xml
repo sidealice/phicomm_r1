@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Przejdź do strony głównej</string>
+    <string name="abc_action_bar_up_description">Przejdź wyżej</string>
+    <string name="abc_action_menu_overflow_description">Więcej opcji</string>
+    <string name="abc_action_mode_done">Gotowe</string>
+    <string name="abc_activity_chooser_view_see_all">Zobacz wszystkie</string>
+    <string name="abc_activitychooserview_choose_application">Wybierz aplikację</string>
+    <string name="abc_capital_off">WYŁ.</string>
+    <string name="abc_capital_on">WŁ.</string>
+    <string name="abc_search_hint">Szukaj…</string>
+    <string name="abc_searchview_description_clear">Wyczyść zapytanie</string>
+    <string name="abc_searchview_description_query">Wyszukiwane hasło</string>
+    <string name="abc_searchview_description_search">Szukaj</string>
+    <string name="abc_searchview_description_submit">Wyślij zapytanie</string>
+    <string name="abc_searchview_description_voice">Wyszukiwanie głosowe</string>
+    <string name="abc_shareactionprovider_share_with">Udostępnij dla</string>
+    <string name="abc_shareactionprovider_share_with_application">Udostępnij przez: %s</string>
+    <string name="abc_toolbar_collapse_description">Zwiń</string>
+    <string name="hms_abort">Zatrzymaj</string>
+    <string name="hms_abort_message">Zatrzymać pobieranie?</string>
+    <string name="hms_cancel">Anuluj</string>
+    <string name="hms_check_failure">Nie udało się sprawdzić aktualizacji.</string>
+    <string name="hms_check_no_update">Używasz obecnie najnowszej wersji.</string>
+    <string name="hms_checking">Sprawdzanie dostępność aktualizacji…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Pobieranie pakietu Mobilnych usług Huawei nie powiodło się.</string>
+    <string name="hms_download_no_space">Za mało wolnego miejsca. Nie można dokończyć pobierania.</string>
+    <string name="hms_download_retry">Pobieranie nie powiodło się. Spróbować ponownie?</string>
+    <string name="hms_downloading">Pobieranie Mobilnych usług Huawei | postęp: %d%%</string>
+    <string name="hms_install">Zainstaluj</string>
+    <string name="hms_install_message">Należy zainstalować Mobilne usługi Huawei, aby korzystać z tej funkcji. Zainstalować?</string>
+    <string name="hms_retry">Ponów</string>
+    <string name="hms_update">Aktualizuj</string>
+    <string name="hms_update_message">Zaktualizuj Mobilne usługi Huawei do najnowszej wersji, aby użyć tej funkcji. Zaktualizować teraz?</string>
+    <string name="hms_update_title">Mobilne usługi Huawei</string>
+    <string name="search_menu_title">Szukaj</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

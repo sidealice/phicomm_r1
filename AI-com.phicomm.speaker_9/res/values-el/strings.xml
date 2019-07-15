@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Πλοήγηση στην αρχική σελίδα</string>
+    <string name="abc_action_bar_up_description">Πλοήγηση προς τα επάνω</string>
+    <string name="abc_action_menu_overflow_description">Περισσότερες επιλογές</string>
+    <string name="abc_action_mode_done">Τέλος</string>
+    <string name="abc_activity_chooser_view_see_all">Προβολή όλων</string>
+    <string name="abc_activitychooserview_choose_application">Επιλέξτε κάποια εφαρμογή</string>
+    <string name="abc_capital_off">ΑΠΕΝΕΡΓΟΠΟΙΗΣΗ</string>
+    <string name="abc_capital_on">ΕΝΕΡΓΟΠΟΙΗΣΗ</string>
+    <string name="abc_search_hint">Αναζήτηση…</string>
+    <string name="abc_searchview_description_clear">Διαγραφή ερωτήματος</string>
+    <string name="abc_searchview_description_query">Ερώτημα αναζήτησης</string>
+    <string name="abc_searchview_description_search">Αναζήτηση</string>
+    <string name="abc_searchview_description_submit">Υποβολή ερωτήματος</string>
+    <string name="abc_searchview_description_voice">Φωνητική αναζήτηση</string>
+    <string name="abc_shareactionprovider_share_with">Κοινή χρήση με</string>
+    <string name="abc_shareactionprovider_share_with_application">Κοινή χρήση με %s</string>
+    <string name="abc_toolbar_collapse_description">Σύμπτυξη</string>
+    <string name="hms_abort">Διακοπή</string>
+    <string name="hms_abort_message">Να διακοπεί η λήψη;</string>
+    <string name="hms_cancel">Ακύρωση</string>
+    <string name="hms_check_failure">Απέτυχε ο έλεγχος για ενημερώσεις.</string>
+    <string name="hms_check_no_update">Χρησιμοποιείτε ήδη την τελευταία έκδοση.</string>
+    <string name="hms_checking">Έλεγχος για ενημερώσεις…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Η λήψη του πακέτου Υπηρεσιών κινητής τηλεφωνίας Huawei απέτυχε.</string>
+    <string name="hms_download_no_space">Δεν υπάρχει αρκετός ελεύθερος χώρος. Η λήψη δεν μπορεί να ολοκληρωθεί.</string>
+    <string name="hms_download_retry">Η λήψη απέτυχε. Επανάληψη;</string>
+    <string name="hms_downloading">Λήψη των Υπηρεσιών κινητής τηλεφωνίας Huawei | πρόοδος: %d%%</string>
+    <string name="hms_install">Εγκατάσταση</string>
+    <string name="hms_install_message">Πρέπει να εγκατασταθεί το στοιχείο Υπηρεσίες Huawei Mobile για τη χρήση αυτής της λειτουργίας. Να γίνει εγκατάσταση;</string>
+    <string name="hms_retry">Επανάληψη</string>
+    <string name="hms_update">Ενημέρωση</string>
+    <string name="hms_update_message">Για να χρησιμοποιήσετε αυτή τη λειτουργία πρέπει να κάνετε ενημέρωση στην τελευταία έκδοση των Υπηρεσιών κινητής τηλεφωνίας Huawei. Ενημέρωση τώρα;</string>
+    <string name="hms_update_title">Υπηρεσίες κινητής τηλεφωνίας Huawei</string>
+    <string name="search_menu_title">Αναζήτηση</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

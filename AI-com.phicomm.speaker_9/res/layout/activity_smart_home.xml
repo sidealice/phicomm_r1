@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:phi="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/include_common_header" />
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scrollView" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:id="@id/iv_blub" android:layout_width="123.0dip" android:layout_height="129.0dip" android:layout_marginTop="70.0dip" android:src="@drawable/bulb" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="12.0sp" android:textColor="#ffa1dfff" android:id="@id/tv_no_device" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/have_no_smart_home" android:layout_below="@id/iv_blub" android:layout_centerHorizontal="true" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/ll_divider" android:paddingLeft="9.0dip" android:paddingRight="9.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="63.0dip" android:layout_below="@id/tv_no_device" android:layout_centerHorizontal="true" android:paddingStart="9.0dip" android:paddingEnd="9.0dip">
+                    <View android:layout_gravity="center_vertical" android:background="@color/color_ebeef1" android:layout_width="70.0dip" android:layout_height="0.5dip" />
+                    <TextView android:textSize="15.0sp" android:textColor="@color/color_494949" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/have_support_devices" android:layout_weight="1.0" />
+                    <View android:layout_gravity="center_vertical" android:background="@color/color_ebeef1" android:layout_width="70.0dip" android:layout_height="0.5dip" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:paddingLeft="7.0dip" android:paddingRight="7.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="18.0dip" android:layout_below="@id/ll_divider" android:paddingStart="7.0dip" android:paddingEnd="7.0dip" />
+            </RelativeLayout>
+        </ScrollView>
+        <com.phicomm.speaker.views.DefaultExceptionView android:layout_gravity="center" android:id="@id/dev_none_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="46.0dip" phi:hint_icon="@drawable/player_load_list_failed" phi:hint_txt="@string/load_music_failed_hint" />
+        <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/refreshLayout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never" />
+        </com.phicomm.speaker.views.refresh.RefreshLayout>
+    </FrameLayout>
+</LinearLayout>

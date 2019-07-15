@@ -1,0 +1,55 @@
+@startuml
+start
+
+partition AP模式下第一次绑定 {
+if (开始到现在够10s？) then (no)
+:等待至10s;
+else (yes)
+endif
+}
+
+:调用绑定接口;
+
+while (成功？) is (no)
+if (是否达到30s超时？) then (no)
+if (是否音箱离线导致失败？) then (yes)
+:等待3s;
+
+if (是否达到30s超时？) then (no)
+:调用绑定接口;
+else (yes)
+end
+endif
+
+else (no)
+
+if (是否手机网络问题？) then (yes)
+if (手机网络是否切换到配网前（如果有）或者配网时所使用的wifi) then (no)
+:切换手机网络到配网前（如果有）或者配网时所使用的wifi;
+
+if (是否达到30s超时？) then (no)
+:调用绑定接口;
+else (yes)
+end
+endif
+
+else (yes)
+:提示用户检查手机网络设置;
+end
+endif
+
+else (no)
+:提示服务器异常;
+end
+endif
+
+endif
+
+else (yes)
+end
+endif
+
+endwhile (yes)
+:设备添加成功;
+stop
+@enduml

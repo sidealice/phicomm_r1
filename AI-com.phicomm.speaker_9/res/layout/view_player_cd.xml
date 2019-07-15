@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:orientation="vertical" android:id="@id/ll_top" android:layout_width="fill_parent" android:layout_height="325.0dip" android:layout_below="@id/tv_artist" android:layout_centerHorizontal="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:phi="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/rl_top" android:background="@drawable/player_main_bg" android:layout_width="285.0dip" android:layout_height="285.0dip" phi:layout_constraintBottom_toBottomOf="parent" phi:layout_constraintLeft_toLeftOf="parent" phi:layout_constraintRight_toRightOf="parent" phi:layout_constraintTop_toTopOf="parent" phi:layout_constraintVertical_bias="0.179">
+        <ImageView android:id="@id/iv_cd" android:layout_width="260.0dip" android:layout_height="260.0dip" android:layout_marginTop="7.5dip" android:src="@drawable/player_cd" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/text_small" android:textColor="@color/color_494949" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@id/tv_lyrics" android:layout_width="210.0dip" android:layout_height="wrap_content" android:lines="1" phi:layout_constraintBottom_toBottomOf="parent" phi:layout_constraintLeft_toLeftOf="parent" phi:layout_constraintRight_toRightOf="parent" />
+</android.support.constraint.ConstraintLayout>

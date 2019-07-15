@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Ana ekrana git</string>
+    <string name="abc_action_bar_up_description">Yukarı git</string>
+    <string name="abc_action_menu_overflow_description">Diğer seçenekler</string>
+    <string name="abc_action_mode_done">Bitti</string>
+    <string name="abc_activity_chooser_view_see_all">Tümünü göster</string>
+    <string name="abc_activitychooserview_choose_application">Bir uygulama seçin</string>
+    <string name="abc_capital_off">KAPAT</string>
+    <string name="abc_capital_on">AÇ</string>
+    <string name="abc_search_hint">Ara…</string>
+    <string name="abc_searchview_description_clear">Sorguyu temizle</string>
+    <string name="abc_searchview_description_query">Arama sorgusu</string>
+    <string name="abc_searchview_description_search">Ara</string>
+    <string name="abc_searchview_description_submit">Sorguyu gönder</string>
+    <string name="abc_searchview_description_voice">Sesli arama</string>
+    <string name="abc_shareactionprovider_share_with">Şununla paylaş</string>
+    <string name="abc_shareactionprovider_share_with_application">%s ile paylaş</string>
+    <string name="abc_toolbar_collapse_description">Daralt</string>
+    <string name="crop__cancel">ÇIKIŞ</string>
+    <string name="crop__done">TAMAM</string>
+    <string name="crop__pick_error">Fotoğraf bulunamadı</string>
+    <string name="crop__saving">Fotoğraf kaydediliyor…</string>
+    <string name="crop__wait">Lütfen bekleyin…</string>
+    <string name="hms_abort">Durdur</string>
+    <string name="hms_abort_message">İndirme durdurulsun mu?</string>
+    <string name="hms_cancel">İptal</string>
+    <string name="hms_check_failure">Güncelleme kontrolü gerçekleştirilemedi.</string>
+    <string name="hms_check_no_update">Şu anda zaten en son sürümü kullanıyorsunuz.</string>
+    <string name="hms_checking">Güncellemeler kontrol ediliyor...</string>
+    <string name="hms_confirm">Tamam</string>
+    <string name="hms_download_failure">Huawei Mobil Hizmetleri paketi indirilemedi.</string>
+    <string name="hms_download_no_space">Yeterli boş alan yok. İndirme işlemi tamamlanamıyor.</string>
+    <string name="hms_download_retry">İndirme başarısız. Tekrar denensin mi?</string>
+    <string name="hms_downloading">Huawei Mobil Hizmetleri indiriliyor | ilerleme: %d%%</string>
+    <string name="hms_install">Yükle</string>
+    <string name="hms_install_message">Bu özelliği kullanmak için Huawei Mobil Hizmetleri yüklü olmalıdır. Yüklensin mi?</string>
+    <string name="hms_retry">Tekrar dene</string>
+    <string name="hms_update">Güncelle</string>
+    <string name="hms_update_message">Bu özelliği kullanmak için Huawei Mobil Hizmetlerini son sürümüne güncelleyin. Şimdi güncellensin mi?</string>
+    <string name="hms_update_title">Huawei Mobil Hizmetleri</string>
+    <string name="search_menu_title">Ara</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

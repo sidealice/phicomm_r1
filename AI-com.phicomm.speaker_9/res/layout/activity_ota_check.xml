@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/main_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <TextView android:textSize="20.0sp" android:textColor="@color/white" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="64.5dip" android:text="@string/ota_check_hint" android:lineSpacingExtra="7.0sp" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="133.0" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_ota_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/anim_ota_check" />
+    <View android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="217.0" />
+</LinearLayout>

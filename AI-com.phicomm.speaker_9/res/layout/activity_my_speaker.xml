@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_common_header" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_my_speaker" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_empty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@id/iv_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="155.0dip" android:src="@drawable/my_speaker_empty" />
+        <TextView android:textColor="@color/main_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.5dip" android:text="@string/none_speaker_content" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/rl_fail_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="150.0dip" android:src="@drawable/player_load_list_failed" />
+        <TextView android:textColor="@color/main_color" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="19.5dip" android:text="@string/load_music_failed_hint" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:minHeight="52.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/iv_LeftImage" android:background="@drawable/housemanage_cycle" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:scaleType="centerCrop" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff313131" android:id="@id/tv_LeftTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_alignParentLeft="true" android:layout_centerInParent="true" />
+        <TextView android:scrollbarAlwaysDrawHorizontalTrack="true" android:textSize="15.0sp" android:textColor="#ff313131" android:id="@id/tv_LeftMessage" android:visibility="gone" android:scrollbars="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_toRightOf="@id/iv_LeftImage" android:layout_centerInParent="true" android:layout_toEndOf="@id/iv_LeftImage" />
+        <ImageView android:id="@id/iv_RightArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginRight="3.0dip" android:layout_marginBottom="16.0dip" android:src="@drawable/housemanage_arrow" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        <ImageView android:id="@id/iv_RightImage" android:background="@drawable/housemanage_cycle" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/iv_RightArrow" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff898989" android:id="@id/tv_RightTitle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_toLeftOf="@id/iv_RightArrow" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="#ff313131" android:id="@id/tv_RightMessage" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@id/iv_RightImage" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_common_header" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="15.0dip" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip">
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_494949" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/have_binding_phone_number" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="@dimen/text_normal" android:textColor="@color/color_494949" android:id="@id/tv_binding_phone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        <View android:background="@color/color_ebeef1" android:layout_width="fill_parent" android:layout_height="0.70000005dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <TextView android:enabled="true" android:id="@id/tv_change_phone_number" android:layout_marginLeft="15.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="15.0dip" android:text="@string/change_phone_number" android:layout_marginStart="15.0dip" android:layout_marginEnd="15.0dip" style="@style/btn_common" />
+</LinearLayout>

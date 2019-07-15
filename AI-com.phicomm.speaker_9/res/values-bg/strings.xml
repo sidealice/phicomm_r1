@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Придвижване към „Начало“</string>
+    <string name="abc_action_bar_up_description">Придвижване нагоре</string>
+    <string name="abc_action_menu_overflow_description">Още опции</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Вижте всички</string>
+    <string name="abc_activitychooserview_choose_application">Изберете приложение</string>
+    <string name="abc_capital_off">ИЗКЛ.</string>
+    <string name="abc_capital_on">ВКЛ.</string>
+    <string name="abc_search_hint">Търсете…</string>
+    <string name="abc_searchview_description_clear">Изчистване на заявката</string>
+    <string name="abc_searchview_description_query">Заявка за търсене</string>
+    <string name="abc_searchview_description_search">Търсене</string>
+    <string name="abc_searchview_description_submit">Изпращане на заявката</string>
+    <string name="abc_searchview_description_voice">Гласово търсене</string>
+    <string name="abc_shareactionprovider_share_with">Споделяне със:</string>
+    <string name="abc_shareactionprovider_share_with_application">Споделяне със: %s</string>
+    <string name="abc_toolbar_collapse_description">Свиване</string>
+    <string name="hms_abort">Стоп</string>
+    <string name="hms_abort_message">Спиране на изтеглянето?</string>
+    <string name="hms_cancel">Отмяна</string>
+    <string name="hms_check_failure">Неуспешна проверка за актуализации.</string>
+    <string name="hms_check_no_update">Вече използвате най-новата версия.</string>
+    <string name="hms_checking">Проверка за актуализации....</string>
+    <string name="hms_confirm">ОК</string>
+    <string name="hms_download_failure">Неуспешно изтегляне на пакета за Huawei Mobile Services.</string>
+    <string name="hms_download_no_space">Няма достатъчно свободно пространство. Изтеглянето не може да бъде завършено.</string>
+    <string name="hms_download_retry">Неуспешно изтегляне. Нов опит?</string>
+    <string name="hms_downloading">Изтегляне на Huawei Mobile Services | изпълнение: %d%%</string>
+    <string name="hms_install">Инсталиране</string>
+    <string name="hms_install_message">Трябва да инсталирате Huawei Mobile Services, за да използвате тази функция. Инсталиране?</string>
+    <string name="hms_retry">Повторен опит</string>
+    <string name="hms_update">Актуализация</string>
+    <string name="hms_update_message">Актуализирайте до най-новата версия на Huawei Mobile Services, за да използвате тази функция. Актуализиране сега?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Търсене</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

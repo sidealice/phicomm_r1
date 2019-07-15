@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/color_f6f6f6" android:layout_width="fill_parent" android:layout_height="43.5dip">
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_color" android:id="@id/tv_cancle" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cancel" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_494949" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/chose_job" android:layout_centerInParent="true" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/main_color" android:id="@id/tv_confirm" android:padding="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/confirm" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <com.phicomm.speaker.views.XcFlowLayout android:id="@id/xcf_flowlayout" android:layout_width="fill_parent" android:layout_height="214.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="20.0dip" />
+</LinearLayout>

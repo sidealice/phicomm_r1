@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Перейти на головний</string>
+    <string name="abc_action_bar_up_description">Перейти вгору</string>
+    <string name="abc_action_menu_overflow_description">Інші опції</string>
+    <string name="abc_action_mode_done">Готово</string>
+    <string name="abc_activity_chooser_view_see_all">Переглянути всі</string>
+    <string name="abc_activitychooserview_choose_application">Вибрати програму</string>
+    <string name="abc_capital_off">ВИМК.</string>
+    <string name="abc_capital_on">УВІМК.</string>
+    <string name="abc_search_hint">Пошук…</string>
+    <string name="abc_searchview_description_clear">Очистити запит</string>
+    <string name="abc_searchview_description_query">Пошуковий запит</string>
+    <string name="abc_searchview_description_search">Пошук</string>
+    <string name="abc_searchview_description_submit">Надіслати запит</string>
+    <string name="abc_searchview_description_voice">Голосовий пошук</string>
+    <string name="abc_shareactionprovider_share_with">Надіслати через</string>
+    <string name="abc_shareactionprovider_share_with_application">Поділитися через додаток %s</string>
+    <string name="abc_toolbar_collapse_description">Згорнути</string>
+    <string name="hms_abort">Стоп</string>
+    <string name="hms_abort_message">Зупинити завантаження?</string>
+    <string name="hms_cancel">Скасувати</string>
+    <string name="hms_check_failure">Не вдалося перевірити наявність оновлень.</string>
+    <string name="hms_check_no_update">Ви вже використовуєте найновішу версію.</string>
+    <string name="hms_checking">Перевірка оновлень...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Не вдалося завантажити пакет Мобільних служб Huawei.</string>
+    <string name="hms_download_no_space">Недостатньо вільного місця. Завантаження не може бути завершено.</string>
+    <string name="hms_download_retry">Не вдалося завантажити. Повторити спробу?</string>
+    <string name="hms_downloading">Завантаження Мобільних служб Huawei | виконано: %d%%</string>
+    <string name="hms_install">Встановити</string>
+    <string name="hms_install_message">Щоб використовувати цю функцію, потрібно встановити Мобільні служби Huawei. Встановити?</string>
+    <string name="hms_retry">Повтор</string>
+    <string name="hms_update">Оновити</string>
+    <string name="hms_update_message">Щоб використовувати цю функцію, оновіть Мобільні служби Huawei до останньої версії. Оновити зараз?</string>
+    <string name="hms_update_title">Мобільні служби Huawei</string>
+    <string name="search_menu_title">Пошук</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

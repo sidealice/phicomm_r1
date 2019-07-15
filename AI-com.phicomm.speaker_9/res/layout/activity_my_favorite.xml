@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/include_common_header" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="6.5dip">
+        <TextView android:textSize="@dimen/txt_size_30" android:id="@id/tv_null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="14.0dip" android:layout_alignParentBottom="true" />
+        <TextView android:textSize="@dimen/txt_size_20" android:textColor="@color/color_494949" android:id="@id/tv_music" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/music" android:layout_alignBaseline="@id/tv_null" />
+        <TextView android:textSize="@dimen/txt_size_20" android:textColor="@color/color_494949" android:id="@id/tv_program" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="115.0dip" android:text="@string/program" android:layout_alignBaseline="@id/tv_null" />
+        <TextView android:textSize="@dimen/txt_size_20" android:textColor="@color/color_494949" android:id="@id/tv_broadcast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="215.0dip" android:text="@string/broadcast" android:layout_alignBaseline="@id/tv_null" />
+    </RelativeLayout>
+    <View android:background="@color/color_ebeef1" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" />
+    <com.phicomm.speaker.views.MyViewPager android:id="@id/vp_favorite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

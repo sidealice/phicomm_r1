@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:MenuRadioButton="http://schemas.android.com/apk/res-auto">
+    <com.phicomm.speaker.views.MyViewPager android:id="@id/vp_main" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+    <include layout="@layout/include_common_line" />
+    <RadioGroup android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@color/white" android:padding="7.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/main_tab_height">
+        <com.phicomm.speaker.views.MenuRadioButton android:id="@id/rb_home" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" MenuRadioButton:rb_icon="@drawable/selector_radiobutton_home_page" MenuRadioButton:rb_txt="@string/home_page" />
+        <com.phicomm.speaker.views.MenuRadioButton android:id="@id/rb_function" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" MenuRadioButton:rb_icon="@drawable/selector_radiobutton_function" MenuRadioButton:rb_txt="@string/function" />
+        <com.phicomm.speaker.views.MenuRadioButton android:id="@id/rb_player" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" MenuRadioButton:rb_icon="@drawable/selector_radiobutton_player" MenuRadioButton:rb_txt="@string/player" />
+        <com.phicomm.speaker.views.MenuRadioButton android:id="@id/mrb_mine" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" MenuRadioButton:rb_icon="@drawable/selector_radiobutton_mine" MenuRadioButton:rb_txt="@string/me" />
+    </RadioGroup>
+</LinearLayout>

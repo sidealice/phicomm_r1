@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true" android:overScrollMode="never"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/hms_background" android:paddingLeft="@dimen/hms_dialog_padding" android:paddingRight="@dimen/hms_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/hms_dialog_padding" android:paddingEnd="@dimen/hms_dialog_padding">
+        <TextView android:textSize="@dimen/hms_textview_jump_size" android:textColor="@color/hms_black" android:gravity="center_vertical" android:id="@id/hms_update_message" android:paddingLeft="4.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hms_update_message" android:paddingStart="4.0dip" android:paddingEnd="4.0dip" />
+    </LinearLayout>
+</ScrollView>

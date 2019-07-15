@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/include_common_header" />
+    <FrameLayout android:layout_width="0.0dip" android:layout_height="0.0dip" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/title">
+        <ImageView android:id="@id/iv_cover" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" />
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_73" android:ellipsize="end" android:id="@id/tv_album_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="150.0dip" android:layout_marginTop="50.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" />
+        <TextView android:textSize="15.0sp" android:textColor="@color/color_73" android:ellipsize="end" android:id="@id/tv_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="150.0dip" android:layout_marginTop="82.0dip" android:layout_marginRight="15.0dip" android:maxLines="1" />
+        <View android:background="@color/color_235_238_241" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginLeft="15.0dip" android:layout_marginTop="155.0dip" android:layout_marginRight="14.5dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="168.0dip">
+            <CheckBox android:textSize="12.0sp" android:textColor="@color/color_73" android:layout_gravity="right" android:id="@id/cb_order" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14.0dip" android:layout_marginBottom="10.0dip" android:button="@null" android:drawableLeft="@drawable/selector_fm_order" android:drawablePadding="9.0dip" />
+            <com.phicomm.speaker.views.widget.RequestLayout android:id="@id/request" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="14.5dip">
+                <com.phicomm.speaker.views.refresh.RefreshLayout android:id="@id/refresh" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ListView android:id="@id/recycler" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+                </com.phicomm.speaker.views.refresh.RefreshLayout>
+            </com.phicomm.speaker.views.widget.RequestLayout>
+        </LinearLayout>
+    </FrameLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:visibility="gone" layout="@layout/include_common_header" />
+    <com.tencent.smtt.sdk.WebView android:id="@id/x5_webview" android:background="@color/main_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">瀏覽首頁</string>
+    <string name="abc_action_bar_up_description">向上瀏覽</string>
+    <string name="abc_action_menu_overflow_description">更多選項</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_activity_chooser_view_see_all">查看全部</string>
+    <string name="abc_activitychooserview_choose_application">選擇應用程式</string>
+    <string name="abc_capital_off">關閉</string>
+    <string name="abc_capital_on">開啟</string>
+    <string name="abc_search_hint">搜尋…</string>
+    <string name="abc_searchview_description_clear">清除查詢</string>
+    <string name="abc_searchview_description_query">搜尋查詢</string>
+    <string name="abc_searchview_description_search">搜尋</string>
+    <string name="abc_searchview_description_submit">提交查詢</string>
+    <string name="abc_searchview_description_voice">語音搜尋</string>
+    <string name="abc_shareactionprovider_share_with">選擇分享對象</string>
+    <string name="abc_shareactionprovider_share_with_application">與「%s」分享</string>
+    <string name="abc_toolbar_collapse_description">收合</string>
+    <string name="crop__cancel">取消</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__pick_error">沒有可用的圖片來源</string>
+    <string name="crop__saving">正在儲存相片…</string>
+    <string name="crop__wait">請稍候…</string>
+    <string name="hms_abort">停止</string>
+    <string name="hms_abort_message">停止下載？</string>
+    <string name="hms_cancel">取消</string>
+    <string name="hms_check_failure">無法檢查更新。</string>
+    <string name="hms_check_no_update">您使用的已是最新版本。</string>
+    <string name="hms_checking">正在檢查更新...</string>
+    <string name="hms_confirm">確定</string>
+    <string name="hms_download_failure">無法下載華為手機服務套件</string>
+    <string name="hms_download_no_space">可用空間不足。無法完成下載。</string>
+    <string name="hms_download_retry">下載失敗。是否重試？</string>
+    <string name="hms_downloading">正在下載華為手機服務 | 進度：%d%%</string>
+    <string name="hms_install">安裝</string>
+    <string name="hms_install_message">不得安裝華為行動服務來使用此功能。要安裝嗎？</string>
+    <string name="hms_retry">重試</string>
+    <string name="hms_update">更新</string>
+    <string name="hms_update_message">更新到最新的華為手機服務以使用本功能。是否立即更新？</string>
+    <string name="hms_update_title">華為手機服務</string>
+    <string name="search_menu_title">搜尋</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

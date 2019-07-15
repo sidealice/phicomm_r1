@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_scan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="scan" />
+        <EditText android:id="@id/et_pwd" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <Button android:id="@id/btn_connect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="connect" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_start_ap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="start ap" />
+        <Button android:id="@id/btn_stop_ap" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="stop ap" />
+        <Button android:id="@id/btn_get_connectivity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="connectivity" />
+    </LinearLayout>
+    <fragment android:name="com.phicomm.speaker.test.netconfig.log.LogFragment" android:id="@id/console" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

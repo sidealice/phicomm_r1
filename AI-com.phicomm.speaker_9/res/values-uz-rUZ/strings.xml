@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">To‘xtatish</string>
+    <string name="hms_abort_message">Yuklab olish to‘xtatilsinmi?</string>
+    <string name="hms_cancel">Bekor qilish</string>
+    <string name="hms_check_failure">Yangilov borligi tekshirilmadi.</string>
+    <string name="hms_check_no_update">Siz eng so‘nggi versiyadan foydalanmoqdasiz.</string>
+    <string name="hms_checking">Yangilov borligi tekshirmoqda…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei Mobile Services paketi yuklab olinmadi.</string>
+    <string name="hms_download_no_space">Bo‘sh joy yetarli emas. Yuklab olish tugallanmadi.</string>
+    <string name="hms_download_retry">Yuklab olish amalga oshmadi. Qayta urinilsinmi?</string>
+    <string name="hms_downloading">Huawei Mobile Services yuklab olinmoqda | rivoj: %d%%</string>
+    <string name="hms_install">O‘rnatish</string>
+    <string name="hms_install_message">Bu funksiyadan foydalanish uchun Huawei Mobile Services o‘rnatilishi lozim. O‘rnatilsinmi?</string>
+    <string name="hms_retry">Qaytadan</string>
+    <string name="hms_update">Yangilash</string>
+    <string name="hms_update_message">Bu funksiyadan foydalanish uchun Huawei Mobile Services yangilanishi zarur. Hozir yangilansinmi?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+</resources>

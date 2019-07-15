@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">ホームへ移動</string>
+    <string name="abc_action_bar_up_description">上へ移動</string>
+    <string name="abc_action_menu_overflow_description">その他のオプション</string>
+    <string name="abc_action_mode_done">完了</string>
+    <string name="abc_activity_chooser_view_see_all">すべて表示</string>
+    <string name="abc_activitychooserview_choose_application">アプリの選択</string>
+    <string name="abc_capital_off">OFF</string>
+    <string name="abc_capital_on">ON</string>
+    <string name="abc_search_hint">検索…</string>
+    <string name="abc_searchview_description_clear">検索キーワードを削除</string>
+    <string name="abc_searchview_description_query">検索キーワード</string>
+    <string name="abc_searchview_description_search">検索</string>
+    <string name="abc_searchview_description_submit">検索キーワードを送信</string>
+    <string name="abc_searchview_description_voice">音声検索</string>
+    <string name="abc_shareactionprovider_share_with">共有</string>
+    <string name="abc_shareactionprovider_share_with_application">%sと共有</string>
+    <string name="abc_toolbar_collapse_description">折りたたむ</string>
+    <string name="crop__cancel">キャンセル</string>
+    <string name="crop__done">決定</string>
+    <string name="crop__pick_error">画像が見つかりません</string>
+    <string name="crop__saving">保存中…</string>
+    <string name="crop__wait">お待ちください…</string>
+    <string name="hms_abort">停止</string>
+    <string name="hms_abort_message">ダウンロードを停止しますか？</string>
+    <string name="hms_cancel">キャンセル</string>
+    <string name="hms_check_failure">更新の確認に失敗しました</string>
+    <string name="hms_check_no_update">ご利用のバージョンはすでに最新です</string>
+    <string name="hms_checking">更新を確認中…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huaweiモバイルサービスパッケージのダウンロードに失敗しました</string>
+    <string name="hms_download_no_space">十分な空き容量がないため、ダウンロードを完了できません</string>
+    <string name="hms_download_retry">ダウンロードに失敗しました。再試行しますか？</string>
+    <string name="hms_downloading">Huaweiモバイルサービスをダウンロード中 | %d%%完了</string>
+    <string name="hms_install">インストール</string>
+    <string name="hms_install_message">この機能を利用するには、Huaweiモバイルサービスをインストールする必要があります。インストールしますか？</string>
+    <string name="hms_retry">再試行</string>
+    <string name="hms_update">更新</string>
+    <string name="hms_update_message">この機能を使用するには、Huaweiモバイルサービスの最新バージョンに更新してください。今すぐ更新しますか？</string>
+    <string name="hms_update_title">Huaweiモバイルサービス</string>
+    <string name="search_menu_title">検索</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

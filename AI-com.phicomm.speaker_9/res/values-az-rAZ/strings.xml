@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">Dayandır</string>
+    <string name="hms_abort_message">Yükləmə dayandırılsın?</string>
+    <string name="hms_cancel">Ləğv et</string>
+    <string name="hms_check_failure">Yenilənmələri yoxlamaq mümkün olmadı.</string>
+    <string name="hms_check_no_update">Siz artıq ən son versiyanı istifadə edirsiniz.</string>
+    <string name="hms_checking">Yeniliklər yoxlanılır...</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Huawei Mobil Xidmətlər paketini yükləmək mümkün olmadı.</string>
+    <string name="hms_download_no_space">Kifayət qədər boş yer yoxdur. Yükləməni tamamlamaq mümkün deyil.</string>
+    <string name="hms_download_retry">Yükləmə baş tutmadı. Təkrar cəhd edilsin?</string>
+    <string name="hms_downloading">Huawei Mobil Xidmətləri yüklənir | gedişat: %d%%</string>
+    <string name="hms_install">Quraşdırın</string>
+    <string name="hms_install_message">Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətləri quraşdırılmalıdır. Quraşdırılsın?</string>
+    <string name="hms_retry">Təkrar cəhd et</string>
+    <string name="hms_update">Yenilə</string>
+    <string name="hms_update_message">Bu funksiyanı istifadə etmək üçün Huawei Mobil Xidmətlərinin ən son versiyasına yeniləyin. İndi yenilənsin?</string>
+    <string name="hms_update_title">Huawei Mobil Xidmətləri</string>
+</resources>

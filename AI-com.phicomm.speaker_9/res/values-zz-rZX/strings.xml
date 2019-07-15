@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">[CS_303457]_Stop</string>
+    <string name="hms_abort_message">[CS_303454]_Stop downloading?</string>
+    <string name="hms_cancel">[CS_303460]_Cancel</string>
+    <string name="hms_check_failure">[CS_303464]_Failed to check for updates.</string>
+    <string name="hms_check_no_update">[CS_303448]_You are already using the latest version.</string>
+    <string name="hms_checking">[CS_303455]_Checking for updates…</string>
+    <string name="hms_confirm">[CS_303461]_OK</string>
+    <string name="hms_download_failure">[CS_303453]_Failed to download Huawei Mobile Services package.</string>
+    <string name="hms_download_no_space">[CS_303452]_Not enough free space. Download cannot be completed.</string>
+    <string name="hms_download_retry">[CS_303459]_Download failed. Try again?</string>
+    <string name="hms_downloading">"[CS_303451]_Downloading Huawei Mobile Services
+progress: %d%%"</string>
+    <string name="hms_install">[CS_304014]_Install</string>
+    <string name="hms_install_message">[CS_304015]_Huawei Mobile Services must be installed to use this feature. Install?</string>
+    <string name="hms_retry">[CS_303456]_Retry</string>
+    <string name="hms_update">[CS_303463]_Update</string>
+    <string name="hms_update_message">[CS_303450]_Update to the latest version of Huawei Mobile Services to use this feature. Update now?</string>
+    <string name="hms_update_title">[CS_303458]_Huawei Mobile Services</string>
+</resources>

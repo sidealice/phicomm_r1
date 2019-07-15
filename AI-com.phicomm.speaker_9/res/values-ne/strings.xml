@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">गृह खोज्नुहोस्</string>
+    <string name="abc_action_bar_up_description">माथि खोज्नुहोस्</string>
+    <string name="abc_action_menu_overflow_description">थप विकल्पहरू</string>
+    <string name="abc_action_mode_done">सम्पन्न भयो</string>
+    <string name="abc_activity_chooser_view_see_all">सबै हेर्नुहोस्</string>
+    <string name="abc_activitychooserview_choose_application">एउटा अनुप्रयोग छान्नुहोस्</string>
+    <string name="abc_capital_off">निष्क्रिय पार्नुहोस्</string>
+    <string name="abc_capital_on">सक्रिय गर्नुहोस्</string>
+    <string name="abc_search_hint">खोज्नुहोस्...</string>
+    <string name="abc_searchview_description_clear">प्रश्‍न हटाउनुहोस्</string>
+    <string name="abc_searchview_description_query">जिज्ञासाको खोज गर्नुहोस्</string>
+    <string name="abc_searchview_description_search">खोज्नुहोस्</string>
+    <string name="abc_searchview_description_submit">जिज्ञासा पेस गर्नुहोस्</string>
+    <string name="abc_searchview_description_voice">भ्वाइस खोजी</string>
+    <string name="abc_shareactionprovider_share_with">साझेदारी गर्नुहोस्...</string>
+    <string name="abc_shareactionprovider_share_with_application">%s सँग आदान-प्रदान गर्नुहोस्</string>
+    <string name="abc_toolbar_collapse_description">संक्षिप्त पार्नुहोस्</string>
+    <string name="hms_abort">रोक्नुहोस्</string>
+    <string name="hms_abort_message">डाउनलोड रोक्ने?</string>
+    <string name="hms_cancel">रद्द गर्नुहोस्</string>
+    <string name="hms_check_failure">अद्यावधिकहरू जाँच गर्न सकिएन।</string>
+    <string name="hms_check_no_update">तपाईं पहिले नै नवीनतम संस्करण प्रयोग गर्दै हुनुहुन्छ।</string>
+    <string name="hms_checking">अद्यावधिकहरू जाँच गर्दै...</string>
+    <string name="hms_confirm">ठीक छ</string>
+    <string name="hms_download_failure">Huawei मोबाइल सेवाको प्याकेज डाउनलोड गर्न सकिएन।</string>
+    <string name="hms_download_no_space">पर्याप्त खाली ठाउँ छैन। डाउनलोड कार्य सम्पन्न गर्न सकिँदैन।</string>
+    <string name="hms_download_retry">डाउनलोड गर्न सकिएन। पुन: प्रयास गर्ने हो?</string>
+    <string name="hms_downloading">Huawei Mobile सेवा डाउनलोड हुँदैछ | पूरा भएको: %d%%</string>
+    <string name="hms_install">स्थापना गर्नुहोस्</string>
+    <string name="hms_install_message">यो सुविधा प्रयोग गर्न अनिवार्य रूपमा Huawei मोबाइल सेवा स्थापना गर्नु पर्दछ। स्थापना गर्ने?</string>
+    <string name="hms_retry">पुनः प्रयास गर्नुहोस्</string>
+    <string name="hms_update">अद्यावधिक गर्नुहोस्</string>
+    <string name="hms_update_message">यो सुविधा प्रयोग गर्न Huawei मोबाइल सेवाको नवीनतम संस्करणमा अद्यावधिक गर्नुहोस्। अहिले अद्यावधिक गर्न चाहनुहुन्छ?</string>
+    <string name="hms_update_title">Huawei मोबाइल सेवा</string>
+    <string name="search_menu_title">खोज्नुहोस्</string>
+    <string name="status_bar_notification_info_overflow">९९९+</string>
+</resources>

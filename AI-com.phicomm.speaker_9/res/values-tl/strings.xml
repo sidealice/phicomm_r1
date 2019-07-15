@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Mag-navigate patungo sa home</string>
+    <string name="abc_action_bar_up_description">Mag-navigate pataas</string>
+    <string name="abc_action_menu_overflow_description">Higit pang mga opsyon</string>
+    <string name="abc_action_mode_done">Tapos na</string>
+    <string name="abc_activity_chooser_view_see_all">Tingnan lahat</string>
+    <string name="abc_activitychooserview_choose_application">Pumili ng isang app</string>
+    <string name="abc_capital_off">I-OFF</string>
+    <string name="abc_capital_on">I-ON</string>
+    <string name="abc_search_hint">Maghanap…</string>
+    <string name="abc_searchview_description_clear">I-clear ang query</string>
+    <string name="abc_searchview_description_query">Query sa paghahanap</string>
+    <string name="abc_searchview_description_search">Maghanap</string>
+    <string name="abc_searchview_description_submit">Isumite ang query</string>
+    <string name="abc_searchview_description_voice">Paghahanap gamit ang boses</string>
+    <string name="abc_shareactionprovider_share_with">Ibahagi sa/kay</string>
+    <string name="abc_shareactionprovider_share_with_application">Ibahagi gamit ang %s</string>
+    <string name="abc_toolbar_collapse_description">I-collapse</string>
+    <string name="hms_abort">Ihinto</string>
+    <string name="hms_abort_message">Ihinto ang pag-download?</string>
+    <string name="hms_cancel">Kanselahin</string>
+    <string name="hms_check_failure">Hindi nagawang tumingin ng mga update.</string>
+    <string name="hms_check_no_update">Pinakabagong bersyon na ang ginagamit mo.</string>
+    <string name="hms_checking">Tumitingin ng mga update…</string>
+    <string name="hms_confirm">OK</string>
+    <string name="hms_download_failure">Hindi na-download ang package ng Mga Serbisyo sa Mobile ng Huawei.</string>
+    <string name="hms_download_no_space">Walang sapat na bakanteng espasyo. Hindi makumpleto ang pag-download.</string>
+    <string name="hms_download_retry">Hindi na-download. Subukang muli?</string>
+    <string name="hms_downloading">Dina-download ang Mga Serbisyo sa Mobile ng Huawei | progreso: %d%%</string>
+    <string name="hms_install">I-install</string>
+    <string name="hms_install_message">Dapat i-install ang Huawei Mobile Services para magamit ang feature na ito. I-install?</string>
+    <string name="hms_retry">Subukang muli</string>
+    <string name="hms_update">I-update</string>
+    <string name="hms_update_message">Mag-update sa pinakabagong bersyon ng Mga Serbisyo sa Mobile ng Huawei upang magamit ang feature na ito. I-update na?</string>
+    <string name="hms_update_title">Mga Serbisyo sa Mobile ng Huawei</string>
+    <string name="search_menu_title">Maghanap</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

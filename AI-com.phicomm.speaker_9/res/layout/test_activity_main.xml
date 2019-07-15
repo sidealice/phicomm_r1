@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.phicomm.speaker.test.netconfig.view.widget.FlowLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:id="@id/btn_enable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="enable bluetooth" />
+        <Button android:id="@id/btn_request" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="request bluetooth" />
+        <Button android:id="@id/btn_disable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="disable bluetooth" />
+        <Button android:id="@id/btn_wifi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="wifi" />
+        <Button android:id="@id/btn_ble_client" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ble client" />
+        <Button android:id="@id/btn_ble_server" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ble server" />
+        <Button android:id="@id/btn_ble_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ble config" />
+        <Button android:id="@id/btn_ap_config" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ap config" />
+    </com.phicomm.speaker.test.netconfig.view.widget.FlowLayout>
+    <fragment android:name="com.phicomm.speaker.test.netconfig.log.LogFragment" android:id="@id/console" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+</LinearLayout>

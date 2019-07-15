@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="right" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_margin="5.0dip">
+        <ImageView android:id="@id/iv_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_dialog" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/captcha" android:layout_width="275.0dip" android:layout_height="185.0dip">
+        <TextView android:textSize="17.0sp" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/captchaDialog_title" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="50.0dip">
+            <ImageView android:id="@id/iv_captcha" android:background="#fffafafa" android:layout_width="150.0dip" android:layout_height="50.0dip" />
+            <FrameLayout android:id="@id/fl_refresh" android:background="@color/main_color" android:layout_width="50.0dip" android:layout_height="50.0dip">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_refresh" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/refresh" />
+            </FrameLayout>
+        </LinearLayout>
+        <TextView android:textSize="12.0sp" android:textColor="#ffff0000" android:gravity="center" android:id="@id/tv_error" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="20.0dip" android:text="@string/captcha_error" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/ll_input" android:layout_width="wrap_content" android:layout_height="40.0dip">
+            <EditText android:gravity="center" android:id="@id/captcha1" android:background="@drawable/verifytext" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="6.5dip" android:cursorVisible="false" android:maxLength="1" />
+            <EditText android:gravity="center" android:id="@id/captcha2" android:background="@drawable/verifytext" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="6.5dip" android:cursorVisible="false" android:maxLength="1" />
+            <EditText android:gravity="center" android:id="@id/captcha3" android:background="@drawable/verifytext" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="6.5dip" android:cursorVisible="false" android:maxLength="1" />
+            <EditText android:gravity="center" android:id="@id/captcha4" android:background="@drawable/verifytext" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="6.5dip" android:cursorVisible="false" android:maxLength="1" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

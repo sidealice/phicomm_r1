@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/dialog_my_toast" android:layout_width="100.0dip" android:layout_height="100.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textColor="@color/main_color" android:gravity="center" android:id="@id/tv_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="18.5dip" android:text="@string/loading_text" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/iv_dialog_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.5dip" android:src="@drawable/phone_code_send" android:layout_above="@id/tv_message" android:layout_centerHorizontal="true" />
+</RelativeLayout>

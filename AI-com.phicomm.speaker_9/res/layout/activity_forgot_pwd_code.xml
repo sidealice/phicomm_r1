@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_common_header" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:textColor="@color/main_color" android:layout_marginLeft="@dimen/dp_42.5" android:layout_marginTop="42.0dip" android:text="@string/forgot_pwd_reset_login" style="@style/text_large_style" />
+        <com.phicomm.speaker.views.MyEditText android:id="@id/myet_phone" android:layout_marginTop="50.0dip" app:hint="@string/hint_login_user" app:input_type="1" app:is_phone="true" app:left_label="@string/phone" app:max_length="11" style="@style/et_common" />
+        <LinearLayout android:layout_marginTop="20.5dip" style="@style/et_common">
+            <com.phicomm.speaker.views.MyEditText android:id="@id/myet_vercode" android:layout_width="wrap_content" android:layout_height="45.0dip" android:layout_weight="1.0" app:has_delete="true" app:hint="@string/hint_captcha" app:input_type="1" app:left_label="@string/verification_code" app:max_length="6" />
+            <TextView android:layout_gravity="center" android:id="@id/tv_get_vercode" android:layout_marginRight="12.5dip" android:text="@string/get_verification_code" style="@style/text_small_style" />
+        </LinearLayout>
+        <TextView android:id="@id/tv_next" android:layout_marginTop="29.5dip" android:text="@string/next_step" style="@style/btn_common" />
+    </LinearLayout>
+</LinearLayout>

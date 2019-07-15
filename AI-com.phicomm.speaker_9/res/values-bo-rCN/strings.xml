@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">མཚམས་འཇོག</string>
+    <string name="hms_abort_message">ཕབ་ལེན་མཚམས་འཇོག་བྱེད་འདོད་དམ།</string>
+    <string name="hms_cancel">ཕྱིར་འཐེན།</string>
+    <string name="hms_check_failure">གསར་བསྐྱར་ལ་ཞིབ་དཔྱད་ཚད་ལེན་ལེགས་མི་འགྲུབ།</string>
+    <string name="hms_check_no_update">ཁྱེད་ཀྱིས་སྔ་ས་ནས་རིམ་པ་གསར་ཤོས་དེ་བེད་སྤྱོད་བྱེད་ཀྱི་འདུག</string>
+    <string name="hms_checking">གསར་བསྐྱར་ཡོད་མེད་ཞིབ་བཤེར་བྱེད་བཞིན།</string>
+    <string name="hms_confirm">ཆོག</string>
+    <string name="hms_download_failure">ཧྭ་ཝེའི་འཕོ་བ་ཞབས་ཞུའི་དོ་བོར་ཕབ་ལེན་ལེགས་མི་འགྲུབ།</string>
+    <string name="hms_download_no_space">བེད་སྤྱོད་ཆོག་པའི་བར་སྟོང་མི་འདང་། ཕབ་ལེན་པར་ལེགས་འགྲུབ་བྱེད་མི་ཐུབ།</string>
+    <string name="hms_download_retry">ཕབ་ལེན་ལེགས་མི་འགྲུབ། ཡང་བསྐྱར་གྱིས་ཚོད་ལྟ་བྱེད་འདོད་དམ།</string>
+    <string name="hms_downloading">གོ་རིམ་ཧྭ་ཝེའི་འཕོ་བ་ཞབས་ཞུ་ལ་ཕབ་ལེན་བྱེད་བཞིན། %d%%</string>
+    <string name="hms_install">སྒྲིག་འཇུག</string>
+    <string name="hms_install_message">ཁྱད་ཆོས་འདི་བེད་སྤྱོད་བྱེད་པར་ཧུ་ཝཡེ་ཁ་པར་ཞབས་ཞུ་དག་སྒྲིག་འཇུག་བྱེད་དགོས་པ་ཡིན། སྒྲིག་འཇུག་བྱེད་འདོད་དམ།</string>
+    <string name="hms_retry">ཡང་བསྐྱར་བྱེད་རོགས།</string>
+    <string name="hms_update">གསར་བསྐྱར།</string>
+    <string name="hms_update_message">ཧྭ་ཝེའི་འཕོ་བའི་ཞབས་ཞུ་གསར་ཤོས་ལ་གསར་བསྐྱར་བྱས་ནས་ཁྱད་ཆོས་འདི་སྤྱོད་བྱེད། ད་ལྟར་གསར་བསྐྱར་བྱེད་འདོད་དམ།</string>
+    <string name="hms_update_title">ཧྭ་ཝེའི་འཕོ་བའི་ཞབས་ཞུ།</string>
+</resources>

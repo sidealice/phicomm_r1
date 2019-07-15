@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">Pārvietoties uz sākuma ekrānu</string>
+    <string name="abc_action_bar_up_description">Pārvietoties augšup</string>
+    <string name="abc_action_menu_overflow_description">Vairāk opciju</string>
+    <string name="abc_action_mode_done">Gatavs</string>
+    <string name="abc_activity_chooser_view_see_all">Skatīt visu</string>
+    <string name="abc_activitychooserview_choose_application">Izvēlieties lietotni</string>
+    <string name="abc_capital_off">IZSLĒGTS</string>
+    <string name="abc_capital_on">IESLĒGTS</string>
+    <string name="abc_search_hint">Meklējiet…</string>
+    <string name="abc_searchview_description_clear">Notīrīt vaicājumu</string>
+    <string name="abc_searchview_description_query">Meklēšanas vaicājums</string>
+    <string name="abc_searchview_description_search">Meklēt</string>
+    <string name="abc_searchview_description_submit">Iesniegt vaicājumu</string>
+    <string name="abc_searchview_description_voice">Meklēšana ar balsi</string>
+    <string name="abc_shareactionprovider_share_with">Kopīgot ar:</string>
+    <string name="abc_shareactionprovider_share_with_application">Kopīgot ar lietojumprogrammu %s</string>
+    <string name="abc_toolbar_collapse_description">Sakļaut</string>
+    <string name="hms_abort">Apturēt</string>
+    <string name="hms_abort_message">Vai apturēt lejupielādi?</string>
+    <string name="hms_cancel">Atcelt</string>
+    <string name="hms_check_failure">Neizdevās pārbaudīt, vai nav atjauninājumu.</string>
+    <string name="hms_check_no_update">Jūs jau lietojat jaunāko versiju.</string>
+    <string name="hms_checking">Notiek atjauninājumu pārbaude…</string>
+    <string name="hms_confirm">Labi</string>
+    <string name="hms_download_failure">Neizdevās lejupielādēt Huawei Mobile Services pakotni.</string>
+    <string name="hms_download_no_space">Nepietiek brīvas vietas. Lejupielādi nevar pabeigt.</string>
+    <string name="hms_download_retry">Lejupielāde neizdevās. Vai mēģināt vēlreiz?</string>
+    <string name="hms_downloading">Notiek Huawei Mobile Services lejupielādēšana | norise: %d%%</string>
+    <string name="hms_install">Instalēt</string>
+    <string name="hms_install_message">Lai lietotu šo funkciju, ir jābūt instalētam pakalpojumam Huawei Mobile Services. Vai instalēt?</string>
+    <string name="hms_retry">Atkārtot</string>
+    <string name="hms_update">Atjaunināt</string>
+    <string name="hms_update_message">Lai lietotu šo funkciju, atjauniniet uz Huawei Mobile Services jaunāko versiju. Vai atjaunināt tūlīt?</string>
+    <string name="hms_update_title">Huawei Mobile Services</string>
+    <string name="search_menu_title">Meklēt</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

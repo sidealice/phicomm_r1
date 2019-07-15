@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout android:background="@drawable/selector_function_fm_item" android:paddingTop="30.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/iv_cover" android:layout_width="70.0dip" android:layout_height="70.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="11.0dip" app:layout_constraintBottom_toBottomOf="@id/iv_cover" app:layout_constraintLeft_toRightOf="@id/iv_cover" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toTopOf="@id/iv_cover">
+        <TextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/color_73" android:ellipsize="end" android:id="@id/tv_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+        <TextView android:textSize="12.0sp" android:textColor="@color/color_73" android:ellipsize="end" android:id="@id/tv_subtitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:maxLines="1" />
+    </LinearLayout>
+    <View android:background="@color/color_235_238_241" android:layout_width="0.0dip" android:layout_height="1.0px" android:layout_marginTop="14.5dip" app:layout_constraintLeft_toLeftOf="parent" app:layout_constraintRight_toRightOf="parent" app:layout_constraintTop_toBottomOf="@id/iv_cover" />
+</android.support.constraint.ConstraintLayout>

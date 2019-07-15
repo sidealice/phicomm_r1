@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="abc_action_bar_home_description">转到主屏幕</string>
+    <string name="abc_action_bar_up_description">转到上一层级</string>
+    <string name="abc_action_menu_overflow_description">更多选项</string>
+    <string name="abc_action_mode_done">完成</string>
+    <string name="abc_activity_chooser_view_see_all">查看全部</string>
+    <string name="abc_activitychooserview_choose_application">选择应用</string>
+    <string name="abc_capital_off">关闭</string>
+    <string name="abc_capital_on">开启</string>
+    <string name="abc_search_hint">搜索…</string>
+    <string name="abc_searchview_description_clear">清除查询</string>
+    <string name="abc_searchview_description_query">搜索查询</string>
+    <string name="abc_searchview_description_search">搜索</string>
+    <string name="abc_searchview_description_submit">提交查询</string>
+    <string name="abc_searchview_description_voice">语音搜索</string>
+    <string name="abc_shareactionprovider_share_with">分享方式</string>
+    <string name="abc_shareactionprovider_share_with_application">使用%s分享</string>
+    <string name="abc_toolbar_collapse_description">收起</string>
+    <string name="crop__cancel">取消</string>
+    <string name="crop__done">完成</string>
+    <string name="crop__pick_error">无效的图片</string>
+    <string name="crop__saving">正在保存照片…</string>
+    <string name="crop__wait">请等待…</string>
+    <string name="hms_abort">终止</string>
+    <string name="hms_abort_message">是否终止下载？</string>
+    <string name="hms_cancel">取消</string>
+    <string name="hms_check_failure">检查华为移动服务更新失败。</string>
+    <string name="hms_check_no_update">华为移动服务已经是最新版本</string>
+    <string name="hms_checking">正在检查华为移动服务更新，请稍候...</string>
+    <string name="hms_confirm">知道了</string>
+    <string name="hms_download_failure">下载华为移动服务安装包失败。</string>
+    <string name="hms_download_no_space">剩余空间不足，无法下载。</string>
+    <string name="hms_download_retry">下载华为移动服务失败。是否重试？</string>
+    <string name="hms_downloading">正在下载华为移动服务 | 已完成：%d%%</string>
+    <string name="hms_install">安装</string>
+    <string name="hms_install_message">您尚未安装华为移动服务，安装之后才可用此功能。是否安装？</string>
+    <string name="hms_retry">重试</string>
+    <string name="hms_update">更新</string>
+    <string name="hms_update_message">华为移动服务版本太旧，更新到最新版本才可用此功能。是否更新？</string>
+    <string name="hms_update_title">华为移动服务</string>
+    <string name="search_menu_title">搜索</string>
+    <string name="status_bar_notification_info_overflow">999+</string>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/title" layout="@layout/include_common_header" />
+    <android.support.design.widget.TabLayout android:id="@id/tab_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabBackground="@color/transparent" app:tabIndicatorHeight="0.0dip" app:tabMode="scrollable" />
+    <com.phicomm.speaker.views.LazyViewPager android:id="@id/vp" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

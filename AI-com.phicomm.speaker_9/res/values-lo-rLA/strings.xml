@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hms_abort">ຢຸດ</string>
+    <string name="hms_abort_message">ຢຸດ​ການດາວ​ໂຫຼດ​ບໍ?</string>
+    <string name="hms_cancel">ຍົກ​ເລີກ​</string>
+    <string name="hms_check_failure">ຊອກ​ຫາ​ການ​ອັບ​ເດດ​ບໍ່​ສຳ​ເລັດ.</string>
+    <string name="hms_check_no_update">ທ່ານ​ກຳ​ລັງ​ໃຊ້​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ​ຢູ່​ແລ້ວ.</string>
+    <string name="hms_checking">ກຳ​ລັງ​ກວດ​ຫາ​ການ​ອັບ​ເດດ...</string>
+    <string name="hms_confirm">ຕົກ​ລົງ</string>
+    <string name="hms_download_failure">ດາວ​ໂຫຼດ​ແພັກ​ເກດ​ການ​ບໍ​ລິ​ການ Huawei Mobile ບໍ່​ສຳ​ເລັດ.</string>
+    <string name="hms_download_no_space">ບໍ່​ມີ​ພື້ນ​ທີ່​ຫວ່າງພຽງ​ພໍ. ບໍ່​ສາ​ມາດ​ດາວ​ໂຫຼດ​ສຳ​ເລັດ​ໄດ້.</string>
+    <string name="hms_download_retry">ດາວ​ໂຫຼດ​ບໍ່​ສຳ​ເລັດ. ລອງໃໝ່ອີກບໍ?</string>
+    <string name="hms_downloading">ກຳ​ລັງ​ດາວ​ໂຫຼດການ​ບໍ​ລິ​ການ Huawei Mobile | ຄື​ບ​ໜ້າ: %d%%</string>
+    <string name="hms_install">​ຕິດ​ຕັ້ງ</string>
+    <string name="hms_install_message">ຈະ​ຕ້ອງ​ຕິດ​ຕັ້ງ​ການ​ບໍ​ລິ​ການ Huawei Mobile ເພື່ອ​ໃຊ້​ຟີ​ເຈີ​ນີ້. ​ຕິດ​ຕັ້ງບໍ?</string>
+    <string name="hms_retry">ລອງໃໝ່ອີກ</string>
+    <string name="hms_update">ອັບເດດ</string>
+    <string name="hms_update_message">ອັບ​ເດດ​ເປັນການ​ບໍ​ລິ​ການ Huawei Mobile ​ເວີ​ຊັນ​ຫຼ້າ​ສຸດ ເພື່ອ​ໃຊ້​ຟີ​ເຈີ​ນີ້. ອັບ​ເດດ​ດຽວ​ນີ້​ບໍ?</string>
+    <string name="hms_update_title">ການ​ບໍ​ລິ​ການ Huawei Mobile</string>
+</resources>
