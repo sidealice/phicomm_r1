@@ -1,0 +1,38 @@
+
+#-------system info-------
+package-name:com.phicomm.speaker.netctl
+app-name:NetControl
+version-name:5.1.1-3448
+version-code:22
+model:rk322x-box
+system-version:5.1.1
+density:1.0
+screen-height:432
+screen-width:720
+imei:null
+imsi:null
+msisdn:null
+mac-addr:98:bb:99:48:99:79
+isWifiOpen:false
+[2018-01-21 00:00:02 681 MyApplication D] onCreate
+[2018-01-21 00:00:02 718 MainService D] onCreate()
+[2018-01-21 00:00:02 730 WifiConfigModeMgr E] get global settings SUCCESS for the first time.
+[2018-01-21 00:00:02 776 UdidHelper D] begin to read udid from local
+[2018-01-21 00:00:02 782 UdidHelper D] read udid from local, value=LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ
+[2018-01-21 00:00:02 862 Phijoin D] WorkHandler, msg.what : 1
+[2018-01-21 00:00:02 866 Phijoin D] WorkHandler, msg.what : 2
+[2018-01-21 00:00:02 886 Phijoin D] processEnablePhijoin, ConfiguredNetworks is exist, so disable phijoin
+[2018-01-21 00:00:02 869 Phijoin D] getEchoScene, echo_scene_for_interrup = 0
+[2018-01-21 00:00:02 896 Phijoin D] updateWifiState WIFI_STATE_ENABLED, so send MSG_ENABLE_PHIJOIN
+[2018-01-21 00:00:02 921 Phijoin D] WorkHandler, msg.what : 2
+[2018-01-21 00:00:02 928 Phijoin D] processEnablePhijoin, ConfiguredNetworks is exist, so disable phijoin
+[2018-01-21 00:00:03 282 LogConfig D] all log files size=161908
+[2018-01-21 00:00:04 951 MyApplication D] onCreate
+[2018-01-21 00:00:05 025 MainService D] onCreate()
+[2018-01-21 00:00:05 049 WifiConfigModeMgr E] get global settings SUCCESS for the first time.
+[2018-01-21 00:00:05 158 UdidHelper D] begin to read udid from local
+[2018-01-21 00:00:05 161 UdidHelper D] read udid from local, value=LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ
+[2018-01-21 00:00:05 350 LogConfig D] all log files size=254966
+[2018-01-21 00:00:05 507 Phijoin D] WorkHandler, msg.what : 1
+[2018-01-21 00:00:05 511 Phijoin D] WorkHandler, msg.what : 2
+[2018-01-21 00:00:05 528 Phijoin D] processEnablePhijoin, ConfiguredNetworks is exist, so disable phijoin

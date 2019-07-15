@@ -1,0 +1,61 @@
+
+#-------system info-------
+package-name:com.phicomm.speaker.airskill
+app-name:AirSkill
+version-name:5.1.1-3448
+version-code:22
+model:rk322x-box
+system-version:5.1.1
+density:1.0
+screen-height:432
+screen-width:720
+imei:null
+imsi:null
+msisdn:null
+mac-addr:98:bb:99:48:99:79
+isWifiOpen:false
+[2019-07-06 14:58:47 738 AirApplication D] onCreate
+[2019-07-06 14:58:47 753 AirService D] onCreate()
+[2019-07-06 14:58:47 764 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 14:58:47 784 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 14:58:47 961 LogConfig D] all log files size=1623
+[2019-07-06 20:50:00 560 AirApplication D] onCreate
+[2019-07-06 20:50:00 568 AirService D] onCreate()
+[2019-07-06 20:50:00 578 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 20:50:00 587 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 20:50:00 720 LogConfig D] all log files size=1986
+[2019-07-06 21:19:15 710 AirApplication D] onCreate
+[2019-07-06 21:19:15 739 AirService D] onCreate()
+[2019-07-06 21:19:15 762 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:19:15 775 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:19:18 702 LogConfig D] all log files size=2361
+[2019-07-06 21:20:59 725 AirApplication D] onCreate
+[2019-07-06 21:20:59 732 AirService D] onCreate()
+[2019-07-06 21:20:59 738 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:20:59 743 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:20:59 881 LogConfig D] all log files size=2736
+[2019-07-06 21:27:48 271 AirApplication D] onCreate
+[2019-07-06 21:27:49 806 LogConfig D] all log files size=3111
+[2019-07-06 21:27:50 300 AirService D] onCreate()
+[2019-07-06 21:27:52 010 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:27:52 926 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:28:45 609 AirApplication D] onCreate
+[2019-07-06 21:28:45 689 AirService D] onCreate()
+[2019-07-06 21:28:45 718 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:28:45 724 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:28:45 880 LogConfig D] all log files size=3486
+[2019-07-06 21:31:13 376 AirApplication D] onCreate
+[2019-07-06 21:31:13 395 AirService D] onCreate()
+[2019-07-06 21:31:13 416 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:31:13 451 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:31:13 662 LogConfig D] all log files size=3861
+[2019-07-06 21:38:27 318 AirApplication D] onCreate
+[2019-07-06 21:38:27 418 AirService D] onCreate()
+[2019-07-06 21:38:27 432 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 21:38:27 442 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 21:38:27 600 LogConfig D] all log files size=4236
+[2019-07-06 22:23:11 216 AirApplication D] onCreate
+[2019-07-06 22:23:11 266 AirService D] onCreate()
+[2019-07-06 22:23:11 358 AirHttpRequestV2 D] envType=PRODUCT, URL=https://home.phicomm.com/v1/phiai/semantic/skill
+[2019-07-06 22:23:11 369 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 22:23:11 514 LogConfig D] all log files size=4611

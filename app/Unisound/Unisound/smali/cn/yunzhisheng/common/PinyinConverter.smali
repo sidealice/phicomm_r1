@@ -1,0 +1,2201 @@
+.class public Lcn/yunzhisheng/common/PinyinConverter;
+.super Ljava/lang/Object;
+
+
+# static fields
+.field private static final MANDPY_END:I = 0x9fa5
+
+.field private static final MANDPY_LEN:I = 0x51a6
+
+.field private static final MANDPY_START:I = 0x4e00
+
+.field public static final PINYIN_EXCLUDE:Ljava/lang/String; = "|"
+
+.field public static final PINYIN_SEPARATOR:Ljava/lang/String; = " "
+
+.field public static final TAG:Ljava/lang/String; = "PinyinConverter"
+
+.field private static mPinyinList:[B
+
+.field private static mPinyinNum:I
+
+.field private static mPinyinSize:I
+
+.field private static mSimplified:Ljava/lang/String;
+
+.field private static mSpecialXingMap:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/Character;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static mTraditional:Ljava/lang/String;
+
+.field private static mUncommonWordsMap:Ljava/util/Map;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "Ljava/util/Map",
+            "<",
+            "Ljava/lang/Character;",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+.end field
+
+.field private static mUnit2PinyinIndex:[B
+
+
+# direct methods
+.method static constructor <clinit>()V
+    .locals 3
+
+    const/4 v1, 0x0
+
+    const/4 v0, 0x0
+
+    sput v1, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinNum:I
+
+    sput v1, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUncommonWordsMap:Ljava/util/Map;
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const-string v0, "\u4e12\u4e17\u4e1f\u4e20\u4e21\u4e23\u4e26\u4e3c\u4e55\u4e57\u4e62\u4e63\u4e68\u4e75\u4e79\u4e80\u4e81\u4e82\u4e8a\u4e90\u4e96\u4e97\u4e99\u4e9c\u4e9d\u4e9e\u4ea3\u4eaf\u4eb0\u4eb1\u4eb4\u4eb7\u4ebc\u4ebd\u4ebe\u4ecc\u4ecf\u4eda\u4ee7\u4eed\u4efa\u4efe\u4f07\u4f15\u4f16\u4f1c\u4f28\u4f29\u4f31\u4f35\u4f37\u4f40\u4f47\u4f48\u4f54\u4f71\u4f72\u4f75\u4f86\u4f8a\u4f8c\u4f8e\u4f96\u4f9f\u4fa1\u4fa2\u4fab\u4fad\u4fb0\u4fb6\u4fb7\u4fbd\u4fc1\u4fc2\u4fcc\u4fe0\u4fe2\u4fe5\u4fec\u4ff2\u4ffb\u4ffc\u4ffd\u5000\u5002\u5006\u5008\u5009\u500b\u5010\u5011\u5016\u5023\u5024\u502b\u5036\u5038\u5039\u503f\u5042\u5049\u5050\u5058\u5067\u506a\u5074\u5075\u5078\u5079\u507a\u507c\u507d\u5081\u508c\u5091\u5096\u5097\u5098\u5099\u509a\u50a0\u50a1\u50a2\u50ad\u50af\u50b3\u50b4\u50b5\u50b7\u50be\u50c2\u50c3\u50c5\u50c9\u50ca\u50cd\u50d1\u50d2\u50d5\u50d8\u50de\u50df\u50e1\u50e2\u50e5\u50e8\u50eb\u50f1\u50f2\u50f4\u50f9\u5100\u5101\u5102\u5104\u5108\u5109\u510d\u510e\u5110\u5114\u5115\u5117\u5118\u511e\u511f\u5128\u512a\u512b\u5132\u5135\u5137\u5139\u513a\u513b\u513c\u513d\u5142\u5147\u514a\u514c\u514e\u514f\u5150\u5152\u5157\u5158\u5160\u5164\u5166\u5167\u5169\u516a\u5172\u517e\u517f\u5183\u5184\u518a\u518e\u5190\u5191\u519d\u519f\u51a1\u51a3\u51a6\u51a8\u51a9\u51aa\u51b4\u51b8\u51ba\u51c2\u51c3\u51c8\u51cd\u51d2\u51d4\u51d6\u51dc\u51df\u51e2\u51e3\u51e5\u51e6\u51e8\u51ec\u51ee\u51f1\u51f2\u51f4\u51fe\u5204\u5205\u520f\u5222\u5225\u5226\u5227\u522a\u522f\u5234\u523c\u523e\u5244\u5247\u5249\u524b\u524e\u524f\u5253\u5257\u5259\u525b\u525d\u5260\u5263\u5264\u526e\u5270\u5271\u5274\u5275\u5277\u5279\u5283\u5284\u5285\u5286\u5287\u5289\u528a\u528c\u528d\u528e\u5291\u5292\u5294\u5295\u52b4\u52b7\u52b8\u52b9\u52c1\u52c5\u52c8\u52ca\u52cc\u52ce\u52d1\u52d4\u52d5\u52d7\u52d9\u52db\u52dd\u52de\u52e0\u52e1\u52e2\u52e3\u52e5\u52e6\u52e7\u52e9\u52ea\u52ee\u52f1\u52f2\u52f3\u52f5\u52f8\u52fb\u5301\u5302\u5303\u5304\u5314\u5318\u531b\u531e\u531f\u5325\u5327\u5329\u532d\u532f\u5331\u5332\u5333\u5335\u5336\u5340\u5342\u5344\u5346\u534b\u5354\u5358\u535b\u5365\u536a\u536d\u5379\u537b\u537d\u537e\u5380\u5390\u5393\u5399\u539b\u53a0\u53a1\u53a4\u53aa\u53ab\u53ad\u53af\u53b0\u53b2\u53b3\u53b4\u53b5\u53ba\u53c0\u53c3\u53c4\u53c5\u53ce\u53cf\u53d3\u53da\u53dc\u53de\u53e2\u540b\u5422\u5433\u5436\u5442\u5449\u544e\u545d\u5469\u546a\u548a\u54b7\u54c5\u54e1\u5500\u5504\u5515\u5516\u5518\u551a\u554f\u5553\u5554\u5557\u555e\u555f\u5560\u5563\u5592\u559a\u55a6\u55a9\u55aa\u55ab\u55ac\u55ae\u55b2\u55c1\u55c6\u55c7\u55ca\u55ce\u55da\u55e0\u55e9\u55f6\u55f8\u5606\u560b\u560d\u5611\u5613\u5614\u5616\u5617\u561c\u5628\u5629\u562b\u562e\u562f\u5630\u5635\u5637\u5638\u563d\u5641\u5644\u5649\u5650\u5651\u5653\u5655\u5656\u565b\u565d\u565f\u5660\u5665\u5666\u566f\u5672\u5674\u5675\u5678\u5679\u5680\u5687\u5689\u568a\u568c\u5690\u5694\u5695\u5696\u5699\u569e\u56a0\u56a2\u56a5\u56a6\u56a8\u56aa\u56ac\u56ae\u56b2\u56b3\u56b4\u56b5\u56b6\u56ba\u56bb\u56c0\u56c1\u56c2\u56c5\u56c8\u56c9\u56cc\u56cf\u56d1\u56d2\u56d3\u56d8\u56d9\u56e6\u56ea\u56ec\u56ef\u56f3\u56f6\u56f8\u56fb\u56fc\u5700\u5705\u5707\u570b\u570d\u570e\u5711\u5712\u5713\u5716\u5717\u5718\u571d\u5721\u5724\u573d\u5743\u5753\u5755\u5756\u5758\u5759\u5763\u5767\u576e\u5775\u5778\u5779\u577f\u5781\u5787\u5796\u579c\u57a8\u57bb\u57c0\u57c9\u57d1\u57d3\u57dc\u57de\u57e1\u57e6\u57f0\u57f3\u57f7\u57ff\u5805\u580a\u5813\u5816\u5817\u5818\u581d\u5822\u5826\u582f\u5831\u5834\u583a\u5841\u584a\u584b\u584f\u5850\u5852\u5856\u5857\u585a\u585c\u585f\u5860\u5861\u5862\u5864\u5866\u5867\u5869\u586a\u5872\u5875\u5877\u5879\u587c\u588a\u588d\u5896\u5897\u589c\u589d\u58a2\u58aa\u58ac\u58ae\u58b0\u58b3\u58b4\u58b5\u58b6\u58b7\u58be\u58c0\u58c3\u58c4\u58c6\u58c7\u58ca\u58cb\u58cc\u58cd\u58ce\u58d0\u58d3\u58d8\u58d9\u58da\u58dc\u58de\u58df\u58e0\u58e1\u58e2\u58e5\u58e6\u58e9\u58ea\u58ef\u58f1\u58f2\u58f5\u58f7\u58fa\u58fb\u58fc\u58fd\u5900\u5901\u5908\u5909\u5913\u5918\u591b\u591d\u5920\u5922\u5923\u5933\u5936\u593e\u594c\u5950\u5959\u5967\u5968\u5969\u596a\u596c\u596e\u597c\u599b\u599d\u59ac\u59b3\u59b7\u59c9\u59cd\u59d9\u59df\u59e2\u59e6\u59e7\u59ea\u59f8\u5a12\u5a1b\u5a24\u5a26\u5a2c\u5a2f\u5a41\u5a54\u5a63\u5a66\u5a6c\u5a6d\u5a6f\u5a79\u5a7e\u5a87\u5a8d\u5aa7\u5aab\u5aae\u5aaf\u5abc\u5abd\u5ad3\u5ad7\u5aef\u5af0\u5af2\u5af5\u5afa\u5afb\u5aff\u5b00\u5b03\u5b08\u5b0a\u5b0b\u5b0c\u5b0d\u5b19\u5b1d\u5b21\u5b22\u5b24\u5b2a\u5b2d\u5b30\u5b38\u5b39\u5b3a\u5b3e\u5b43\u5b44\u5b46\u5b4c\u5b52\u5b5e\u5b60\u5b61\u5b6b\u5b6f\u5b76\u5b78\u5b79\u5b7c\u5b7e\u5b7f\u5b82\u5b86\u5b8d\u5b90\u5b91\u5b9f\u5ba9\u5bae\u5bb7\u5bbb\u5bbc\u5bc0\u5bc3\u5bc8\u5bc9\u5bd1\u5bd5\u5bd8\u5bdb\u5bdc\u5be2\u5be6\u5be7\u5be9\u5beb\u5bec\u5bf5\u5bf6\u5bfe\u5c00\u5c02\u5c05\u5c07\u5c08\u5c0b\u5c0d\u5c0e\u5c12\u5c13\u5c17\u5c19\u5c1b\u5c1f\u5c20\u5c23\u5c26\u5c29\u5c2b\u5c32\u5c36\u5c37\u5c46\u5c4d\u5c53\u5c5a\u5c5b\u5c5c\u5c5f\u5c62\u5c64\u5c68\u5c6b\u5c6c\u5c6d\u5c73\u5c75\u5c76\u5c77\u5c80\u5ca1\u5cba\u5cc0\u5cdc\u5cdd\u5ce0\u5ce2\u5ce9\u5cef\u5cf4\u5cf5\u5cf6\u5cfd\u5d08\u5d0d\u5d10\u5d11\u5d15\u5d17\u5d18\u5d19\u5d22\u5d2a\u5d2b\u5d2c\u5d2f\u5d33\u5d3b\u5d46\u5d50\u5d52\u5d57\u5d5f\u5d60\u5d6e\u5d73\u5d7c\u5d81\u5d83\u5d84\u5d87\u5d8b\u5d8c\u5d90\u5d94\u5d96\u5d97\u5d9a\u5da0\u5da2\u5da3\u5da4\u5da7\u5da8\u5dae\u5db3\u5db8\u5db9\u5dba\u5dbb\u5dbc\u5dbd\u5dcb\u5dcc\u5dd2\u5dd3\u5dd4\u5dd6\u5dd7\u5dda\u5de3\u5df0\u5df5\u5df6\u5df9\u5dfa\u5dfb\u5e00\u5e0b\u5e12\u5e25\u5e2b\u5e2c\u5e2f\u5e30\u5e33\u5e36\u5e40\u5e43\u5e47\u5e51\u5e57\u5e58\u5e5a\u5e5f\u5e63\u5e64\u5e6a\u5e6b\u5e6c\u5e71\u5e77\u5e79\u5e7e\u5e82\u5e83\u5e85\u5e92\u5eab\u5eba\u5ebb\u5ebd\u5ebf\u5ec0\u5ec1\u5ec2\u5ec3\u5ec4\u5ec8\u5ece\u5ecf\u5ed0\u5ed5\u5eda\u5edd\u5edf\u5ee0\u5ee1\u5ee2\u5ee3\u5ee9\u5eec\u5ef0\u5ef3\u5ef5\u5ef8\u5ef9\u5efb\u5efc\u5efd\u5f09\u5f0c\u5f0d\u5f0e\u5f10\u5f12\u5f14\u5f33\u5f35\u5f37\u5f3b\u5f3d\u5f3e\u5f42\u5f46\u5f48\u5f4c\u5f4e\u5f59\u5f5a\u5f5b\u5f5c\u5f5e\u5f5f\u5f60\u5f65\u5f6b\u5f72\u5f7f\u5f83\u5f8f\u5f91\u5f93\u5f94\u5f9e\u5fa0\u5fa3\u5fa4\u5fa7\u5fa9\u5fac\u5fb0\u5fb3\u5fb4\u5fb9\u5fba\u5fc8\u5fce\u5fdb\u5fdc\u5fe2\u5fe9\u5ff0\u6023\u6031\u6033\u603a\u6046\u6056\u6060\u6061\u6065\u6071\u6074\u6075\u6077\u6085\u608b\u6091\u6093\u609e\u60a4\u60a9\u60aa\u60ae\u60b3\u60b5\u60b6\u60bd\u60d2\u60d6\u60de\u60e1\u60e3\u60e5\u60ea\u60f1\u60f2\u60fb\u60fd\u6102\u6107\u6110\u6112\u6119\u611b\u611c\u611e\u6128\u6131\u6133\u6134\u6135\u6137\u6138\u6139\u613c\u613d\u613e\u6142\u6144\u614b\u614d\u6150\u6153\u6158\u6159\u615a\u615f\u6163\u6164\u616a\u616b\u616e\u616f\u6173\u6174\u6176\u617b\u617c\u617d\u617e\u617f\u6182\u6185\u6186\u6187\u618a\u6190\u6191\u6192\u6196\u6197\u619a\u619c\u619e\u61a4\u61a6\u61ab\u61ae\u61b2\u61b3\u61b6\u61bb\u61c7\u61c9\u61cc\u61cd\u61d0\u61d3\u61d5\u61db\u61dd\u61de\u61df\u61e3\u61e8\u61ee\u61ef\u61f2\u61f4\u61f6\u61f7\u61f8\u61fa\u61fc\u61fd\u61fe\u6200\u6205\u6207\u6214\u621d\u621e\u6226\u6227\u6229\u622f\u6230\u6232\u6236\u6238\u6239\u623c\u6257\u6275\u6285\u6299\u629c\u629d\u62a6\u62c0\u62cb\u62d5\u62dd\u62de\u62e0\u62e1\u62ea\u6305\u630a\u6310\u6317\u6319\u6331\u6335\u6337\u633e\u633f\u6344\u635b\u635c\u6366\u6368\u636b\u6372\u637f\u6383\u6384\u638b\u6397\u6399\u639b\u63a1\u63a6\u63b1\u63b2\u63b6\u63bb\u63bd\u63c0\u63d1\u63da\u63db\u63dc\u63eb\u63ee\u63f7\u63f9\u63fa\u6403\u6406\u6407\u640d\u6416\u6417\u6425\u6427\u6428\u642f\u6436\u643c\u643e\u6440\u6443\u6449\u6451\u645c\u645f\u6460\u6463\u646f\u6470\u6473\u6476\u647b\u6481\u6483\u6486\u6488\u648e\u648f\u6490\u6493\u649a\u649f\u64a1\u64a2\u64a3\u64a5\u64a6\u64ab\u64af\u64b2\u64b3\u64b6\u64b9\u64bb\u64be\u64bf\u64c1\u64c4\u64c7\u64c8\u64ca\u64cb\u64d1\u64d4\u64d5\u64da\u64dd\u64e0\u64e1\u64e3\u64e5\u64e7\u64ec\u64ed\u64ee\u64ef\u64f0\u64f1\u64f2\u64f4\u64f5\u64f7\u64f9\u64fa\u64fb\u64fc\u64fe\u6502\u6504\u6505\u6506\u650f\u6514\u6516\u6519\u651b\u651c\u651d\u651f\u6522\u6523\u6524\u6528\u652a\u652c\u6537\u6542\u654d\u654e\u6557\u6558\u655f\u656a\u656d\u6575\u6578\u657a\u657d\u657e\u6582\u6583\u6585\u6586\u6588\u6589\u658a\u658e\u6595\u6598\u659a\u65ac\u65ae\u65b2\u65b5\u65b7\u65be\u65c2\u65c8\u65c9\u65d1\u65d8\u65d9\u65db\u65dc\u65e3\u65e4\u65ea\u65fe\u6607\u6617\u6618\u661a\u662c\u6637\u6638\u663b\u663f\u6642\u6644\u6648\u6649\u664d\u6650\u665d\u6662\u6663\u6669\u6673\u6681\u6688\u6689\u668e\u6692\u6698\u669c\u669e\u66a0\u66a2\u66a3\u66a6\u66ab\u66ac\u66ad\u66b1\u66c1\u66c4\u66c5\u66c6\u66c7\u66c9\u66cf\u66d0\u66d3\u66d6\u66d7\u66e0\u66e1\u66e8\u66ec\u66ef\u66f5\u66f8\u66fa\u66fd\u6702\u6703\u6707\u6716\u6719\u6722\u6723\u6724\u6727\u672e\u6736\u6771\u6780\u678f\u6792\u67a0\u67a4\u67a6\u67ac\u67b4\u67bd\u67be\u67bf\u67d5\u67d7\u67df\u67f5\u67fb\u67fe\u6801\u6802\u6804\u6814\u6815\u681e\u6822\u6827\u6830\u685a\u685c\u685e\u685f\u686e\u6870\u687a\u687f\u6894\u6895\u6898\u689d\u689f\u68a5\u68b8\u68b9\u68c3\u68c4\u68c5\u68ca\u68d6\u68d7\u68df\u68e5\u68e7\u68f2\u68f6\u6900\u6909\u690f\u6918\u691c\u691d\u6926\u6936\u693e\u6944\u694a\u694d\u6953\u6955\u6961\u6967\u6968\u696d\u6973\u6975\u697d\u698e\u698f\u699f\u69a6\u69aa\u69ae\u69bf\u69c0\u69c7\u69c8\u69cb\u69cd\u69d1\u69d2\u69d3\u69d5\u69d6\u69d7\u69d8\u69de\u69e1\u69e4\u69e7\u69e8\u69e9\u69ea\u69ee\u69f3\u69f6\u69f9\u69fc\u6a01\u6a02\u6a05\u6a0c\u6a10\u6a11\u6a13\u6a19\u6a1c\u6a1e\u6a23\u6a24\u6a29\u6a2c\u6a37\u6a38\u6a39\u6a3a\u6a3f\u6a48\u6a4a\u6a4b\u6a53\u6a5c\u6a5f\u6a62\u6a63\u6a6b\u6a6e\u6a70\u6a81\u6a86\u6a89\u6a8f\u6a94\u6a9c\u6a9f\u6aa2\u6aa3\u6aaa\u6aae\u6aaf\u6ab1\u6ab3\u6ab8\u6abb\u6ac0\u6ac1\u6ac2\u6ac3\u6ac4\u6ac8\u6ac9\u6ad0\u6ad3\u6ad8\u6ada\u6adb\u6add\u6ade\u6adf\u6ae3\u6ae5\u6ae7\u6ae8\u6aea\u6aeb\u6aec\u6af1\u6af3\u6af5\u6af8\u6afa\u6afb\u6afd\u6b04\u6b05\u6b09\u6b0a\u6b0e\u6b0f\u6b11\u6b12\u6b14\u6b16\u6b1d\u6b1e\u6b1f\u6b35\u6b3d\u6b40\u6b4e\u6b50\u6b53\u6b57\u6b5a\u6b5b\u6b5d\u6b5f\u6b61\u6b68\u6b69\u6b6c\u6b6e\u6b6f\u6b71\u6b72\u6b73\u6b74\u6b77\u6b78\u6b7a\u6b7f\u6b80\u6b98\u6b9e\u6ba4\u6ba6\u6bab\u6bac\u6bad\u6bae\u6baf\u6bb1\u6bb2\u6bba\u6bbb\u6bbc\u6bc0\u6bc6\u6bce\u6bd8\u6be9\u6bec\u6bf1\u6bf4\u6bf6\u6bfa\u6bff\u6c02\u6c08\u6c0a\u6c0c\u6c12\u6c17\u6c1d\u6c1e\u6c23\u6c2b\u6c2c\u6c2d\u6c31\u6c33\u6c37\u6c3a\u6c3c\u6c3e\u6c45\u6c4e\u6c53\u6c59\u6c5a\u6c63\u6c6c\u6c7a\u6c8d\u6c92\u6c96\u6c97\u6ca0\u6cc1\u6cd8\u6cdd\u6cf4\u6d1c\u6d29\u6d36\u6d44\u6d71\u6d79\u6d81\u6d87\u6d96\u6d99\u6db1\u6dbc\u6dd2\u6dda\u6ddb\u6de5\u6de8\u6de9\u6dea\u6df5\u6df6\u6df8\u6dfa\u6dfe\u6dff\u6e01\u6e06\u6e07\u6e08\u6e09\u6e0b\u6e0f\u6e13\u6e15\u6e19\u6e1b\u6e22\u6e26\u6e2a\u6e2c\u6e3e\u6e4a\u6e4c\u6e50\u6e5e\u6e67\u6e6c\u6e6f\u6e7a\u6e7b\u6e7c\u6e7d\u6e84\u6e88\u6e8a\u6e8b\u6e95\u6e96\u6e9d\u6ea8\u6eab\u6eae\u6eb3\u6ebc\u6ec4\u6ec5\u6ecc\u6ece\u6ed9\u6edb\u6edd\u6ee3\u6eec\u6eef\u6ef2\u6ef7\u6ef8\u6efa\u6efb\u6efe\u6eff\u6f01\u6f04\u6f0a\u6f11\u6f1a\u6f22\u6f23\u6f25\u6f2c\u6f32\u6f35\u6f38\u6f3f\u6f41\u6f42\u6f44\u6f45\u6f4a\u6f51\u6f54\u6f59\u6f5b\u6f64\u6f6f\u6f70\u6f77\u6f79\u6f7f\u6f80\u6f81\u6f82\u6f86\u6f87\u6f8f\u6f91\u6f97\u6f99\u6f9d\u6f9f\u6fa0\u6fa4\u6fa6\u6fa9\u6fae\u6fb1\u6fb7\u6fc1\u6fc3\u6fc5\u6fc7\u6fd0\u6fd4\u6fd5\u6fd8\u6fda\u6fdc\u6fdf\u6fe4\u6feb\u6fec\u6ff0\u6ff1\u6ff3\u6ff6\u6ffa\u6ffc\u6ffe\u7002\u7005\u7006\u7009\u700b\u700f\u7010\u7012\u7013\u7015\u7018\u701d\u701e\u701f\u7020\u7025\u7026\u7027\u7028\u702c\u7030\u7032\u703e\u7043\u7044\u704b\u704e\u7050\u7051\u7052\u7054\u7055\u7058\u705c\u705d\u7063\u7064\u7067\u7068\u7069\u706e\u7072\u7073\u707b\u707d\u7081\u708f\u7097\u709b\u70a4\u70ba\u70c9\u70cf\u70d5\u70d6\u70e3\u70ee\u70f1\u70f4\u70fe\u7108\u7114\u7121\u7124\u7133\u7134\u7147\u7149\u7152\u7155\u7156\u7157\u7159\u7160\u7162\u7165\u7169\u716b\u716c\u716d\u7188\u718b\u7192\u7196\u7197\u71a6\u71ab\u71b1\u71b2\u71b4\u71be\u71c1\u71c4\u71c8\u71c9\u71cc\u71d0\u71d1\u71d2\u71d3\u71d7\u71d9\u71dc\u71df\u71e6\u71ea\u71ec\u71ed\u71ef\u71f3\u71f4\u71fa\u71fb\u71fc\u71fe\u720b\u720d\u7210\u7211\u7212\u7215\u7217\u721b\u7224\u7225\u722d\u722f\u7232\u7234\u723a\u723c\u723e\u7245\u7246\u724b\u724e\u7250\u7253\u7257\u7258\u7271\u7274\u727d\u7282\u7287\u7296\u729b\u72a0\u72a2\u72a7\u72ab\u72b2\u72c0\u72e2\u72f5\u72f9\u72fd\u7302\u7310\u7319\u731f\u7328\u732f\u7336\u733b\u7343\u7344\u7345\u7346\u7347\u734b\u734e\u734f\u7353\u7354\u7363\u7368\u736a\u736b\u736e\u7370\u7371\u7372\u7375\u7377\u7378\u737a\u737b\u737c\u7380\u7385\u73a8\u73c1\u73ce\u73e1\u73e4\u73ee\u73f1\u73f3\u73fb\u73fe\u740d\u7416\u741e\u7431\u7439\u743a\u743f\u7447\u744b\u7452\u7460\u7463\u7464\u7469\u746a\u746f\u7472\u747b\u7484\u7489\u748d\u749d\u74a1\u74a2\u74a3\u74a6\u74ab\u74b0\u74b5\u74b8\u74bd\u74bf\u74c8\u74c9\u74ca\u74cc\u74cf\u74d4\u74da\u7501\u7506\u750c\u750e\u7515\u751b\u751e\u7520\u7522\u7523\u7526\u753c\u753d\u7541\u7542\u7544\u7546\u754a\u754d\u7550\u7552\u7555\u755d\u755e\u7561\u7562\u7567\u7568\u756b\u756c\u756d\u756e\u7570\u7571\u7573\u7575\u7576\u757a\u7582\u7585\u7587\u7588\u7589\u758a\u758e\u7598\u75a9\u75b7\u75bf\u75cc\u75d0\u75d9\u75dc\u75e0\u75e9\u75ee\u75fa\u7602\u7609\u760b\u760d\u7613\u7614\u7616\u761e\u7621\u7627\u762c\u7636\u763a\u763b\u7642\u7644\u7645\u7646\u7647\u7649\u764e\u764f\u7652\u7658\u765b\u765d\u765f\u7661\u7662\u7664\u7665\u7669\u766c\u766d\u766e\u7670\u7671\u7672\u7673\u767c\u7681\u7683\u768d\u7690\u769a\u769c\u76a1\u76a2\u76a3\u76a5\u76a8\u76a9\u76b0\u76b3\u76b6\u76b7\u76b8\u76b9\u76ba\u76bb\u76bc\u76c1\u76c3\u76c7\u76cb\u76cc\u76d9\u76dc\u76de\u76e1\u76e3\u76e4\u76e7\u76ea\u7700\u7702\u7706\u770e\u7718\u771e\u7721\u7725\u773e\u773f\u7742\u775c\u775e\u7764\u776a\u7787\u778b\u7796\u779e\u77ad\u77b6\u77bc\u77be\u77c1\u77c7\u77c8\u77d2\u77d3\u77d9\u77da\u77dd\u77e4\u77e6\u77ef\u77f4\u77f5\u7807\u7815\u7824\u7832\u783f\u7842\u7843\u784b\u784f\u785c\u7864\u7868\u786f\u7872\u7876\u7892\u78a9\u78aa\u78ad\u78b5\u78ba\u78bc\u78c7\u78d1\u78d2\u78d7\u78da\u78e0\u78e3\u78e7\u78ef\u78f5\u78f8\u78fd\u7900\u7904\u7906\u7908\u790d\u790e\u7919\u791a\u7920\u7921\u7926\u792a\u792b\u792c\u792e\u7931\u7932\u7936\u7937\u794d\u7950\u7955\u7958\u796c\u7975\u7976\u797f\u7987\u798d\u798e\u7995\u7999\u799d\u799e\u79a1\u79a5\u79a6\u79a9\u79aa\u79ae\u79b0\u79b1\u79bf\u79c8\u79ca\u79cc\u79d0\u79d4\u79d7\u79da\u79f4\u7a01\u7a05\u7a08\u7a09\u7a1c\u7a1f\u7a2c\u7a2d\u7a2e\u7a31\u7a32\u7a3a\u7a3e\u7a40\u7a42\u7a45\u7a49\u7a4c\u7a4d\u7a4e\u7a4f\u7a50\u7a5e\u7a60\u7a61\u7a62\u7a64\u7a68\u7a69\u7a6a\u7a6b\u7a6d\u7a6f\u7a75\u7a7d\u7a82\u7a93\u7a9a\u7aa9\u7aaa\u7aae\u7aaf\u7ab0\u7ab5\u7ab6\u7aba\u7abb\u7abc\u7abd\u7ac2\u7ac3\u7ac4\u7ac5\u7ac6\u7ac7\u7ac8\u7aca\u7ad2\u7ad4\u7ad7\u7ada\u7adc\u7add\u7ae9\u7aea\u7af5\u7af6\u7af8\u7afc\u7afe\u7b1f\u80f3\u7b36\u7b42\u7b46\u7b4d\u7b53\u7b59\u7b5e\u7b66\u7b67\u7b69\u7b6f\u7b70\u7b7a\u7b86\u7b87\u7b8b\u7b8e\u7b8f\u7b92\u7b9a\u7bb0\u7bb2\u7bb7\u7bc0\u7bc4\u7bc9\u7bcb\u7bcf\u7bd0\u7bd2\u7bd4\u7bdb\u7bde\u7be4\u7be9\u7bed\u7bf2\u7bf3\u7c00\u7c06\u7c0d\u7c11\u7c12\u7c14\u7c17\u7c18\u7c1e\u7c21\u7c23\u7c2b\u7c2e\u7c30\u7c34\u7c35\u7c37\u7c39\u7c3d\u7c3e\u7c43\u7c44\u7c4c\u7c50\u7c52\u7c55\u7c56\u7c58\u7c59\u7c5b\u7c5c\u7c5d\u7c5f\u7c60\u7c62\u7c64\u7c68\u7c69\u7c6a\u7c6c\u7c6d\u7c6e\u7c72\u7c76\u7c78\u7c83\u7c8b\u7c8e\u7c9a\u7c9b\u7ca6\u7ca7\u7cb5\u7cba\u7cc2\u7cc9\u7cd3\u7cda\u7cdb\u7cdd\u7cde\u7ce1\u7ce2\u7ce3\u7ce5\u7ce7\u7ced\u7cf0\u7cf2\u7cf4\u7cf6\u7cfa\u7cfc\u7cfe\u7d00\u7d02\u7d04\u7d05\u7d06\u7d07\u7d08\u7d09\u7d0b\u7d0d\u7d10\u7d13\u7d14\u7d15\u7d16\u7d17\u7d18\u7d19\u7d1a\u7d1b\u7d1c\u7d1d\u7d21\u7d23\u7d25\u7d2c\u7d2d\u7d2e\u7d30\u7d31\u7d32\u7d33\u7d35\u7877\u7d39\u7d3a\u7d3c\u7d3f\u7d40\u7d42\u7d43\u7d44\u7d46\u7d48\u7d4b\u7d4c\u7d4d\u7d4e\u7d4f\u7d50\u7d55\u7d5b\u7d5c\u7d5d\u7d5e\u7d61\u7d62\u7d64\u7d66\u7d68\u7d70\u7d71\u7d72\u7d73\u7d75\u7d76\u7d78\u7d79\u7d7c\u7d81\u7d82\u7d83\u7d86\u7d88\u7d89\u7d8c\u7d8f\u7d91\u7d93\u7d95\u7d98\u7d99\u7d9c\u7d9e\u7da0\u7da2\u7da3\u7da4\u7dab\u7dac\u7dad\u7daf\u7db0\u7db1\u7db2\u7db3\u7db4\u7db5\u7db8\u7db9\u7dba\u7dbb\u7dbd\u7dbe\u7dbf\u7dc4\u7dc7\u7dca\u7dcb\u7dcd\u7dcf\u7dd0\u7dd1\u7dd2\u7dd3\u7dd4\u7dd6\u7dd7\u7dd8\u7dd9\u7dda\u7ddc\u7ddd\u7dde\u7de0\u7de1\u7de3\u7de5\u7de6\u7de8\u7de9\u7dea\u7deb\u7dec\u7def\u7df1\u7df2\u7df4\u7df6\u7df9\u7dfb\u7dfc\u7dfd\u7dfe\u7dff\u7e00\u7e01\u7e02\u7e04\u7e08\u7e09\u7e0a\u7e0b\u7e10\u7e11\u7e15\u7e17\u7e1a\u7e1b\u7e1d\u7e1e\u7e1f\u7e23\u7e26\u7e27\u7e2b\u7e2d\u7e2e\u7e31\u7e32\u7e34\u7e35\u7e36\u7e37\u7e39\u7e3d\u7e3e\u7e43\u7e45\u7e46\u7e48\u7e4a\u7e4b\u7e4d\u7e50\u7e52\u7e54\u7e55\u7e56\u7e59\u7e5a\u7e5b\u7e5e\u7e61\u7e62\u7e64\u7e65\u7e69\u7e6a\u7e6b\u7e6d\u7e6e\u7e6f\u7e70\u7e73\u7e79\u7e7c\u7e7d\u7e7e\u7e7f\u7e84\u7e87\u7e88\u7e89\u7e8a\u7e8c\u7e8d\u7e8e\u7e8f\u7e92\u7e93\u7e94\u7e96\u7e98\u7e9c\u7e9d\u7f37\u7f3b\u7f3c\u7f3d\u7f3e\u7f41\u7f46\u7f47\u7f48\u7f4b\u7f4c\u7f4e\u7f59\u7f63\u7f70\u7f75\u7f77\u7f78\u7f80\u7f84\u7f85\u7f86\u7f88\u7f8b\u7f90\u7f97\u7fa2\u7fa3\u7fa5\u7fa8\u7fa9\u7fae\u7fb4\u7fb6\u7fc4\u7fc6\u7fd2\u7fd6\u7fdd\u7fe4\u7feb\u7fec\u7ff6\u7ff9\u7ffa\u7ffd\u8008\u8009\u800a\u8011\u802c\u802e\u802f\u803c\u8040\u8053\u8056\u805e\u805f\u8061\u8068\u806b\u806e\u806f\u8070\u8072\u8073\u8074\u8075\u8076\u8077\u8079\u807c\u807d\u807e\u8085\u8088\u808a\u808e\u8090\u8094\u80a7\u80a8\u80ac\u80b3\u80bb\u80df\u80e2\u80ee\u80f7\u8103\u8104\u8105\u8107\u8108\u810b\u8117\u811b\u8123\u812b\u8133\u8134\u8139\u8141\u814e\u8157\u8161\u8166\u816b\u8173\u8178\u8183\u8184\u8186\u8190\u8193\u8195\u8196\u819a\u819e\u81a0\u81a7\u81a9\u81b8\u81bd\u81be\u81bf\u81c8\u81c9\u81cb\u81cd\u81cf\u81d8\u81da\u81dd\u81df\u81e0\u81e2\u81e5\u81e8\u81ef\u81f0\u81fa\u81fd\u8203\u8207\u8208\u8209\u820a\u8213\u8216\u8217\u8218\u821d\u8227\u8229\u822e\u8241\u824a\u8259\u8262\u8263\u8264\u8265\u8266\u826a\u826b\u8271\u8276\u8277\u8281\u828c\u829a\u82bb\u82c5\u82e7\u82fd\u830a\u8310\u8318\u8330\u8332\u834a\u8355\u8358\u8373\u838a\u8391\u8395\u8396\u839f\u83a2\u83a7\u83ad\u83b5\u83be\u83d1\u83d3\u83d5\u83e6\u83ed\u4e7e\u83ef\u83f4\u83f7\u8405\u8407\u840a\u8414\u8415\u8416\u8417\u841e\u841f\u8421\u842c\u8432\u8434\u8435\u8445\u8449\u844a\u8452\u8455\u8460\u8462\u8466\u846f\u8477\u8483\u8490\u8493\u8494\u849e\u84ad\u84b7\u84bc\u84c0\u84c6\u84cb\u84da\u84de\u84e1\u84e4\u84ed\u84ee\u84ef\u84f4\u84fd\u8505\u8506\u8510\u8514\u8515\u8518\u851e\u8523\u8525\u8526\u852d\u8532\u8533\u8534\u8535\u8536\u853e\u8541\u8546\u854b\u854c\u854e\u8550\u8555\u8558\u855a\u8562\u8569\u856a\u856d\u856f\u8577\u857f\u8588\u858a\u858c\u8591\u8593\u8594\u8597\u8598\u8599\u859f\u85a6\u85a9\u85ab\u85ac\u85ad\u85b4\u85ba\u85bb\u85cc\u85cd\u85ce\u85dd\u85e5\u85e7\u85ea\u85ee\u85f3\u85f4\u85f6\u85f9\u85fa\u85fc\u85fd\u8600\u8602\u8603\u8604\u8606\u8607\u860a\u860b\u860d\u860e\u860f\u8610\u8613\u8615\u861a\u861d\u861e\u8622\u8628\u862d\u862f\u8637\u863a\u863d\u863f\u8640\u8641\u8646\u8655\u8656\u8657\u865b\u865c\u865d\u865f\u8667\u866f\u8675\u8689\u8698\u86a0\u86a6\u86ab\u86cd\u86d5\u86e0\u86fa\u86fb\u86fd\u86ff\u8706\u8716\u871d\u872f\u8739\u8745\u874b\u8755\u875f\u8766\u8768\u876f\u8771\u8778\u877f\u8784\u878e\u8799\u879e\u87a1\u87a2\u87bb\u87bf\u87c1\u87c4\u87c7\u87c8\u87da\u87e3\u87e9\u87ec\u87ef\u87f0\u87f2\u87f6\u87f8\u87fb\u8801\u8805\u8806\u8807\u880d\u880f\u8810\u8811\u8812\u8814\u8819\u881f\u8823\u8824\u8827\u8828\u8829\u882d\u8831\u8836\u8837\u883a\u883b\u8842\u8846\u8847\u8849\u8852\u8853\u8855\u885a\u885b\u885c\u885d\u885e\u885f\u889e\u889f\u88a0\u88b5\u88c4\u88ca\u88cc\u88cf\u88dc\u88dd\u88e0\u88e1\u88e6\u88e9\u88ed\u88f5\u88f6\u88fd\u8903\u8907\u890c\u890e\u8918\u8932\u8933\u8938\u893b\u8943\u8946\u8949\u894c\u894d\u894f\u8956\u895d\u8960\u8962\u8964\u8965\u8969\u896a\u896f\u8972\u8974\u8975\u897d\u8984\u8989\u898b\u898c\u898d\u898f\u8990\u8993\u8994\u8996\u8998\u8999\u899a\u89a1\u89a5\u89a6\u89a7\u89a9\u89aa\u89ac\u89af\u89b0\u89b2\u89b3\u89b4\u89b7\u89ba\u89bb\u89bd\u89bf\u89c0\u89d4\u89d5\u89d7\u89dd\u89e7\u89ea\u89ee\u89f4\u89f5\u89f6\u89f8\u89f9\u89fd\u8a02\u8a03\u8a06\u8a08\u8a0a\u8a0c\u8a0e\u8a10\u8a12\u8a13\u8a14\u8a15\u8a16\u8a17\u8a18\u8a19\u8a1b\u8a1d\u8a1f\u8a20\u8a21\u8a22\u8a23\u8a25\u8a29\u8a2a\u8a2b\u8a2d\u8a2e\u8a31\u8a33\u8a34\u8a36\u8a3a\u8a3b\u8a3c\u8a3d\u8a41\u8a46\u8a4b\u8a4e\u8a50\u8a51\u8a52\u8a54\u8a55\u8a56\u8a57\u8a58\u8a5b\u8a5e\u8a60\u8a61\u8a62\u8a63\u8a64\u8a66\u8a67\u8a69\u8a6b\u8a6c\u8a6d\u8a6e\u8a70\u8a71\u8a72\u8a73\u8a75\u8a76\u8a78\u8a7c\u8a7e\u8a7f\u8a84\u8a85\u8a86\u8a87\u8a88\u8a8c\u8a8d\u8a91\u8a92\u8a95\u8a96\u8a98\u8a9a\u8a9e\u8aa0\u8aa1\u8aa3\u8aa4\u8aa5\u8aa6\u8aa8\u8aaa\u8aac\u8aad\u8aaf\u8ab0\u8ab2\u8ab3\u8ab6\u8ab9\u8abc\u8abe\u8abf\u8ac2\u8ac4\u8ac7\u8ac9\u8acb\u8acd\u8acf\u8ad0\u8ad1\u8ad2\u8ad6\u8ad7\u8ad9\u8adb\u8adc\u8add\u8ade\u8ae0\u8ae1\u8ae2\u8ae4\u8ae6\u8ae7\u8ae9\u8aeb\u8aec\u8aed\u8aee\u8af1\u8af3\u8af6\u8af7\u8af8\u8afa\u8afc\u8afe\u8b00\u8b01\u8b02\u8b04\u8b05\u8b0a\u8b0c\u8b0e\u8b10\u8b13\u8b14\u8b15\u8b16\u8b17\u8b19\u8b1a\u8b1b\u8b1d\u8b20\u8b21\u8b28\u8b29\u8b2a\u8b2b\u8b2c\u8b33\u8b39\u8b3c\u8b3e\u8b3f\u8b41\u8457\u8b46\u8b49\u8b4b\u8b4c\u8b4d\u8b4e\u8b4f\u8b54\u8b56\u8b58\u8b59\u8b5a\u8b5b\u8b5c\u8b5f\u8b61\u8b62\u8b67\u8b68\u8b69\u8b6a\u8b6b\u8b6d\u8b6f\u8b70\u8b71\u8b72\u8b74\u8b75\u8b77\u8b78\u8b79\u8b7d\u8b7e\u8b7f\u8b80\u8b81\u8b83\u8b85\u8b8a\u8b8b\u8b8c\u8b8d\u8b8e\u8b8f\u8b90\u8b92\u8b93\u8b95\u8b96\u8b9a\u8b9b\u8b9c\u8b9e\u8c38\u8c3f\u8c40\u8c44\u8c48\u8c4b\u8c4e\u8c50\u8c52\u8c53\u8c54\u8c6c\u8c74\u8c76\u8c7c\u8c7f\u8c83\u8c8b\u8c8d\u8c8e\u8c93\u8c9b\u8c9d\u8c9e\u8ca0\u8ca1\u8ca2\u8ca6\u8ca7\u8ca8\u8ca9\u8caa\u8cab\u8cac\u8cad\u8cae\u8caf\u8cb0\u8cb2\u8cb3\u8cb4\u8cb6\u8cb7\u8cb8\u8cba\u8cbb\u8cbc\u8cbd\u8cbf\u8cc0\u8cc1\u8cc2\u8cc3\u8cc4\u8cc5\u8cc7\u8cc8\u8cc9\u8cca\u8ccd\u8cce\u8cd1\u8cd2\u8cd3\u8cd4\u8cd5\u8cd6\u8cd8\u8cd9\u8cda\u8cdb\u8cdc\u8cdd\u8cde\u8ce0\u8ce1\u8ce2\u8ce3\u8ce4\u8ce6\u8ce7\u8cea\u8ceb\u8cec\u8ced\u8cee\u8cf4\u8cf5\u8cf8\u8cfa\u8cfb\u8cfc\u8cfd\u8cfe\u8d01\u8d04\u8d05\u8d07\u8d08\u8d0a\u8d0b\u8d0d\u502e\u6c46\u8d0f\u8d10\u8d12\u8d13\u8d14\u8d16\u8d17\u8d18\u8d1b\u8d1c\u8d6c\u8d71\u8d7c\u8d82\u8d95\u8d99\u8da6\u8da8\u8dae\u8db2\u8dc0\u8de1\u8de5\u8df4\u8e01\u8e08\u8e0b\u8e10\u8e28\u8e2b\u8e30\u8e32\u8e34\u8e46\u8e4c\u8e4f\u8e53\u8e55\u8e5f\u8e60\u8e63\u8e64\u8e6e\u8e75\u8e77\u8e79\u8e7a\u8e7b\u8e82\u8e83\u8e89\u8e8a\u8e8b\u8e8d\u8e91\u8e92\u8e93\u8e95\u8e99\u8e9a\u8e9b\u8ea1\u8ea2\u8ea5\u8ea6\u8eaa\u8ead\u8eb0\u8eb1\u8eb3\u8eb6\u8eb7\u8ebc\u8ec0\u8ec1\u8ec3\u8ec4\u8ec6\u8eca\u8ecb\u8ecc\u8ecd\u8ed1\u8ed2\u8ed4\u8eda\u8edb\u8edf\u8ee2\u8ee3\u8eeb\u8ef0\u8ef6\u8ef8\u8ef9\u8efa\u8efb\u8efc\u8efd\u8efe\u8f03\u8f05\u8f07\u8f08\u8f09\u8f0a\u8f0c\u8f0f\u8f12\u8f13\u8f14\u8f15\u8f19\u8f1b\u8f1c\u8f1d\u8f1e\u8f1f\u8f25\u8f26\u8f29\u8f2a\u8f2c\u8f2d\u8f2f\u8f33\u8f37\u8f38\u8f3b\u8f3c\u8f3e\u8f3f\u8f40\u8f42\u8f44\u8f45\u8f46\u8f49\u8f4d\u8f4e\u8f54\u8f5d\u8f5f\u8f61\u8f62\u8f64\u8f9d\u8fa0\u8fa1\u8fa2\u8fa4\u8fa6\u8fa7\u8faa\u8fac\u8fad\u8fae\u8faf\u8fb2\u8fb3\u8fbc\u8fc3\u8fc6\u8fca\u8fcf\u8fef\u8ff1\u8ff4\u8ffb\u9008\u9013\u9015\u9019\u9023\u9025\u9029\u902a\u902c\u9030\u9031\u9032\u9037\u9039\u903a\u9040\u9045\u9049\u904a\u904b\u904e\u9054\u9055\u9059\u905c\u905e\u905f\u9060\u9061\u9069\u9072\u9076\u9077\u9078\u907a\u907c\u9081\u9084\u9087\u9089\u908a\u908c\u908e\u908f\u9090\u90ab\u90c9\u90cc\u90cd\u90d2\u90de\u90df\u90f5\u90f6\u90f7\u9106\u9109\u910a\u9112\u9114\u9115\u9116\u9125\u9127\u912d\u9130\u9132\u9134\u9136\u9137\u913a\u913c\u913d\u55ec\u9147\u9148\u9154\u9167\u9183\u9186\u9195\u9196\u9197\u919c\u919e\u91a4\u91ab\u91ac\u91b1\u91b8\u91bb\u91bc\u91bf\u91c0\u91c1\u91c3\u91c4\u91c5\u91c6\u91c8\u91cb\u91d0\u91d3\u91d4\u91d5\u91d7\u91d8\u91d9\u91dd\u91e1\u91e3\u91e4\u5f77\u5f8c\u5fb5\u91e7\u91e9\u91ec\u91ef\u91f5\u91f7\u91f9\u9200\u9201\u9203\u9204\u9205\u9206\u9208\u9209\u920d\u920e\u9210\u9211\u9212\u9214\u9215\u921e\u921f\u9221\u9223\u9225\u9226\u9227\u922e\u9230\u9233\u9234\u9237\u9238\u9239\u923a\u923d\u923e\u923f\u9240\u9244\u9245\u7315\u5925\u5ed1\u9246\u9248\u9249\u924b\u924d\u924f\u9251\u9255\u9257\u925a\u925b\u925e\u9262\u9264\u9266\u9268\u9269\u926c\u926d\u9271\u9276\u9278\u927a\u927b\u927f\u9280\u9281\u9283\u9285\u928d\u928f\u9291\u9292\u9293\u9295\u9296\u9298\u929a\u929b\u929c\u929e\u92a0\u92a3\u92a5\u92a6\u92a8\u92a9\u92aa\u92ab\u92ac\u92ad\u92b1\u92b2\u92b3\u92b7\u92b9\u92bb\u92bc\u92bd\u92be\u92c1\u92c3\u92c5\u92c7\u92cc\u92cf\u92d2\u92d5\u92d6\u92d9\u92db\u92dd\u92df\u92e2\u92e3\u92e4\u92e5\u92e6\u92e8\u92e9\u92ea\u92ed\u92ee\u92ef\u92f0\u92f1\u92f3\u92f5\u92f6\u92f8\u92fc\u9301\u9304\u9306\u9307\u9308\u6e16\u930f\u9310\u9312\u9315\u9318\u9319\u931a\u931b\u931f\u9320\u9321\u9322\u9326\u9328\u9329\u932b\u932c\u932e\u932f\u9331\u9332\u9333\u9336\u9337\u9338\u9341\u9346\u9347\u9348\u934a\u934b\u934d\u9354\u9358\u935a\u935b\u9360\u9364\u9365\u9368\u9369\u936b\u752f\u936c\u9370\u9373\u9375\u9376\u937a\u937c\u937e\u937f\u9382\u9387\u938a\u938b\u9392\u9394\u9396\u9397\u9398\u939a\u939b\u939c\u939d\u93a0\u93a1\u93a2\u93a3\u93a6\u93a7\u93a9\u93aa\u93ab\u93ac\u93ad\u93ae\u93af\u93b0\u93b2\u93b3\u93b5\u93b8\u93bb\u93bc\u93bd\u93bf\u93c1\u93c3\u93c6\u93c7\u93c8\u93cc\u93cd\u93d0\u93d1\u93d7\u93d8\u93db\u93dc\u93dd\u93de\u93df\u93e0\u93e1\u93e2\u93e4\u93e5\u93e8\u93ec\u93f0\u93f3\u93f5\u93f7\u93f9\u93fa\u93fd\u9403\u940b\u9410\u9412\u9413\u9414\u9417\u9418\u9419\u941a\u941d\u941f\u9420\u9424\u9426\u9427\u9428\u9429\u942b\u942e\u5ddb\u740a\u745b\u9430\u9432\u9433\u9435\u9436\u9438\u943a\u943d\u943f\u9440\u9444\u944a\u944c\u9451\u9452\u9454\u9455\u945a\u945b\u945c\u945e\u9460\u9463\u9464\u9465\u946c\u946d\u9470\u9471\u9472\u9477\u947b\u947c\u947d\u947e\u947f\u9481\u9482\u9484\u68f9\u9577\u957e\u9580\u9582\u9583\u9585\u9586\u9587\u9588\u9589\u958b\u958c\u958e\u958f\u9591\u9592\u9593\u9594\u9597\u9598\u9599\u95a0\u95a1\u95a2\u95a3\u95a4\u95a5\u95a7\u95a8\u95a9\u95ab\u95ac\u95ad\u95b1\u95b2\u95b3\u95b4\u95b5\u95b6\u95b7\u95b8\u95b9\u95bb\u95bc\u95bd\u95be\u95bf\u95c0\u95c1\u95c3\u95c5\u95c6\u95c8\u95ca\u95cb\u6998\u95cc\u95cd\u95d0\u95d2\u95d3\u95d4\u95d5\u95d6\u95d7\u95d8\u95d9\u95da\u95dc\u95dd\u95de\u95e0\u95e1\u95e2\u95e4\u95e5\u9625\u9626\u9627\u9629\u962c\u962f\u9652\u9656\u9657\u9658\u965c\u965d\u965e\u9663\u9665\u9666\u9670\u9673\u9678\u9679\u967b\u967d\u967f\u9682\u9684\u9689\u968a\u66db\u968c\u968e\u9695\u9696\u969a\u969b\u969d\u969f\u96a0\u96a3\u96a6\u96a8\u96aa\u96ad\u96b1\u96b2\u96b4\u96b7\u96b8\u96bb\u96cb\u96d1\u96d6\u96d9\u96db\u96dc\u96de\u96e2\u96e3\u96e7\u96f0\u96f2\u96fb\u96fc\u970a\u9711\u9717\u971a\u971b\u9721\u9727\u9734\u973d\u9740\u9741\u9742\u9744\u9746\u9748\u9749\u974c\u9751\u975a\u975c\u975d\u9763\u9764\u9766\u9768\u976d\u9771\u9775\u978c\u978f\u979b\u979d\u65bc\u97a6\u97a9\u97b0\u97b1\u97b5\u97b9\u97bd\u97be\u97c0\u97c1\u97c3\u97c6\u97c8\u97c9\u97cb\u97cc\u97d2\u97d3\u97d9\u97da\u97dc\u97dd\u97de\u97e4\u97ee\u97ef\u97f2\u97fb\u97fc\u97ff\u9801\u9802\u9803\u9805\u9806\u9807\u9808\u9809\u980a\u980c\u980e\u8080\u980f\u9810\u9811\u9812\u9813\u9817\u9818\u981a\u981c\u981f\u9821\u9824\u9825\u9826\u982a\u982b\u982c\u982d\u9830\u9832\u9834\u9837\u9838\u9839\u983a\u983b\u983c\u983d\u983e\u983f\u9844\u9846\u9847\u9848\u984a\u984b\u984c\u984d\u984e\u984f\u9852\u9853\u9854\u9856\u9858\u9859\u985a\u985b\u985e\u9862\u9865\u9866\u9867\u9868\u986b\u986f\u9870\u9871\u9873\u9874\u98a8\u98ad\u98ae\u98af\u98b1\u98b3\u98b6\u98b7\u98b8\u98ba\u98bb\u98bc\u98c0\u98c3\u98c4\u98c5\u98c6\u98c7\u98c8\u98ca\u98db\u98dc\u98e1\u98e2\u98e3\u98e4\u98e5\u98e6\u98e9\u98ea\u98eb\u98ed\u98ee\u98ef\u98f0\u98f1\u98f2\u98f4\u98f8\u98f9\u98fb\u98fc\u98fd\u98fe\u9901\u9903\u9904\u9905\u953a\u9908\u9909\u990a\u990c\u9911\u9912\u9913\u9914\u9915\u9916\u9918\u9919\u991a\u991b\u991c\u991d\u991e\u991f\u9920\u9921\u9927\u9928\u992a\u992c\u9931\u9933\u9935\u9939\u993a\u993b\u993c\u993d\u993e\u993f\u9941\u9943\u9944\u9945\u9948\u9949\u994a\u994b\u994c\u994d\u9951\u9952\u9957\u995a\u995c\u995d\u995e\u9962\u7a70\u99ac\u99ad\u99ae\u99b1\u99b3\u99b4\u99b9\u99bf\u99c1\u99c6\u99c8\u99d0\u99d1\u99d2\u99d4\u99d5\u99d8\u99d9\u99db\u99dd\u99de\u99df\u99e0\u99e1\u99e2\u99e6\u99ed\u99f0\u99f1\u99f5\u99f8\u766f\u88b7\u99ff\u9a01\u9a02\u9a05\u9a08\u9a0d\u9a0e\u9a0f\u9a10\u9a12\u9a13\u9a16\u9a18\u9a19\u9a21\u9a23\u9a24\u9a2b\u9a2d\u9a2e\u9a30\u9a36\u9a37\u9a38\u9a3b\u9a3e\u9a40\u9a41\u9a42\u9a43\u9a44\u9a45\u9a46\u9a4a\u9a4c\u9a4d\u9a4f\u9a51\u9a55\u9a57\u9a58\u9a5a\u9a5b\u9a5d\u9a5f\u9a62\u9a63\u9a64\u9a65\u9a66\u9a69\u9a6a\u9aaf\u9ab5\u9abd\u9abe\u9ac3\u9ac4\u9ac8\u9acf\u9ad2\u9ad4\u9ad5\u9ad6\u9ad7\u9ad9\u9ae0\u9ae4\u9ae5\u9ae8\u9ae9\u9aea\u9aee\u9af0\u9b00\u9b02\u9b06\u9b09\u9b0d\u9b1a\u9b1b\u9b22\u9b25\u9b26\u9b27\u9b28\u9b29\u9b2a\u9b2c\u9b2d\u9b2e\u9b30\u9b31\u9b34\u9b3d\u9b40\u9b4e\u9b50\u9b57\u9b58\u9b5a\u9b5b\u9b66\u9b68\u9b6f\u9b72\u9b74\u9b77\u9b7a\u9eb4\u9b81\u9b89\u9b8c\u9b8e\u9b90\u9b91\u9b92\u9b93\u9b99\u9b9a\u9b9e\u9ba6\u9baa\u9bab\u9bad\u9bae\u9bb6\u9bb7\u9bb8\u9bc0\u9bc1\u9bc2\u9bc7\u9bc9\u9bca\u9bcb\u9bd4\u9bd5\u9bd6\u9bd7\u9bdb\u9be1\u9be2\u9be4\u9be7\u9be8\u9bea\u9beb\u9bf0\u9bf6\u9bf7\u9bfa\u9bfd\u9bff\u9c00\u9c08\u9c09\u9c0d\u9c10\u9c12\u9c13\u9c1c\u9c1f\u9c23\u9c25\u9c27\u9c28\u9c29\u9c2d\u9c31\u9c32\u9c33\u9c35\u9c37\u9c39\u9c3b\u9c3c\u9c3e\u9c48\u9c49\u9c4d\u9c4f\u9c51\u9c52\u9c53\u9c54\u9c56\u9c57\u9c58\u9c5f\u9c60\u9c63\u9c67\u9c68\u9c6d\u9c6e\u9c77\u9c78\u9c7a\u9c7b\u9ebd\u9f44\u9ce5\u9ce7\u9ce9\u9ceb\u9cec\u9cee\u9cef\u9cf2\u9cf3\u9cf4\u9cf6\u9d06\u9d07\u9d08\u9d09\u9d0c\u9d0e\u9d0f\u9d12\u9d15\u9d1b\u9d1c\u9d1d\u9d1e\u9d1f\u9d23\u9d26\u9d27\u9d28\u9d2a\u9d2c\u9d2f\u9d30\u9d35\u9d37\u9d3b\u9d3c\u9d3f\u9d42\u9d43\u9d44\u9d49\u9d51\u9d52\u9d53\u9d55\u9d5c\u9d5d\u9d5e\u9d60\u9d61\u9d6a\u9d6c\u9d6d\u9d6f\u9d70\u9d72\u9d76\u9d77\u9d84\u9d87\u9d89\u9d8a\u9d8f\u9d95\u9d96\u9d98\u9d9a\u9da1\u9da4\u9da5\u9da9\u9daa\u9dac\u9dae\u9daf\u9db2\u9db4\u9db9\u9dba\u9dbb\u9dbc\u9dbd\u9dbf\u9dc0\u9dc1\u9dc2\u9dc4\u9dc6\u9dca\u9dd3\u9dd6\u9dd7\u9dd9\u9dda\u9de5\u9de6\u9dea\u9deb\u9def\u9df2\u9df4\u9df8\u9df9\u9dfa\u9dfd\u9dff\u9e07\u9e0e\u9e0f\u9e15\u9e16\u9e1a\u9e1b\u9e1d\u9e1e\u9e75\u9e76\u9e78\u9e79\u9e7a\u9e7b\u9e7c\u9e7d\u9e81\u9e84\u9e8f\u9e90\u9e95\u9e97\u9e9e\u9ea2\u9ea4\u9ea5\u9ea9\u9eaa\u9eab\u9eac\u9eaf\u9eb1\u9eb5\u9eba\u9ebc\u9ebf\u9ec3\u9ecc\u9ed2\u9ed9\u9ede\u9ee8\u9ef1\u9ef2\u9ef4\u9ef7\u9efd\u9eff\u9f03\u9f04\u9f05\u9f07\u9f08\u9f09\u9f11\u9f14\u9f15\u9f1d\u9f21\u9f26\u9f34\u9f45\u9f4a\u9f4b\u9f4f\u9f52\u9f53\u9f54\u9f55\u9f56\u9f57\u9f59\u9f5a\u9f5c\u9f5f\u9f60\u9f61\u9f63\u9f65\u9f66\u9f67\u9f69\u9f6a\u9f6c\u9f72\u9f76\u9f77\u9f7d\u9f8d\u9f8e\u9f8f\u9f90\u9f92\u9f94\u9f95\u9f97\u9f9c\u9f9d\u9f9e\u9fa1\u9fa2\u9fa3"
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mTraditional:Ljava/lang/String;
+
+    const-string v0, "\u4e11\u4e16\u4e22\u4e18\u4e24\u9149\u5e76\u4e95\u864e\u4e58\u4e10\u7ea0\u59cb\u8fdb\u4e7e\u9f9f\u4e7e\u4e71\u4e8b\u4e8e\u56db\u5c81\u4e98\u4e9a\u658b\u4e9a\u5927\u4eab\u4eac\u591c\u98de\u5ec9\u96c6\u96c6\u4ea1\u51b0\u4f5b\u4ed9\u957f\u5203\u4ed3\u4f4e\u5f79\u592b\u5e11\u5005\u5f87\u4fe1\u4f60\u4f90\u80c4\u4f3c\u4f2b\u5e03\u5360\u6cd5\u9169\u5e76\u6765\u89e5\u9634\u7c73\u4ed1\u5b58\u4f3c\u6234\u4f5e\u5c3d\u50d2\u4fa3\u5c40\u7537\u4fe3\u7cfb\u8f85\u4fa0\u4fee\u4f21\u79c1\u6548\u5907\u9b3b\u6b23\u4f25\u5e76\u4fe9\u4feb\u4ed3\u4e2a\u500f\u4eec\u5e78\u4eff\u503c\u4f26\u4ff1\u776c\u4fed\u4f5e\u524d\u4f1f\u8d5d\u4f83\u5953\u903c\u4fa7\u4fa6\u5077\u5907\u54b1\u5022\u4f2a\u53df\u9a82\u6770\u4f27\u6ec0\u4f1e\u5907\u6548\u4f10\u5e76\u5bb6\u4f63\u506c\u4f20\u4f1b\u503a\u4f24\u503e\u507b\u5907\u4ec5\u4f65\u4ed9\u52a8\u4fa8\u7a98\u4ec6\u655e\u4f2a\u51e0\u60e0\u821b\u4fa5\u507e\u6076\u96c7\u4ed9\u50e9\u4ef7\u4eea\u4fca\u4fac\u4ebf\u4fa9\u4fed\u50bb\u50a4\u50a7\u4fe6\u4faa\u62df\u5c3d\u4f60\u507f\u8d28\u4f18\u8c6a\u50a8\u500f\u4fea\u6512\u50a9\u50a5\u4fe8\u50ab\u7c2a\u51f6\u5151\u5151\u5154\u957f\u513f\u513f\u5156\u59cb\u515c\u6643\u4ea1\u5185\u4e24\u4fde\u5929\u5180\u827a\u5e3d\u5189\u518c\u5250\u5192\u80c4\u5b9c\u9002\u8499\u6700\u5bc7\u5bcc\u5199\u5e42\u8bb6\u6cee\u6cef\u6d7c\u6d82\u51c0\u51bb\u7691\u6ca7\u51c6\u51db\u6e0e\u51e1\u51e1\u5c45\u5904\u98ce\u98ce\u98ce\u51ef\u5c34\u51ed\u51fd\u5203\u521b\u5209\u4f36\u522b\u52ab\u52ab\u5220\u5256\u5241\u52ab\u523a\u522d\u5219\u9509\u514b\u5239\u521b\u5299\u522c\u521b\u521a\u5265\u9ee5\u5251\u5242\u5250\u5269\u5251\u5240\u521b\u94f2\u622e\u5212\u672d\u6580\u9570\u5267\u5218\u523d\u523f\u5251\u5251\u5242\u5251\u5251\u8d28\u52b3\u529d\u903c\u6548\u52b2\u6555\u52c7\u524b\u5026\u622e\u6765\u52c9\u52a8\u52d6\u52a1\u52cb\u80dc\u52b3\u622e\u527d\u52bf\u7ee9\u729f\u527f\u529d\u52da\u8df7\u5267\u52a2\u52cb\u52cb\u52b1\u529d\u5300\u4e24\u5308\u4e10\u4e10\u5311\u8111\u67e9\u5320\u7095\u7b32\u7ba7\u5321\u5326\u6c47\u532e\u5941\u5941\u691f\u67e9\u533a\u8fc5\u5eff\u5352\u4e16\u534f\u5355\u7387\u897f\u8282\u909b\u6064\u5374\u5373\u816d\u819d\u5e9e\u5d16\u538d\u5385\u5395\u539f\u5386\u4ec5\u5ed2\u538c\u5386\u5382\u5389\u4e25\u53a3\u6e90\u53bb\u60e0\u53c2\u53c2\u53c2\u6536\u592c\u540f\u5047\u53df\u5c09\u4e1b\u5bf8\u5423\u5434\u5450\u5415\u5434\u5c3a\u5443\u55dc\u5492\u548c\u5555\u8bbb\u5458\u8bf1\u5457\u5523\u54d1\u542f\u5423\u95ee\u542f\u542f\u5556\u54d1\u542f\u54f2\u8854\u54b1\u5524\u5ca9\u55bb\u4e27\u5403\u4e54\u5355\u54df\u557c\u545b\u556c\u551d\u5417\u545c\u916a\u5522\u54d4\u55f7\u53f9\u54ee\u55bd\u547c\u556f\u5455\u5567\u5c1d\u551b\u5578\u54d7\u7136\u5520\u5578\u53fd\u54d3\u55e5\u5452\u5574\u6076\u5403\u5556\u5668\u55e5\u5618\u5645\u541f\u556e\u549d\u5e94\u54d2\u54dd\u54d5\u55f3\u54d9\u55b7\u9053\u5428\u5f53\u549b\u5413\u5484\u55c5\u54dc\u5c1d\u568f\u565c\u5612\u556e\u54f2\u6d4f\u56ca\u54bd\u5456\u5499\u5556\u98a6\u5411\u4eb8\u55be\u4e25\u998b\u5624\u5683\u56a3\u556d\u55eb\u56a3\u5181\u5453\u5570\u82cf\u8270\u5631\u8c30\u556e\u56de\u56e0\u6e0a\u56f1\u56de\u56fd\u56fe\u56fd\u65e5\u56fd\u80ce\u56fd\u51fd\u56f5\u56fd\u56f4\u5706\u5703\u56ed\u5706\u56fe\u56fe\u56e2\u571e\u571f\u58a3\u6b81\u57d9\u9631\u7ecf\u5fcc\u577b\u5de0\u5802\u588c\u53f0\u4e18\u57a2\u7a74\u9644\u96c9\u5773\u5806\u579b\u5b88\u575d\u5782\u5ce1\u54f2\u57d2\u91ce\u5824\u57ad\u7897\u91c7\u9677\u6267\u6ce5\u575a\u57a9\u5cb8\u57b4\u7a81\u584d\u57da\u5821\u9636\u5c27\u62a5\u573a\u754c\u5792\u5757\u8314\u57b2\u5851\u57d8\u584d\u6d82\u51a2\u5873\u846c\u5806\u586b\u575e\u57d9\u9635\u9698\u76d0\u57f3\u573a\u5c18\u5364\u5811\u7816\u57ab\u5848\u5854\u589e\u5760\u7857\u57a1\u58a9\u5730\u5815\u575b\u575f\u968d\u575b\u57af\u70e8\u57a6\u57e4\u7586\u91ce\u5b66\u575b\u574f\u57b1\u58e4\u5811\u57d9\u73ba\u538b\u5792\u5739\u5786\u575b\u574f\u5784\u5784\u777f\u575c\u5edb\u57d9\u575d\u5846\u58ee\u58f9\u5356\u58ee\u58f6\u58f6\u5a7f\u58f6\u5bff\u5bff\u58f9\u658b\u53d8\u590f\u536f\u591a\u6674\u591f\u68a6\u68a6\u592a\u6bd4\u5939\u70b9\u5942\u755a\u5965\u5956\u5941\u593a\u5956\u594b\u59f9\u5ab8\u5986\u5992\u4f60\u4f84\u59ca\u59d7\u598a\u5793\u5a1f\u5978\u5978\u4f84\u598d\u59c6\u5a31\u5986\u5ad4\u59a9\u5a31\u5a04\u6590\u59fb\u5987\u6deb\u5a05\u4e3d\u5060\u5077\u4eb2\u5987\u5a32\u5a55\u5077\u59ab\u5aaa\u5988\u5ab2\u59aa\u50b2\u5ae9\u5b37\u59a9\u5a34\u5a34\u5a73\u59ab\u5aad\u5a06\u5b3f\u5a75\u5a07\u7f8e\u5af1\u8885\u5ad2\u5a18\u5b37\u5ad4\u5976\u5a74\u5a76\u5174\u6635\u61d2\u5a18\u61d2\u5a74\u5a08\u5b53\u4fe1\u55e3\u80ce\u5b59\u6394\u5b73\u5b66\u64d8\u5b7d\u5a74\u5b6a\u5197\u7a79\u8089\u5b9c\u9631\u5b9e\u5c4e\u5bab\u91c7\u5bc6\u5bc7\u91c7\u51a4\u9752\u9e64\u5bdd\u5b81\u7f6e\u5bbd\u5b81\u5bdd\u5b9e\u5b81\u5ba1\u5199\u5bbd\u5ba0\u5b9d\u5bf9\u53f5\u4e13\u514b\u5c06\u4e13\u5bfb\u5bf9\u5bfc\u5c14\u5c14\u83fd\u5c1a\u4e48\u9c9c\u9c9c\u5c2a\u5c25\u5c2a\u5c2a\u5c34\u5c34\u5c34\u5c4a\u5c38\u5c43\u6f0f\u5c4f\u5c49\u5c49\u5c61\u5c42\u5c66\u5c69\u5c5e\u5c43\u4ed9\u5cb8\u4f1a\u4f1a\u51fa\u5188\u5cad\u5cab\u6cd5\u5cd2\u5361\u5cdb\u5ce8\u5cf0\u5c98\u5d58\u5c9b\u5ce1\u5d07\u5d03\u5d11\u6606\u5d16\u5c97\u5d19\u4ed1\u5ce5\u5d12\u5d1b\u5cbd\u5d1f\u5d5b\u5cd9\u5d47\u5c9a\u5ca9\u5c81\u5d14\u6eaa\u5dc5\u5d6f\u5d43\u5d5d\u5d2d\u5d2d\u5c96\u5c9b\u5c9b\u9686\u5d5a\u5d26\u5d02\u5d9b\u5ce4\u5ce3\u5d95\u5da2\u5cc4\u5cc3\u9669\u5730\u5d58\u5c9b\u5cad\u5dc0\u5c7f\u5cb3\u5cbf\u5ca9\u5ce6\u5dc5\u5dc5\u5ca9\u5ca9\u5dd8\u5de2\u5def\u536e\u662d\u537a\u5dfd\u5377\u531d\u7eb8\u888b\u5e05\u5e08\u88d9\u5e26\u5f52\u5e10\u5e26\u5e27\u5e0f\u5e2e\u5fbd\u5e3c\u5e3b\u5e2e\u5e1c\u5e01\u5e01\u8499\u5e2e\u5e31\u8955\u5e76\u5e72\u51e0\u4ec4\u5e7f\u4e48\u5e84\u5e93\u677e\u5eb6\u5bd3\u5e99\u5ecb\u5395\u53a2\u5e9f\u53a9\u53a6\u5ebc\u53a9\u53a9\u836b\u53a8\u53ae\u5e99\u5382\u5e91\u5e9f\u5e7f\u5eea\u5e90\u5385\u5385\u5de1\u8fea\u8feb\u56de\u4e43\u5efb\u5958\u58f9\u8d30\u53c1\u8d30\u5f11\u540a\u5f2a\u5f20\u5f3a\u5f3c\u97d8\u5f39\u767c\u522b\u5f39\u5f25\u5f2f\u6c47\u5f59\u5f5d\u5f5d\u5f5d\u84a6\u84a6\u5f66\u96d5\u5f68\u4f5b\u5f80\u965f\u5f84\u4ece\u4ece\u4ece\u5f95\u501f\u5065\u904d\u590d\u5f77\u5f81\u5fb7\u5f81\u5f7b\u4fa5\u4ec1\u4ec1\u5e06\u5e94\u609f\u5306\u60b4\u5c24\u5306\u604d\u607f\u6052\u601d\u602a\u541d\u803b\u60a6\u5fb7\u60e0\u6058\u60a6\u541d\u6016\u4f23\u60ae\u5306\u607c\u6076\u8bef\u5fb7\u6005\u95f7\u51c4\u548c\u60d5\u6b23\u6076\u63d4\u607f\u5fb7\u607c\u607d\u607b\u60db\u6096\u97ea\u52c9\u61a9\u606a\u7231\u60ec\u61e6\u60ab\u5ac9\u60e7\u6006\u60c4\u607a\u6574\u6111\u614e\u535a\u5ffe\u607f\u6817\u6001\u6120\u6129\u527d\u60e8\u60ed\u60ed\u6078\u60ef\u60ab\u6004\u6002\u8651\u4f24\u60ad\u6151\u5e86\u7737\u621a\u621a\u6b32\u51ed\u5fe7\u6078\u77a0\u61a9\u60eb\u601c\u51ed\u6126\u616d\u616d\u60ee\u60f0\u619d\u6124\u61a5\u60af\u6003\u5baa\u5fd0\u5fc6\u5766\u6073\u5e94\u603f\u61d4\u6000\u50fe\u6079\u5446\u62df\u8499\u603c\u61d1\u6079\u5fe7\u6024\u60e9\u5fcf\u61d2\u6000\u60ac\u5fcf\u60e7\u6b22\u6151\u604b\u6206\u6206\u620b\u8d3c\u621b\u6218\u6217\u622c\u620f\u6218\u620f\u6237\u6237\u5384\u536f\u5728\u65bc\u62d8\u634a\u62d4\u62d7\u79c9\u67f7\u629b\u62d6\u62dc\u62b5\u636e\u6269\u8fc1\u6306\u5f04\u62ff\u6289\u4e3e\u6332\u5f04\u6412\u631f\u63d2\u6551\u65c5\u641c\u64d2\u820d\u626a\u5377\u6816\u626b\u62a1\u62b5\u631c\u6323\u6302\u91c7\u5254\u6252\u63ed\u6377\u6414\u78b0\u62e3\u634f\u626c\u6362\u63a9\u63ea\u6325\u63d2\u80cc\u6447\u603b\u6784\u63ff\u635f\u6447\u6363\u6376\u6247\u62d3\u638f\u62a2\u62f3\u69a8\u6342\u625b\u641c\u63b4\u63bc\u6402\u6374\u63f8\u631a\u631a\u62a0\u629f\u63ba\u7275\u51fb\u6487\u635e\u63d6\u6326\u6491\u6320\u637b\u6322\u64cd\u63b8\u63b8\u62e8\u626f\u629a\u64c6\u6251\u63ff\u5212\u6405\u631e\u631d\u6361\u62e5\u63b3\u62e9\u6251\u51fb\u6321\u63a5\u62c5\u643a\u636e\u63b9\u6324\u62ac\u6363\u63fd\u4e3e\u62df\u62a4\u622a\u6448\u62e7\u6401\u63b7\u6269\u6469\u64b7\u644a\u6446\u64de\u64b8\u6270\u64c2\u6445\u6512\u64b5\u62e2\u62e6\u6484\u6400\u64ba\u643a\u6444\u6343\u6512\u631b\u644a\u6432\u6405\u63fd\u8003\u53e9\u53d9\u6559\u8d25\u53d9\u5178\u6387\u626c\u654c\u6570\u9a71\u657f\u7f2e\u655b\u6bd9\u6569\u6569\u5b66\u9f50\u9f50\u658b\u6593\u5347\u659d\u65a9\u65ab\u65ab\u65ab\u65ad\u65c6\u65d7\u65d2\u6577\u65d6\u5e1c\u5e61\u5e61\u65c3\u65e2\u7978\u534f\u6625\u5347\u6603\u6609\u614e\u660f\u6e29\u51ac\u6602\u65f7\u65f6\u6643\u768e\u664b\u66c8\u8d45\u663c\u6f88\u6662\u665a\u6670\u6653\u6655\u6656\u6620\u6674\u65f8\u666e\u66d2\u7693\u7545\u6c14\u5386\u6682\u4eb5\u66a4\u6635\u66a8\u6654\u6654\u5386\u6619\u6653\u5411\u661f\u66b4\u66a7\u6654\u65f7\u53e0\u663d\u6652\u70db\u66f3\u4e66\u66f9\u66fe\u52d6\u4f1a\u88e8\u6717\u660e\u671b\u80f4\u6717\u80e7\u672f\u6735\u4e1c\u677e\u6960\u4e2b\u6866\u6755\u680c\u6834\u62d0\u67bc\u67ff\u8616\u6959\u677e\u6960\u6805\u67e5\u67e9\u67f3\u6885\u8363\u5951\u686d\u520a\u67cf\u67bb\u7b4f\u62f6\u6a31\u67f3\u6808\u676f\u681d\u67f3\u6746\u6800\u6752\u67a7\u6761\u67ad\u677e\u68a8\u69df\u68a8\u5f03\u67c4\u68cb\u67a8\u67a3\u680b\u6a0a\u6808\u6816\u68be\u7897\u4e58\u6860\u695a\u68c0\u89c4\u68ec\u68d5\u7b3a\u533e\u6768\u715c\u67ab\u692d\u6986\u67cd\u6862\u4e1a\u6885\u6781\u4e50\u69da\u8257\u6893\u5e72\u6769\u8363\u6864\u69c1\u69d9\u8028\u6784\u67aa\u6885\u6149\u6760\u684c\u6a50\u6865\u6837\u680a\u6851\u68bf\u6920\u6901\u6982\u6982\u692e\u6868\u6922\u69d4\u89c4\u6869\u4e50\u679e\u704c\u6a79\u6881\u697c\u6807\u67d8\u67a2\u6837\u6761\u6743\u68c7\u4e1b\u6734\u6811\u6866\u692b\u6861\u69b4\u6865\u8563\u6a5b\u673a\u692d\u67e0\u6a2a\u67f3\u69d4\u6aa9\u6749\u67fd\u6734\u6863\u6867\u69da\u68c0\u6a2f\u680e\u68bc\u67b1\u68cb\u69df\u67e0\u69db\u68cb\u6993\u68f9\u67dc\u693f\u51f3\u6a71\u85df\u6a79\u69e5\u6988\u6809\u691f\u6a7c\u680e\u68bf\u6a71\u69e0\u680c\u67a5\u6a65\u6987\u8616\u680a\u6a35\u6989\u68c2\u6a31\u6a83\u680f\u6989\u4e1b\u6743\u90c1\u6924\u6ad5\u683e\u6b0b\u6984\u90c1\u68c2\u7f50\u6b3e\u94a6\u6b3e\u53f9\u6b27\u6b22\u5578\u7f2e\u655b\u6581\u6b24\u6b22\u6b65\u6b65\u524d\u6da9\u9f7f\u8e35\u5c81\u5c81\u5386\u5386\u5f52\u6b79\u6b81\u592d\u6b8b\u6b92\u6b87\u9e31\u6b9a\u6581\u50f5\u6b93\u6ba1\u6b7c\u6b7c\u6740\u58f3\u58f3\u6bc1\u6bb4\u6bcf\u6bd7\u97a0\u7403\u97a0\u5c44\u6bff\u6bf9\u6bf5\u7266\u6be1\u6be1\u6c07\u6a5b\u6c14\u6c16\u6c16\u6c14\u6c22\u6c29\u6c21\u6c27\u6c32\u51b0\u6c34\u6eba\u6cdb\u6c94\u6cdb\u6cc5\u6c61\u6c61\u6c3f\u9631\u51b3\u51b1\u6ca1\u51b2\u971f\u6d3e\u51b5\u6ef9\u6eaf\u76e5\u6d1b\u6cc4\u6c79\u51c0\u6f18\u6d43\u6e17\u6cfe\u8385\u6cea\u6da8\u51c9\u51c4\u6cea\u6d59\u6e0c\u51c0\u51cc\u6ca6\u6e0a\u6d9e\u6e05\u6d45\u996e\u6cca\u6e0a\u6e0a\u6e34\u6d4e\u6d89\u6da9\u6f2a\u6eaa\u6e0a\u6da3\u51cf\u6ca8\u6da1\u6fe1\u6d4b\u6d51\u51d1\u9910\u6d26\u6d48\u6d8c\u6e6b\u6c64\u6d8e\u6df3\u6d85\u6dc4\u6d72\u6ca9\u6ce2\u76c8\u8499\u51c6\u6c9f\u6e3d\u6e29\u6d49\u6da2\u6e7f\u6ca7\u706d\u6da4\u8365\u6c47\u6deb\u6cf7\u6f18\u6caa\u6ede\u6e17\u5364\u6d52\u6d5f\u6d50\u6eda\u6ee1\u6e14\u6daf\u6e87\u6e89\u6ca4\u6c49\u6d9f\u6d3c\u6e0d\u6da8\u6e86\u6e10\u6d46\u988d\u6d2a\u6f31\u704c\u6e86\u6cfc\u6d01\u59ab\u6f5c\u6da6\u6d54\u6e83\u6ed7\u6f7a\u6da0\u6da9\u6da9\u6f84\u6d47\u6d9d\u6d5b\u6e9c\u6da7\u6f5f\u6cde\u51db\u6e11\u6cfd\u6eea\u6cf6\u6d4d\u6dc0\u6f2b\u6d4a\u6d53\u6d78\u6da9\u6e1a\u6cb5\u6e7f\u6cde\u6e81\u6d55\u6d4e\u6d9b\u6ee5\u6d5a\u6f4d\u6ee8\u6f5c\u9614\u6e85\u6cfa\u6ee4\u6f9b\u6ee2\u6e0e\u6cfb\u6c88\u6d4f\u7038\u6da9\u6f84\u6fd2\u6cf8\u6ca5\u51c0\u6f47\u6f46\u6ec8\u6f74\u6cf7\u6fd1\u6fd1\u5f25\u6f4b\u6f9c\u6ca3\u6ee0\u6cd5\u6edf\u7005\u6d12\u6ffd\u6edf\u6f13\u6ee9\u701b\u704f\u6e7e\u6ee6\u6edf\u8d63\u6edf\u5149\u7071\u8f89\u8d64\u707e\u6c14\u708e\u5149\u5149\u7167\u4e3a\u7115\u4e4c\u706d\u707e\u6062\u70c8\u70af\u70c3\u8d64\u7199\u7130\u65e0\u8150\u721d\u715c\u8f89\u70bc\u709c\u7199\u6696\u6696\u70df\u70b8\u8315\u7115\u70e6\u71e7\u7080\u70c8\u7199\u718a\u8367\u7130\u709d\u721d\u7099\u70ed\u988e\u711c\u70bd\u70e8\u7130\u706f\u7096\u711a\u78f7\u70d4\u70e7\u711a\u70c2\u70eb\u7116\u8425\u707f\u719c\u6bc1\u70db\u7227\u7167\u70e9\u7187\u718f\u70ec\u7118\u718f\u70c1\u7089\u721d\u71ce\u71ee\u70e8\u70c2\u70c2\u70db\u4e89\u79f0\u4e3a\u652b\u7237\u4fce\u5c14\u5889\u5899\u7b3a\u7a97\u95f8\u699c\u7256\u724d\u7241\u62b5\u7275\u7281\u5954\u8366\u7266\u727a\u728a\u727a\u72a8\u8c7a\u72b6\u8c89\u5c28\u72ed\u72c8\u608d\u7f8c\u72f0\u730e\u733f\u8c92\u72b9\u72f2\u5446\u72f1\u72ee\u55e5\u7f8c\u55e5\u5956\u8c98\u7352\u55e5\u517d\u72ec\u72ef\u7303\u72dd\u72de\u7335\u83b7\u730e\u72b7\u517d\u736d\u732e\u72dd\u7321\u5999\u73cf\u74f7\u73cd\u7434\u5b9d\u4f69\u748e\u739f\u73ab\u73b0\u7483\u76cf\u5723\u96d5\u7434\u73d0\u73f2\u73b3\u73ae\u739a\u7409\u7410\u7476\u83b9\u739b\u7405\u73b1\u7428\u749f\u740f\u70e8\u7470\u740e\u7409\u7391\u7477\u73f0\u73af\u7399\u7478\u73ba\u7487\u7483\u74d2\u743c\u7470\u73d1\u748e\u74d2\u74f6\u74f7\u74ef\u7816\u74ee\u751c\u5c1d\u6674\u4ea7\u4ea7\u82cf\u753a\u5733\u7540\u4ea9\u7559\u4ea9\u8015\u754c\u903c\u4ea9\u7586\u4ea9\u4ea9\u5793\u6bd5\u7565\u756a\u753b\u7572\u756c\u4ea9\u5f02\u7559\u53e0\u753b\u5f53\u7586\u53e0\u7586\u7574\u526f\u758a\u53e0\u758f\u809b\u7601\u80dd\u75f1\u606b\u86d4\u75c9\u79c3\u9178\u7626\u80c0\u75f9\u54d1\u6108\u75af\u75a1\u75ea\u82e6\u5591\u7617\u75ae\u759f\u80c0\u55fd\u7618\u7618\u7597\u6194\u7624\u75e8\u75eb\u7605\u75eb\u761d\u6108\u75a0\u51db\u51db\u762a\u75f4\u75d2\u7596\u75c7\u765e\u7663\u763f\u763e\u75c8\u762b\u766b\u7630\u53d1\u7682\u8c8c\u5373\u768b\u7691\u7693\u769e\u6653\u6654\u769e\u661f\u769d\u75b1\u6bec\u9f47\u9f13\u76b2\u76b2\u76b1\u9f47\u9f13\u76c8\u676f\u76cd\u94b5\u7897\u7c20\u76d7\u76cf\u5c3d\u76d1\u76d8\u5362\u8361\u660e\u89c6\u4eff\u89c6\u614e\u771f\u89c6\u7726\u4f17\u773d\u7709\u7741\u7750\u7765\u777e\u772f\u77a0\u7ff3\u7792\u4e86\u7786\u7751\u66cc\u7785\u8499\u77cf\u77a2\u772c\u77b0\u77a9\u77dc\u77e7\u4faf\u77eb\u7887\u780c\u739f\u788e\u7823\u70ae\u77ff\u94e8\u6731\u788d\u7814\u7841\u7856\u7817\u781a\u5cea\u789c\u5d1f\u7855\u7827\u7800\u78cc\u786e\u7801\u7812\u7859\u9668\u7816\u7816\u7875\u789c\u789b\u77f6\u6da7\u7887\u7857\u6da7\u785a\u7877\u5760\u78a3\u7840\u788d\u78d5\u78c1\u7934\u77ff\u783a\u783e\u77fe\u70ae\u783b\u783b\u7f50\u791b\u887d\u4f51\u79d8\u7b97\u7957\u6346\u7998\u7984\u891a\u7978\u796f\u794e\u8919\u7a37\u7970\u7943\u797a\u5fa1\u7940\u7985\u793c\u7962\u7977\u79c3\u7c7c\u5e74\u79cb\u8018\u7cb3\u996b\u62cc\u8020\u7a3f\u7a0e\u79c6\u7cb3\u68f1\u7980\u7cef\u79f8\u79cd\u79f0\u7a3b\u7a1a\u7a3f\u8c37\u7a57\u7ce0\u7a1a\u7a23\u79ef\u9896\u7a33\u79cb\u7a06\u79fe\u7a51\u79fd\u7cef\u9893\u7a33\u79f0\u83b7\u7a06\u7a51\u6316\u9631\u7262\u7a97\u5bac\u7a9d\u6d3c\u7a77\u7a91\u7a91\u7a8e\u7aad\u7aa5\u7a97\u5de2\u7abe\u5bee\u7076\u7a9c\u7a8d\u7a77\u7aa6\u7076\u7a83\u5947\u5347\u5999\u4f2b\u9f99\u5e76\u8c0a\u7ad6\u6b6a\u7ade\u7ade\u7bf7\u7bea\u7b8d\u9abc\u77e2\u7bea\u7b14\u7b0b\u7b04\u7b82\u7b56\u7ba1\u7b15\u7b52\u7bb8\u7b2e\u7b50\u7be6\u4e2a\u7b3a\u7bea\u7b5d\u5e1a\u5284\u7b4d\u7b45\u6938\u8282\u8303\u7b51\u7ba7\u5d4c\u7b8d\u9950\u7b7c\u7bac\u6d85\u7b03\u7b5b\u5784\u5f57\u7b5a\u7ba6\u7b58\u7bd3\u84d1\u7be1\u84d1\u7bc9\u7bab\u7baa\u7b80\u7bd1\u7bab\u7c2a\u7b84\u8661\u7c2c\u6a90\u7b5c\u7b7e\u5e18\u7bee\u7c23\u7b79\u85e4\u7c40\u7c40\u7b7e\u85e4\u7b93\u7bef\u7ba8\u7c6f\u7c41\u7b3c\u5941\u7b7e\u5941\u7b3e\u7c16\u7bf1\u7b5b\u7ba9\u5401\u7c78\u7cc1\u79d5\u7cb9\u7c73\u9ed0\u8083\u78f7\u5986\u7ca4\u7a17\u7cc1\u7cbd\u8c37\u5986\u7cd6\u7cc1\u7caa\u7ce8\u998d\u7cc1\u7cef\u7cae\u7cbd\u56e2\u7c9d\u7c74\u7c9c\u7ea0\u529f\u7ea0\u7eaa\u7ea3\u7ea6\u7ea2\u7ea1\u7ea5\u7ea8\u7eab\u7eb9\u7eb3\u7ebd\u7ebe\u7eaf\u7eb0\u7ebc\u7eb1\u7eae\u7eb8\u7ea7\u7eb7\u7ead\u7eb4\u7eba\u7db7\u624e\ue837\u7d18\u624e\u7ec6\u7ec2\u7ec1\u7ec5\u7ebb\u78b1\u7ecd\u7ec0\u7ecb\u7ed0\u7ecc\u7ec8\u5f26\u7ec4\u7eca\u5e1e\u7ea9\u7ecf\u7eb4\u7ed7\u7ec1\u7ed3\u7edd\u7ee6\u6d01\u7ed4\u7ede\u7edc\u7eda\u7ebf\u7ed9\u7ed2\u7ed6\u7edf\u4e1d\u7edb\u7ed8\u7edd\u8327\u7ee2\u7ebc\u7ed1\u7edf\u7ee1\u7ee0\u7ee8\u7ee3\u7ee4\u7ee5\u6346\u7ecf\u7ec7\u7f1d\u7ee7\u7efc\u7f0d\u7eff\u7ef8\u7efb\u7ecd\u7ebf\u7ef6\u7ef4\u7ef9\u7efe\u7eb2\u7f51\u7ef7\u7f00\u5f69\u7eb6\u7efa\u7eee\u7efd\u7ef0\u7eeb\u7ef5\u7ef2\u7f01\u7d27\u7eef\u7f17\u603b\u7e41\u7eff\u7eea\u7f28\u7ef1\u7eea\u7f03\u7f04\u7f02\u7ebf\u7ef5\u7f09\u7f0e\u7f14\u7f17\u7f18\u8913\u7f0c\u7f16\u7f13\u7e06\u603b\u7f05\u7eac\u7f11\u7f08\u7ec3\u7f0f\u7f07\u81f4\u7f0a\u8d6a\u7f20\u7ed0\u978b\u7f18\u603b\u7ef3\u8426\u7f19\u7f22\u7f12\u7ec9\u7f23\u7f0a\u7f1e\u7ee6\u7f1a\u7f1c\u7f1f\u7f1b\u53bf\u7eb5\u7ee6\u7f1d\u7f21\u7f29\u7eb5\u7f27\u7ea4\u7f26\u7d77\u7f15\u7f25\u603b\u7ee9\u7ef7\u7f2b\u7f2a\u7e66\u7ea4\u7cfb\u7ee3\u7a57\u7f2f\u7ec7\u7f2e\u4f1e\u7ffb\u7f2d\u7ef0\u7ed5\u7ee3\u7f0b\u7e82\u5b09\u7ef3\u7ed8\u7cfb\u8327\u7f30\u7f33\u7f32\u7f34\u7ece\u7ee7\u7f24\u7f31\u8934\u84ec\u98a3\u7f2c\u7f35\u7ea9\u7eed\u7d2f\u7ea4\u7f20\u7f20\u7f28\u624d\u7ea4\u7f35\u7f06\u7f27\u5378\u7f36\u7f3a\u94b5\u74f6\u7f38\u7f50\u6a3d\u575b\u74ee\u7f42\u575b\u6df1\u6302\u7f5a\u9a82\u7f62\u7f5a\u7f76\u7f69\u7f57\u7f74\u7f81\u8288\u83f1\u7f8c\u7ed2\u7fa4\u7f9f\u7fa1\u4e49\u7fb9\u81bb\u81bb\u7fc5\u7fe0\u4e60\u7fd5\u7fc3\u7fc5\u73a9\u7fda\u7ff1\u7fd8\u7ff1\u7fd9\u8007\u8007\u800b\u4e13\u8027\u8022\u83b7\u8043\u804c\u5a7f\u5723\u95fb\u5a7f\u806a\u8054\u8054\u8054\u8054\u806a\u58f0\u8038\u542c\u8069\u8042\u804c\u804d\u542c\u542c\u804b\u8083\u8087\u81c6\u80af\u80f3\u80e3\u80da\u80d6\u75a3\u543b\u80af\u62c7\u9abc\u8180\u80f8\u8106\u8122\u80c1\u80c1\u8109\u80c1\u543b\u80eb\u5507\u8131\u8111\u75de\u80c0\u80fc\u80be\u813e\u8136\u8111\u80bf\u811a\u80a0\u817d\u7626\u55c9\u8182\u80a0\u8158\u8180\u80a4\ue83f\u80f6\u80f4\u817b\u9ad3\u80c6\u810d\u8113\u814a\u8138\u81c0\u8110\u8191\u814a\u80ea\u88f8\u810f\u8114\u81dc\u5367\u4e34\u768b\u81ed\u53f0\u9677\u8204\u4e0e\u5174\u4e3e\u65e7\u8210\u94fa\u8216\u9986\u8f96\u8224\u8239\u823b\u9020\u8236\u8231\u6a2f\u6a79\u8223\u696b\u8230\u6a79\u823b\u8270\u8273\u8273\u827d\u828b\u6625\u520d\u5208\u82ce\u83f0\u5179\u8471\u8354\u8438\u5179\u8346\u7b4b\u5e84\u8c46\u5e84\u84ec\u8347\u830e\u83e1\u835a\u82cb\u7bc0\u83df\u83bd\u707e\u679c\u82b2\u82b9\u82d4\u5e72\u534e\u5eb5\u5e1a\u6625\u82cc\u83b1\u82d5\u8360\u839e\u7b56\u84d6\u827a\u7b94\u4e07\u8431\u835d\u83b4\u83f9\u53f6\u5eb5\u836d\u839a\u53c2\u76d6\u82c7\u836f\u8364\u7bc6\u641c\u83bc\u83b3\u8385\u82bb\u82b8\u82cd\u836a\u5e2d\u76d6\u84e8\u840f\u53c2\u83f1\u5eb5\u83b2\u82c1\u83bc\u835c\u598d\u83f1\u837b\u535c\u8482\u53c2\u848c\u848b\u8471\u8311\u836b\u853b\u84a8\u9ebb\u85cf\u7ba6\u85dc\u8368\u8487\u854a\u85df\u835e\u534e\u83b8\u835b\u843c\u8489\u8361\u829c\u8427\u85a9\u84e3\u8431\u835f\u84df\u8297\u59dc\u53c2\u8537\u56ed\u8359\u5243\u83b6\u8350\u8428\u85b0\u836f\u7a17\u82e7\u8360\u85fb\u8524\u84dd\u8369\u827a\u836f\u85e8\u85ae\u6a35\u7a3f\u8574\u82c8\u853c\u853a\u8431\u6aec\u841a\u854a\u854a\u8572\u82a6\u82cf\u8574\u82f9\u85b0\u9aa5\u7d45\u8431\u82cf\u84ec\u85d3\u8539\u8539\u830f\u7e47\u5170\u8361\u5914\u84e0\u85df\u841d\u9f51\u5914\u85df\u5904\u547c\u865a\u865a\u864f\u864e\u53f7\u4e8f\u866c\u86c7\u868a\u86d4\u9f22\u86ba\u9c8d\u8424\u86d4\u73d5\u86f1\u8715\u8d1d\u872d\u86ac\u86d4\u871e\u868c\u868b\u8695\u8721\u8680\u732c\u867e\u8671\u733f\u867b\u8717\u8747\u86f3\u878d\u8839\u8682\u868a\u8424\u877c\u8780\u868a\u86f0\u87c6\u8748\u87db\u866e\u87e8\u8749\u86f2\u87cf\u866b\u86cf\u8821\u8681\u8683\u8747\u867f\u86ce\u874e\u87f9\u86f4\u877e\u8327\u869d\u73ad\u8721\u86ce\u87d7\u8839\u87cf\u876b\u8702\u86ca\u8695\u883c\u8695\u86ee\u8844\u4f17\u8109\u5580\u70ab\u672f\u540c\u80e1\u536b\u9053\u51b2\u536b\u9053\u886e\u5e19\u5e19\u887d\u7ed7\u8885\u5939\u91cc\u8865\u88c5\u88d9\u91cc\u8912\u88c8\u892b\u88f4\u88f4\u5236\u88c9\u590d\u88c8\u8896\u8886\u88e4\u88e2\u891b\u4eb5\u8912\u5e5e\u88e5\u7985\u6742\u88af\u8884\u88e3\u88c6\u8892\u8934\u5e5e\u8961\u889c\u886c\u88ad\u8955\u8936\u8955\u8986\u7f81\u89c1\u89c2\u5f01\u89c4\u89c9\u89c5\u89c5\u89c6\u89c7\u8bca\u89c9\u89cb\u89cd\u89ce\u89c8\u7779\u4eb2\u89ca\u89cf\u89d1\u89d0\u89c2\u77aa\u89d1\u89c9\u89d1\u89c8\u89cc\u89c2\u7b4b\u7c97\u89ef\u62b5\u89e3\u89f2\u89d2\u89de\u89e5\u89ef\u89e6\u89ff\u89ff\u8ba2\u8ba3\u53eb\u8ba1\u8baf\u8ba7\u8ba8\u8ba6\u8bb1\u8bad\u8abe\u8baa\u8bab\u8bac\u8bb0\u8baf\u8bb9\u8bb6\u8bbc\u77e7\u541f\u6b23\u8bc0\u8bb7\u8bbb\u8bbf\u4fe1\u8bbe\u8a7d\u8bb8\u8bd1\u8bc9\u8bc3\u8bca\u6ce8\u8bc1\u8bdf\u8bc2\u8bcb\u5492\u8bb5\u8bc8\u8be7\u8bd2\u8bcf\u8bc4\u8bd0\u8bc7\u8bce\u8bc5\u8bcd\u548f\u8be9\u8be2\u8be3\u8c0e\u8bd5\u5bdf\u8bd7\u8be7\u8bdf\u8be1\u8be0\u8bd8\u8bdd\u8be5\u8be6\u8bdc\u916c\u8c1c\u8bd9\u8bbb\u8bd6\u8bd4\u8bdb\u8bd3\u5938\u8bec\u5fd7\u8ba4\u8bf3\u8bf6\u8bde\u6096\u8bf1\u8bee\u8bed\u8bda\u8beb\u8bec\u8bef\u8bf0\u8bf5\u8bf2\u8bf4\u8bf4\u8bfb\u5531\u8c01\u8bfe\u8bce\u8c07\u8bfd\u8c0a\u8a1a\u8c03\u8c04\u8c06\u8c08\u8bff\u8bf7\u8be4\u8bf9\u6106\u8bfc\u8c05\u8bba\u8c02\u8bdd\u8c00\u8c0d\u8c1e\u8c1d\u55a7\u8c25\u8be8\u8c14\u8c1b\u8c10\u8c31\u8c0f\u542f\u8c15\u8c18\u8bb3\u8c19\u8c0c\u8bbd\u8bf8\u8c1a\u8c16\u8bfa\u8c0b\u8c12\u8c13\u8a8a\u8bcc\u8c0e\u6b4c\u8c1c\u8c27\u55d4\u8c11\u557c\u8c21\u8c24\u8c26\u8c25\u8bb2\u8c22\u8c23\u8c23\u8c1f\u8c1f\u5546\u8c2a\u8c2c\u8bb4\u8c28\u547c\u8c29\u5632\u54d7\u7740\u563b\u8bc1\u8c30\u8bb9\u5e94\u8c32\u8ba5\u64b0\u8c2e\u8bc6\u8c2f\u8c2d\u8c2e\u8c31\u566a\u8c20\u8c07\u8a40\u54dd\u566b\u853c\u8c35\u6bc1\u8bd1\u8bae\u5584\u8ba9\u8c34\u603c\u62a4\u8bea\u53f7\u8a89\u8c2b\u6167\u8bfb\u8c2a\u8d5e\u8c09\u53d8\u8a5f\u5bb4\u8c14\u96e0\u8b86\u4ec7\u8c17\u8ba9\u8c30\u8c36\u8d5e\u5453\u8c20\u8c33\u828a\u6eaa\u8c3f\u6e0e\u5c82\u767b\u7ad6\u4e30\u79e9\u8273\u8273\u732a\u8e62\u8c6e\u8c94\u72d7\u8c8a\u8c7b\u72f8\u730a\u732b\u737e\u8d1d\u8d1e\u8d1f\u8d22\u8d21\u73a9\u8d2b\u8d27\u8d29\u8d2a\u8d2f\u8d23\u8d28\u8d30\u8d2e\u8d33\u8d40\u8d30\u8d35\u8d2c\u4e70\u8d37\u8d36\u8d39\u8d34\u8d3b\u8d38\u8d3a\u8d32\u8d42\u8d41\u8d3f\u8d45\u8d44\u8d3e\u6064\u8d3c\u8d43\u8d31\u8d48\u8d4a\u5bbe\u5bbe\u8d47\u8d4a\u8d43\u8d52\u8d49\u8d5e\u8d50\u741b\u8d4f\u8d54\u8d53\u8d24\u5356\u8d31\u8d4b\u8d55\u8d28\u8d4d\u8d26\u8d4c\u8d46\u8d56\u8d57\u5269\u8d5a\u8d59\u8d2d\u8d5b\u8d5c\u8d25\u8d3d\u8d58\u8d5f\u8d60\u8d5e\u8d5d\u8d61\u88f8\u6c3d\u8d62\u8d46\u8d24\u8d43\u8d51\u8d4e\u8d5d\u8d4f\u8d63\u8d43\u8d6a\u8d70\u8d91\u8d81\u8d76\u8d75\u8d91\u8d8b\u8e81\u8db1\u5216\u8ff9\u8dfa\u8e29\u80eb\u758f\u811a\u8df5\u8e2a\u78b0\u903e\u9041\u8e0a\u817f\u8dc4\u8e44\u6e9c\u8df8\u8ff9\u8dd6\u8e52\u8e2a\u8df9\u8e74\u8e76\u8e0f\u8df7\u8df7\u8df6\u8e84\u8db8\u8e0c\u8dfb\u8dc3\u8e2f\u8dde\u8e2c\u8e70\u8e8f\u8df9\u8e97\u8e51\u8e4b\u8e7f\u8e9c\u8e8f\u803d\u4f53\u8eb2\u8eac\u88f8\u77ee\u8ec2\u8eaf\u507b\u4eb8\u804c\u4f53\u8f66\u8f67\u8f68\u519b\u8f6a\u8f69\u8f6b\u8ed1\u8f6d\u8f6f\u8f6c\u8f70\u8f78\u8f88\u8f6d\u8f74\u8f75\u8f7a\u8f72\u8f76\u8f7b\u8f7c\u8f83\u8f82\u8f81\u8f80\u8f7d\u8f7e\u8f86\u8f36\u8f84\u633d\u8f85\u8f7b\u8f84\u8f86\u8f8e\u8f89\u8f8b\u8f8d\u8f8a\u8f87\u8f88\u8f6e\u8f8c\u8f6f\u8f91\u8f8f\u8f70\u8f93\u8f90\u8f92\u8f97\u8206\u8f92\u6bc2\u8f96\u8f95\u8f98\u8f6c\u8f99\u8f7f\u8f9a\u8206\u8f70\u8f94\u8f79\u8f73\u8f9e\u7f6a\u8fa9\u8fa3\u8f9e\u529e\u8fa8\u8fa5\u6591\u8f9e\u8fab\u8fa9\u519c\u519c\u8fc2\u8fc2\u8fe4\u5e01\u8fbe\u9003\u8fe4\u56de\u79fb\u8fe5\u9012\u8ff3\u8fd9\u8fde\u56de\u5954\u9519\u8ff8\u904a\u5468\u8fdb\u9016\u8fbe\u8fdc\u968f\u8fdf\u4fa6\u6e38\u8fd0\u8fc7\u8fbe\u8fdd\u9065\u900a\u9012\u8fdf\u8fdc\u6eaf\u9002\u8fdf\u7ed5\u8fc1\u9009\u9057\u8fbd\u8fc8\u8fd8\u8fe9\u8fb9\u8fb9\u8fdf\u6e38\u903b\u9026\u90a6\u90a2\u90bd\u90a3\u90ce\u90ce\u90cf\u90ae\u90e8\u4e61\u90d3\u4e61\u4e61\u90b9\u90ac\u4e61\u90e7\u9121\u9093\u90d1\u90bb\u90f8\u90ba\u90d0\u9146\u909d\u9142\u5edb\u5475\u9142\u90e6\u9189\u916c\u814c\u76cf\u9187\u915d\u9166\u4e11\u915d\u9171\u533b\u9171\u62e8\u917f\u916c\u5bb4\u91be\u917f\u8845\u917e\u91be\u917d\u8fa8\u91ca\u91ca\u5398\u9486\u9487\u948c\u948a\u9489\u948b\u9488\u91dc\u9493\u9490\u4eff\u540e\u5f81\u948f\u9492\u948e\u94d3\u9497\u948d\u9495\u94af\u94ab\u9498\u94ad\u94ba\u94c5\u949a\u94a0\u949d\u94a9\u94a4\u94a3\u9491\u949e\u94ae\u94a7\u9493\u949f\u9499\u94ac\u949b\u94aa\u94cc\u94c8\u94b6\u94c3\u94b4\u94b9\u94cd\u94b0\u94b8\u94c0\u94bf\u94be\u94c1\u949c\u72dd\u4f19\u4ec5\u94bb\u94ca\u94c9\u5228\u94cb\u9504\u94c2\u94b7\u94b3\u94c6\u94c5\u94ba\u94b5\u94a9\u94b2\u73ba\u73ba\u94bc\u94bd\u77ff\u94cf\u94f0\u94d2\u94ec\u94ea\u94f6\u94a7\u94f3\u94dc\u94da\u9490\u94e3\u9498\u94e8\u94c1\u94e2\u94ed\u94eb\u94e6\u8854\u94a7\u94d1\u94f7\u94f1\u94df\u94f5\u94e5\u94d5\u94ef\u94d0\u94b1\u94de\u710a\u9510\u9500\u9508\u9511\u9509\u94e6\u6c5e\u94dd\u9512\u950c\u94a1\u94e4\u94d7\u950b\u5fd7\u9495\u94fb\u77ff\u950a\u9513\u950a\u94d8\u9504\u9503\u9514\u9507\u94d3\u94fa\u9510\u94d6\u9506\u9502\u94fd\u94f8\u94e5\u950d\u952f\u94a2\u951e\u5f55\u9516\u952b\u9529\u6c88\u94d4\u9525\u9515\u951f\u9524\u9531\u94ee\u951b\u952c\u952d\u951c\u94b1\u9526\u951a\u9520\u9521\u70bc\u9522\u9519\u73cd\u5f55\u9530\u8868\u9486\u94fc\u9528\u9494\u9534\u9533\u70bc\u9505\u9540\u9537\u94e1\u9496\u953b\u953d\u9538\u9532\u6223\u9518\u9539\u5b81\u9539\u953e\u9274\u952e\u9536\u9517\u9488\u949f\u9531\u9541\u9545\u9551\u8f96\u8028\u9555\u9501\u67aa\u9549\u9524\u9548\u76d8\u951d\u94a2\u9543\u94a8\u84e5\u954f\u94e0\u94e9\u953c\u933d\u9550\u9547\u9547\u6994\u9552\u954b\u954d\u9553\u954c\u9501\u7f45\u950b\u954e\u9501\u955e\u7f50\u955f\u94fe\u9546\u9559\u9560\u955d\u94ff\u9535\u92ff\u9557\u9558\u955b\u94f2\u950b\u955c\u9556\u9542\u9508\u933e\u7f45\u955a\u94ee\u94e7\u9564\u956a\ue84b\u9508\u94d9\u94f4\u9563\u94f9\u9566\u9561\u950f\u949f\u956b\u94d4\u9562\u9415\u9568\u9f0e\u950e\u950f\u9544\u71e7\u954c\u9570\u5ddd\u73a1\u9533\u9539\u956f\u956d\u94c1\u956e\u94ce\u94db\u94bd\u9571\u953f\u94f8\u956c\u9554\u9274\u9274\u9572\u9527\u94bb\u77ff\u92ff\u9574\u94c4\u9573\u5228\u9565\u9274\u9567\u94a5\u9575\u9576\u954a\u897b\u9523\u94bb\u92ae\u51ff\ue84f\u954b\u9567\u684c\u957f\u5f25\u95e8\u95e9\u95ea\u95e8\u95eb\u95ed\u95ec\u95ed\u5f00\u95f6\u95f3\u95f0\u95f2\u95f2\u95f4\u95f5\u6597\u95f8\u95f9\u95f0\u9602\u5173\u9601\u5408\u9600\u54c4\u95fa\u95fd\u9603\u9606\u95fe\u9605\u9605\u9610\u9612\u8e8f\u960a\u6740\u58f8\u9609\u960e\u960f\u960d\u9608\u960c\u54c4\u8912\u9612\u960c\u677f\u95f1\u9614\u9615\u77e9\u9611\u9607\u9617\u9618\u95ff\u9616\u9619\u95ef\u5173\u6597\u542f\u7aa5\u5173\u5ad6\u961a\u9613\u9610\u8f9f\u961b\u95fc\u9634\u9633\u9661\u5347\u5751\u5740\u579d\u5cfb\u5ced\u9649\u9655\u9655\u5347\u9635\u9677\u5c9b\u9634\u9648\u9646\u5347\u5819\u9633\u72ed\u9634\u5824\u9667\u961f\u660f\u6697\u9636\u9668\u575e\u5802\u9645\u5c9b\u9699\u9690\u90bb\u9674\u968f\u9669\u9651\u9690\u9a98\u9647\u96b6\u96b6\u53ea\u96bd\u6742\u867d\u53cc\u96cf\u6742\u9e21\u79bb\u96be\u96c6\u6c1b\u4e91\u7535\u5b95\u7075\u6cbe\u96f6\u96fe\u7075\u9722\u96fe\u53c7\u9701\u8499\u96f7\u96f3\u972d\u53c7\u7075\u53c6\u5b9d\u9752\u9753\u9759\u9754\u9762\u75b1\u817c\u9765\u97e7\u97e7\u7ebd\u978d\u5de9\u742b\u7ef1\u4e8e\u79cb\u9798\u97eb\u97ec\u978b\u979f\u9792\u9774\u97af\u7f30\u9791\u5343\u889c\u97af\u97e6\u97e7\u9798\u97e9\u97ea\u9769\u97ec\u97b2\u97eb\u889c\u97ed\u97f1\u9f51\u97f5\u97f8\u54cd\u9875\u9876\u9877\u9879\u987a\u9878\u987b\u9890\u987c\u9882\u9880\u807f\u9883\u9884\u987d\u9881\u987f\u9887\u9886\u9888\u988c\u989d\u9889\u9890\u9890\u988f\u7c7b\u4fef\u988a\u5934\u988a\u988b\u9896\u9894\u9888\u9893\u9893\u9891\u8d56\u9893\u9aed\u9aed\u9894\u9897\u60b4\u9895\u9890\u816e\u9898\u989d\u989a\u989c\u9899\u989b\u989c\u56df\u613f\u98a1\u98a0\u98a0\u7c7b\u989f\u98a2\u6194\u987e\u5dfd\u98a4\u663e\u98a6\u9885\u989e\u98a7\u98ce\u98d0\u98d1\u98d2\u53f0\u522e\u98d3\u98d9\u98d4\u98cf\u98d6\u98d5\u98d7\u98d8\u98d8\u98d7\u98d9\u98d9\u98da\u98da\u98de\u7ffb\u9910\u9965\u9964\u9972\u9966\u9958\u9968\u996a\u996b\u996c\u996e\u996d\u996d\u9910\u996e\u9974\u9955\u9971\u992e\u9972\u9971\u9970\u996a\u997a\u9978\u997c\u949f\u7ccd\u9977\u517b\u9975\u997d\u9981\u997f\u54fa\u9982\u997e\u4f59\u9970\u80b4\u9984\u9983\u9970\u996f\u555c\u997c\u9985\u5582\u9986\u6696\u7cca\u7cc7\u9967\u5582\u7cd6\u998e\u7cd5\u9969\u9988\u998f\u998a\u998c\u998d\u7cd6\u9992\u9990\u9991\u9993\u9988\u9994\u81b3\u9965\u9976\u98e8\u9900\u990d\u998d\u998b\u9995\u7a63\u9a6c\u9a6d\u51af\u9a6e\u9a70\u9a6f\u9a72\u9a74\u9a73\u9a71\u9a71\u9a7b\u9a7d\u9a79\u9a75\u9a7e\u9a80\u9a78\u9a76\u9a7c\u9a7c\u9a77\u9a9d\u9a82\u9a88\u817e\u9a87\u9a83\u9a86\u9a9d\u9a8e\u81de\u5939\u9a8f\u9a8b\u9a8d\u9a93\u9a88\u9a92\u9a91\u9a90\u9a8c\u9a9a\u9a8c\u9a9b\u9aa2\u9a97\u99e9\u9b03\u9a99\u9a9e\u9a98\u9a9d\u817e\u9a7a\u9a9a\u9a9f\u9aa6\u9aa1\u84e6\u9a9c\u9a96\u9aa0\u9aa2\u9a71\u8df8\u9a85\u9a95\u9a81\u9aa3\u9a9d\u9a84\u9a8c\u9aa1\u60ca\u9a7f\u9a7c\u9aa4\u9a74\u817e\u9aa7\u9aa5\u9aa6\u6b22\u9a8a\u80ae\u4f53\u817f\u9ca0\u8162\u9ad3\u8180\u9ac5\u810f\u4f53\u9acc\u9acb\u9885\u9ad8\u9ae1\u9af9\u9aef\u9ae1\u9b13\u53d1\u53d1\u5243\u5243\u9b13\u677e\u9b03\u80e1\u987b\u9b23\u9b13\u6597\u6597\u95f9\u54c4\u960b\u6597\u6597\u6597\u9604\u90c1\u90c1\u91dc\u9b45\u5c2c\u9b49\u5c34\u4e11\u9b47\u9c7c\u9c7d\u9ca8\u9c80\u9c81\u9c88\u9c82\u9c7f\u9c84\u66f2\u9c85\u9cb7\u9ca7\u9c87\u9c90\u9c8d\u9c8b\u9c9d\u9cce\u9c92\u9c95\u9c96\u9c94\u9c9b\u9c91\u9c9c\u9caa\u9cc0\u9cd8\u9ca7\u9ca0\u7a23\u9ca9\u9ca4\u9ca8\u9ca8\u9cbb\u9caf\u9cad\u9c9e\u9cb7\u9cb1\u9cb5\u9cb2\u9cb3\u9cb8\u9cae\u9cb0\u9cb6\u9ca9\u9cc0\u8829\u9c97\u9cca\u9ca9\u9cbd\u9cc7\u9cc5\u9cc4\u9cc6\u9cc3\u9cd2\u9cd1\u9ca5\u9ccf\u85e4\u9cce\u9cd0\u9ccd\u9ca2\u9ccc\u9cd3\u9cd8\u9ca6\u9ca3\u9cd7\u9cdb\u9cd4\u9cd5\u9cd6\u9c85\u9c9f\u9cc7\u9cdf\u9cdd\u9cdd\u9cdc\u9cde\u9c9f\u9c8e\u9c99\u9ce3\u9ce2\u9cbf\u9c9a\u9b63\u9cc4\u9c88\u9ca1\u9c9c\u4e48\u9f47\u9e1f\u51eb\u9e20\u96c1\u51eb\u9e21\u51e4\u9e24\u51e4\u9e23\u9e22\u9e29\u9e28\u96c1\u9e26\u51e4\u9e25\u73b3\u9e30\u9e35\u9e33\u96cc\u9e32\u9e2e\u9e31\u9e2a\u9e2f\u9d25\u9e2d\u9d25\u83ba\u9e38\u9e39\u67ad\ue85e\u9e3f\u9e6d\u9e3d\u9e3a\u9e3c\u9e31\u9e3e\u9e43\u9e46\u9e41\u9d54\u9e48\u9e45\u9e45\u9e44\u9e49\u9e4c\u9e4f\u9cf9\u9e4e\u96d5\u9e4a\u9e26\u9e53\ue85f\u9e2b\u9e51\u9e52\u9e21\u9e4c\u9e59\u9e55\u9e57\u9e56\u9e4d\u9e5b\u9e5c\ue860\u9e27\u9e64\u83ba\u9e5f\u9e64\u9e60\u9e61\u9e58\u9e63\u96bc\u9e5a\u9e5a\u9e62\u9e5e\u9e21\u9dcf\u9e5d\u9e67\u9e65\u9e25\u9e37\u9e68\u9e36\u9e6a\u83ba\u9e54\u9e69\u9e6b\u9e47\u9e6c\u9e70\u9e6d\u9e34\ue862\u9e6f\u83ba\u9e72\u9e2c\u9db4\u9e66\u9e73\u9e42\u9e3e\u5364\u77dc\u7877\u54b8\u9e7e\u7877\u78b1\u76d0\u7c97\u7c97\u9e87\u9e9f\u9e87\u4e3d\u7350\u7f9a\u7c97\u9ea6\u9eb8\u9762\u9762\u9eb8\u66f2\u9eb8\u9762\u9762\u4e48\u7e3b\u9ec4\u9ec9\u9ed1\u9ed8\u70b9\u515a\u9edb\u9eea\u9709\u9ee9\u9efe\u9f0b\u86d9\u86db\u8718\u9ccc\u9cd6\u9f0d\u9f0e\u9f13\u51ac\u9f18\u9f20\u8c82\u9f39\u55c5\u9f50\u658b\u9f51\u9f7f\u9f80\u9f80\u9f81\u7259\u9f82\u9f85\u9f70\u9f87\u9f83\u9f86\u9f84\u51fa\u9f5b\u9f88\u556e\u54ac\u9f8a\u9f89\u9f8b\u816d\u9f8c\u5664\u9f99\u5e9e\u606d\u5e9e\u9f99\u9f9a\u9f9b\u7075\u9f9f\u79cb\u9cd6\u5439\u548c\u89d2"
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSimplified:Ljava/lang/String;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUncommonWordsMap:Ljava/util/Map;
+
+    new-instance v0, Ljava/util/HashMap;
+
+    invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
+
+    sput-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUncommonWordsMap:Ljava/util/Map;
+
+    const/16 v1, 0x698a
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "shen2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x66fe
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "zeng1"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const v1, 0x8c0c
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "chen2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x4ec7
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "qiu2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x5355
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "shan4"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x4e50
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "yue4"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x7fdf
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "zhai2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x533a
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "ou1"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x67e5
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "zha1"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x5c09
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "yu4"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x6734
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "piao2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const v1, 0x89e3
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "xie4"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const v1, 0x8983
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "qin2"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const/16 v1, 0x5085
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "fu4"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const v1, 0x8096
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "xiao1"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    const v1, 0x8fc7
+
+    invoke-static {v1}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v1
+
+    const-string v2, "guo1"
+
+    invoke-interface {v0, v1, v2}, Ljava/util/Map;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
+
+    return-void
+.end method
+
+.method public constructor <init>()V
+    .locals 0
+
+    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
+
+    return-void
+.end method
+
+.method private static filterChar(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .param p0, "result"    # Ljava/lang/String;
+
+    .prologue
+    if-eqz p0, :cond_0
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const-string p0, ""
+
+    :goto_0
+    return-object p0
+
+    :cond_1
+    const-string v0, "( )+"
+
+    const-string v1, " "
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    const-string v0, "[ ]*[|][ ]*"
+
+    const-string v1, "|"
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    invoke-virtual {p0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object p0
+
+    goto :goto_0
+.end method
+
+.method public static getCartesianPinyin(ILjava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V
+    .locals 5
+    .param p0, "index"    # I
+    .param p2, "str"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I",
+            "Ljava/util/ArrayList",
+            "<[",
+            "Ljava/lang/String;",
+            ">;",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p1, "table":Ljava/util/ArrayList;, "Ljava/util/ArrayList<[Ljava/lang/String;>;"
+    .local p3, "names":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    const/4 v1, 0x0
+
+    invoke-virtual {p1}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    add-int/lit8 v0, v0, -0x1
+
+    if-ne p0, v0, :cond_2
+
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/lang/String;
+
+    :goto_0
+    array-length v2, v0
+
+    if-lt v1, v2, :cond_1
+
+    :cond_0
+    return-void
+
+    :cond_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    aget-object v3, v0, v1
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p1, p0}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, [Ljava/lang/String;
+
+    :goto_1
+    array-length v2, v0
+
+    if-ge v1, v2, :cond_0
+
+    add-int/lit8 v2, p0, 0x1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v4, " "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    aget-object v4, v0, v1
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, p1, v3, p3}, Lcn/yunzhisheng/common/PinyinConverter;->getCartesianPinyin(ILjava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_1
+.end method
+
+.method public static getCartesianPinyin(I[[Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+    .locals 5
+    .param p0, "index"    # I
+    .param p1, "table"    # [[Ljava/lang/String;
+    .param p2, "str"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(I[[",
+            "Ljava/lang/String;",
+            "Ljava/lang/String;",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;)V"
+        }
+    .end annotation
+
+    .prologue
+    .local p3, "names":Ljava/util/ArrayList;, "Ljava/util/ArrayList<Ljava/lang/String;>;"
+    const/4 v0, 0x0
+
+    array-length v1, p1
+
+    add-int/lit8 v1, v1, -0x1
+
+    if-ne p0, v1, :cond_2
+
+    aget-object v1, p1, p0
+
+    :goto_0
+    array-length v2, v1
+
+    if-lt v0, v2, :cond_1
+
+    :cond_0
+    return-void
+
+    :cond_1
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v3, " "
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    aget-object v3, v1, v0
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p3, v2}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    aget-object v1, p1, p0
+
+    :goto_1
+    array-length v2, v1
+
+    if-ge v0, v2, :cond_0
+
+    add-int/lit8 v2, p0, 0x1
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    invoke-static {p2}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    const-string v4, " "
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    aget-object v4, v1, v0
+
+    invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, p1, v3, p3}, Lcn/yunzhisheng/common/PinyinConverter;->getCartesianPinyin(I[[Ljava/lang/String;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+.end method
+
+.method private static getIntFrombytes([BII)I
+    .locals 5
+    .param p0, "b"    # [B
+    .param p1, "start"    # I
+    .param p2, "len"    # I
+
+    .prologue
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    array-length v1, p0
+
+    add-int v2, p1, p2
+
+    if-ge v1, v2, :cond_2
+
+    :cond_0
+    const/4 v0, -0x1
+
+    :cond_1
+    return v0
+
+    :cond_2
+    move v1, v0
+
+    move v2, v0
+
+    :goto_0
+    if-ge v1, p2, :cond_1
+
+    add-int v3, p1, v1
+
+    aget-byte v3, p0, v3
+
+    mul-int/lit8 v4, v1, 0x8
+
+    shl-int/2addr v3, v4
+
+    and-int/2addr v0, v2
+
+    or-int/2addr v3, v0
+
+    const/16 v0, 0xff
+
+    mul-int/lit8 v4, v1, 0x8
+
+    shl-int/2addr v0, v4
+
+    or-int/2addr v2, v0
+
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
+
+    move v0, v3
+
+    goto :goto_0
+.end method
+
+.method private static getMultiPinYin(Ljava/lang/String;)Ljava/util/ArrayList;
+    .locals 5
+    .param p0, "str"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v1, 0x0
+
+    const-string v0, "[^\u4e00-\u9fa5]"
+
+    const-string v2, ""
+
+    invoke-virtual {p0, v0, v2}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+
+    :cond_1
+    new-instance v2, Ljava/util/ArrayList;
+
+    invoke-direct {v2}, Ljava/util/ArrayList;-><init>()V
+
+    move v0, v1
+
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-lt v0, v3, :cond_2
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v3, ""
+
+    invoke-static {v1, v2, v3, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getCartesianPinyin(ILjava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v3
+
+    invoke-static {v3}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2MultiPinyin(Ljava/lang/Character;)Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v3
+
+    const-string v4, " "
+
+    invoke-virtual {v3, v4}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-virtual {v2, v3}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+.end method
+
+.method public static getMultiSpell(Ljava/lang/String;I)[Ljava/lang/String;
+    .locals 4
+    .param p0, "cnStr"    # Ljava/lang/String;
+    .param p1, "type"    # I
+
+    .prologue
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    const-string v1, ""
+
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_1
+
+    :cond_0
+    :goto_0
+    return-object v0
+
+    :cond_1
+    new-instance v1, Ljava/util/ArrayList;
+
+    invoke-direct {v1}, Ljava/util/ArrayList;-><init>()V
+
+    packed-switch p1, :pswitch_data_0
+
+    invoke-static {p0}, Lcn/yunzhisheng/common/PinyinConverter;->getMultiPinYin(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    :goto_1
+    if-eqz v3, :cond_0
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v1
+
+    if-lez v1, :cond_0
+
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    new-array v2, v0, [Ljava/lang/String;
+
+    const/4 v0, 0x0
+
+    move v1, v0
+
+    :goto_2
+    invoke-virtual {v3}, Ljava/util/ArrayList;->size()I
+
+    move-result v0
+
+    if-lt v1, v0, :cond_2
+
+    move-object v0, v2
+
+    goto :goto_0
+
+    :pswitch_0
+    invoke-static {p0}, Lcn/yunzhisheng/common/PinyinConverter;->getNameMultiPinYin(Ljava/lang/String;)Ljava/util/ArrayList;
+
+    move-result-object v1
+
+    move-object v3, v1
+
+    goto :goto_1
+
+    :cond_2
+    invoke-virtual {v3, v1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    aput-object v0, v2, v1
+
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
+
+    goto :goto_2
+
+    nop
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private static getNameMultiPinYin(Ljava/lang/String;)Ljava/util/ArrayList;
+    .locals 6
+    .param p0, "str"    # Ljava/lang/String;
+    .annotation system Ldalvik/annotation/Signature;
+        value = {
+            "(",
+            "Ljava/lang/String;",
+            ")",
+            "Ljava/util/ArrayList",
+            "<",
+            "Ljava/lang/String;",
+            ">;"
+        }
+    .end annotation
+
+    .prologue
+    const/4 v2, 0x0
+
+    const-string v0, "[^\u4e00-\u9fa5]"
+
+    const-string v1, ""
+
+    invoke-virtual {p0, v0, v1}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object p0
+
+    if-eqz p0, :cond_0
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+
+    :cond_1
+    new-instance v4, Ljava/util/ArrayList;
+
+    invoke-direct {v4}, Ljava/util/ArrayList;-><init>()V
+
+    move v1, v2
+
+    :goto_1
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v0
+
+    if-lt v1, v0, :cond_2
+
+    new-instance v0, Ljava/util/ArrayList;
+
+    invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
+
+    const-string v1, ""
+
+    invoke-static {v2, v4, v1, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getCartesianPinyin(ILjava/util/ArrayList;Ljava/lang/String;Ljava/util/ArrayList;)V
+
+    goto :goto_0
+
+    :cond_2
+    invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v0
+
+    invoke-static {v0}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v0
+
+    if-nez v1, :cond_3
+
+    sget-object v3, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    invoke-interface {v3, v0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v3
+
+    if-eqz v3, :cond_3
+
+    const/4 v3, 0x1
+
+    new-array v3, v3, [Ljava/lang/String;
+
+    sget-object v5, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    invoke-interface {v5, v0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    aput-object v0, v3, v2
+
+    move-object v0, v3
+
+    :goto_2
+    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
+
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
+
+    goto :goto_1
+
+    :cond_3
+    invoke-static {v0}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2MultiPinyin(Ljava/lang/Character;)Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-virtual {v0}, Ljava/lang/String;->trim()Ljava/lang/String;
+
+    move-result-object v0
+
+    const-string v3, " "
+
+    invoke-virtual {v0, v3}, Ljava/lang/String;->split(Ljava/lang/String;)[Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_2
+.end method
+
+.method public static getNameMultiSpell(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getMultiSpell(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static getNamePinYin(Ljava/lang/String;)Ljava/lang/String;
+    .locals 8
+    .param p0, "str"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v3, 0x1
+
+    const/4 v2, 0x0
+
+    new-instance v5, Ljava/lang/StringBuilder;
+
+    invoke-direct {v5}, Ljava/lang/StringBuilder;-><init>()V
+
+    move v1, v2
+
+    move v0, v3
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v4
+
+    if-lt v1, v4, :cond_0
+
+    invoke-virtual {v5}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcn/yunzhisheng/common/PinyinConverter;->filterChar(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    invoke-virtual {p0, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_1
+
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const-string v7, " "
+
+    invoke-virtual {v7, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v7
+
+    if-ne v6, v7, :cond_1
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move v4, v0
+
+    :goto_1
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
+
+    move v0, v4
+
+    goto :goto_0
+
+    :cond_1
+    invoke-static {v4}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2Pinyin(Ljava/lang/Character;)Ljava/lang/String;
+
+    move-result-object v6
+
+    if-eqz v6, :cond_2
+
+    const-string v7, ""
+
+    invoke-virtual {v6, v7}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-nez v7, :cond_2
+
+    const-string v7, " "
+
+    invoke-virtual {v5, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    if-eqz v0, :cond_6
+
+    sget-object v7, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    invoke-interface {v7, v4}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v7
+
+    if-eqz v7, :cond_6
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mSpecialXingMap:Ljava/util/Map;
+
+    invoke-interface {v0, v4}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    invoke-virtual {v5, v0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move v0, v2
+
+    :goto_2
+    const-string v6, " "
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_2
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x30
+
+    if-lt v6, v7, :cond_3
+
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x39
+
+    if-le v6, v7, :cond_5
+
+    :cond_3
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x61
+
+    if-lt v6, v7, :cond_4
+
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x7a
+
+    if-le v6, v7, :cond_5
+
+    :cond_4
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x41
+
+    if-lt v6, v7, :cond_7
+
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const/16 v7, 0x5a
+
+    if-gt v6, v7, :cond_7
+
+    :cond_5
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move v4, v0
+
+    goto :goto_1
+
+    :cond_6
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_2
+
+    :cond_7
+    invoke-virtual {v4}, Ljava/lang/Character;->charValue()C
+
+    move-result v6
+
+    const-string v7, "|"
+
+    invoke-virtual {v7, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v7
+
+    if-ne v6, v7, :cond_8
+
+    invoke-virtual {v5, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    move v4, v3
+
+    goto :goto_1
+
+    :cond_8
+    move v4, v0
+
+    goto :goto_1
+.end method
+
+.method public static getNameSpell(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    if-eqz p0, :cond_0
+
+    const-string v0, ""
+
+    invoke-virtual {p0, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_1
+
+    :cond_0
+    const-string v0, ""
+
+    :goto_0
+    return-object v0
+
+    :cond_1
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    goto :goto_0
+.end method
+
+.method public static getNameSpell1(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getNameSpell2(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static getPinYin(Ljava/lang/String;)Ljava/lang/String;
+    .locals 6
+    .param p0, "str"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v1, 0x0
+
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    invoke-direct {v2}, Ljava/lang/StringBuilder;-><init>()V
+
+    move v0, v1
+
+    :goto_0
+    invoke-virtual {p0}, Ljava/lang/String;->length()I
+
+    move-result v3
+
+    if-lt v0, v3, :cond_0
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    invoke-static {v0}, Lcn/yunzhisheng/common/PinyinConverter;->filterChar(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+
+    :cond_0
+    invoke-virtual {p0, v0}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    invoke-static {v3}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object v3
+
+    if-eqz v3, :cond_2
+
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const-string v5, " "
+
+    invoke-virtual {v5, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v5
+
+    if-ne v4, v5, :cond_2
+
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    :cond_1
+    :goto_1
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    invoke-static {v3}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2Pinyin(Ljava/lang/Character;)Ljava/lang/String;
+
+    move-result-object v4
+
+    if-eqz v4, :cond_3
+
+    const-string v5, ""
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v5
+
+    if-nez v5, :cond_3
+
+    const-string v5, " "
+
+    invoke-virtual {v2, v5}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    const-string v4, " "
+
+    invoke-virtual {v2, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :cond_3
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x30
+
+    if-lt v4, v5, :cond_4
+
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x39
+
+    if-le v4, v5, :cond_7
+
+    :cond_4
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x61
+
+    if-lt v4, v5, :cond_5
+
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x7a
+
+    if-le v4, v5, :cond_7
+
+    :cond_5
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x41
+
+    if-lt v4, v5, :cond_6
+
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const/16 v5, 0x5a
+
+    if-le v4, v5, :cond_7
+
+    :cond_6
+    invoke-virtual {v3}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    const-string v5, "|"
+
+    invoke-virtual {v5, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v5
+
+    if-ne v4, v5, :cond_1
+
+    :cond_7
+    invoke-virtual {v2, v3}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+
+    goto :goto_1
+.end method
+
+.method private static getPinYinbyIndex(I)Ljava/lang/String;
+    .locals 3
+    .param p0, "index"    # I
+
+    .prologue
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    if-eqz v0, :cond_2
+
+    sget v0, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    mul-int/2addr p0, v0
+
+    sget v0, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    add-int/2addr v0, p0
+
+    sget-object v1, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    array-length v1, v1
+
+    if-gt v0, v1, :cond_2
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    invoke-direct {v1}, Ljava/lang/StringBuilder;-><init>()V
+
+    move v0, p0
+
+    :goto_0
+    sget v2, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    add-int/2addr v2, p0
+
+    if-lt v0, v2, :cond_1
+
+    :cond_0
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_1
+    return-object v0
+
+    :cond_1
+    sget-object v2, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    aget-byte v2, v2, v0
+
+    if-eqz v2, :cond_0
+
+    sget-object v2, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    aget-byte v2, v2, v0
+
+    int-to-char v2, v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(C)Ljava/lang/StringBuilder;
+
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_0
+
+    :cond_2
+    const-string v0, ""
+
+    goto :goto_1
+.end method
+
+.method public static getSpell(Ljava/lang/String;I)[Ljava/lang/String;
+    .locals 5
+    .param p0, "cnStr"    # Ljava/lang/String;
+    .param p1, "type"    # I
+
+    .prologue
+    const/4 v4, 0x0
+
+    invoke-static {p0, p1}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    if-nez v0, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    aget-object v1, v0, v4
+
+    const-string v2, "([a-zA-Z]+)[0-4]"
+
+    const-string v3, "$1"
+
+    invoke-virtual {v1, v2, v3}, Ljava/lang/String;->replaceAll(Ljava/lang/String;Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v1
+
+    aput-object v1, v0, v4
+
+    goto :goto_0
+.end method
+
+.method public static getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+    .locals 7
+    .param p0, "cnStr"    # Ljava/lang/String;
+    .param p1, "type"    # I
+
+    .prologue
+    const/4 v4, 0x1
+
+    const/4 v2, 0x0
+
+    if-nez p0, :cond_0
+
+    const/4 v0, 0x0
+
+    :goto_0
+    return-object v0
+
+    :cond_0
+    const-string v0, ""
+
+    packed-switch p1, :pswitch_data_0
+
+    invoke-static {p0}, Lcn/yunzhisheng/common/PinyinConverter;->getPinYin(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    :goto_1
+    new-instance v5, Ljava/lang/StringBuffer;
+
+    invoke-direct {v5}, Ljava/lang/StringBuffer;-><init>()V
+
+    move v1, v2
+
+    move v3, v4
+
+    :goto_2
+    invoke-virtual {v0}, Ljava/lang/String;->length()I
+
+    move-result v6
+
+    if-lt v1, v6, :cond_1
+
+    const/4 v1, 0x2
+
+    new-array v1, v1, [Ljava/lang/String;
+
+    aput-object v0, v1, v2
+
+    invoke-virtual {v5}, Ljava/lang/StringBuffer;->toString()Ljava/lang/String;
+
+    move-result-object v0
+
+    aput-object v0, v1, v4
+
+    move-object v0, v1
+
+    goto :goto_0
+
+    :pswitch_0
+    invoke-static {p0}, Lcn/yunzhisheng/common/PinyinConverter;->getNamePinYin(Ljava/lang/String;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1
+
+    :cond_1
+    invoke-virtual {v0, v1}, Ljava/lang/String;->charAt(I)C
+
+    move-result v6
+
+    if-eqz v3, :cond_4
+
+    const/16 v3, 0x61
+
+    if-lt v6, v3, :cond_2
+
+    const/16 v3, 0x7a
+
+    if-le v6, v3, :cond_3
+
+    :cond_2
+    const/16 v3, 0x41
+
+    if-lt v6, v3, :cond_4
+
+    const/16 v3, 0x5a
+
+    if-gt v6, v3, :cond_4
+
+    :cond_3
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+
+    :cond_4
+    const-string v3, " "
+
+    invoke-virtual {v3, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    if-ne v6, v3, :cond_5
+
+    move v3, v4
+
+    :goto_3
+    add-int/lit8 v1, v1, 0x1
+
+    goto :goto_2
+
+    :cond_5
+    const-string v3, "|"
+
+    invoke-virtual {v3, v2}, Ljava/lang/String;->charAt(I)C
+
+    move-result v3
+
+    if-ne v6, v3, :cond_6
+
+    invoke-virtual {v5, v6}, Ljava/lang/StringBuffer;->append(C)Ljava/lang/StringBuffer;
+
+    move v3, v4
+
+    goto :goto_3
+
+    :cond_6
+    move v3, v2
+
+    goto :goto_3
+
+    :pswitch_data_0
+    .packed-switch 0x1
+        :pswitch_0
+    .end packed-switch
+.end method
+
+.method private static getUIntFrombytes([BII)I
+    .locals 4
+    .param p0, "b"    # [B
+    .param p1, "start"    # I
+    .param p2, "len"    # I
+
+    .prologue
+    const/4 v0, 0x0
+
+    if-eqz p0, :cond_0
+
+    array-length v1, p0
+
+    add-int v2, p1, p2
+
+    if-ge v1, v2, :cond_2
+
+    :cond_0
+    const/4 v0, -0x1
+
+    :cond_1
+    return v0
+
+    :cond_2
+    move v1, v0
+
+    :goto_0
+    if-ge v1, p2, :cond_1
+
+    add-int v2, p1, v1
+
+    aget-byte v2, p0, v2
+
+    and-int/lit16 v2, v2, 0xff
+
+    mul-int/lit8 v3, v1, 0x8
+
+    shl-int/2addr v2, v3
+
+    or-int/2addr v2, v0
+
+    add-int/lit8 v0, v1, 0x1
+
+    move v1, v0
+
+    move v0, v2
+
+    goto :goto_0
+.end method
+
+.method public static getWordMultiSpell(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getMultiSpell(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getWordSpell(Ljava/lang/String;)Ljava/lang/String;
+    .locals 2
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x2
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    const/4 v1, 0x0
+
+    aget-object v0, v0, v1
+
+    return-object v0
+.end method
+
+.method public static getWordSpell1(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x2
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static getWordSpell2(Ljava/lang/String;)[Ljava/lang/String;
+    .locals 1
+    .param p0, "cnStr"    # Ljava/lang/String;
+
+    .prologue
+    const/4 v0, 0x2
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->getSpell2(Ljava/lang/String;I)[Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method public static init(Ljava/io/InputStream;)V
+    .locals 5
+    .param p0, "in"    # Ljava/io/InputStream;
+
+    .prologue
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    if-nez v0, :cond_0
+
+    if-nez p0, :cond_1
+
+    :cond_0
+    :goto_0
+    return-void
+
+    :cond_1
+    :try_start_0
+    invoke-virtual {p0}, Ljava/io/InputStream;->available()I
+
+    move-result v0
+
+    new-array v0, v0, [B
+
+    invoke-virtual {p0, v0}, Ljava/io/InputStream;->read([B)I
+
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+
+    array-length v1, v0
+    :try_end_0
+    .catch Ljava/io/IOException; {:try_start_0 .. :try_end_0} :catch_2
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
+
+    const/16 v2, 0xc
+
+    if-ge v1, v2, :cond_2
+
+    :try_start_1
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+    :try_end_1
+    .catch Ljava/io/IOException; {:try_start_1 .. :try_end_1} :catch_0
+
+    goto :goto_0
+
+    :catch_0
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_0
+
+    :cond_2
+    const/4 v1, 0x0
+
+    const/4 v2, 0x4
+
+    :try_start_2
+    invoke-static {v0, v1, v2}, Lcn/yunzhisheng/common/PinyinConverter;->getUIntFrombytes([BII)I
+
+    move-result v1
+
+    sput v1, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinNum:I
+
+    const/4 v1, 0x4
+
+    const/4 v2, 0x4
+
+    invoke-static {v0, v1, v2}, Lcn/yunzhisheng/common/PinyinConverter;->getUIntFrombytes([BII)I
+
+    move-result v1
+
+    sput v1, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    const/16 v1, 0x8
+
+    sget v2, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinNum:I
+
+    sget v3, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinSize:I
+
+    mul-int/2addr v2, v3
+
+    if-lez v2, :cond_3
+
+    new-array v3, v2, [B
+
+    sput-object v3, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    sget-object v3, Lcn/yunzhisheng/common/PinyinConverter;->mPinyinList:[B
+
+    const/4 v4, 0x0
+
+    invoke-static {v0, v1, v3, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+
+    :cond_3
+    add-int/lit8 v1, v2, 0x8
+
+    array-length v2, v0
+
+    sub-int/2addr v2, v1
+
+    if-lez v2, :cond_4
+
+    new-array v3, v2, [B
+
+    sput-object v3, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    sget-object v3, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    const/4 v4, 0x0
+
+    invoke-static {v0, v1, v3, v4, v2}, Ljava/lang/System;->arraycopy(Ljava/lang/Object;ILjava/lang/Object;II)V
+    :try_end_2
+    .catch Ljava/io/IOException; {:try_start_2 .. :try_end_2} :catch_2
+    .catchall {:try_start_2 .. :try_end_2} :catchall_0
+
+    :cond_4
+    :try_start_3
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+    :try_end_3
+    .catch Ljava/io/IOException; {:try_start_3 .. :try_end_3} :catch_1
+
+    goto :goto_0
+
+    :catch_1
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catch_2
+    move-exception v0
+
+    :try_start_4
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+    :try_end_4
+    .catchall {:try_start_4 .. :try_end_4} :catchall_0
+
+    :try_start_5
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+    :try_end_5
+    .catch Ljava/io/IOException; {:try_start_5 .. :try_end_5} :catch_3
+
+    goto :goto_0
+
+    :catch_3
+    move-exception v0
+
+    invoke-virtual {v0}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_0
+
+    :catchall_0
+    move-exception v0
+
+    :try_start_6
+    invoke-virtual {p0}, Ljava/io/InputStream;->close()V
+    :try_end_6
+    .catch Ljava/io/IOException; {:try_start_6 .. :try_end_6} :catch_4
+
+    :goto_1
+    throw v0
+
+    :catch_4
+    move-exception v1
+
+    invoke-virtual {v1}, Ljava/io/IOException;->printStackTrace()V
+
+    goto :goto_1
+.end method
+
+.method public static transT2S(C)C
+    .locals 2
+    .param p0, "t"    # C
+
+    .prologue
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mTraditional:Ljava/lang/String;
+
+    invoke-virtual {v0, p0}, Ljava/lang/String;->indexOf(I)I
+
+    move-result v0
+
+    if-ltz v0, :cond_0
+
+    sget-object v1, Lcn/yunzhisheng/common/PinyinConverter;->mSimplified:Ljava/lang/String;
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->charAt(I)C
+
+    move-result p0
+
+    .end local p0    # "t":C
+    :cond_0
+    return p0
+.end method
+
+.method private static transWord2MultiPinyin(Ljava/lang/Character;)Ljava/lang/String;
+    .locals 1
+    .param p0, "cn"    # Ljava/lang/Character;
+
+    .prologue
+    const/4 v0, 0x1
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2Pinyin(Ljava/lang/Character;Z)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static transWord2Pinyin(Ljava/lang/Character;)Ljava/lang/String;
+    .locals 1
+    .param p0, "cn"    # Ljava/lang/Character;
+
+    .prologue
+    const/4 v0, 0x0
+
+    invoke-static {p0, v0}, Lcn/yunzhisheng/common/PinyinConverter;->transWord2Pinyin(Ljava/lang/Character;Z)Ljava/lang/String;
+
+    move-result-object v0
+
+    return-object v0
+.end method
+
+.method private static transWord2Pinyin(Ljava/lang/Character;Z)Ljava/lang/String;
+    .locals 10
+    .param p0, "cn"    # Ljava/lang/Character;
+    .param p1, "needMulti"    # Z
+
+    .prologue
+    const/4 v3, 0x0
+
+    const/4 v2, 0x0
+
+    const/4 v8, 0x2
+
+    const-string v1, ""
+
+    const-string v0, ""
+
+    invoke-virtual {p0}, Ljava/lang/Character;->charValue()C
+
+    move-result v4
+
+    invoke-static {v4}, Lcn/yunzhisheng/common/PinyinConverter;->transT2S(C)C
+
+    move-result v4
+
+    invoke-static {v4}, Ljava/lang/Character;->valueOf(C)Ljava/lang/Character;
+
+    move-result-object p0
+
+    :try_start_0
+    invoke-static {p0}, Ljava/lang/String;->valueOf(Ljava/lang/Object;)Ljava/lang/String;
+
+    move-result-object v4
+
+    const-string v5, "UTF-16LE"
+
+    invoke-virtual {v4, v5}, Ljava/lang/String;->getBytes(Ljava/lang/String;)[B
+    :try_end_0
+    .catch Ljava/io/UnsupportedEncodingException; {:try_start_0 .. :try_end_0} :catch_0
+
+    move-result-object v4
+
+    :goto_0
+    if-eqz v4, :cond_6
+
+    array-length v5, v4
+
+    if-lez v5, :cond_6
+
+    array-length v5, v4
+
+    invoke-static {v4, v2, v5}, Lcn/yunzhisheng/common/PinyinConverter;->getUIntFrombytes([BII)I
+
+    move-result v4
+
+    const/16 v5, 0x4e00
+
+    if-lt v4, v5, :cond_6
+
+    const v5, 0x9fa5
+
+    if-gt v4, v5, :cond_6
+
+    add-int/lit16 v4, v4, -0x4e00
+
+    mul-int/lit8 v4, v4, 0x2
+
+    sget-object v5, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    if-eqz v5, :cond_6
+
+    sget-object v5, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    array-length v5, v5
+
+    add-int/lit8 v6, v4, 0x2
+
+    if-le v5, v6, :cond_6
+
+    sget-object v5, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    invoke-static {v5, v4, v8}, Lcn/yunzhisheng/common/PinyinConverter;->getIntFrombytes([BII)I
+
+    move-result v4
+
+    const/16 v5, 0x270f
+
+    if-eq v4, v5, :cond_0
+
+    if-ltz v4, :cond_0
+
+    invoke-static {v4}, Lcn/yunzhisheng/common/PinyinConverter;->getPinYinbyIndex(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    :cond_0
+    if-gez v4, :cond_6
+
+    rsub-int v0, v4, 0x51a6
+
+    mul-int/lit8 v0, v0, 0x2
+
+    sget-object v1, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    invoke-static {v1, v0, v8}, Lcn/yunzhisheng/common/PinyinConverter;->getIntFrombytes([BII)I
+
+    move-result v4
+
+    add-int/lit8 v0, v0, 0x2
+
+    neg-int v1, v4
+
+    new-array v5, v1, [I
+
+    new-instance v6, Ljava/lang/StringBuilder;
+
+    invoke-direct {v6}, Ljava/lang/StringBuilder;-><init>()V
+
+    move-object v9, v3
+
+    move v3, v0
+
+    move-object v0, v9
+
+    :goto_1
+    neg-int v1, v4
+
+    if-lt v2, v1, :cond_2
+
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    :goto_2
+    sget-object v2, Lcn/yunzhisheng/common/PinyinConverter;->mUncommonWordsMap:Ljava/util/Map;
+
+    invoke-interface {v2, p0}, Ljava/util/Map;->containsKey(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1
+
+    sget-object v0, Lcn/yunzhisheng/common/PinyinConverter;->mUncommonWordsMap:Ljava/util/Map;
+
+    invoke-interface {v0, p0}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v0
+
+    check-cast v0, Ljava/lang/String;
+
+    :cond_1
+    if-eqz p1, :cond_5
+
+    const-string v2, ""
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_5
+
+    invoke-virtual {v1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-nez v2, :cond_5
+
+    :goto_3
+    return-object v1
+
+    :catch_0
+    move-exception v4
+
+    move-object v4, v3
+
+    goto :goto_0
+
+    :cond_2
+    sget-object v1, Lcn/yunzhisheng/common/PinyinConverter;->mUnit2PinyinIndex:[B
+
+    invoke-static {v1, v3, v8}, Lcn/yunzhisheng/common/PinyinConverter;->getIntFrombytes([BII)I
+
+    move-result v1
+
+    aput v1, v5, v2
+
+    aget v1, v5, v2
+
+    invoke-static {v1}, Lcn/yunzhisheng/common/PinyinConverter;->getPinYinbyIndex(I)Ljava/lang/String;
+
+    move-result-object v1
+
+    if-nez v0, :cond_3
+
+    move-object v0, v1
+
+    :cond_3
+    invoke-virtual {v6}, Ljava/lang/StringBuilder;->length()I
+
+    move-result v7
+
+    if-gtz v7, :cond_4
+
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    :goto_4
+    add-int/lit8 v3, v3, 0x2
+
+    add-int/lit8 v1, v2, 0x1
+
+    move v2, v1
+
+    goto :goto_1
+
+    :cond_4
+    const-string v7, " "
+
+    invoke-virtual {v6, v7}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    invoke-virtual {v6, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    goto :goto_4
+
+    :cond_5
+    move-object v1, v0
+
+    goto :goto_3
+
+    :cond_6
+    move-object v9, v0
+
+    move-object v0, v1
+
+    move-object v1, v9
+
+    goto :goto_2
+.end method

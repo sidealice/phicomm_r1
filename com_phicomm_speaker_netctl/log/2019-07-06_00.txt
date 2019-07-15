@@ -1,0 +1,619 @@
+
+#-------system info-------
+package-name:com.phicomm.speaker.netctl
+app-name:NetControl
+version-name:5.1.1-3331
+version-code:22
+model:rk322x-box
+system-version:5.1.1
+density:1.0
+screen-height:432
+screen-width:720
+imei:null
+imsi:null
+msisdn:null
+mac-addr:98:bb:99:48:99:79
+isWifiOpen:true
+[2019-07-06 13:48:26 746 MessageReceiverImpl D] notifyMsg() what=256, arg1=5, arg2=0, obj=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1411390, downTime=1411390, deviceId=0, source=0x101 }
+[2019-07-06 13:48:26 747 MainService D] Receive MSG_RECV_LONG_PRESS
+[2019-07-06 13:48:26 886 LogConfig D] all log files size=26421
+[2019-07-06 13:48:26 909 MessageReceiverImpl D] notifyMsg() what=262144, arg1=1, arg2=-1, obj=null
+[2019-07-06 13:48:26 911 MainService D] Receive MSG_RECV_TURN_ON_WIFI_CONFIG, turning ON wifi config mode
+[2019-07-06 13:48:26 912 WifiConfigModeMgr D] turning on wifi config mode
+[2019-07-06 13:48:26 924 BleServer D] BLE begin to start...
+[2019-07-06 13:48:26 928 BleServer D] BLE is supported on current device.
+[2019-07-06 13:48:26 929 BleServer D] trying to open GattServer...attempt times:1
+[2019-07-06 13:48:26 934 BleServer D] GATT service added=8235a8e8-c6cb-48ea-bae2-3d2431384478
+[2019-07-06 13:48:26 950 BleServer D] multiple advertisement supported.
+[2019-07-06 13:48:26 989 BleServer D] advertising engaged.
+[2019-07-06 13:48:26 994 IJettyService D] jetty pref port = 8989, use nio = true, use ssl = false, ssl port = 0
+[2019-07-06 13:48:26 997 IJettyService I] Configured org.eclipse.jetty.server.nio.SelectChannelConnector on port 8989
+[2019-07-06 13:48:27 006 Jetty W] WebAppDeployer is deprecated. Use WebAppProvider
+[2019-07-06 13:48:27 008 IJettyService I] Adding webapp deployer: 
+[2019-07-06 13:48:27 009 WifiHelper D] start scan for first time, startScan()=true
+[2019-07-06 13:48:27 011 WifiConfigModeMgr D] put global settings, ellapse time=17
+[2019-07-06 13:48:27 013 Statistics D] 
+==========================Statistics=========================
+ enterConfigModeCount: 1
+ scanWifiListEllapseTimes data: 
+ average: 2236, min: 2236, max: 2236
+ 2000~2499: 1
+ wifi list size data:
+ size 30~39: 1
+===============================================================
+
+[2019-07-06 13:48:27 018 WifiStateMonitor D] Network state changed to ROUTER_CONNECTED
+[2019-07-06 13:48:27 020 BleServer D] onWifiStateChanged newState=5
+[2019-07-06 13:48:27 023 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[5]
+[2019-07-06 13:48:27 024 Jetty I] jetty-7.x.y-SNAPSHOT
+[2019-07-06 13:48:27 032 AndroidWebAppDeployer D] AndroidWebAppDeployer: prepared file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:48:27 032 BleServer V] BLE Advertising start successfully. Broadcasting
+[2019-07-06 13:48:27 040 AndroidWebInfConfiguration D] Setting classloader parent=dalvik.system.PathClassLoader[DexPathList[[zip file "/system/app/NetControl/NetControl.apk"],nativeLibraryDirectories=[/system/app/NetControl/lib/arm, /vendor/lib, /system/lib]]] for context: o.e.j.w.WebAppContext{,file:/system/web/jetty/webapps/ROOT/},file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:48:27 052 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@2a99887f
+[2019-07-06 13:48:27 143 Jetty I] NO JSP Support for {}, did not find {}
+[2019-07-06 13:48:27 157 Jetty I] started {}
+[2019-07-06 13:48:27 176 Jetty I] Started {}
+[2019-07-06 13:48:27 179 IJettyService D] start jetty ellapse time=184
+[2019-07-06 13:48:27 430 MessageReceiverImpl D] notifyMsg() what=256, arg1=6, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1417080, downTime=1411390, deviceId=0, source=0x101 }
+[2019-07-06 13:48:28 571 NetworkUtils D] begin to check network....
+[2019-07-06 13:48:28 700 NetworkUtils D] callback network avaliable=true PING www.a.shifen.com (180.101.49.12) 56(84) bytes of data.
+64 bytes from entry.baidu.com (180.101.49.12): icmp_seq=1 ttl=52 time=16.3 ms
+
+--- www.a.shifen.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 16.354/16.354/16.354/0.000 ms
+
+elapse time=129
+[2019-07-06 13:48:28 701 WifiStateMonitor D] Network state changed to GOOD
+[2019-07-06 13:48:28 702 BleServer D] onWifiStateChanged newState=3
+[2019-07-06 13:48:28 704 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[3]
+[2019-07-06 13:48:28 839 BleServer V] BLE connected to device, name=null, addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:48:29 826 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:48:29 916 BleServer D] Characteristic Write request: [1, 123, 34, 112, 97, 103, 101, 95, 115, 105, 122, 101, 34, 58, 51, 48, 44, 34, 112, 97]
+[2019-07-06 13:48:30 006 BleServer D] Characteristic Write request: [0, 103, 101, 95, 110, 117, 109, 98, 101, 114, 34, 58, 49, 125]
+[2019-07-06 13:48:30 007 WifiHelper D] start scan for second time, startScan()=true
+[2019-07-06 13:48:30 010 DefaultBleRequestProcessor D] receive request={"page_size":30,"page_number":1}
+[2019-07-06 13:48:30 011 DefaultBleRequestProcessor D] get wifi list from mobile
+[2019-07-06 13:48:30 271 WifiHelper D] receivce action SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:48:30 276 WifiHelper D] get scan wifi list size = 23 when receive SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:48:30 305 WifiHelper D] scan wifi list ellapse time = 3304, list size = 23
+[2019-07-06 13:48:30 310 WifiBiz D] get wifi list, reqContent={"page_size":30,"page_number":1}, respContent={"total":23,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:5f",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:07",1,"WPA"],["Xiaomi-z z","34:ce:00:18:14:22",1,"WPA"]]}
+[2019-07-06 13:48:30 311 DefaultBleRequestProcessor D] get wifi list, response={"total":23,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:5f",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:07",1,"WPA"],["Xiaomi-z z","34:ce:00:18:14:22",1,"WPA"]]}
+[2019-07-06 13:48:30 330 WifiHelper I] scann wifi list result:[{"level":3,"mac":"74:7d:24:30:a1:ba","secure":"WPA","ssid":"@PHICOMM_B8"},{"level":3,"mac":"74:7d:24:30:a1:bb","secure":"WPA","ssid":"@PHICOMM_B8_5G"},{"level":2,"mac":"cc:2d:21:83:3f:81","secure":"WPA","ssid":"Chinanet-2.4G-3F80"},{"level":2,"mac":"fc:10:c6:82:fd:b3","secure":"WPA","ssid":"ChinaNet-brMb"},{"level":2,"mac":"34:ce:00:22:24:fe","secure":"WPA","ssid":"Xiaomi_24FD"},{"level":2,"mac":"74:ec:42:8e:2e:ad","secure":"WPA","ssid":"ChinaNet-2Ufz"},{"level":2,"mac":"24:69:68:8e:04:b7","secure":"WPA","ssid":"TP-LINK_04B7"},{"level":2,"mac":"cc:2d:21:83:3f:85","secure":"WPA","ssid":"Chinanet-5G-3F80"},{"level":2,"mac":"d0:60:8c:58:b6:ee","secure":"WPA","ssid":"ChinaNet-q6eN"},{"level":2,"mac":"00:1f:8f:f8:06:5c","secure":"WPA","ssid":"ChinaNet-vEDe"},{"level":2,"mac":"02:76:e7:7a:14:73","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"d0:76:e7:7a:14:73","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"d0:76:e7:11:21:ed","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"02:76:e7:11:21:ed","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"02:76:e7:7a:17:1b","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:e6:58:7d","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:7a:17:1b","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"d0:76:e7:e6:57:81","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"02:76:e7:7a:16:5f","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:7a:16:5f","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"cc:08:fb:a2:2f:23","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:e6:58:07","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"34:ce:00:18:14:22","secure":"WPA","ssid":"Xiaomi-z z"}]
+[2019-07-06 13:48:30 497 WifiHelper D] enable wifi ap. ssid=Phicomm_R1_9979, ret=true
+[2019-07-06 13:48:30 615 BleServer D] 302ms
+[2019-07-06 13:48:30 628 MessageReceiverImpl D] notifyMsg() what=2097152, arg1=1, arg2=0, obj=android.os.ParcelableUtil@283cec8
+[2019-07-06 13:48:30 637 WifiStateMonitor D] Network state changed to DISCONNECTED
+[2019-07-06 13:48:30 638 BleServer D] onWifiStateChanged newState=1
+[2019-07-06 13:48:30 695 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:48:30 736 BleServer D] Device tried to read characteristic: c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:48:30 741 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:48:30 742 DefaultBleRequestProcessor D] query wifi state from mobile.
+[2019-07-06 13:48:30 750 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:48:37 611 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:48:37 701 BleServer D] Characteristic Write request: [8, 123, 34, 115, 115, 105, 100, 34, 58, 34, 64, 80, 72, 73, 67, 79, 77, 77, 95, 66]
+[2019-07-06 13:48:37 791 BleServer D] Characteristic Write request: [7, 56, 34, 44, 34, 109, 97, 99, 34, 58, 34, 55, 52, 58, 55, 100, 58, 50, 52, 58]
+[2019-07-06 13:48:37 881 BleServer D] Characteristic Write request: [6, 51, 48, 58, 97, 49, 58, 98, 97, 34, 44, 34, 108, 101, 118, 101, 108, 34, 58, 51]
+[2019-07-06 13:48:37 971 BleServer D] Characteristic Write request: [5, 44, 34, 115, 101, 99, 117, 114, 101, 34, 58, 34, 87, 80, 65, 34, 44, 34, 112, 119]
+[2019-07-06 13:48:38 061 BleServer D] Characteristic Write request: [4, 100, 34, 58, 34, 53, 50, 57, 51, 54, 57, 56, 55, 67, 54, 52, 56, 57, 48, 70]
+[2019-07-06 13:48:38 151 BleServer D] Characteristic Write request: [3, 67, 51, 53, 48, 53, 68, 70, 68, 49, 70, 57, 49, 65, 66, 48, 70, 52, 34, 44]
+[2019-07-06 13:48:38 241 BleServer D] Characteristic Write request: [2, 34, 112, 119, 100, 95, 118, 50, 34, 58, 34, 68, 65, 52, 57, 50, 51, 57, 66, 70]
+[2019-07-06 13:48:38 331 BleServer D] Characteristic Write request: [1, 66, 52, 69, 56, 50, 48, 65, 52, 50, 49, 53, 52, 52, 70, 70, 50, 68, 49, 68]
+[2019-07-06 13:48:38 421 BleServer D] Characteristic Write request: [0, 49, 66, 57, 48, 34, 125]
+[2019-07-06 13:48:38 424 DefaultBleRequestProcessor D] receive request={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 13:48:38 425 DefaultBleRequestProcessor D] config wifi from mobile, json={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 13:48:38 430 WifiHelper D] decryptPasswordV2()  encryptedPasswordV2=DA49239BFB4E820A421544FF2D1D1B90
+[2019-07-06 13:48:38 431 DeviceInfoUtils D] get hardware version from system, version=V3.0.0
+[2019-07-06 13:48:38 431 WifiHelper D] decryptPasswordV2()  decryptedPasswordV2=aaaaaaaa
+[2019-07-06 13:48:38 433 WifiHelper D] begin to connect wifi, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 13:48:38 437 DefaultBleRequestProcessor D] config wifi from mobile, response={"device_id":"0098BB99489979DF9624B17A","device_type":"phicomm_echo","hardware_version":"V3.0.0","model":"R1","rom_version":"1.0.0.3331","udid":"LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ"}
+[2019-07-06 13:48:38 492 BleServer D] 55ms
+[2019-07-06 13:48:41 558 WifiHelper D] remove existing network config, ssid= "@PHICOMM_B8"
+[2019-07-06 13:48:41 651 WifiHelper D] add network, networkId=  0
+[2019-07-06 13:48:41 666 WifiHelper D] Associating to network "@PHICOMM_B8"
+[2019-07-06 13:48:43 080 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 13:48:43 081 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 13:48:43 082 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 13:48:44 565 WifiStateMonitor D] Network state changed to ROUTER_CONNECTED
+[2019-07-06 13:48:44 580 BleServer D] onWifiStateChanged newState=5
+[2019-07-06 13:48:44 584 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[5]
+[2019-07-06 13:48:45 992 MessageReceiverImpl D] notifyMsg() what=2097152, arg1=100, arg2=-1, obj=null
+[2019-07-06 13:48:45 994 BleServer D] unisound mqtt connect success. code=20
+[2019-07-06 13:48:45 995 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[20]
+[2019-07-06 13:48:46 071 BleServer D] Device tried to read characteristic: 163456bd-0f5a-80f2-ec0a-b6e04a9e7b4d, value=null
+[2019-07-06 13:48:46 074 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:48:46 074 DefaultBleRequestProcessor D] exit wifi config mode from mobile.
+[2019-07-06 13:48:46 075 WifiConfigModeMgr D] turning off wifi config mode
+[2019-07-06 13:48:46 081 BleServer D] cancelConnection, bluetooth device addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:48:46 096 WifiConfigModeMgr D] get global settings, ellapse time=2
+[2019-07-06 13:48:46 099 IJettyService D] stop() waiting for getting lock
+[2019-07-06 13:48:46 101 IJettyService D] stop() begin to get lock
+[2019-07-06 13:48:46 101 WifiHelper D] disable wifi ap, ret=true
+[2019-07-06 13:48:46 102 IJettyService I] Jetty stopping
+[2019-07-06 13:48:46 105 WifiHelper D] resotre wifi state, enable wifi...
+[2019-07-06 13:48:46 112 WifiConfigModeMgr D] put global settings, ellapse time=14
+[2019-07-06 13:48:46 115 Statistics D] report wifi config data, content={"key":"distribution_network","data":{"begin":"1562392107015","success":"1562392126112","band":"2.4GHz"}}
+[2019-07-06 13:48:46 117 Statistics D] ---------------------------------------------------
+[2019-07-06 13:48:27:015] enter wifi config mode
+[2019-07-06 13:48:27:030] net state changed to 5
+[2019-07-06 13:48:28:709] net state changed to 3
+[2019-07-06 13:48:28:839] ble connected, address=57:94:FC:B6:FB:E8
+[2019-07-06 13:48:30:012] receive wifi list request using ble, page number=1, page size=30
+[2019-07-06 13:48:30:307] return wifi list using ble, size=23
+[2019-07-06 13:48:30:737] net state changed to 1
+[2019-07-06 13:48:38:432] receive wifi config info using ble, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 13:48:43:091] net state changed to 2
+[2019-07-06 13:48:44:616] net state changed to 5
+[2019-07-06 13:48:46:008] net state changed to 20
+[2019-07-06 13:48:46:112] exit wifi config mode by mobile request using ble
+---------------------------------------------------
+
+[2019-07-06 13:48:46 134 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@b793512
+[2019-07-06 13:48:46 138 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@2eb344e3
+[2019-07-06 13:48:46 155 NetworkUtils D] begin to check network....
+[2019-07-06 13:48:46 184 Jetty I] stopped {}
+[2019-07-06 13:48:46 292 IJettyService I] Jetty server stopped
+[2019-07-06 13:48:46 294 IJettyService I] Finally stopped
+[2019-07-06 13:48:46 295 IJettyService D] stop jetty ellapse time=193
+[2019-07-06 13:51:10 998 MessageReceiverImpl D] notifyMsg() what=256, arg1=5, arg2=0, obj=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1575650, downTime=1575650, deviceId=0, source=0x101 }
+[2019-07-06 13:51:11 000 MainService D] Receive MSG_RECV_LONG_PRESS
+[2019-07-06 13:51:11 159 MessageReceiverImpl D] notifyMsg() what=262144, arg1=1, arg2=-1, obj=null
+[2019-07-06 13:51:11 160 MainService D] Receive MSG_RECV_TURN_ON_WIFI_CONFIG, turning ON wifi config mode
+[2019-07-06 13:51:11 161 WifiConfigModeMgr D] turning on wifi config mode
+[2019-07-06 13:51:11 170 BleServer D] BLE begin to start...
+[2019-07-06 13:51:11 174 BleServer D] BLE is supported on current device.
+[2019-07-06 13:51:11 175 BleServer D] trying to open GattServer...attempt times:1
+[2019-07-06 13:51:11 179 BleServer D] GATT service added=8235a8e8-c6cb-48ea-bae2-3d2431384478
+[2019-07-06 13:51:11 190 BleServer D] multiple advertisement supported.
+[2019-07-06 13:51:11 219 BleServer D] advertising engaged.
+[2019-07-06 13:51:11 221 IJettyService D] jetty pref port = 8989, use nio = true, use ssl = false, ssl port = 0
+[2019-07-06 13:51:11 225 WifiHelper D] start scan for first time, startScan()=true
+[2019-07-06 13:51:11 226 IJettyService I] Configured org.eclipse.jetty.server.nio.SelectChannelConnector on port 8989
+[2019-07-06 13:51:11 239 Jetty W] WebAppDeployer is deprecated. Use WebAppProvider
+[2019-07-06 13:51:11 241 WifiConfigModeMgr D] put global settings, ellapse time=18
+[2019-07-06 13:51:11 247 Statistics D] 
+==========================Statistics=========================
+ enterConfigModeCount: 2
+ scanWifiListEllapseTimes data: 
+ average: 2770, min: 2236, max: 3305
+ 2000~2499: 1
+ 3000~3499: 1
+ wifi list size data:
+ size 20~29: 1
+ size 30~39: 1
+===============================================================
+
+[2019-07-06 13:51:11 250 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@8f5c32f
+[2019-07-06 13:51:11 252 WifiStateMonitor D] Network state changed to ROUTER_CONNECTED
+[2019-07-06 13:51:11 241 IJettyService I] Adding webapp deployer: 
+[2019-07-06 13:51:11 255 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@17769d3c
+[2019-07-06 13:51:11 253 BleServer D] onWifiStateChanged newState=5
+[2019-07-06 13:51:11 256 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[5]
+[2019-07-06 13:51:11 258 Jetty I] jetty-7.x.y-SNAPSHOT
+[2019-07-06 13:51:11 266 BleServer V] BLE Advertising start successfully. Broadcasting
+[2019-07-06 13:51:11 267 AndroidWebAppDeployer D] AndroidWebAppDeployer: prepared file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:51:11 275 AndroidWebInfConfiguration D] Setting classloader parent=dalvik.system.PathClassLoader[DexPathList[[zip file "/system/app/NetControl/NetControl.apk"],nativeLibraryDirectories=[/system/app/NetControl/lib/arm, /vendor/lib, /system/lib]]] for context: o.e.j.w.WebAppContext{,file:/system/web/jetty/webapps/ROOT/},file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:51:11 381 Jetty I] NO JSP Support for {}, did not find {}
+[2019-07-06 13:51:11 395 Jetty I] started {}
+[2019-07-06 13:51:11 412 Jetty I] Started {}
+[2019-07-06 13:51:11 414 IJettyService D] start jetty ellapse time=189
+[2019-07-06 13:51:11 718 MessageReceiverImpl D] notifyMsg() what=256, arg1=6, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1581370, downTime=1575650, deviceId=0, source=0x101 }
+[2019-07-06 13:51:11 787 BleServer V] BLE connected to device, name=null, addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:51:12 805 NetworkUtils D] begin to check network....
+[2019-07-06 13:51:12 819 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:51:12 910 BleServer D] Characteristic Write request: [1, 123, 34, 112, 97, 103, 101, 95, 115, 105, 122, 101, 34, 58, 51, 48, 44, 34, 112, 97]
+[2019-07-06 13:51:13 000 BleServer D] Characteristic Write request: [0, 103, 101, 95, 110, 117, 109, 98, 101, 114, 34, 58, 49, 125]
+[2019-07-06 13:51:13 003 DefaultBleRequestProcessor D] receive request={"page_size":30,"page_number":1}
+[2019-07-06 13:51:13 004 DefaultBleRequestProcessor D] get wifi list from mobile
+[2019-07-06 13:51:13 083 NetworkUtils D] callback network avaliable=true PING www.a.shifen.com (180.101.49.11) 56(84) bytes of data.
+64 bytes from 180.101.49.11: icmp_seq=1 ttl=52 time=77.8 ms
+
+--- www.a.shifen.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 77.889/77.889/77.889/0.000 ms
+
+elapse time=276
+[2019-07-06 13:51:13 084 WifiStateMonitor D] Network state changed to GOOD
+[2019-07-06 13:51:13 085 BleServer D] onWifiStateChanged newState=3
+[2019-07-06 13:51:13 483 WifiHelper D] receivce action SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:51:13 487 WifiHelper D] get scan wifi list size = 22 when receive SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:51:13 496 WifiHelper D] scan wifi list ellapse time = 2273, list size = 22
+[2019-07-06 13:51:13 506 WifiBiz D] get wifi list, reqContent={"page_size":30,"page_number":1}, respContent={"total":22,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["Shenergyesco","02:76:e7:11:21:f7",1,"WPA"]]}
+[2019-07-06 13:51:13 508 DefaultBleRequestProcessor D] get wifi list, response={"total":22,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["Shenergyesco","02:76:e7:11:21:f7",1,"WPA"]]}
+[2019-07-06 13:51:13 515 WifiHelper I] scann wifi list result:[{"level":3,"mac":"74:7d:24:30:a1:ba","secure":"WPA","ssid":"@PHICOMM_B8"},{"level":3,"mac":"74:7d:24:30:a1:bb","secure":"WPA","ssid":"@PHICOMM_B8_5G"},{"level":2,"mac":"fc:10:c6:82:fd:b3","secure":"WPA","ssid":"ChinaNet-brMb"},{"level":2,"mac":"cc:2d:21:83:3f:81","secure":"WPA","ssid":"Chinanet-2.4G-3F80"},{"level":2,"mac":"9e:30:5b:94:f2:1b","secure":"WPA","ssid":"DIRECT-o5-KD-70X8300F"},{"level":2,"mac":"34:ce:00:22:24:fe","secure":"WPA","ssid":"Xiaomi_24FD"},{"level":2,"mac":"74:ec:42:8e:2e:ad","secure":"WPA","ssid":"ChinaNet-2Ufz"},{"level":2,"mac":"24:69:68:8e:04:b7","secure":"WPA","ssid":"TP-LINK_04B7"},{"level":2,"mac":"d0:60:8c:58:b6:ee","secure":"WPA","ssid":"ChinaNet-q6eN"},{"level":2,"mac":"00:1f:8f:f8:06:5c","secure":"WPA","ssid":"ChinaNet-vEDe"},{"level":2,"mac":"cc:2d:21:83:3f:85","secure":"WPA","ssid":"Chinanet-5G-3F80"},{"level":2,"mac":"02:76:e7:11:21:ed","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"d0:76:e7:11:21:cd","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"02:76:e7:7a:14:73","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"d0:76:e7:7a:14:73","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"02:76:e7:11:21:cd","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"cc:08:fb:a2:2f:3f","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:7a:17:1b","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"d0:76:e7:7a:16:5f","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"c0:61:18:91:ad:9a","secure":"WPA","ssid":"zylp-wifi2"},{"level":1,"mac":"cc:08:fb:a2:2f:23","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"02:76:e7:11:21:f7","secure":"WPA","ssid":"Shenergyesco"}]
+[2019-07-06 13:51:13 557 WifiHelper D] enable wifi ap. ssid=Phicomm_R1_9979, ret=true
+[2019-07-06 13:51:13 753 WifiStateMonitor D] Network state changed to DISCONNECTED
+[2019-07-06 13:51:13 760 MessageReceiverImpl D] notifyMsg() what=2097152, arg1=1, arg2=0, obj=android.os.ParcelableUtil@40368cd
+[2019-07-06 13:51:13 811 BleServer D] 303ms
+[2019-07-06 13:51:13 813 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[3]
+[2019-07-06 13:51:13 821 BleServer D] onWifiStateChanged newState=1
+[2019-07-06 13:51:13 823 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:51:13 854 BleServer D] Device tried to read characteristic: c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:51:13 856 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:51:13 857 DefaultBleRequestProcessor D] query wifi state from mobile.
+[2019-07-06 13:51:13 858 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:51:31 630 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:51:31 720 BleServer D] Characteristic Write request: [8, 123, 34, 115, 115, 105, 100, 34, 58, 34, 67, 104, 105, 110, 97, 110, 101, 116, 45, 50]
+[2019-07-06 13:51:31 810 BleServer D] Characteristic Write request: [7, 46, 52, 71, 45, 51, 70, 56, 48, 34, 44, 34, 109, 97, 99, 34, 58, 34, 99, 99]
+[2019-07-06 13:51:31 900 BleServer D] Characteristic Write request: [6, 58, 50, 100, 58, 50, 49, 58, 56, 51, 58, 51, 102, 58, 56, 49, 34, 44, 34, 108]
+[2019-07-06 13:51:31 990 BleServer D] Characteristic Write request: [5, 101, 118, 101, 108, 34, 58, 50, 44, 34, 115, 101, 99, 117, 114, 101, 34, 58, 34, 87]
+[2019-07-06 13:51:32 080 BleServer D] Characteristic Write request: [4, 80, 65, 34, 44, 34, 112, 119, 100, 34, 58, 34, 68, 66, 48, 57, 65, 68, 68, 55]
+[2019-07-06 13:51:32 170 BleServer D] Characteristic Write request: [3, 57, 67, 56, 70, 68, 68, 65, 65, 52, 68, 51, 67, 55, 48, 69, 69, 67, 57, 50]
+[2019-07-06 13:51:32 260 BleServer D] Characteristic Write request: [2, 51, 48, 52, 56, 66, 34, 44, 34, 112, 119, 100, 95, 118, 50, 34, 58, 34, 70, 57]
+[2019-07-06 13:51:32 350 BleServer D] Characteristic Write request: [1, 67, 51, 67, 68, 51, 70, 49, 48, 55, 69, 51, 53, 66, 48, 52, 49, 55, 48, 55]
+[2019-07-06 13:51:32 440 BleServer D] Characteristic Write request: [0, 54, 55, 66, 53, 65, 52, 52, 48, 66, 53, 50, 34, 125]
+[2019-07-06 13:51:32 443 DefaultBleRequestProcessor D] receive request={"ssid":"Chinanet-2.4G-3F80","mac":"cc:2d:21:83:3f:81","level":2,"secure":"WPA","pwd":"DB09ADD79C8FDDAA4D3C70EEC923048B","pwd_v2":"F9C3CD3F107E35B04170767B5A440B52"}
+[2019-07-06 13:51:32 444 DefaultBleRequestProcessor D] config wifi from mobile, json={"ssid":"Chinanet-2.4G-3F80","mac":"cc:2d:21:83:3f:81","level":2,"secure":"WPA","pwd":"DB09ADD79C8FDDAA4D3C70EEC923048B","pwd_v2":"F9C3CD3F107E35B04170767B5A440B52"}
+[2019-07-06 13:51:32 450 WifiHelper D] decryptPasswordV2()  encryptedPasswordV2=F9C3CD3F107E35B04170767B5A440B52
+[2019-07-06 13:51:32 450 DeviceInfoUtils D] get hardware version from system, version=V3.0.0
+[2019-07-06 13:51:32 452 WifiHelper D] decryptPasswordV2()  decryptedPasswordV2=AFAaFAF1
+[2019-07-06 13:51:32 454 WifiHelper D] begin to connect wifi, ssid=Chinanet-2.4G-3F80, password=AFAaFAF1, encryptionType=WPA
+[2019-07-06 13:51:32 458 DefaultBleRequestProcessor D] config wifi from mobile, response={"device_id":"0098BB99489979DF9624B17A","device_type":"phicomm_echo","hardware_version":"V3.0.0","model":"R1","rom_version":"1.0.0.3331","udid":"LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ"}
+[2019-07-06 13:51:32 501 BleServer D] 41ms
+[2019-07-06 13:51:35 588 WifiHelper D] remove existing network config, ssid= "@PHICOMM_B8"
+[2019-07-06 13:51:35 687 WifiHelper D] add network, networkId=  0
+[2019-07-06 13:51:35 706 WifiHelper D] Associating to network "Chinanet-2.4G-3F80"
+[2019-07-06 13:51:37 084 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 13:51:37 086 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 13:51:37 087 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 13:51:43 126 WifiStateMonitor D] Network state changed to DISCONNECTED
+[2019-07-06 13:51:43 129 BleServer D] onWifiStateChanged newState=1
+[2019-07-06 13:51:43 132 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:51:45 749 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 13:51:45 750 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 13:51:45 751 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 13:51:51 790 WifiStateMonitor D] Network state changed to DISCONNECTED
+[2019-07-06 13:51:51 791 BleServer D] onWifiStateChanged newState=1
+[2019-07-06 13:51:51 792 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:51:56 515 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:51:56 605 BleServer D] Characteristic Write request: [8, 123, 34, 115, 115, 105, 100, 34, 58, 34, 67, 104, 105, 110, 97, 110, 101, 116, 45, 50]
+[2019-07-06 13:51:56 696 BleServer D] Characteristic Write request: [7, 46, 52, 71, 45, 51, 70, 56, 48, 34, 44, 34, 109, 97, 99, 34, 58, 34, 99, 99]
+[2019-07-06 13:51:56 785 BleServer D] Characteristic Write request: [6, 58, 50, 100, 58, 50, 49, 58, 56, 51, 58, 51, 102, 58, 56, 49, 34, 44, 34, 108]
+[2019-07-06 13:51:56 876 BleServer D] Characteristic Write request: [5, 101, 118, 101, 108, 34, 58, 50, 44, 34, 115, 101, 99, 117, 114, 101, 34, 58, 34, 87]
+[2019-07-06 13:51:56 965 BleServer D] Characteristic Write request: [4, 80, 65, 34, 44, 34, 112, 119, 100, 34, 58, 34, 48, 55, 53, 51, 55, 56, 66, 48]
+[2019-07-06 13:51:57 056 BleServer D] Characteristic Write request: [3, 52, 65, 49, 51, 53, 53, 65, 50, 53, 55, 69, 68, 54, 55, 57, 68, 55, 50, 51]
+[2019-07-06 13:51:57 146 BleServer D] Characteristic Write request: [2, 65, 51, 54, 66, 49, 34, 44, 34, 112, 119, 100, 95, 118, 50, 34, 58, 34, 57, 54]
+[2019-07-06 13:51:57 236 BleServer D] Characteristic Write request: [1, 69, 50, 65, 49, 53, 65, 52, 54, 70, 54, 49, 51, 68, 52, 67, 55, 50, 56, 66]
+[2019-07-06 13:51:57 325 BleServer D] Characteristic Write request: [0, 56, 49, 55, 67, 49, 69, 54, 51, 69, 67, 70, 34, 125]
+[2019-07-06 13:51:57 328 DefaultBleRequestProcessor D] receive request={"ssid":"Chinanet-2.4G-3F80","mac":"cc:2d:21:83:3f:81","level":2,"secure":"WPA","pwd":"075378B04A1355A257ED679D723A36B1","pwd_v2":"96E2A15A46F613D4C728B817C1E63ECF"}
+[2019-07-06 13:51:57 329 DefaultBleRequestProcessor D] config wifi from mobile, json={"ssid":"Chinanet-2.4G-3F80","mac":"cc:2d:21:83:3f:81","level":2,"secure":"WPA","pwd":"075378B04A1355A257ED679D723A36B1","pwd_v2":"96E2A15A46F613D4C728B817C1E63ECF"}
+[2019-07-06 13:51:57 336 DeviceInfoUtils D] get hardware version from system, version=V3.0.0
+[2019-07-06 13:51:57 336 WifiHelper D] decryptPasswordV2()  encryptedPasswordV2=96E2A15A46F613D4C728B817C1E63ECF
+[2019-07-06 13:51:57 337 WifiHelper D] decryptPasswordV2()  decryptedPasswordV2=AFAFAFAF
+[2019-07-06 13:51:57 339 WifiHelper D] begin to connect wifi, ssid=Chinanet-2.4G-3F80, password=AFAFAFAF, encryptionType=WPA
+[2019-07-06 13:51:57 342 DefaultBleRequestProcessor D] config wifi from mobile, response={"device_id":"0098BB99489979DF9624B17A","device_type":"phicomm_echo","hardware_version":"V3.0.0","model":"R1","rom_version":"1.0.0.3331","udid":"LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ"}
+[2019-07-06 13:51:57 345 WifiHelper D] remove existing network config, ssid= "Chinanet-2.4G-3F80"
+[2019-07-06 13:51:57 376 BleServer D] 33ms
+[2019-07-06 13:51:57 442 WifiHelper D] add network, networkId=  0
+[2019-07-06 13:51:57 456 WifiHelper D] Associating to network "Chinanet-2.4G-3F80"
+[2019-07-06 13:51:59 302 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 13:51:59 304 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 13:51:59 305 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 13:52:05 351 WifiStateMonitor D] Network state changed to DISCONNECTED
+[2019-07-06 13:52:05 353 BleServer D] onWifiStateChanged newState=1
+[2019-07-06 13:52:05 355 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:52:07 450 BleServer D] Device tried to read characteristic: 163456bd-0f5a-80f2-ec0a-b6e04a9e7b4d, value=null
+[2019-07-06 13:52:07 454 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:52:07 455 DefaultBleRequestProcessor D] exit wifi config mode from mobile.
+[2019-07-06 13:52:07 456 WifiConfigModeMgr D] turning off wifi config mode
+[2019-07-06 13:52:07 462 BleServer D] cancelConnection, bluetooth device addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:52:07 476 IJettyService D] stop() waiting for getting lock
+[2019-07-06 13:52:07 478 WifiConfigModeMgr D] get global settings, ellapse time=1
+[2019-07-06 13:52:07 478 IJettyService D] stop() begin to get lock
+[2019-07-06 13:52:07 479 IJettyService I] Jetty stopping
+[2019-07-06 13:52:07 479 WifiHelper D] disable wifi ap, ret=true
+[2019-07-06 13:52:07 482 WifiHelper D] resotre wifi state, enable wifi...
+[2019-07-06 13:52:07 495 WifiConfigModeMgr D] put global settings, ellapse time=16
+[2019-07-06 13:52:07 504 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@32076493
+[2019-07-06 13:52:07 502 Statistics D] report wifi config data, content={"key":"distribution_network","data":{"begin":"1562392271249","failed":"1562392327496","failed_msg":"---------------------------------------------------\r\n[2019-07-06 13:51:11:249] enter wifi config mode\r\n[2019-07-06 13:51:11:261] net state changed to 5\r\n[2019-07-06 13:51:11:787] ble connected, address=57:94:FC:B6:FB:E8\r\n[2019-07-06 13:51:13:005] receive wifi list request using ble, page number=1, page size=30\r\n[2019-07-06 13:51:13:503] return wifi list using ble, size=22\r\n[2019-07-06 13:51:13:819] net state changed to 3\r\n[2019-07-06 13:51:13:827] net state changed to 1\r\n[2019-07-06 13:51:32:453] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAaFAF1, encryptionType=WPA\r\n[2019-07-06 13:51:37:092] net state changed to 2\r\n[2019-07-06 13:51:43:138] net state changed to 1\r\n[2019-07-06 13:51:45:763] net state changed to 2\r\n[2019-07-06 13:51:51:800] net state changed to 1\r\n[2019-07-06 13:51:57:338] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAFAFAF, encryptionType=WPA\r\n[2019-07-06 13:51:59:310] net state changed to 2\r\n[2019-07-06 13:52:05:363] net state changed to 1\r\n[2019-07-06 13:52:07:496] exit wifi config mode by mobile request using ble\r\n---------------------------------------------------\r\n"}}
+[2019-07-06 13:52:07 507 Statistics D] ---------------------------------------------------
+[2019-07-06 13:51:11:249] enter wifi config mode
+[2019-07-06 13:51:11:261] net state changed to 5
+[2019-07-06 13:51:11:787] ble connected, address=57:94:FC:B6:FB:E8
+[2019-07-06 13:51:13:005] receive wifi list request using ble, page number=1, page size=30
+[2019-07-06 13:51:13:503] return wifi list using ble, size=22
+[2019-07-06 13:51:13:819] net state changed to 3
+[2019-07-06 13:51:13:827] net state changed to 1
+[2019-07-06 13:51:32:453] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAaFAF1, encryptionType=WPA
+[2019-07-06 13:51:37:092] net state changed to 2
+[2019-07-06 13:51:43:138] net state changed to 1
+[2019-07-06 13:51:45:763] net state changed to 2
+[2019-07-06 13:51:51:800] net state changed to 1
+[2019-07-06 13:51:57:338] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAFAFAF, encryptionType=WPA
+[2019-07-06 13:51:59:310] net state changed to 2
+[2019-07-06 13:52:05:363] net state changed to 1
+[2019-07-06 13:52:07:496] exit wifi config mode by mobile request using ble
+---------------------------------------------------
+
+[2019-07-06 13:52:07 526 Jetty I] stopped {}
+[2019-07-06 13:52:07 616 IJettyService I] Jetty server stopped
+[2019-07-06 13:52:07 618 IJettyService I] Finally stopped
+[2019-07-06 13:52:07 619 IJettyService D] stop jetty ellapse time=140
+[2019-07-06 13:53:19 249 MessageReceiverImpl D] notifyMsg() what=256, arg1=1, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1708160, downTime=1708090, deviceId=0, source=0x101 }
+[2019-07-06 13:53:19 251 MainService D] Receive MSG_RECV_SINGLE_CLICK
+[2019-07-06 13:53:23 748 MessageReceiverImpl D] notifyMsg() what=256, arg1=5, arg2=0, obj=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1708400, downTime=1708400, deviceId=0, source=0x101 }
+[2019-07-06 13:53:23 750 MainService D] Receive MSG_RECV_LONG_PRESS
+[2019-07-06 13:53:23 940 MessageReceiverImpl D] notifyMsg() what=262144, arg1=1, arg2=-1, obj=null
+[2019-07-06 13:53:23 941 MainService D] Receive MSG_RECV_TURN_ON_WIFI_CONFIG, turning ON wifi config mode
+[2019-07-06 13:53:23 942 WifiConfigModeMgr D] turning on wifi config mode
+[2019-07-06 13:53:23 949 BleServer D] cancelConnection, bluetooth device addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:53:23 952 BleServer D] BLE begin to start...
+[2019-07-06 13:53:23 956 BleServer D] BLE is supported on current device.
+[2019-07-06 13:53:23 957 BleServer D] trying to open GattServer...attempt times:1
+[2019-07-06 13:53:23 962 BleServer D] GATT service added=8235a8e8-c6cb-48ea-bae2-3d2431384478
+[2019-07-06 13:53:23 973 BleServer D] multiple advertisement supported.
+[2019-07-06 13:53:24 011 BleServer D] advertising engaged.
+[2019-07-06 13:53:24 014 IJettyService D] jetty pref port = 8989, use nio = true, use ssl = false, ssl port = 0
+[2019-07-06 13:53:24 018 IJettyService I] Configured org.eclipse.jetty.server.nio.SelectChannelConnector on port 8989
+[2019-07-06 13:53:24 020 WifiHelper D] start scan for first time, startScan()=true
+[2019-07-06 13:53:24 031 Jetty W] WebAppDeployer is deprecated. Use WebAppProvider
+[2019-07-06 13:53:24 034 IJettyService I] Adding webapp deployer: 
+[2019-07-06 13:53:24 035 Jetty I] jetty-7.x.y-SNAPSHOT
+[2019-07-06 13:53:24 038 WifiConfigModeMgr D] put global settings, ellapse time=17
+[2019-07-06 13:53:24 043 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@2fb0c62c
+[2019-07-06 13:53:24 044 Statistics D] 
+==========================Statistics=========================
+ enterConfigModeCount: 3
+ scanWifiListEllapseTimes data: 
+ average: 2605, min: 2236, max: 3305
+ 2000~2499: 2
+ 3000~3499: 1
+ wifi list size data:
+ size 20~29: 2
+ size 30~39: 1
+ wifi config failed info list:
+---------------------------------------------------
+[2019-07-06 13:51:11:249] enter wifi config mode
+[2019-07-06 13:51:11:261] net state changed to 5
+[2019-07-06 13:51:11:787] ble connected, address=57:94:FC:B6:FB:E8
+[2019-07-06 13:51:13:005] receive wifi list request using ble, page number=1, page size=30
+[2019-07-06 13:51:13:503] return wifi list using ble, size=22
+[2019-07-06 13:51:13:819] net state changed to 3
+[2019-07-06 13:51:13:827] net state changed to 1
+[2019-07-06 13:51:32:453] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAaFAF1, encryptionType=WPA
+[2019-07-06 13:51:37:092] net state changed to 2
+[2019-07-06 13:51:43:138] net state changed to 1
+[2019-07-06 13:51:45:763] net state changed to 2
+[2019-07-06 13:51:51:800] net state changed to 1
+[2019-07-06 13:51:57:338] receive wifi config info using ble, ssid=Chinanet-2.4G-3F80, password=AFAFAFAF, encryptionType=WPA
+[2019-07-06 13:51:59:310] net state changed to 2
+[2019-07-06 13:52:05:363] net state changed to 1
+[2019-07-06 13:52:07:496] exit wifi config mode by mobile request using ble
+---------------------------------------------------
+===============================================================
+
+[2019-07-06 13:53:24 044 AndroidWebAppDeployer D] AndroidWebAppDeployer: prepared file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:53:24 047 BleServer V] BLE Advertising start successfully. Broadcasting
+[2019-07-06 13:53:24 050 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@3a6bd68a
+[2019-07-06 13:53:24 056 AndroidWebInfConfiguration D] Setting classloader parent=dalvik.system.PathClassLoader[DexPathList[[zip file "/system/app/NetControl/NetControl.apk"],nativeLibraryDirectories=[/system/app/NetControl/lib/arm, /vendor/lib, /system/lib]]] for context: o.e.j.w.WebAppContext{,file:/system/web/jetty/webapps/ROOT/},file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 13:53:24 144 Jetty I] NO JSP Support for {}, did not find {}
+[2019-07-06 13:53:24 159 Jetty I] started {}
+[2019-07-06 13:53:24 174 Jetty I] Started {}
+[2019-07-06 13:53:24 175 IJettyService D] start jetty ellapse time=159
+[2019-07-06 13:53:24 384 WifiHelper D] receivce action SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:53:24 390 WifiHelper D] get scan wifi list size = 39 when receive SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 13:53:24 415 WifiHelper D] scan wifi list ellapse time = 398, list size = 39
+[2019-07-06 13:53:24 439 WifiHelper I] scann wifi list result:[{"level":3,"mac":"74:7d:24:30:a1:bb","secure":"WPA","ssid":"@PHICOMM_B8_5G"},{"level":3,"mac":"74:7d:24:30:a1:ba","secure":"WPA","ssid":"@PHICOMM_B8"},{"level":2,"mac":"cc:2d:21:83:3f:81","secure":"WPA","ssid":"Chinanet-2.4G-3F80"},{"level":2,"mac":"fc:10:c6:82:fd:b3","secure":"WPA","ssid":"ChinaNet-brMb"},{"level":2,"mac":"74:ec:42:8e:2e:ad","secure":"WPA","ssid":"ChinaNet-2Ufz"},{"level":2,"mac":"34:ce:00:22:24:fe","secure":"WPA","ssid":"Xiaomi_24FD"},{"level":2,"mac":"9e:30:5b:94:f2:1b","secure":"WPA","ssid":"DIRECT-o5-KD-70X8300F"},{"level":2,"mac":"24:69:68:8e:04:b7","secure":"WPA","ssid":"TP-LINK_04B7"},{"level":2,"mac":"d0:60:8c:58:b6:ee","secure":"WPA","ssid":"ChinaNet-q6eN"},{"level":2,"mac":"00:1f:8f:f8:06:5c","secure":"WPA","ssid":"ChinaNet-vEDe"},{"level":2,"mac":"d0:76:e7:e6:57:81","secure":"WPA","ssid":"sh-newenergy"},{"level":2,"mac":"02:76:e7:11:21:ed","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"d0:76:e7:7a:14:73","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"d0:76:e7:11:21:ed","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"cc:2d:21:83:3f:85","secure":"WPA","ssid":"Chinanet-5G-3F80"},{"level":2,"mac":"d0:76:e7:e6:58:7d","secure":"WPA","ssid":"sh-newenergy"},{"level":2,"mac":"02:76:e7:7a:17:1b","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"02:76:e7:7a:14:73","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:7a:16:5f","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"02:76:e7:11:21:cd","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"c0:61:18:91:ad:9a","secure":"WPA","ssid":"zylp-wifi2"},{"level":1,"mac":"d0:76:e7:7a:17:1b","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"cc:08:fb:a2:2f:3f","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"cc:08:fb:a2:2f:23","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:11:21:cd","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"cc:08:fb:a2:2f:59","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"02:76:e7:7a:16:25","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:e6:58:07","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:7a:16:25","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"24:69:68:8e:04:b9","secure":"WPA","ssid":"TP-LINK_5G_04B7"},{"level":1,"mac":"02:76:e7:7a:16:5f","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"dc:c6:4b:5e:53:b4","secure":"WPA","ssid":"ChinaNet-zEYH"},{"level":1,"mac":"02:76:e7:11:21:f7","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"76:05:a5:5f:26:93","secure":"INSECURE","ssid":"TPGuest_2693"},{"level":1,"mac":"b4:86:55:80:dd:bc","secure":"WPA","ssid":"HUAWEI-lv"},{"level":1,"mac":"d0:76:e7:11:21:f7","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"cc:08:fb:a8:36:bb","secure":"WPA","ssid":"house"},{"level":1,"mac":"30:b4:9e:d6:e5:1c","secure":"INSECURE","ssid":"TP-LINK_E51C"},{"level":1,"mac":"cc:2d:21:54:df:41","secure":"WPA","ssid":"Chinanet-2.4G-DF40"}]
+[2019-07-06 13:53:24 496 WifiHelper D] enable wifi ap. ssid=Phicomm_R1_9979, ret=true
+[2019-07-06 13:53:24 588 MessageReceiverImpl D] notifyMsg() what=256, arg1=6, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1714240, downTime=1708400, deviceId=0, source=0x101 }
+[2019-07-06 13:53:26 925 BleServer V] BLE connected to device, name=null, addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:53:27 912 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:53:28 003 BleServer D] Characteristic Write request: [1, 123, 34, 112, 97, 103, 101, 95, 115, 105, 122, 101, 34, 58, 51, 48, 44, 34, 112, 97]
+[2019-07-06 13:53:28 093 BleServer D] Characteristic Write request: [0, 103, 101, 95, 110, 117, 109, 98, 101, 114, 34, 58, 49, 125]
+[2019-07-06 13:53:28 096 DefaultBleRequestProcessor D] receive request={"page_size":30,"page_number":1}
+[2019-07-06 13:53:28 097 DefaultBleRequestProcessor D] get wifi list from mobile
+[2019-07-06 13:53:28 101 WifiBiz D] get wifi list, reqContent={"page_size":30,"page_number":1}, respContent={"total":39,"data":[["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:59",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:25",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:07",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:25",1,"WPA"],["TP-LINK_5G_04B7","24:69:68:8e:04:b9",1,"WPA"]]}
+[2019-07-06 13:53:28 103 DefaultBleRequestProcessor D] get wifi list, response={"total":39,"data":[["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",2,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:23",1,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:59",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:25",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:07",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:25",1,"WPA"],["TP-LINK_5G_04B7","24:69:68:8e:04:b9",1,"WPA"]]}
+[2019-07-06 13:53:28 318 BleServer D] 213ms
+[2019-07-06 13:53:28 362 BleServer D] Device tried to read characteristic: c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[1]
+[2019-07-06 13:53:28 365 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:53:28 366 DefaultBleRequestProcessor D] query wifi state from mobile.
+[2019-07-06 13:53:28 367 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[0]
+[2019-07-06 13:53:35 967 BleServer D] Characteristic Write request: [83]
+[2019-07-06 13:53:36 058 BleServer D] Characteristic Write request: [8, 123, 34, 115, 115, 105, 100, 34, 58, 34, 64, 80, 72, 73, 67, 79, 77, 77, 95, 66]
+[2019-07-06 13:53:36 148 BleServer D] Characteristic Write request: [7, 56, 34, 44, 34, 109, 97, 99, 34, 58, 34, 55, 52, 58, 55, 100, 58, 50, 52, 58]
+[2019-07-06 13:53:36 238 BleServer D] Characteristic Write request: [6, 51, 48, 58, 97, 49, 58, 98, 97, 34, 44, 34, 108, 101, 118, 101, 108, 34, 58, 51]
+[2019-07-06 13:53:36 328 BleServer D] Characteristic Write request: [5, 44, 34, 115, 101, 99, 117, 114, 101, 34, 58, 34, 87, 80, 65, 34, 44, 34, 112, 119]
+[2019-07-06 13:53:36 418 BleServer D] Characteristic Write request: [4, 100, 34, 58, 34, 53, 50, 57, 51, 54, 57, 56, 55, 67, 54, 52, 56, 57, 48, 70]
+[2019-07-06 13:53:36 508 BleServer D] Characteristic Write request: [3, 67, 51, 53, 48, 53, 68, 70, 68, 49, 70, 57, 49, 65, 66, 48, 70, 52, 34, 44]
+[2019-07-06 13:53:36 598 BleServer D] Characteristic Write request: [2, 34, 112, 119, 100, 95, 118, 50, 34, 58, 34, 68, 65, 52, 57, 50, 51, 57, 66, 70]
+[2019-07-06 13:53:36 688 BleServer D] Characteristic Write request: [1, 66, 52, 69, 56, 50, 48, 65, 52, 50, 49, 53, 52, 52, 70, 70, 50, 68, 49, 68]
+[2019-07-06 13:53:36 777 BleServer D] Characteristic Write request: [0, 49, 66, 57, 48, 34, 125]
+[2019-07-06 13:53:36 780 DefaultBleRequestProcessor D] receive request={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 13:53:36 781 DefaultBleRequestProcessor D] config wifi from mobile, json={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 13:53:36 787 DeviceInfoUtils D] get hardware version from system, version=V3.0.0
+[2019-07-06 13:53:36 787 WifiHelper D] decryptPasswordV2()  encryptedPasswordV2=DA49239BFB4E820A421544FF2D1D1B90
+[2019-07-06 13:53:36 789 WifiHelper D] decryptPasswordV2()  decryptedPasswordV2=aaaaaaaa
+[2019-07-06 13:53:36 792 WifiHelper D] begin to connect wifi, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 13:53:36 797 DefaultBleRequestProcessor D] config wifi from mobile, response={"device_id":"0098BB99489979DF9624B17A","device_type":"phicomm_echo","hardware_version":"V3.0.0","model":"R1","rom_version":"1.0.0.3331","udid":"LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ"}
+[2019-07-06 13:53:36 835 BleServer D] 37ms
+[2019-07-06 13:53:38 911 WifiHelper D] remove existing network config, ssid= "Chinanet-2.4G-3F80"
+[2019-07-06 13:53:39 021 WifiHelper D] add network, networkId=  0
+[2019-07-06 13:53:39 036 WifiHelper D] Associating to network "@PHICOMM_B8"
+[2019-07-06 13:53:41 334 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 13:53:41 336 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 13:53:41 337 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 13:53:43 485 WifiStateMonitor D] Network state changed to ROUTER_CONNECTED
+[2019-07-06 13:53:43 488 BleServer D] onWifiStateChanged newState=5
+[2019-07-06 13:53:43 489 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[5]
+[2019-07-06 13:53:44 978 MessageReceiverImpl D] notifyMsg() what=2097152, arg1=100, arg2=-1, obj=null
+[2019-07-06 13:53:44 979 BleServer D] unisound mqtt connect success. code=20
+[2019-07-06 13:53:44 980 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[20]
+[2019-07-06 13:53:45 039 NetworkUtils D] begin to check network....
+[2019-07-06 13:53:45 090 NetworkUtils D] callback network avaliable=true PING www.a.shifen.com (180.101.49.11) 56(84) bytes of data.
+64 bytes from sp1.baidu.com (180.101.49.11): icmp_seq=1 ttl=52 time=22.2 ms
+
+--- www.a.shifen.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 22.212/22.212/22.212/0.000 ms
+
+elapse time=50
+[2019-07-06 13:53:45 091 WifiStateMonitor D] Network state changed to GOOD
+[2019-07-06 13:53:45 092 BleServer D] onWifiStateChanged newState=3
+[2019-07-06 13:53:45 093 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[3]
+[2019-07-06 13:53:45 102 BleServer D] Device tried to read characteristic: 163456bd-0f5a-80f2-ec0a-b6e04a9e7b4d, value=null
+[2019-07-06 13:53:45 106 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 13:53:45 107 DefaultBleRequestProcessor D] exit wifi config mode from mobile.
+[2019-07-06 13:53:45 108 WifiConfigModeMgr D] turning off wifi config mode
+[2019-07-06 13:53:45 115 BleServer D] cancelConnection, bluetooth device addr=57:94:FC:B6:FB:E8
+[2019-07-06 13:53:45 128 IJettyService D] stop() waiting for getting lock
+[2019-07-06 13:53:45 130 IJettyService D] stop() begin to get lock
+[2019-07-06 13:53:45 130 WifiConfigModeMgr D] get global settings, ellapse time=2
+[2019-07-06 13:53:45 131 IJettyService I] Jetty stopping
+[2019-07-06 13:53:45 135 WifiHelper D] disable wifi ap, ret=true
+[2019-07-06 13:53:45 137 WifiHelper D] resotre wifi state, enable wifi...
+[2019-07-06 13:53:45 153 WifiConfigModeMgr D] put global settings, ellapse time=21
+[2019-07-06 13:53:45 159 Statistics D] report wifi config data, content={"key":"distribution_network","data":{"begin":"1562392404044","success":"1562392425153","band":"2.4GHz"}}
+[2019-07-06 13:53:45 162 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@1a5e41f2
+[2019-07-06 13:53:45 164 Statistics D] ---------------------------------------------------
+[2019-07-06 13:53:24:045] enter wifi config mode
+[2019-07-06 13:53:26:925] ble connected, address=57:94:FC:B6:FB:E8
+[2019-07-06 13:53:28:097] receive wifi list request using ble, page number=1, page size=30
+[2019-07-06 13:53:28:098] return wifi list using ble, size=30
+[2019-07-06 13:53:36:790] receive wifi config info using ble, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 13:53:41:341] net state changed to 2
+[2019-07-06 13:53:43:496] net state changed to 5
+[2019-07-06 13:53:44:986] net state changed to 20
+[2019-07-06 13:53:45:099] net state changed to 3
+[2019-07-06 13:53:45:153] exit wifi config mode by mobile request using ble
+---------------------------------------------------
+
+[2019-07-06 13:53:45 177 Jetty I] stopped {}
+[2019-07-06 13:53:45 260 IJettyService I] Jetty server stopped
+[2019-07-06 13:53:45 262 IJettyService I] Finally stopped
+[2019-07-06 13:53:45 264 IJettyService D] stop jetty ellapse time=133
+[2019-07-06 13:55:08 958 MessageReceiverImpl D] notifyMsg() what=256, arg1=3, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=1818110, downTime=1817940, deviceId=0, source=0x101 }
+[2019-07-06 13:55:09 090 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@2b778033
+[2019-07-06 13:55:09 101 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@5634ff0
+[2019-07-06 14:55:55 271 MyApplication D] onCreate
+[2019-07-06 14:55:55 289 MainService D] onCreate()
+[2019-07-06 14:55:55 308 WifiConfigModeMgr E] get global settings SUCCESS for the first time.
+[2019-07-06 14:55:55 373 UdidHelper D] begin to read udid from local
+[2019-07-06 14:55:55 377 UdidHelper D] read udid from local, value=LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ
+[2019-07-06 14:55:55 689 LogConfig D] all log files size=84934
+[2019-07-06 14:55:58 009 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@3a9f100
+[2019-07-06 14:56:01 024 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@3cc9cd39
+[2019-07-06 14:56:49 506 MessageReceiverImpl D] notifyMsg() what=256, arg1=5, arg2=0, obj=KeyEvent { action=ACTION_DOWN, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=62110, downTime=62110, deviceId=0, source=0x101 }
+[2019-07-06 14:56:49 509 MainService D] Receive MSG_RECV_LONG_PRESS
+[2019-07-06 14:56:49 578 MessageReceiverImpl D] notifyMsg() what=262144, arg1=1, arg2=-1, obj=null
+[2019-07-06 14:56:49 580 MainService D] Receive MSG_RECV_TURN_ON_WIFI_CONFIG, turning ON wifi config mode
+[2019-07-06 14:56:49 581 WifiConfigModeMgr D] turning on wifi config mode
+[2019-07-06 14:56:49 592 BleServer D] BLE begin to start...
+[2019-07-06 14:56:49 596 BleServer D] BLE is supported on current device.
+[2019-07-06 14:56:49 598 BleServer D] trying to open GattServer...attempt times:1
+[2019-07-06 14:56:49 607 BleServer D] GATT service added=8235a8e8-c6cb-48ea-bae2-3d2431384478
+[2019-07-06 14:56:49 620 BleServer D] multiple advertisement supported.
+[2019-07-06 14:56:49 655 BleServer D] advertising engaged.
+[2019-07-06 14:56:49 666 WifiHelper D] start scan for first time, startScan()=true
+[2019-07-06 14:56:49 682 IJettyService D] jetty pref port = 8989, use nio = true, use ssl = false, ssl port = 0
+[2019-07-06 14:56:49 722 WifiConfigModeMgr D] put global settings, ellapse time=37
+[2019-07-06 14:56:49 726 Statistics D] 
+==========================Statistics=========================
+ enterConfigModeCount: 0
+===============================================================
+
+[2019-07-06 14:56:49 730 IJettyService I] Configured org.eclipse.jetty.server.nio.SelectChannelConnector on port 8989
+[2019-07-06 14:56:49 732 BleServer V] BLE Advertising start successfully. Broadcasting
+[2019-07-06 14:56:49 734 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@3d63e5c4
+[2019-07-06 14:56:49 737 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@d22bcad
+[2019-07-06 14:56:49 787 Jetty W] WebAppDeployer is deprecated. Use WebAppProvider
+[2019-07-06 14:56:49 790 IJettyService I] Adding webapp deployer: 
+[2019-07-06 14:56:49 795 Jetty I] jetty-7.x.y-SNAPSHOT
+[2019-07-06 14:56:49 820 AndroidWebAppDeployer D] AndroidWebAppDeployer: prepared file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 14:56:49 837 AndroidWebInfConfiguration D] Setting classloader parent=dalvik.system.PathClassLoader[DexPathList[[zip file "/system/app/NetControl/NetControl.apk"],nativeLibraryDirectories=[/system/app/NetControl/lib/arm, /vendor/lib, /system/lib]]] for context: o.e.j.w.WebAppContext{,file:/system/web/jetty/webapps/ROOT/},file:/system/web/jetty/webapps/ROOT/
+[2019-07-06 14:56:50 108 Jetty I] NO JSP Support for {}, did not find {}
+[2019-07-06 14:56:50 138 Jetty I] started {}
+[2019-07-06 14:56:50 203 Jetty I] Started {}
+[2019-07-06 14:56:50 205 IJettyService D] start jetty ellapse time=518
+[2019-07-06 14:56:50 450 MessageReceiverImpl D] notifyMsg() what=256, arg1=6, arg2=0, obj=KeyEvent { action=ACTION_UP, keyCode=KEYCODE_PHICOMM_OK, scanCode=195, metaState=0, flags=0x8, repeatCount=0, eventTime=68070, downTime=62110, deviceId=0, source=0x101 }
+[2019-07-06 14:56:51 792 BleServer V] BLE connected to device, name=null, addr=52:55:B6:C7:D5:D0
+[2019-07-06 14:56:52 079 WifiHelper D] receivce action SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 14:56:52 086 WifiHelper D] get scan wifi list size = 42 when receive SCAN_RESULTS_AVAILABLE_ACTION
+[2019-07-06 14:56:52 116 WifiHelper D] scan wifi list ellapse time = 2452, list size = 42
+[2019-07-06 14:56:52 164 WifiHelper I] scann wifi list result:[{"level":3,"mac":"74:7d:24:30:a1:ba","secure":"WPA","ssid":"@PHICOMM_B8"},{"level":3,"mac":"74:7d:24:30:a1:bb","secure":"WPA","ssid":"@PHICOMM_B8_5G"},{"level":2,"mac":"fc:10:c6:82:fd:b3","secure":"WPA","ssid":"ChinaNet-brMb"},{"level":2,"mac":"cc:2d:21:83:3f:81","secure":"WPA","ssid":"Chinanet-2.4G-3F80"},{"level":2,"mac":"74:ec:42:8e:2e:ad","secure":"WPA","ssid":"ChinaNet-2Ufz"},{"level":2,"mac":"24:69:68:8e:04:b7","secure":"WPA","ssid":"TP-LINK_04B7"},{"level":2,"mac":"34:ce:00:22:24:fe","secure":"WPA","ssid":"Xiaomi_24FD"},{"level":2,"mac":"9e:30:5b:94:f2:1b","secure":"WPA","ssid":"DIRECT-o5-KD-70X8300F"},{"level":2,"mac":"d0:76:e7:e6:57:81","secure":"WPA","ssid":"sh-newenergy"},{"level":2,"mac":"00:1f:8f:f8:06:5c","secure":"WPA","ssid":"ChinaNet-vEDe"},{"level":2,"mac":"02:76:e7:7a:17:1b","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"02:76:e7:11:21:ed","secure":"WPA","ssid":"SNESCOGUEST"},{"level":2,"mac":"d0:60:8c:58:b6:ee","secure":"WPA","ssid":"ChinaNet-q6eN"},{"level":2,"mac":"cc:2d:21:83:3f:85","secure":"WPA","ssid":"Chinanet-5G-3F80"},{"level":2,"mac":"d0:76:e7:11:21:ed","secure":"WPA","ssid":"Shenergyesco"},{"level":2,"mac":"d0:76:e7:7a:17:1b","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"c0:61:18:91:ad:9a","secure":"WPA","ssid":"zylp-wifi2"},{"level":1,"mac":"cc:08:fb:a2:2f:3f","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d0:76:e7:e6:58:7d","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"02:76:e7:11:21:cd","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:11:21:cd","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"02:76:e7:7a:16:25","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"d0:76:e7:7a:16:25","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"d0:76:e7:7a:14:73","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"d0:76:e7:7a:16:5f","secure":"WPA","ssid":"Shenergyesco"},{"level":1,"mac":"02:76:e7:7a:14:73","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"cc:08:fb:a8:36:bb","secure":"WPA","ssid":"house"},{"level":1,"mac":"02:76:e7:7a:16:5f","secure":"WPA","ssid":"SNESCOGUEST"},{"level":1,"mac":"24:69:68:8e:04:b9","secure":"WPA","ssid":"TP-LINK_5G_04B7"},{"level":1,"mac":"7a:44:fd:0a:32:d5","secure":"WPA","ssid":"CMCC-xzTZ"},{"level":1,"mac":"dc:c6:4b:5e:53:b4","secure":"WPA","ssid":"ChinaNet-zEYH"},{"level":1,"mac":"40:31:3c:25:b7:0c","secure":"WPA","ssid":"Xiaomi_B70B"},{"level":1,"mac":"d0:76:e7:e6:58:07","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"d8:15:0d:b1:07:74","secure":"WPA","ssid":"Zhouying@2"},{"level":1,"mac":"cc:08:fb:a2:2f:59","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"cc:08:fb:a2:2f:23","secure":"WPA","ssid":"sh-newenergy"},{"level":1,"mac":"88:44:77:af:8f:fc","secure":"WPA","ssid":"HUAWEI-WKV7L9"},{"level":1,"mac":"50:bd:5f:58:7e:7d","secure":"WPA","ssid":"TAO-TPLINK_7E7D"},{"level":1,"mac":"c6:bb:4c:0e:1a:04","secure":"WPA","ssid":"IOV_JG186056"},{"level":1,"mac":"d4:ad:2d:02:4c:21","secure":"WPA","ssid":"ChinaNet-rFyg"},{"level":1,"mac":"8c:fd:18:28:e1:c8","secure":"WPA","ssid":"CMCC-W6kV"},{"level":1,"mac":"d4:ee:07:52:1a:48","secure":"WPA","ssid":"Heros"}]
+[2019-07-06 14:56:52 200 WifiHelper D] enable wifi ap. ssid=Phicomm_R1_9979, ret=true
+[2019-07-06 14:56:52 823 BleServer D] Characteristic Write request: [83]
+[2019-07-06 14:56:52 914 BleServer D] Characteristic Write request: [1, 123, 34, 112, 97, 103, 101, 95, 115, 105, 122, 101, 34, 58, 51, 48, 44, 34, 112, 97]
+[2019-07-06 14:56:53 004 BleServer D] Characteristic Write request: [0, 103, 101, 95, 110, 117, 109, 98, 101, 114, 34, 58, 49, 125]
+[2019-07-06 14:56:53 007 DefaultBleRequestProcessor D] receive request={"page_size":30,"page_number":1}
+[2019-07-06 14:56:53 009 DefaultBleRequestProcessor D] get wifi list from mobile
+[2019-07-06 14:56:53 019 WifiBiz D] get wifi list, reqContent={"page_size":30,"page_number":1}, respContent={"total":42,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",2,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",1,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:25",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:25",1,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",1,"WPA"],["house","cc:08:fb:a8:36:bb",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:5f",1,"WPA"],["TP-LINK_5G_04B7","24:69:68:8e:04:b9",1,"WPA"],["CMCC-xzTZ","7a:44:fd:0a:32:d5",1,"WPA"]]}
+[2019-07-06 14:56:53 022 DefaultBleRequestProcessor D] get wifi list, response={"total":42,"data":[["@PHICOMM_B8","74:7d:24:30:a1:ba",3,"WPA"],["@PHICOMM_B8_5G","74:7d:24:30:a1:bb",3,"WPA"],["ChinaNet-brMb","fc:10:c6:82:fd:b3",2,"WPA"],["Chinanet-2.4G-3F80","cc:2d:21:83:3f:81",2,"WPA"],["ChinaNet-2Ufz","74:ec:42:8e:2e:ad",2,"WPA"],["TP-LINK_04B7","24:69:68:8e:04:b7",2,"WPA"],["Xiaomi_24FD","34:ce:00:22:24:fe",2,"WPA"],["DIRECT-o5-KD-70X8300F","9e:30:5b:94:f2:1b",2,"WPA"],["sh-newenergy","d0:76:e7:e6:57:81",2,"WPA"],["ChinaNet-vEDe","00:1f:8f:f8:06:5c",2,"WPA"],["SNESCOGUEST","02:76:e7:7a:17:1b",2,"WPA"],["SNESCOGUEST","02:76:e7:11:21:ed",2,"WPA"],["ChinaNet-q6eN","d0:60:8c:58:b6:ee",2,"WPA"],["Chinanet-5G-3F80","cc:2d:21:83:3f:85",2,"WPA"],["Shenergyesco","d0:76:e7:11:21:ed",2,"WPA"],["Shenergyesco","d0:76:e7:7a:17:1b",2,"WPA"],["zylp-wifi2","c0:61:18:91:ad:9a",1,"WPA"],["sh-newenergy","cc:08:fb:a2:2f:3f",1,"WPA"],["sh-newenergy","d0:76:e7:e6:58:7d",1,"WPA"],["SNESCOGUEST","02:76:e7:11:21:cd",1,"WPA"],["Shenergyesco","d0:76:e7:11:21:cd",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:25",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:25",1,"WPA"],["Shenergyesco","d0:76:e7:7a:14:73",1,"WPA"],["Shenergyesco","d0:76:e7:7a:16:5f",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:14:73",1,"WPA"],["house","cc:08:fb:a8:36:bb",1,"WPA"],["SNESCOGUEST","02:76:e7:7a:16:5f",1,"WPA"],["TP-LINK_5G_04B7","24:69:68:8e:04:b9",1,"WPA"],["CMCC-xzTZ","7a:44:fd:0a:32:d5",1,"WPA"]]}
+[2019-07-06 14:56:53 273 BleServer D] 250ms
+[2019-07-06 14:56:53 318 BleServer D] Device tried to read characteristic: c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=null
+[2019-07-06 14:56:53 321 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 14:56:53 322 DefaultBleRequestProcessor D] query wifi state from mobile.
+[2019-07-06 14:56:53 323 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[0]
+[2019-07-06 14:56:54 444 BleServer D] Characteristic Write request: [83]
+[2019-07-06 14:56:54 534 BleServer D] Characteristic Write request: [8, 123, 34, 115, 115, 105, 100, 34, 58, 34, 64, 80, 72, 73, 67, 79, 77, 77, 95, 66]
+[2019-07-06 14:56:54 624 BleServer D] Characteristic Write request: [7, 56, 34, 44, 34, 109, 97, 99, 34, 58, 34, 55, 52, 58, 55, 100, 58, 50, 52, 58]
+[2019-07-06 14:56:54 713 BleServer D] Characteristic Write request: [6, 51, 48, 58, 97, 49, 58, 98, 97, 34, 44, 34, 108, 101, 118, 101, 108, 34, 58, 51]
+[2019-07-06 14:56:54 804 BleServer D] Characteristic Write request: [5, 44, 34, 115, 101, 99, 117, 114, 101, 34, 58, 34, 87, 80, 65, 34, 44, 34, 112, 119]
+[2019-07-06 14:56:54 893 BleServer D] Characteristic Write request: [4, 100, 34, 58, 34, 53, 50, 57, 51, 54, 57, 56, 55, 67, 54, 52, 56, 57, 48, 70]
+[2019-07-06 14:56:54 984 BleServer D] Characteristic Write request: [3, 67, 51, 53, 48, 53, 68, 70, 68, 49, 70, 57, 49, 65, 66, 48, 70, 52, 34, 44]
+[2019-07-06 14:56:55 126 BleServer D] Characteristic Write request: [2, 34, 112, 119, 100, 95, 118, 50, 34, 58, 34, 68, 65, 52, 57, 50, 51, 57, 66, 70]
+[2019-07-06 14:56:55 209 BleServer D] Characteristic Write request: [1, 66, 52, 69, 56, 50, 48, 65, 52, 50, 49, 53, 52, 52, 70, 70, 50, 68, 49, 68]
+[2019-07-06 14:56:55 298 BleServer D] Characteristic Write request: [0, 49, 66, 57, 48, 34, 125]
+[2019-07-06 14:56:55 301 DefaultBleRequestProcessor D] receive request={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 14:56:55 302 DefaultBleRequestProcessor D] config wifi from mobile, json={"ssid":"@PHICOMM_B8","mac":"74:7d:24:30:a1:ba","level":3,"secure":"WPA","pwd":"52936987C64890FC3505DFD1F91AB0F4","pwd_v2":"DA49239BFB4E820A421544FF2D1D1B90"}
+[2019-07-06 14:56:55 311 WifiHelper D] decryptPasswordV2()  encryptedPasswordV2=DA49239BFB4E820A421544FF2D1D1B90
+[2019-07-06 14:56:55 311 DeviceInfoUtils D] get hardware version from system, version=V3.0.0
+[2019-07-06 14:56:55 318 DefaultBleRequestProcessor D] config wifi from mobile, response={"device_id":"0098BB99489979DF9624B17A","device_type":"phicomm_echo","hardware_version":"V3.0.0","model":"R1","rom_version":"1.0.0.3331","udid":"LTEzNDgzNzYzMzgwMDk4QkI5OTQ4OTk3OQ"}
+[2019-07-06 14:56:55 321 WifiHelper D] decryptPasswordV2()  decryptedPasswordV2=aaaaaaaa
+[2019-07-06 14:56:55 323 WifiHelper D] begin to connect wifi, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 14:56:55 360 BleServer D] 40ms
+[2019-07-06 14:56:58 474 WifiHelper D] remove existing network config, ssid= "Phicomm_Factory_OTA"
+[2019-07-06 14:56:58 576 WifiHelper D] add network, networkId=  0
+[2019-07-06 14:56:58 599 WifiHelper D] Associating to network "@PHICOMM_B8"
+[2019-07-06 14:57:00 056 WifiStateMonitor D] Network state changed to CONNECTING
+[2019-07-06 14:57:00 068 BleServer D] onWifiStateChanged newState=2
+[2019-07-06 14:57:00 070 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[2]
+[2019-07-06 14:57:02 426 WifiStateMonitor D] Network state changed to ROUTER_CONNECTED
+[2019-07-06 14:57:02 427 BleServer D] onWifiStateChanged newState=5
+[2019-07-06 14:57:02 429 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[5]
+[2019-07-06 14:57:04 147 NetworkUtils D] begin to check network....
+[2019-07-06 14:57:04 199 NetworkUtils D] callback network avaliable=true PING www.baidu.com (180.101.49.11) 56(84) bytes of data.
+64 bytes from www.baidu.com (180.101.49.11): icmp_seq=1 ttl=52 time=12.9 ms
+
+--- www.baidu.com ping statistics ---
+1 packets transmitted, 1 received, 0% packet loss, time 0ms
+rtt min/avg/max/mdev = 12.943/12.943/12.943/0.000 ms
+
+elapse time=50
+[2019-07-06 14:57:04 200 WifiStateMonitor D] Network state changed to GOOD
+[2019-07-06 14:57:04 201 BleServer D] onWifiStateChanged newState=3
+[2019-07-06 14:57:04 202 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[3]
+[2019-07-06 14:57:04 349 MessageReceiverImpl D] notifyMsg() what=2097152, arg1=100, arg2=-1, obj=null
+[2019-07-06 14:57:04 351 BleServer D] unisound mqtt connect success. code=20
+[2019-07-06 14:57:04 352 BleServer D] notifyCharacteristicChanged, characteristicID=c5816f6f-4b00-47ad-8fd6-8915ffe262b3, value=[20]
+[2019-07-06 14:57:04 434 BleServer D] Device tried to read characteristic: 163456bd-0f5a-80f2-ec0a-b6e04a9e7b4d, value=null
+[2019-07-06 14:57:04 437 DefaultBleRequestProcessor D] receive request=null
+[2019-07-06 14:57:04 438 DefaultBleRequestProcessor D] exit wifi config mode from mobile.
+[2019-07-06 14:57:04 439 WifiConfigModeMgr D] turning off wifi config mode
+[2019-07-06 14:57:04 446 BleServer D] cancelConnection, bluetooth device addr=52:55:B6:C7:D5:D0
+[2019-07-06 14:57:04 461 IJettyService D] stop() waiting for getting lock
+[2019-07-06 14:57:04 461 WifiHelper D] disable wifi ap, ret=true
+[2019-07-06 14:57:04 462 WifiConfigModeMgr D] get global settings, ellapse time=2
+[2019-07-06 14:57:04 463 IJettyService D] stop() begin to get lock
+[2019-07-06 14:57:04 464 IJettyService I] Jetty stopping
+[2019-07-06 14:57:04 464 WifiHelper D] resotre wifi state, enable wifi...
+[2019-07-06 14:57:04 480 WifiConfigModeMgr D] put global settings, ellapse time=17
+[2019-07-06 14:57:04 489 Statistics D] report wifi config data, content={"key":"distribution_network","data":{"begin":"1562396209728","success":"1562396224482","band":"2.4GHz"}}
+[2019-07-06 14:57:04 492 MessageReceiverImpl D] notifyMsg() what=32768, arg1=4, arg2=0, obj=android.os.ParcelableUtil@b6e6fde
+[2019-07-06 14:57:04 496 Statistics D] ---------------------------------------------------
+[2019-07-06 14:56:49:728] enter wifi config mode
+[2019-07-06 14:56:51:792] ble connected, address=52:55:B6:C7:D5:D0
+[2019-07-06 14:56:53:012] receive wifi list request using ble, page number=1, page size=30
+[2019-07-06 14:56:53:013] return wifi list using ble, size=30
+[2019-07-06 14:56:55:322] receive wifi config info using ble, ssid=@PHICOMM_B8, password=aaaaaaaa, encryptionType=WPA
+[2019-07-06 14:57:00:076] net state changed to 2
+[2019-07-06 14:57:02:574] net state changed to 5
+[2019-07-06 14:57:04:209] net state changed to 3
+[2019-07-06 14:57:04:358] net state changed to 20
+[2019-07-06 14:57:04:482] exit wifi config mode by mobile request using ble
+---------------------------------------------------
+
+[2019-07-06 14:57:04 529 Jetty I] stopped {}
+[2019-07-06 14:57:04 643 IJettyService I] Jetty server stopped
+[2019-07-06 14:57:04 646 IJettyService I] Finally stopped
+[2019-07-06 14:57:04 647 IJettyService D] stop jetty ellapse time=184

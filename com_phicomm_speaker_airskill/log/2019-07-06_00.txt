@@ -1,0 +1,21 @@
+
+#-------system info-------
+package-name:com.phicomm.speaker.airskill
+app-name:AirSkill
+version-name:5.1.1-3331
+version-code:22
+model:rk322x-box
+system-version:5.1.1
+density:1.0
+screen-height:432
+screen-width:720
+imei:null
+imsi:null
+msisdn:null
+mac-addr:98:bb:99:48:99:79
+isWifiOpen:false
+[2019-07-06 14:55:54 816 AirApplication D] onCreate
+[2019-07-06 14:55:54 854 AirService D] onCreate()
+[2019-07-06 14:55:54 932 AirHttpRequest D] envType=PRODUCT, URL=https://home.phicomm.com/phiai/semantic/skill
+[2019-07-06 14:55:54 964 AirMessageManager D] register MessageReceiver for  MSG_TYPE_SKILL
+[2019-07-06 14:55:55 191 LogConfig D] all log files size=965
