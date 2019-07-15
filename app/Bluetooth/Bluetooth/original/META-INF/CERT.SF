@@ -1,0 +1,67 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest: Ej0ZyGhzfUz7AF+zB0MVX378kNohdlsx1Yn71WvuEic=
+Created-By: 1.0 (Android SignApk)
+
+Name: res/layout/no_transfers.xml
+SHA-256-Digest: oIkUnUOQzb5kxbjkXFPwEKvJWarhcfMc6nRLLyctpKQ=
+
+Name: res/drawable-hdpi-v4/ic_launcher_folder_bluetooth.png
+SHA-256-Digest: G1yqkYadv6sjPi2lnYnUcagbLYlVi6srozIfwv3LIu8=
+
+Name: res/layout/auth.xml
+SHA-256-Digest: MWBDy8NNW0eR4ZC1/9RsPfHr8nNbLYsCgrvTEU9cyn0=
+
+Name: res/layout/bluetooth_transfers_page.xml
+SHA-256-Digest: TvKXIs5TouS4wyoRxfWSuPyxNCGIYbmnspsBd8+J8hE=
+
+Name: res/layout/bluetooth_map_email_settings.xml
+SHA-256-Digest: R1bYESH/Yex1a1JMFFiQ0D7X7yq9od0Fo5xr9rMGpsM=
+
+Name: res/drawable-hdpi-v4/bt_share.png
+SHA-256-Digest: vKtSI5h5slN60OyTyFZwEA476R21/EMDqxs/IR/DH/8=
+
+Name: res/layout/file_transfer.xml
+SHA-256-Digest: eQO4cwvpAhjrHpZSAISLtabOnljbqlutwcI2AH8FkAk=
+
+Name: resources.arsc
+SHA-256-Digest: Ae53zv3SU/4eSaqQmN1Cu2Kzk2f+F4X/lLvX+EImrJA=
+
+Name: classes.dex
+SHA-256-Digest: 9OYt+JTDvXNgiQmdtakRnTP3veH6WQzrrLvgn/POywI=
+
+Name: res/menu/transferhistorycontextfinished.xml
+SHA-256-Digest: iehsp9Fa89h9H/geSRq9HZibYFQbB2EOyx744iby+fA=
+
+Name: res/layout/testactivity_main.xml
+SHA-256-Digest: oBwamYg0LeTDUqTgTV/bufM/YQs2M6+ueB0/ShGG1xU=
+
+Name: res/layout/bluetooth_map_email_settings_account_item.xml
+SHA-256-Digest: p6n41ekzVzJCnCib+b4HWgpuy/u+8a6a+9+hYHpumpE=
+
+Name: res/layout/bluetooth_transfer_item.xml
+SHA-256-Digest: AgIq5gXbwmLR6QaTo4vLDy8i0EUZnsNGSVtE+eIXlHc=
+
+Name: res/drawable-hdpi-v4/bt_incomming_file_notification.png
+SHA-256-Digest: W6ZxwklObBfISRM8OuIMGHiRpcqGg6XrD1k2H6YZwyA=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: 5dYQTaELd6hZ95XU27f6YxdfxNSl5yAn7N5hmfcTHFE=
+
+Name: res/layout/confirm_dialog.xml
+SHA-256-Digest: 9TV6YiVAmrXSVVCBo3vnGBmULezTxmJYAQ6x1N5YzoU=
+
+Name: res/layout/bluetooth_map_email_settings_account_group.xml
+SHA-256-Digest: vaYg8JK2LGuG81S4xpBHzeDGZ3iEaxZP45H3FRlq7Ko=
+
+Name: res/menu/receivedfilescontextfinished.xml
+SHA-256-Digest: 46bT54zuwDb+Zuxfb8Mqof7GnLKOKaylrs5pJiqLKDk=
+
+Name: res/menu/transferhistory.xml
+SHA-256-Digest: ZDaJnRTmkdSSl7XQiWN8/ohD50GfYyE0xD+1qdebB+Y=
+
+Name: res/layout/incoming_dialog.xml
+SHA-256-Digest: T16hOsR77xD4W6iQ4XCGYOfjaHvwtqf6Wu1M+5O5Svk=
+
+Name: res/layout/bt_enabling_progress.xml
+SHA-256-Digest: LoJrzHsoIu6NAI377ED+ZNScMaEkNZzKf53+7DKp4jo=
+

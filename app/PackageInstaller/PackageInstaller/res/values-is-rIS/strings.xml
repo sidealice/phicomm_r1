@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Uppsetningarforrit pakka</string>
+    <string name="next">Áfram</string>
+    <string name="install">Setja upp</string>
+    <string name="done">Lokið</string>
+    <string name="security_settings_desc">Leyfa þessu forriti að:</string>
+    <string name="cancel">Hætta við</string>
+    <string name="unknown">Óþekkt</string>
+    <string name="installing">Setur upp…</string>
+    <string name="install_done">Forritið er uppsett.</string>
+    <string name="install_confirm_question">Viltu setja þetta forrit upp? Það mun fá aðgang að:</string>
+    <string name="install_confirm_question_no_perms">Viltu setja þetta forrit upp? Það krefst ekki neins sérstaks aðgangs.</string>
+    <string name="install_confirm_question_update">Viltu setja upp uppfærslu á þessu uppsetta forriti? Eldri gögn glatast ekki. Uppfærða forritið mun fá aðgang að:</string>
+    <string name="install_confirm_question_update_system">Viltu setja upp uppfærslu á þessu innbyggða forriti? Eldri gögn glatast ekki. Uppfærða forritið mun fá aðgang að:</string>
+    <string name="install_confirm_question_update_no_perms">Viltu setja upp uppfærslu á þessu uppsetta forriti? Eldri gögn glatast ekki. Forritið krefst ekki neins sérstaks aðgangs.</string>
+    <string name="install_confirm_question_update_system_no_perms">Viltu setja upp uppfærslu á þessu innbyggða forriti? Eldri gögn glatast ekki. Forritið krefst ekki neins sérstaks aðgangs.</string>
+    <string name="install_failed">Forritið er ekki uppsett.</string>
+    <string name="install_failed_invalid_apk">Pakkinn virðist vera skemmdur.</string>
+    <string name="install_failed_inconsistent_certificates">Pakki með sama heiti og með undirskrift sem rekst á er þegar uppsettur.</string>
+    <string name="install_failed_older_sdk">Pakkinn virkar aðeins í nýrri útgáfum af Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Þetta forrit er ekki samhæft við spjaldtölvuna.</string>
+    <string name="install_failed_file_not_found">Tilgreindum pakka var eytt áður en tókst að ljúka uppsetningunni.</string>
+    <string name="install_failed_verify_failed">Pakkinn stóðst ekki sannprófun og ekki er hægt að setja hann upp.</string>
+    <string name="install_failed_verify_timeout">Staðfesting þessa pakka rann út á tíma. Prófaðu uppsetningu aftur síðar.</string>
+    <string name="install_failed_msg">Ekki tókst að setja %1$s upp í spjaldtölvunni.</string>
+    <string name="launch">Opna</string>
+    <string name="unknown_apps_dlg_title">Uppsetning læst</string>
+    <string name="unknown_apps_dlg_text">Af öryggisástæðum er spjaldtölvan stillt á að loka á uppsetningu forrita af óþekktum uppruna.</string>
+    <string name="unknown_apps_admin_dlg_text">Kerfisstjórinn þinn leyfir ekki uppsetningu forrita af óþekktum uppruna.</string>
+    <string name="ok">Í lagi</string>
+    <string name="settings">Stillingar</string>
+    <string name="allow_source_dlg_title">Ný forritaveita</string>
+    <string name="allow_source_dlg_text">"%1$s vill setja upp önnur forrit.
+
+Viltu leyfa það núna og til frambúðar?"</string>
+    <string name="manage_applications">Stjórna forritum</string>
+    <string name="dlg_app_replacement_title">Skipta út forriti?</string>
+    <string name="dlg_app_replacement_statement">"Forritið sem þú ert að setja upp kemur í stað annars forrits.
+
+Öll fyrri notandagögn þín verða vistuð."</string>
+    <string name="dlg_sys_app_replacement_statement">"Þetta er kerfisforrit.
+
+Öll fyrri notandagögn þín verða vistuð."</string>
+    <string name="out_of_space_dlg_title">Ekkert pláss eftir</string>
+    <string name="out_of_space_dlg_text">Ekki tókst að setja upp %1$s. Losaðu um pláss og reyndu aftur.</string>
+    <string name="dlg_ok">Í lagi</string>
+    <string name="app_not_found_dlg_title">Forritið finnst ekki</string>
+    <string name="app_not_found_dlg_text">Forritið fannst ekki á listanum yfir uppsett forrit.</string>
+    <string name="uninstall_application_title">Fjarlægja forrit</string>
+    <string name="uninstall_update_title">Fjarlægja uppfærslu</string>
+    <string name="uninstall_activity_text">%1$s er hluti af þessu forriti:</string>
+    <string name="uninstall_application_text">Viltu fjarlægja þetta forrit?</string>
+    <string name="uninstall_application_text_all_users">Viltu fjarlægja þetta forrit hjá <b>öllum</b> notendum? Forritið og gögn þess verða fjarlægð hjá <b>öllum</b> notendum tækisins.</string>
+    <string name="uninstall_application_text_user">Viltu fjarlægja þetta forrit fyrir notandann %1$s?</string>
+    <string name="uninstall_update_text">Viltu skipta þessu forriti út fyrir verksmiðjuútgáfuna?</string>
+    <string name="uninstalling">Fjarlægir…</string>
+    <string name="uninstall_done">Forritið hefur verið fjarlægt.</string>
+    <string name="uninstall_failed">Ekki tókst að fjarlægja forritið.</string>
+    <string name="uninstall_failed_device_policy_manager">Ekki er hægt að fjarlægja forritið því að pakkinn er virkur stjórnandi tækis.</string>
+    <string name="uninstall_blocked_profile_owner">Sniðið þitt, %1$s, krefst þessa forrits og ekki er hægt að fjarlægja það.</string>
+    <string name="uninstall_blocked_device_owner">Stjórnandi tækisins krefst þessa forrits og ekki er hægt að fjarlægja það.</string>
+    <string name="manage_device_administrators">Hafa umsjón með stjórnendum tækis</string>
+    <string name="uninstall_failed_msg">Ekki tókst að fjarlægja %1$s.</string>
+    <string name="Parse_error_dlg_title">Þáttunarvilla</string>
+    <string name="Parse_error_dlg_text">Vandamál kom upp við að vinna úr pakkanum.</string>
+    <string name="newPerms">Nýjar</string>
+    <string name="allPerms">Allar</string>
+    <string name="privacyPerms">Persónuvernd</string>
+    <string name="devicePerms">Tækisaðgangur</string>
+    <string name="no_new_perms">Þessi uppfærsla krefst engra nýrra heimilda.</string>
+    <string name="grant_confirm_question">Viltu veita eftirfarandi heimildir? Aðgangur er veittur að:</string>
+</resources>

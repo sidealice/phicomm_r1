@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" android:sharedUserId="android.uid.system" package="com.phicomm.speaker.netctl" platformBuildVersionCode="22" platformBuildVersionName="5.1.1-3448">
+    <permission android:name="com.phicomm.speaker.netctl.selfpermission" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.WRITE_SECURE_SETTINGS"/>
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.CONNECTIVITY_INTERNAL"/>
+    <uses-permission android:name="com.phicomm.speaker.netctl.selfpermission"/>
+    <application android:allowBackup="false" android:allowClearUserData="false" android:icon="@mipmap/ic_launcher" android:killAfterRestore="false" android:label="@string/app_name" android:name=".MyApplication" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <service android:enabled="true" android:name="com.phicomm.speaker.netctl.MainService">
+            <intent-filter>
+                <action android:name="smartsound.intent.action.TOGGLE_BLUETOOTH_ENABLED"/>
+                <action android:name="smartsound.intent.action.ESTABLISH_WIFI_CONNECTION"/>
+                <action android:name="smartsound.intent.action.INIT_BLUETOOTH"/>
+                <action android:name="smartsound.intent.action.CHECK_BLUETOOTH_STATE"/>
+            </intent-filter>
+        </service>
+        <service android:name="org.mortbay.ijetty.IJettyService"/>
+        <receiver android:name="com.phicomm.speaker.netctl.receivers.BootCompleteReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED"/>
+            </intent-filter>
+        </receiver>
+    </application>
+</manifest>

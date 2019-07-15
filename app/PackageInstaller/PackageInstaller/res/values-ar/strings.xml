@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">أداة تثبيت الحزم</string>
+    <string name="next">التالي</string>
+    <string name="install">تثبيت</string>
+    <string name="done">تم</string>
+    <string name="security_settings_desc">السماح لهذا التطبيق بـ:</string>
+    <string name="cancel">إلغاء</string>
+    <string name="unknown">غير معروف</string>
+    <string name="installing">جارٍ التثبيت...</string>
+    <string name="install_done">تم تثبيت التطبيق.</string>
+    <string name="install_confirm_question">هل تريد تثبيت هذا التطبيق؟ سيكون بإمكانه الدخول إلى:</string>
+    <string name="install_confirm_question_no_perms">هل تريد تثبيت هذا التطبيق؟ إنه لا يتطلب أي دخول خاص.</string>
+    <string name="install_confirm_question_update">هل تريد تثبيت تحديث لهذا التطبيق الحالي؟ لن تفقد بياناتك الحالية. سيكون بإمكان التطبيق المحدّث الدخول إلى:</string>
+    <string name="install_confirm_question_update_system">هل تريد تثبيت تحديث لهذا التطبيق المضمن؟ لن تفقد بياناتك الحالية. سيكون بإمكان التطبيق المحدّث الدخول إلى:</string>
+    <string name="install_confirm_question_update_no_perms">هل تريد تثبيت تحديث لهذا التطبيق الحالي؟ لن يتم فقد بياناتك الحالية. كما أنه لا يتطلب أي دخول خاص.</string>
+    <string name="install_confirm_question_update_system_no_perms">هل تريد تثبيت تحديث لهذا التطبيق المضمن؟ لن يتم فقد بياناتك الحالية. كما أنه لا يتطلب أي دخول خاص.</string>
+    <string name="install_failed">التطبيق ليس مثبتًا.</string>
+    <string name="install_failed_invalid_apk">يبدو أن الحزمة تالفة.</string>
+    <string name="install_failed_inconsistent_certificates">هناك حزمة حالية ذات توقيع متضارب، تم تثبيتها من قبل بالاسم نفسه.</string>
+    <string name="install_failed_older_sdk">‏تعمل الحزمة فقط على إصدارات أحدث من Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">هذا التطبيق ليس متوافقًا مع جهازك اللوحي.</string>
+    <string name="install_failed_file_not_found">تم حذف الحزمة المحددة قبل اكتمال عملية التثبيت.</string>
+    <string name="install_failed_verify_failed">لم تتجاوز هذه الحزمة عملية التحقق ولا يمكن تثبيتها.</string>
+    <string name="install_failed_verify_timeout">حدثت مهلة أثناء محاولة التحقق من هذه الحزمة. الرجاء محاولة إعادة تثبيتها لاحقًا.</string>
+    <string name="install_failed_msg">تعذر تثبيت %1$s على جهازك اللوحي.</string>
+    <string name="launch">فتح</string>
+    <string name="unknown_apps_dlg_title">التثبيت محظور</string>
+    <string name="unknown_apps_dlg_text">لدواعي الأمان، تم تعيين جهازك اللوحي لحظر تثبيت التطبيقات التي تم الحصول عليها من مصادر غير معروفة.</string>
+    <string name="unknown_apps_admin_dlg_text">لا يسمح المشرف بتثبيت التطبيقات التي يتم الحصول عليها من مصادر غير معروفة.</string>
+    <string name="ok">موافق</string>
+    <string name="settings">الإعدادات</string>
+    <string name="allow_source_dlg_title">مصدر جديد للتطبيقات</string>
+    <string name="allow_source_dlg_text">"يريد %1$s تثبيت تطبيق آخر.
+
+هل تريد السماح بذلك الآن وفي المستقبل؟"</string>
+    <string name="manage_applications">إدارة التطبيقات</string>
+    <string name="dlg_app_replacement_title">هل تريد استبدال التطبيق؟</string>
+    <string name="dlg_app_replacement_statement">"سيحل التطبيق الذي تثبته الآن محل تطبيق آخر.
+
+سيتم حفظ جميع بيانات المستخدم السابقة."</string>
+    <string name="dlg_sys_app_replacement_statement">"هذا تطبيق نظام.
+
+سيتم حفظ جميع بيانات المستخدم السابقة."</string>
+    <string name="out_of_space_dlg_title">نفدت مساحة التخزين</string>
+    <string name="out_of_space_dlg_text">تعذر تثبيت %1$s الرجاء تحرير بعض المساحة والمحاولة مرة أخرى.</string>
+    <string name="dlg_ok">موافق</string>
+    <string name="app_not_found_dlg_title">لم يتم العثور على التطبيق</string>
+    <string name="app_not_found_dlg_text">لم يتم العثور على التطبيق في قائمة التطبيقات المثبتة.</string>
+    <string name="uninstall_application_title">إزالة التطبيق</string>
+    <string name="uninstall_update_title">إزالة التحديث</string>
+    <string name="uninstall_activity_text">%1$s هو جزء من التطبيق التالي:</string>
+    <string name="uninstall_application_text">هل تريد إزالة هذا التطبيق؟</string>
+    <string name="uninstall_application_text_all_users">هل تريد إزالة هذا التطبيق <b>لكل</b> المستخدمين؟ ستتم إزالة التطبيق وبياناته من <b>كل</b> المستخدمين على هذا الجهاز.</string>
+    <string name="uninstall_application_text_user">هل تريد إزالة هذا التطبيق للمستخدم %1$s؟</string>
+    <string name="uninstall_update_text">هل تريد استبدال هذا التطبيق بإصدار المصنع؟</string>
+    <string name="uninstalling">جارٍ الإزالة...</string>
+    <string name="uninstall_done">انتهت الإزالة.</string>
+    <string name="uninstall_failed">أخفقت الإزالة.</string>
+    <string name="uninstall_failed_device_policy_manager">تتعذر الإزالة نظرًا لأن هذه الحزمة تمثل مشرفًا نشطًا للجهاز.</string>
+    <string name="uninstall_blocked_profile_owner">هذا التطبيق مطلوب لملفك الشخصي في %1$s ولا يمكن إزالته.</string>
+    <string name="uninstall_blocked_device_owner">مشرف الجهاز يحتاج إلى هذا التطبيق ولا يمكن إزالته.</string>
+    <string name="manage_device_administrators">إدارة مشرفي الجهاز</string>
+    <string name="uninstall_failed_msg">تعذرت إزالة %1$s.</string>
+    <string name="Parse_error_dlg_title">خطأ في التحليل</string>
+    <string name="Parse_error_dlg_text">حدثت مشكلة أثناء تحليل الحزمة.</string>
+    <string name="newPerms">جديد</string>
+    <string name="allPerms">الكل</string>
+    <string name="privacyPerms">الخصوصية</string>
+    <string name="devicePerms">الدخول إلى الجهاز</string>
+    <string name="no_new_perms">لا يتطلب هذا التحديث أي أذونات جديدة.</string>
+    <string name="grant_confirm_question">هل ترغب في منح الأذونات التالية؟ علمًا بأنها تتيح الدخول إلى:</string>
+</resources>

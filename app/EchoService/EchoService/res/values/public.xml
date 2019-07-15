@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="mipmap" name="ic_launcher" id="0x7f020000" />
+    <public type="mipmap" name="ic_launcher_round" id="0x7f020001" />
+    <public type="string" name="app_name" id="0x7f030000" />
+    <public type="string" name="can_not_find_version_name" id="0x7f030001" />
+</resources>

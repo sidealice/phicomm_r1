@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">पॅकेज स्‍थापनकर्ता</string>
+    <string name="next">पुढील</string>
+    <string name="install">स्‍थापित करा</string>
+    <string name="done">पूर्ण झाले</string>
+    <string name="security_settings_desc">या अॅप ला यावर अनुमती द्या:</string>
+    <string name="cancel">रद्द करा</string>
+    <string name="unknown">अज्ञात</string>
+    <string name="installing">स्थापित करीत आहे...</string>
+    <string name="install_done">अॅप स्थापित झाला.</string>
+    <string name="install_confirm_question">आपण हा अनुप्रयोग स्थापित करू इच्छिता? यास यावर प्रवेश मिळेल:</string>
+    <string name="install_confirm_question_no_perms">आपण हा अनुप्रयोग स्थापित करू इच्छिता? यास कोणत्याही विशेष प्रवेशाची आवश्यकता नसते.</string>
+    <string name="install_confirm_question_update">आपण या विद्यमान अनुप्रयोगावर अद्यतन स्थापित करू इच्छिता? आपला विद्यमान डेटा गमावणार नाही. अद्यतनित अनुप्रयोगास यावर प्रवेश मिळेल:</string>
+    <string name="install_confirm_question_update_system">आपण या अंगभूत अनुप्रयोगावर अद्यतन स्थापित करू इच्छिता? आपला विद्यमान डेटा गमावणार नाही. अद्यतनित अनुप्रयोगास यावर प्रवेश मिळेल:</string>
+    <string name="install_confirm_question_update_no_perms">आपण या विद्यमान अनुप्रयोगावर अद्यतन स्थापित करू इच्छिता? आपला विद्यमान डेटा गमावणार नाही. यासाठी कोणताही विशेष प्रवेश आवश्यक नसतो.</string>
+    <string name="install_confirm_question_update_system_no_perms">आपण या अंगभूत अनुप्रयोगावर अद्यतन स्थापित करू इच्छिता? आपला विद्यमान डेटा गमावणार नाही. यास कोणत्याही विशेष प्रवेशाची आवश्यकता नसते.</string>
+    <string name="install_failed">अॅप स्थापित झाला नाही.</string>
+    <string name="install_failed_invalid_apk">पॅकेज कदाचित दूषित आहे.</string>
+    <string name="install_failed_inconsistent_certificates">समान नावाद्वारे विवादित स्‍वाक्षरीसह अस्‍तित्‍वात असलेले पॅकेज आधीपासून स्‍थापित केले आहे.</string>
+    <string name="install_failed_older_sdk">पॅकेज Android च्या केवळ नवीनतम आवृत्त्‍यांवर कार्य करते.</string>
+    <string name="install_failed_cpu_abi_incompatible">हा अॅप आपल्या टॅब्लेटशी सुसंगत नाही.</string>
+    <string name="install_failed_file_not_found">स्‍थापित करणे पूर्ण होण्‍यापूर्वी निर्दिष्‍ट केलेले पॅकेज हटविले गेले.</string>
+    <string name="install_failed_verify_failed">पॅकेज सत्‍यापनात उत्तीर्ण झाले नाही आणि स्‍थापित केले जाऊ शकत नाही.</string>
+    <string name="install_failed_verify_timeout">हे पॅकेज सत्यापित करण्याचा प्रयत्न करताना एक कालबाह्य त्रुटी आली. ते नंतर पुन्हा स्थापित करण्याचा प्रयत्न करा.</string>
+    <string name="install_failed_msg">%1$s आपल्या टॅब्लेटवर स्थापित केला जाऊ शकला नाही.</string>
+    <string name="launch">उघडा</string>
+    <string name="unknown_apps_dlg_title">स्‍थापना अवरोधित केली</string>
+    <string name="unknown_apps_dlg_text">सुरक्षिततेसाठी, आपला टॅब्लेट अज्ञात स्त्रोतांकडून प्राप्त झालेल्या अॅप्सची स्थापना अवरोधित करण्यावर सेट केला आहे.</string>
+    <string name="unknown_apps_admin_dlg_text">अज्ञात स्त्रोतांकडून मिळविलेल्या अॅप्सच्या स्थापनेस आपला प्रशासक अनुमती देत नाही.</string>
+    <string name="ok">ठीक</string>
+    <string name="settings">सेटिंग्ज</string>
+    <string name="allow_source_dlg_title">अॅप्स साठी नवीन स्त्रोत</string>
+    <string name="allow_source_dlg_text">"%1$s इतर अ‍ॅप्‍स स्‍थापित करू इच्‍छितो.
+
+यास आता आणि भविष्‍यात अनुमती द्यायची?"</string>
+    <string name="manage_applications">अ‍ॅप्स व्यवस्थापित करा</string>
+    <string name="dlg_app_replacement_title">अॅप पुनर्स्थित करायचा?</string>
+    <string name="dlg_app_replacement_statement">"आपण स्थापित करत असलेला अॅप दुसरा अॅप पुनर्स्थित करेल.
+
+आपला सर्व मागील वापरकर्ता डेटा जतन केला जाईल."</string>
+    <string name="dlg_sys_app_replacement_statement">"हा सिस्टम अॅप आहे.
+
+आपला सर्व मागील वापरकर्ता डेटा जतन केला जाईल."</string>
+    <string name="out_of_space_dlg_title">स्‍थानाबाहेर</string>
+    <string name="out_of_space_dlg_text">%1$s स्थापित केला जाऊ शकला नाही. काही स्थान मोकळे करा आणि पुन्हा प्रयत्न करा.</string>
+    <string name="dlg_ok">ठीक</string>
+    <string name="app_not_found_dlg_title">अॅप आढळला नाही</string>
+    <string name="app_not_found_dlg_text">स्थापित केलेल्या अॅप्सच्या सूचीमध्ये अॅप आढळला नाही.</string>
+    <string name="uninstall_application_title">अॅप विस्थापित करा</string>
+    <string name="uninstall_update_title">अद्यतन विस्थापित करा</string>
+    <string name="uninstall_activity_text">%1$s खालील अॅप चा भाग आहे:</string>
+    <string name="uninstall_application_text">आपण हा अॅप विस्थापित करू इच्छिता?</string>
+    <string name="uninstall_application_text_all_users">आपण हा अॅप <b>सर्व</b> वापरकर्त्यांसाठी विस्थापित करू इच्छिता? अनुप्रयोग आणि त्याचा डेटा डिव्हाइसवरील <b>सर्व</b> वापरकर्त्यांवरून काढला जाईल.</string>
+    <string name="uninstall_application_text_user">आपण %1$s वापरकर्त्यासाठी हा अ‍ॅप विस्‍थापित करु इच्‍छिता?</string>
+    <string name="uninstall_update_text">आपण फॅक्टरी आवृत्तीसह हा अॅप पुनर्स्थित करू इच्छिता?</string>
+    <string name="uninstalling">विस्थापित करीत आहे…</string>
+    <string name="uninstall_done">विस्थापित करणे समाप्त.</string>
+    <string name="uninstall_failed">विस्थापित करणे अयशस्वी.</string>
+    <string name="uninstall_failed_device_policy_manager">हे पॅकेज सक्रिय डिव्हाइस प्रशासक असल्यामुळे विस्थापित करू शकत नाही.</string>
+    <string name="uninstall_blocked_profile_owner">आपल्‍या %1$s प्रोफाईलसाठी हा अ‍ॅप आवश्‍यक आहे आणि विस्‍थापित केला जाऊ शकत नाही.</string>
+    <string name="uninstall_blocked_device_owner">आपल्‍या डिव्‍हाइस प्रशासकाद्वारे हा अ‍ॅप आवश्यक आहे आणि तो विस्‍थापित केला जाऊ शकत नाही.</string>
+    <string name="manage_device_administrators">डिव्‍हाइस प्रशासकांना व्‍यवस्‍थापित करा</string>
+    <string name="uninstall_failed_msg">%1$s विस्थापित केला जाऊ शकला नाही.</string>
+    <string name="Parse_error_dlg_title">विश्लेषण त्रुटी</string>
+    <string name="Parse_error_dlg_text">पॅकेज चे विश्लेषण करताना समस्या आली.</string>
+    <string name="newPerms">नवीन</string>
+    <string name="allPerms">सर्व</string>
+    <string name="privacyPerms">गोपनीयता</string>
+    <string name="devicePerms">डिव्हाइस प्रवेश</string>
+    <string name="no_new_perms">या अद्यतनास कोणत्याही नवीन परवानग्यांची आवश्यकता नाही.</string>
+    <string name="grant_confirm_question">आपण खालील परवानग्‍यांना मंजूरी देऊ इच्‍छिता? त्‍यांना यावर प्रवेश मिळेल:</string>
+</resources>

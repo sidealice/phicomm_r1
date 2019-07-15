@@ -1,0 +1,27 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: res/layout/layout_app_item.xml
+SHA-256-Digest: NU4+cSi80ru0X4bVnKWpc9ePmO9vor0KN9z0uc+sWXM=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: fVgyirRR51DxAqzpYPIklSppfNjXB0V4TcL+qoNqxkQ=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: N/dER7xL8qmP74ftPgYgyhuQ0i3Ncws0v6iPev0bb+w=
+
+Name: res/layout-mdpi-v4/activity_main.xml
+SHA-256-Digest: rS/jKqVnUkN2Pcjx/cd8YDC7IUwr6+Ju4sl4lugU090=
+
+Name: res/layout/activity_main.xml
+SHA-256-Digest: 3v3nRHv13O2HQr8O4fYHZqtmJQuO/wztVsr3MTBNoGM=
+
+Name: resources.arsc
+SHA-256-Digest: xZ4Apr9GM/X856eqp6ABfbm3a1tVFfHdFm4sqmrXVrY=
+
+Name: classes.dex
+SHA-256-Digest: gRXUdZJhd+7Dg/AqW4RFEJeJkxrSOTTN1uKjrZNxhzw=
+
+Name: res/layout-mdpi-v4/layout_app_item.xml
+SHA-256-Digest: 1GetG1Ng519GsS8C+groFC8zMEG6TFGIjbEDuduu4YQ=
+

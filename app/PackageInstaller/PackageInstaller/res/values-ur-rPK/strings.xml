@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">پیکیج انسٹال کنندہ</string>
+    <string name="next">اگلا</string>
+    <string name="install">انسٹال کریں</string>
+    <string name="done">ہو گیا</string>
+    <string name="security_settings_desc">اس ایپ کو مندرجہ ذیل کی اجازت دیں:</string>
+    <string name="cancel">منسوخ کریں</string>
+    <string name="unknown">نامعلوم</string>
+    <string name="installing">انسٹال کیا جا رہا ہے…</string>
+    <string name="install_done">ایپ انسٹال ہوگئی۔</string>
+    <string name="install_confirm_question">کیا آپ یہ ایپلیکیشن انسٹال کرنا چاہتے ہیں؟ اس کو مندرجہ ذیل تک رسائی حاصل ہوگی:</string>
+    <string name="install_confirm_question_no_perms">کیا آپ یہ ایپلیکیشن انسٹال کرنا چاہتے ہیں؟ اس کو کوئی خاص رسائی درکار نہیں۔</string>
+    <string name="install_confirm_question_update">کیا آپ اس موجودہ ایپلیکیشن میں ایک اپ ڈیٹ انسٹال کرنا چاہتے ہیں؟ آپ کا موجودہ ڈیٹا ضائع نہیں ہوگا۔ اپ ڈیٹ کردہ ایپلیکیشن کو مندرجہ ذیل تک رسائی حاصل ہوگی:</string>
+    <string name="install_confirm_question_update_system">کیا آپ پہلے سے شامل اس ایپلیکیشن میں ایک اپ ڈیٹ انسٹال کرنا چاہتے ہیں؟ آپ کا موجودہ ڈیٹا ضائع نہیں ہوگا۔ اپ ڈیٹ کردہ ایپلیکیشن کو مندرجہ ذیل تک رسائی حاصل ہوگی:</string>
+    <string name="install_confirm_question_update_no_perms">کیا آپ اس موجودہ ایپلیکیشن میں ایک اپ ڈیٹ انسٹال کرنا چاہتے ہیں؟ آپ کا موجودہ ڈیٹا ضائع نہیں ہوگا۔ اس کو کوئی خاص رسائی درکار نہیں۔</string>
+    <string name="install_confirm_question_update_system_no_perms">کیا آپ پہلے سے شامل اس ایپلیکیشن میں ایک اپ ڈیٹ انسٹال کرنا چاہتے ہیں؟ آپ کا موجودہ ڈیٹا ضائع نہیں ہوگا۔ اس کو کوئی خاص رسائی درکار نہیں۔</string>
+    <string name="install_failed">ایپ انسٹال نہیں ہوئی۔</string>
+    <string name="install_failed_invalid_apk">پیکیج خراب معلوم ہوتا ہے۔</string>
+    <string name="install_failed_inconsistent_certificates">ایک متضاد دستخط کے ساتھ اسی نام سے ایک موجودہ پیکیج پہلے سے انسٹال ہے۔</string>
+    <string name="install_failed_older_sdk">‏پیکیج Android کے صرف نئے ورژنز پر کام کرتا ہے۔</string>
+    <string name="install_failed_cpu_abi_incompatible">یہ ایپ آپ کے ٹیبلیٹ کے ساتھ مطابقت پذیر نہیں ہے۔</string>
+    <string name="install_failed_file_not_found">انسٹالیشن مکمل ہونے سے پہلے متعینہ پیکیج کو حذف کر دیا گیا۔</string>
+    <string name="install_failed_verify_failed">پیکیج نے توثیق کو پاس نہیں کیا اور انسٹال نہیں کیا جا سکتا ہے۔</string>
+    <string name="install_failed_verify_timeout">اس پیکیج کی توثیق کی کوشش کرتے وقت ایک ٹائم آؤٹ پیش آگیا۔ اسے بعد میں پھر انسٹال کرنے کی کوشش کریں۔</string>
+    <string name="install_failed_msg">%1$s کو آپ کے ٹیبلیٹ پر انسٹال نہیں کیا جا سکا۔</string>
+    <string name="launch">کھولیں</string>
+    <string name="unknown_apps_dlg_title">انسٹال کرنے کو مسدود کردیا گیا</string>
+    <string name="unknown_apps_dlg_text">سیکیورٹی کے مدنظر، آپ کا ٹیبلٹ نامعلوم مآخذ سے حاصل شدہ ایپس کی انسٹالیشن مسدود کرنے پر سیٹ ہے۔</string>
+    <string name="unknown_apps_admin_dlg_text">آپ کا منتظم نامعلوم ذرائع سے اخذ کردہ ایپس کو انسٹال کرنے کی اجازت نہیں دیتا ہے۔</string>
+    <string name="ok">ٹھیک ہے</string>
+    <string name="settings">ترتیبات</string>
+    <string name="allow_source_dlg_title">ایپس کیلئے نیا ماخذ</string>
+    <string name="allow_source_dlg_text">"%1$s دیگر ایپس انسٹال کرنا چاہتی ہے۔
+
+اسے ابھی اور آئندہ کیلئے اجازت دیں؟"</string>
+    <string name="manage_applications">ایپس کا نظم کریں</string>
+    <string name="dlg_app_replacement_title">ایپ کو بدلیں؟</string>
+    <string name="dlg_app_replacement_statement">"آپ جو ایپ انسٹال کر رہے ہیں وہ دوسری ایپ کی جگہ لے لے گی۔
+
+آپ کا سبھی پچھلا صارف کا ڈیٹا محفوظ رہے گا۔"</string>
+    <string name="dlg_sys_app_replacement_statement">"یہ ایک سسٹم ایپ ہے۔
+
+آپ کا سبھی پچھلا صارف کا ڈیٹا محفوظ رہے گا۔"</string>
+    <string name="out_of_space_dlg_title">جگہ ختم ہو گئی ہے</string>
+    <string name="out_of_space_dlg_text">%1$s کو انسٹال نہیں کیا جا سکا۔ کچھ جگہ خالی کریں اور دوبارہ کوشش کریں۔</string>
+    <string name="dlg_ok">ٹھیک ہے</string>
+    <string name="app_not_found_dlg_title">ایپ نہیں ملی</string>
+    <string name="app_not_found_dlg_text">ایپ انسٹال کردہ ایپس کی فہرست میں نہیں ملی۔</string>
+    <string name="uninstall_application_title">ایپ کو اَن انسٹال کریں</string>
+    <string name="uninstall_update_title">اپ ڈیٹ اَن انسٹال کریں</string>
+    <string name="uninstall_activity_text">%1$s درج ذیل ایپ کا حصہ ہے:</string>
+    <string name="uninstall_application_text">کیا آپ یہ ایپ اَن انسٹال کرنا چاہتے ہیں؟</string>
+    <string name="uninstall_application_text_all_users">کیا آپ <b>سبھی</b> صارفین کیلئے یہ ایپ اَن انسٹال کرنا چاہتے ہیں؟ ایپلیکیشن اور اس کا ڈیٹا آلے پر موجود <b>سبھی</b> صارفین سے ہٹا دیا جائے گا۔</string>
+    <string name="uninstall_application_text_user">کیا آپ اس ایپ کو صارف %1$s کیلئے اَن انسٹال کرنا چاہتے ہیں؟</string>
+    <string name="uninstall_update_text">کیا آپ اس ایپ کو فیکٹری ورژن کے ساتھ تبدیل کرنا چاہتے ہیں؟</string>
+    <string name="uninstalling">اَن انسٹال ہو رہا ہے…</string>
+    <string name="uninstall_done">اَن انسٹال پورا ہوگیا۔</string>
+    <string name="uninstall_failed">اَن انسٹال ناکام۔</string>
+    <string name="uninstall_failed_device_policy_manager">اَن انسٹال نہیں کر سکتا کیونکہ یہ پیکیج ایک فعال آلے کا منتظم ہے۔</string>
+    <string name="uninstall_blocked_profile_owner">یہ ایپ آپ کے %1$s پروفائل کیلئے درکار ہے اور اسے اَن انسٹال نہیں کیا جا سکتا ہے۔</string>
+    <string name="uninstall_blocked_device_owner">یہ ایپ آپ کے آلہ کے منتظم کو درکار ہے اور اسے اَن انسٹال نہیں کیا جا سکتا ہے۔</string>
+    <string name="manage_device_administrators">آلہ کے منتظمین کا نظم کریں</string>
+    <string name="uninstall_failed_msg">%1$s کو اَن انسٹال نہیں کیا جا سکا۔</string>
+    <string name="Parse_error_dlg_title">پارس سے متعلق خرابی</string>
+    <string name="Parse_error_dlg_text">پیکیج کو پارس کرنے میں ایک دشواری پیش آگئی۔</string>
+    <string name="newPerms">نئی</string>
+    <string name="allPerms">سبھی</string>
+    <string name="privacyPerms">رازداری</string>
+    <string name="devicePerms">آلہ کی رسائی</string>
+    <string name="no_new_perms">اس اپ ڈیٹ کو کوئی نئی اجازتیں درکار نہیں۔</string>
+    <string name="grant_confirm_question">کیا آپ مندرجہ ذیل اجازتیں دینا چاہتے ہیں؟ اس سے اس تک رسائی حاصل ہو جائے گی:</string>
+</resources>

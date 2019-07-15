@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">პაკეტის ინსტალერი</string>
+    <string name="next">შემდეგი</string>
+    <string name="install">დაყენება</string>
+    <string name="done">დასრულდა</string>
+    <string name="security_settings_desc">აპის ნებართვების სია:</string>
+    <string name="cancel">გაუქმება</string>
+    <string name="unknown">უცნობი</string>
+    <string name="installing">მიმდინარეობს დაყენება…</string>
+    <string name="install_done">აპი დაყენებულია.</string>
+    <string name="install_confirm_question">გსურთ, ამ აპლიკაციის დაყენება? მას ექნება წვდომა:</string>
+    <string name="install_confirm_question_no_perms">გსურთ ამ აპლიკაციის დაყენება? ის არ მოითხოვს რაიმე განსაკუთრებულ ნებართვას.</string>
+    <string name="install_confirm_question_update">გსურთ განახლების დაყენება ამ არსებული აპლიკაციისთვის? არსებული მონაცემები არ დაიკარგება. განახლებულ აპლიკაციას წვდომა ექნება:</string>
+    <string name="install_confirm_question_update_system">გსურთ განახლების დაყენება ამ ჩაშენებული აპლიკაციისთვის? არსებული მონაცემები არ დაიკარგება. განახლენულ აპლიკაციას წვდომა ექნება:</string>
+    <string name="install_confirm_question_update_no_perms">გსურთ განახლების დაყენება ამ არსებული აპლიკაციისთვის? არსებული მონაცემები არ დაიკარგება. ის არ საჭიროებს რაიმე განსაკუთრებულ წვდომას:</string>
+    <string name="install_confirm_question_update_system_no_perms">გსურთ განახლების დაყენება ამ ჩაშენებული აპლიკაციისთვის? არსებული მონაცემები არ დაიკარგება. ის არ საჭიროებს რაიმე განსაკუთრებულ წვდომას:</string>
+    <string name="install_failed">აპი არ არის დაყენებული.</string>
+    <string name="install_failed_invalid_apk">როგორც ჩანს, ეს პაკეტი დაზიანებულია.</string>
+    <string name="install_failed_inconsistent_certificates">იმავე სახელის მქონე პაკეტი უკვე დაყენებულია და მას აქვს კონფლიქტური ხელმოწერა.</string>
+    <string name="install_failed_older_sdk">პაკეტი მუშაობს მხოლოდ Android-ის ახალ ვერსიებში.</string>
+    <string name="install_failed_cpu_abi_incompatible">ეს აპი არ არის თავსებადი თქვენს ტაბლეტთან.</string>
+    <string name="install_failed_file_not_found">მითითებული პაკეტი წაშლილია ინსტალაციის დასრულებამდე.</string>
+    <string name="install_failed_verify_failed">პაკეტმა არ გაიარა გადამოწმება და ვერ დაყენდება.</string>
+    <string name="install_failed_verify_timeout">დროის ლიმიტი ამოიწურა პაკეტის დადასტურების მცდელობისას. სცადეთ მისი დაყენება მოგვიანებით.</string>
+    <string name="install_failed_msg">%1$s-ის დაყენება თქვენს ტაბლეტზე ვერ მოხერხდა.</string>
+    <string name="launch">გახსნა</string>
+    <string name="unknown_apps_dlg_title">დაყენება დაბლოკილია</string>
+    <string name="unknown_apps_dlg_text">უსაფრთხოების მიზნით, ტაბლეტი ბლოკავს უცნობი წყაროებიდან მიღებული აპების დაყენებას.</string>
+    <string name="unknown_apps_admin_dlg_text">თქვენი ადმინისტრატორი არ უშვებს უცნობი წყაროებისგან მიღებული აპების ინსტალაციას.</string>
+    <string name="ok">კარგი</string>
+    <string name="settings">პარამეტრები</string>
+    <string name="allow_source_dlg_title">აპებისთვის ახალი წყარო</string>
+    <string name="allow_source_dlg_text">"%1$s სურს სხვა აპების დაყენება.
+
+მიენიჭოს ამის სამუდამო ნებართვა?"</string>
+    <string name="manage_applications">აპების მართვა</string>
+    <string name="dlg_app_replacement_title">ჩავანაცვლოთ აპი?</string>
+    <string name="dlg_app_replacement_statement">"აპი, რომელსაც აყენებთ, ჩაანაცვლებს სხვა აპს.
+
+მომხმარებლის ყველა წინა მონაცემი შეინახება."</string>
+    <string name="dlg_sys_app_replacement_statement">"ეს არის სისტემური აპი.
+
+მომხმარებლის ყველა წინა მონაცემი შეინახება."</string>
+    <string name="out_of_space_dlg_title">სივრცე შეივსო</string>
+    <string name="out_of_space_dlg_text">%1$s-ის დაყენება შეუძლებელია. გაათავისუფლეთ მეხსიერება და სცადეთ ხელახლა.</string>
+    <string name="dlg_ok">კარგი</string>
+    <string name="app_not_found_dlg_title">აპი ვერ მოიძებნა.</string>
+    <string name="app_not_found_dlg_text">დაყენებული აპების სიაში ეს აპი ვერ მოიძებნა.</string>
+    <string name="uninstall_application_title">აპის დეინსტალაცია</string>
+    <string name="uninstall_update_title">განახლების დეინსტალაცია</string>
+    <string name="uninstall_activity_text">%1$s არის შემდეგი აპის ნაწილი:</string>
+    <string name="uninstall_application_text">გსურთ, ამ აპის დეინსტალაცია?</string>
+    <string name="uninstall_application_text_user">გსურთ %1$s მომხმარებლისათვის ამ აპის დეინსტალაცია?</string>
+    <string name="uninstall_update_text">გნებავთ ამ აპის ჩანაცვლება მწარმოებლის ვერსიით?</string>
+    <string name="uninstalling">დეინსტალაცია…</string>
+    <string name="uninstall_done">დეინსტალაცია დასრულდა.</string>
+    <string name="uninstall_failed">დეინსტალაცია წარუმატებელია.</string>
+    <string name="uninstall_failed_device_policy_manager">დეინსტალაცია ვერ ხერხდება, რადგან ეს პაკეტი არის მოწყობილობის აქტიური ადმინისტრატორი.</string>
+    <string name="uninstall_blocked_profile_owner">ეს აპი საჭიროა თქვენი %1$s პროფილისათვის და მისი დეინსტალაცია ვერ მოხერხდება.</string>
+    <string name="uninstall_blocked_device_owner">ეს აპი საჭიროა თქვენი მოწყ. ადმინისტრატორისათვის და დეინსტალაცია ვერ გამოვა.</string>
+    <string name="manage_device_administrators">მოწყობილობის ადმინისტრატორების მართვა</string>
+    <string name="uninstall_failed_msg">%1$s -ის დეინსტალაცია ვერ მოხერხდა.</string>
+    <string name="Parse_error_dlg_title">შეცდომა კოდის ანალიზისას</string>
+    <string name="Parse_error_dlg_text">პაკეტის ანალიზისას წარმოიშვა პრობლემა.</string>
+    <string name="newPerms">ახალი</string>
+    <string name="allPerms">ყველა</string>
+    <string name="privacyPerms">კონფიდენციალურობა</string>
+    <string name="devicePerms">მოწყობილობის წვდომა</string>
+    <string name="no_new_perms">ეს განახლება არ საჭიროებს ახალ ნებართვებს.</string>
+    <string name="grant_confirm_question">გსურთ, მიანიჭოთ შემდეგი ნებართვები? წვდომა ექნება შემდეგზე:</string>
+</resources>

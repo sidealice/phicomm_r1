@@ -1,0 +1,47 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: OtaService.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+- wav
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '17'
+  targetSdkVersion: '22'
+sharedLibrary: false
+sparseResources: true
+unknownFiles:
+  about.html: '8'
+  bundle.properties: '8'
+  org/eclipse/paho/client/mqttv3/package.html: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.properties: '8'
+  org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.properties: '8'
+  org/eclipse/paho/client/mqttv3/logging/jsr47min.properties: '8'
+  org/eclipse/paho/client/mqttv3/logging/package.html: '8'
+  org/eclipse/paho/client/mqttv3/persist/package.html: '8'
+  org/eclipse/paho/client/mqttv3/util/package.html: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.4
+versionInfo:
+  versionCode: '22'
+  versionName: 5.1.1-3448

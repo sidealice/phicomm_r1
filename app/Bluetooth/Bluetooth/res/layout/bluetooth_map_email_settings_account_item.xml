@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="fill_vertical" android:orientation="horizontal" android:paddingLeft="51.0dip" android:paddingRight="25.0dip" android:clickable="true" android:layout_width="fill_parent" android:layout_height="51.0dip" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center|left" android:id="@id/bluetooth_map_email_settings_item_text_view" android:layout_width="fill_parent" android:layout_height="51.0dip" android:layout_weight="1.0" />
+    <CheckBox android:gravity="center|right" android:layout_gravity="right" android:id="@id/bluetooth_map_email_settings_item_check" android:layout_width="110.0dip" android:layout_height="51.0dip" android:layout_weight="2.0" />
+</LinearLayout>

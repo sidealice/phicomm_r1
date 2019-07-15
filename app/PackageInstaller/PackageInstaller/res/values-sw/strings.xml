@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Kisakinishaji cha furushi</string>
+    <string name="next">Inayofuata</string>
+    <string name="install">Sakinisha</string>
+    <string name="done">Nimemaliza</string>
+    <string name="security_settings_desc">Ruhusu programu hii:</string>
+    <string name="cancel">Ghairi</string>
+    <string name="unknown">Haijulikani</string>
+    <string name="installing">inawekwa...</string>
+    <string name="install_done">Programu imewekwa.</string>
+    <string name="install_confirm_question">Je, ungependa kuiweka programu hii? Itaweza:</string>
+    <string name="install_confirm_question_no_perms">Je, ungependa kuiweka programu hii? Haihitaji idhini ya kufikia kitu chochote.</string>
+    <string name="install_confirm_question_update">Je, unataka kuweka sasisho katika programu hii? Data yako iliyopo haitapotea. Programu iliyosasishwa itaweza:</string>
+    <string name="install_confirm_question_update_system">Je, unataka kuweka sasisho la programu hii iliyojengewa ndani? Data yako iliyopo haitapotea. Programu iliyosasishwa itaweza:</string>
+    <string name="install_confirm_question_update_no_perms">Je, unataka kuweka sasisho la programu hii? Data yako iliyopo haitapotea. Haihitaji idhini yoyote maalum ya kufikia.</string>
+    <string name="install_confirm_question_update_system_no_perms">Je, unataka kuweka sasisho la programu hii? Data yako iliyopo haitapotea. Haihitaji idhini yoyote maalum ya kufikia.</string>
+    <string name="install_failed">Programu haikusakinishwa.</string>
+    <string name="install_failed_invalid_apk">Inaonekana kifaa kimeharibika</string>
+    <string name="install_failed_inconsistent_certificates">Tayari kuna furushi lenye jina sawa na lenye sahihi inayogongana lililosakinishwa.</string>
+    <string name="install_failed_older_sdk">Kifurushi kinafanya kazi tu na toleo jipya la Android</string>
+    <string name="install_failed_cpu_abi_incompatible">Programu hii haitangamani na kompyuta yako kibao.</string>
+    <string name="install_failed_file_not_found">Furushi bainifu lilifutwa kabla ya usakinishaji uweze kukamilika.</string>
+    <string name="install_failed_verify_failed">Furushi halikupitia uthibitishaji na haliwezi kusakinishwa.</string>
+    <string name="install_failed_verify_timeout">Muda ulikwisha ulipokuwa ukijaribu kuthibitisha furushi hili. Jaribu kusakinisha tena baadaye.</string>
+    <string name="install_failed_msg">%1$s haikuweza kusakinishwa kwenye kompyuta yako kibao.</string>
+    <string name="launch">Fungua</string>
+    <string name="unknown_apps_dlg_title">Kusakinisha kumezuiwa</string>
+    <string name="unknown_apps_dlg_text">Kwa ajili ya usalama, kompyuta yako kibao imepangwa kuzuia usakinishaji wa programu zilizopatikana kutoka kwa vyanzo visivyojulikana.</string>
+    <string name="unknown_apps_admin_dlg_text">Msimamizi wako haruhusu usakinishaji wa programu zilizopatikana kutoka vyanzo visivyojulikana.</string>
+    <string name="ok">Sawa</string>
+    <string name="settings">Mipangilio</string>
+    <string name="allow_source_dlg_title">Chanzo kipya cha programu</string>
+    <string name="allow_source_dlg_text">"%1$s anataka kusakinisha programu nyingine. 
+ 
+ Ruhusu hii sasa na katika siku za usoni?"</string>
+    <string name="manage_applications">Dhibiti programu</string>
+    <string name="dlg_app_replacement_title">Badilisha programu?</string>
+    <string name="dlg_app_replacement_statement">"Programu unayosakinisha itachukua nafasi ya programu nyingine.
+
+Data yako ya mtumiaji wa awali itahifadhiwa."</string>
+    <string name="dlg_sys_app_replacement_statement">"Huu ni programu ya mfumo.
+
+Data yako ya mtumiaji iliyotangulia itahifadhiwa."</string>
+    <string name="out_of_space_dlg_title">Nafasi imeisha</string>
+    <string name="out_of_space_dlg_text">%1$s haingeweza kusakinishwa. Wezesha nafasi kiasi na ujaribu tena.</string>
+    <string name="dlg_ok">Sawa</string>
+    <string name="app_not_found_dlg_title">Programu haikupatikana</string>
+    <string name="app_not_found_dlg_text">Programu haikupatikana katika orodha ya programu zilizosakinishwa.</string>
+    <string name="uninstall_application_title">Sanidua programu</string>
+    <string name="uninstall_update_title">Sanidua kisasisho</string>
+    <string name="uninstall_activity_text">%1$s ni sehemu ya programu ifuatayo:</string>
+    <string name="uninstall_application_text">Unataka kusanidua programu hii?</string>
+    <string name="uninstall_application_text_all_users">Je, unataka kusanidua programu hii kwa <b>watumiaji</b> wote? Programu na data yake zitaondolewa kutoka kwa <b>watumiaji</b> kwenye kifaa.</string>
+    <string name="uninstall_application_text_user">Je, unataka kuondoa programu hii kwa mtumiaji %1$s?</string>
+    <string name="uninstall_update_text">Ungependa kubadilisha programu hii na toleo ililotoka nalo kiwandani?</string>
+    <string name="uninstalling">Inasanidua...</string>
+    <string name="uninstall_done">Imesaniduliwa.</string>
+    <string name="uninstall_failed">Kusanidua hakukufaulu.</string>
+    <string name="uninstall_failed_device_policy_manager">Furushi hili haliwezi kusaniduliwa kwa sababu ni kidhibiti kinachosimamia kifaa.</string>
+    <string name="uninstall_blocked_profile_owner">Programu hii inahitajika kwa ajili ya wasifu wako %1$s na haiwezi kuondolewa.</string>
+    <string name="uninstall_blocked_device_owner">Programu hii inahitajika na msimamizi wako wa kifaa na haiwezi kuondolewa.</string>
+    <string name="manage_device_administrators">Simamia vidhibiti vya kifaa</string>
+    <string name="uninstall_failed_msg">%1$s haingeweza kusaniduliwa.</string>
+    <string name="Parse_error_dlg_title">Changanua hitilafu</string>
+    <string name="Parse_error_dlg_text">Kulikuwa na tatizo la kuchanganua furushi.</string>
+    <string name="newPerms">Mpya</string>
+    <string name="allPerms">Zote</string>
+    <string name="privacyPerms">Faragha</string>
+    <string name="devicePerms">Kufikia Kifaa</string>
+    <string name="no_new_perms">Sasisho hili halihitaji vibali vipya.</string>
+    <string name="grant_confirm_question">Je, unataka kupeana idhini zifuatazo? Itakuwa na ufikiaji kwa:</string>
+</resources>

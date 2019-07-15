@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">نصب کننده بسته</string>
+    <string name="next">بعدی</string>
+    <string name="install">نصب</string>
+    <string name="done">انجام شد</string>
+    <string name="security_settings_desc">به این برنامه اجازه داده شود که:</string>
+    <string name="cancel">لغو</string>
+    <string name="unknown">ناشناس</string>
+    <string name="installing">در حال نصب…</string>
+    <string name="install_done">برنامه نصب شد.</string>
+    <string name="install_confirm_question">آیا می‌خواهید این برنامه را نصب کنید؟ این برنامه به این موارد دسترسی خواهد یافت:</string>
+    <string name="install_confirm_question_no_perms">آیا می‌خواهید این برنامه را نصب کنید؟ این برنامه به دسترسی خاصی نیاز ندارد.</string>
+    <string name="install_confirm_question_update">آیا میٰ‌خواهید بهٰ‌روزرسانی این برنامه کنونی را نصب کنید؟ داده کنونی شما از بین نمی‌رود. برنامه به‌روزرسانی شده دسترسی خواهد داشت به:</string>
+    <string name="install_confirm_question_update_system">آیا می‌خواهید به‌روزرسانی این برنامه جاسازی شده را نصب کنید؟ داده‌های کنونی شما از بین نمی‌رود. برنامه به‌روزرسانی شده دسترسی خواهد داشت به:</string>
+    <string name="install_confirm_question_update_no_perms">آیا می‌خواهید یک به‌روزرسانی برای این برنامه کاربردی موجود نصب کنید؟ داده‌های موجود شما از دست نخواهد رفت. به دسترسی ویژه‌ای نیاز ندارد.</string>
+    <string name="install_confirm_question_update_system_no_perms">آیا می‌خواهید یک به‌روزرسانی برای این برنامه کاربردی داخلی نصب کنید؟ داده‌های موجود شما از دست نخواهد رفت. به دسترسی ویژه‌ای نیاز ندارد.</string>
+    <string name="install_failed">برنامه نصب نشد.</string>
+    <string name="install_failed_invalid_apk">این بسته به نظر می‌رسد خراب است.</string>
+    <string name="install_failed_inconsistent_certificates">بسته فعلی با همین نام اما با امضای مختلف قبلاً نصب شده است.</string>
+    <string name="install_failed_older_sdk">‏این بسته فقط در نسخه‌های جدیدتر Android کار می‌کند.</string>
+    <string name="install_failed_cpu_abi_incompatible">این برنامه با رایانهٔ لوحی شما سازگار نیست.</string>
+    <string name="install_failed_file_not_found">بسته مشخص شده قبل از تکمیل نصب حذف شده است.</string>
+    <string name="install_failed_verify_failed">این بسته مورد تأیید نیست و نمی‌تواند نصب شود.</string>
+    <string name="install_failed_verify_timeout">هنگام تأیید صحت این بسته، فرصت زمانی تمام شد. بعداً دوباره آن را نصب کنید.</string>
+    <string name="install_failed_msg">%1$s در رایانهٔ لوحی شما نصب نشد.</string>
+    <string name="launch">باز کردن</string>
+    <string name="unknown_apps_dlg_title">نصب مسدود شد</string>
+    <string name="unknown_apps_dlg_text">به دلایل امنیتی، رایانهٔ لوحی شما طوری تنظیم شده است که نصب برنامه‌های دریافت شده از منابع ناشناخته را مسدود کند.</string>
+    <string name="unknown_apps_admin_dlg_text">سرپرست شما اجازه نمی‌دهد برنامه‌های دریافت شده از منابع ناشناس نصب شوند.</string>
+    <string name="ok">تأیید</string>
+    <string name="settings">تنظیمات</string>
+    <string name="allow_source_dlg_title">منبع جدید برای برنامه‌ها</string>
+    <string name="allow_source_dlg_text">"%1$s می‌خواهد برنامه‌های دیگری نصب کند.
+
+آیا اکنون و در آینده این اجازه را می‌دهید؟"</string>
+    <string name="manage_applications">مدیریت برنامه‌ها</string>
+    <string name="dlg_app_replacement_title">برنامه جایگزین شود؟</string>
+    <string name="dlg_app_replacement_statement">"برنامه‌ای که دارید نصب می‌کنید جایگزین یک برنامهٔ دیگر خواهد شد.
+
+تمام داده‌های کاربری قبلی شما ذخیره خواهد شد."</string>
+    <string name="dlg_sys_app_replacement_statement">"این یک برنامه سیستمی است.
+
+تمام داده‌های کاربری قبلی شما ذخیره خواهد شد."</string>
+    <string name="out_of_space_dlg_title">فضا کافی نیست</string>
+    <string name="out_of_space_dlg_text">%1$s نصب نمی‌شود. مقداری از فضا را آزاد کرده و دوباره امتحان کنید.</string>
+    <string name="dlg_ok">تأیید</string>
+    <string name="app_not_found_dlg_title">برنامه یافت نشد</string>
+    <string name="app_not_found_dlg_text">برنامه در لیست برنامه‌های نصب شده یافت نشد.</string>
+    <string name="uninstall_application_title">حذف نصب برنامه</string>
+    <string name="uninstall_update_title">حذف نصب به‌روزرسانی</string>
+    <string name="uninstall_activity_text">%1$s قسمتی از برنامه زیر است:</string>
+    <string name="uninstall_application_text">می‌خواهید این برنامه را حذف نصب کنید؟</string>
+    <string name="uninstall_application_text_all_users">آیا می‌خواهید این برنامه را برای <b>همه</b> کاربران حذف کنید؟ این برنامه کاربردی و داده‌های آن برای <b>همه</b> کاربران این دستگاه حذف خواهد شد.</string>
+    <string name="uninstall_application_text_user">آیا می‌خواهید این برنامه را برای این کاربر %1$s حذف نصب کنید؟</string>
+    <string name="uninstall_update_text">آیا می‌خواهید این برنامه را با یک نسخه کارخانه جایگزین کنید؟</string>
+    <string name="uninstalling">در حال حذف نصب...</string>
+    <string name="uninstall_done">حذف نصب پایان یافت.</string>
+    <string name="uninstall_failed">حذف نصب انجام نشد.</string>
+    <string name="uninstall_failed_device_policy_manager">حذف نصب ممکن نیست، زیرا این بسته یک سرپرست دستگاه فعال است.</string>
+    <string name="uninstall_blocked_profile_owner">این برنامه برای نمایه %1$s شما مورد نیاز است و نمی‌تواند حذف نصب شود.</string>
+    <string name="uninstall_blocked_device_owner">سرپرست دستگاه شما این برنامه را لازم کرده است و نمی‌تواند حذف نصب شود.</string>
+    <string name="manage_device_administrators">مدیریت سرپرستان دستگاه</string>
+    <string name="uninstall_failed_msg">%1$s حذف نصب نشد.</string>
+    <string name="Parse_error_dlg_title">خطای تجزیه</string>
+    <string name="Parse_error_dlg_text">مشکلی در تجزیه این بسته وجود داشت.</string>
+    <string name="newPerms">جدید</string>
+    <string name="allPerms">همه موارد</string>
+    <string name="privacyPerms">حریم خصوصی</string>
+    <string name="devicePerms">دسترسی به دستگاه</string>
+    <string name="no_new_perms">این به‌روزرسانی به مجوز جدیدی نیاز ندارد.</string>
+    <string name="grant_confirm_question">آیا می‌خواهید مجوزهای زیر را اعطا کنید؟ این مجوزها دسترسی به این موارد را بوجود می‌آورند:</string>
+</resources>

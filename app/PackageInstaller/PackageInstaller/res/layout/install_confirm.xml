@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/install_confirm_question" android:paddingTop="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/install_confirm_question" style="@style/padded" />
+    <ImageView android:id="@id/divider" android:background="?android:dividerHorizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" />
+    <FrameLayout android:id="@id/filler" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <HorizontalScrollView android:id="@id/tabscontainer" android:background="@android:drawable/text_select_handle_right_material" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fillViewport="true">
+                <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TabWidget android:layout_gravity="center" android:orientation="horizontal" android:id="@android:id/tabs" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                </FrameLayout>
+            </HorizontalScrollView>
+            <FrameLayout android:id="@android:id/tabcontent" android:layout_width="0.0dip" android:layout_height="0.0dip" android:layout_weight="0.0" />
+            <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        </LinearLayout>
+    </TabHost>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="?android:dividerHorizontal" android:showDividers="beginning">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true" style="?android:attr/buttonBarStyle">
+            <LinearLayout android:orientation="horizontal" android:id="@id/leftSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+            <Button android:layout_gravity="start" android:id="@id/cancel_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/cancel" android:maxLines="2" android:layout_weight="1.0" style="?android:attr/buttonBarButtonStyle" />
+            <Button android:layout_gravity="end" android:id="@id/ok_button" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/next" android:maxLines="2" android:layout_weight="1.0" android:filterTouchesWhenObscured="true" style="?android:attr/buttonBarButtonStyle" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/rightSpacer" android:visibility="gone" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.25" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

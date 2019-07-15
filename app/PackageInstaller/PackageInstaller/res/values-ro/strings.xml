@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Program de instalare a pachetelor</string>
+    <string name="next">Înainte</string>
+    <string name="install">Instalaţi</string>
+    <string name="done">Terminat</string>
+    <string name="security_settings_desc">Permiteţi acestei aplicaţii să:</string>
+    <string name="cancel">Anulaţi</string>
+    <string name="unknown">Necunoscut</string>
+    <string name="installing">În curs de instalare...</string>
+    <string name="install_done">Aplicaţie instalată.</string>
+    <string name="install_confirm_question">Doriţi să instalaţi această aplicaţie? Aceasta va avea acces la:</string>
+    <string name="install_confirm_question_no_perms">Doriţi să instalaţi această aplicaţie? Aplicaţia nu solicită un acces special.</string>
+    <string name="install_confirm_question_update">Doriţi să instalaţi o actualizare pentru această aplicaţie existentă? Datele existente nu vor fi pierdute. Aplicaţia actualizată va avea acces la:</string>
+    <string name="install_confirm_question_update_system">Doriţi să instalaţi o actualizare pentru această aplicaţie încorporată? Datele existente nu vor fi pierdute. Aplicaţia actualizată va avea acces la:</string>
+    <string name="install_confirm_question_update_no_perms">Doriţi să instalaţi o actualizare pentru această aplicaţie existentă? Datele existente nu vor fi pierdute. Actualizarea nu are nevoie de acces special.</string>
+    <string name="install_confirm_question_update_system_no_perms">Doriţi să instalaţi o actualizare pentru această aplicaţie încorporată? Datele existente nu vor fi pierdute. Actualizarea nu are nevoie de acces special.</string>
+    <string name="install_failed">Aplicaţia nu este instalată.</string>
+    <string name="install_failed_invalid_apk">Pachetul pare a fi deteriorat.</string>
+    <string name="install_failed_inconsistent_certificates">Un pachet cu acelaşi nume şi cu o semnătură conflictuală este deja instalat.</string>
+    <string name="install_failed_older_sdk">Pachetul funcţionează numai pe versiunile Android mai recente.</string>
+    <string name="install_failed_cpu_abi_incompatible">Această aplicaţie nu este compatibilă cu tableta dvs.</string>
+    <string name="install_failed_file_not_found">Pachetul specificat a fost şters înainte ca instalarea să poată fi finalizată.</string>
+    <string name="install_failed_verify_failed">Pachetul nu a trecut de verificare şi nu pot fi instalat.</string>
+    <string name="install_failed_verify_timeout">La verificarea pachetului timpul limită a expirat. Încercaţi să instalaţi din nou ulterior.</string>
+    <string name="install_failed_msg">%1$s nu a putut fi instalată pe tableta dvs.</string>
+    <string name="launch">Deschideţi</string>
+    <string name="unknown_apps_dlg_title">Instalare blocată</string>
+    <string name="unknown_apps_dlg_text">Pentru securitate, tableta blochează instalarea aplicaţiilor obţinute din surse necunoscute.</string>
+    <string name="unknown_apps_admin_dlg_text">Administratorul nu permite instalarea aplicațiilor obținute din surse necunoscute.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Setări</string>
+    <string name="allow_source_dlg_title">Sursă nouă pentru aplicaţii</string>
+    <string name="allow_source_dlg_text">"%1$s doreşte să instaleze alte aplicaţii.
+
+Permiteţi acest lucru acum şi pe viitor?"</string>
+    <string name="manage_applications">Gestionaţi aplicaţii</string>
+    <string name="dlg_app_replacement_title">Înlocuiţi aplicaţia?</string>
+    <string name="dlg_app_replacement_statement">"Aplicaţia pe care o instalaţi va înlocui o altă aplicaţie.
+ 
+Toate datele dvs. anterioare de utilizator vor fi salvate."</string>
+    <string name="dlg_sys_app_replacement_statement">"Aceasta este o aplicaţie de sistem.
+ 
+Toate datele dvs. anterioare de utilizator vor fi salvate."</string>
+    <string name="out_of_space_dlg_title">Spaţiu de stocare insuficient</string>
+    <string name="out_of_space_dlg_text">%1$s nu a putut fi instalată. Eliberaţi spaţiu şi încercaţi din nou.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Aplicaţia nu a fost găsită</string>
+    <string name="app_not_found_dlg_text">Aplicaţia nu a fost găsită în lista de aplicaţii instalate.</string>
+    <string name="uninstall_application_title">Dezinstalaţi aplicaţia</string>
+    <string name="uninstall_update_title">Dezinstalaţi actualizarea</string>
+    <string name="uninstall_activity_text">" %1$s face parte din următoarea aplicaţie:"</string>
+    <string name="uninstall_application_text">Doriţi să dezinstalaţi această aplicaţie?</string>
+    <string name="uninstall_application_text_all_users">Doriţi să dezinstalaţi această aplicaţie pentru <b>toţi</b> utilizatorii? Aplicaţia şi datele acesteia vor fi eliminate de la <b>toţi</b> utilizatorii de pe acest dispozitiv.</string>
+    <string name="uninstall_application_text_user">Dezinstalați această aplicație pentru utilizatorul %1$s?</string>
+    <string name="uninstall_update_text">Doriţi să înlocuiţi această aplicaţie cu versiunea din fabrică?</string>
+    <string name="uninstalling">În curs de dezinstalare...</string>
+    <string name="uninstall_done">Dezinstalare finalizată.</string>
+    <string name="uninstall_failed">Dezinstalare nefinalizată.</string>
+    <string name="uninstall_failed_device_policy_manager">Nu se poate dezinstala, acest pachet este un administrator de dispozitive activ.</string>
+    <string name="uninstall_blocked_profile_owner">Aplicație necesară pentru profilul dvs. %1$s. Nu poate fi dezinstalată.</string>
+    <string name="uninstall_blocked_device_owner">Aplicație necesară administratorului dispozitivului. Nu poate fi dezinstalată.</string>
+    <string name="manage_device_administrators">Gestionaţi administratori de dispozitive</string>
+    <string name="uninstall_failed_msg">%1$s nu a putut fi dezinstalată.</string>
+    <string name="Parse_error_dlg_title">Erori de analizare</string>
+    <string name="Parse_error_dlg_text">A apărut o problemă la analizarea pachetului.</string>
+    <string name="newPerms">Noi</string>
+    <string name="allPerms">Toate</string>
+    <string name="privacyPerms">Confidenţialitate</string>
+    <string name="devicePerms">Acces la dispozitiv</string>
+    <string name="no_new_perms">Această actualizare nu necesită permisiuni noi.</string>
+    <string name="grant_confirm_question">Doriți să acordați următoarele permisiuni? Utilizatorul va avea acces la:</string>
+</resources>

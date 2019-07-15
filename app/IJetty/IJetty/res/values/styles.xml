@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="H1">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="small">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">@color/translucent_dark</item>
+    </style>
+    <style name="footer">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+    <style name="Theme.IJetty" parent="@android:style/Theme.Light">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="Theme.Message" parent="@android:style/Theme.Dialog" />
+</resources>

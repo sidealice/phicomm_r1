@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ໂຕຕິດຕັ້ງແພັກເກດ</string>
+    <string name="next">ຕໍ່ໄປ</string>
+    <string name="install">ຕິດຕັ້ງ</string>
+    <string name="done">ແລ້ວໆ</string>
+    <string name="security_settings_desc">ອະນຸຍາດໃຫ້ແອັບຯນີ້:</string>
+    <string name="cancel">ຍົກເລີກ</string>
+    <string name="unknown">ບໍ່ຮູ້ຈັກ</string>
+    <string name="installing">ກຳລັງຕິດຕັ້ງ…</string>
+    <string name="install_done">ຕິດຕັ້ງແອັບຯແລ້ວ.</string>
+    <string name="install_confirm_question">ທ່ານຕ້ອງການຕິດຕັ້ງແອັບພລິເຄຊັນນີ້ບໍ່? ມັນຈະໄດ້ສິດການເຂົ້າເຖິງ:</string>
+    <string name="install_confirm_question_no_perms">ທ່ານ​ຕ້ອງ​ການ​ຕິດ​ຕັ້ງ​ແອັບພລິເຄຊັນນີ້ບໍ່​? ມັນ​ບໍ່​ຕ້ອງໃຊ້ສິດທິການ​ເຂົ້າ​ເຖິງ​​ພິ​ເສດໃດໆ.</string>
+    <string name="install_confirm_question_update">ທ່ານຕ້ອງການຕິດຕັ້ງອັບເດດໃສ່ແອັບພລິເຄຊັນນີ້ບໍ່? ຂໍ້ມູນຂອງທ່ານທີ່ມີຢູ່ກ່ອນແລ້ວຈະຍັງຄົງຢູ່ຄືເກົ່າ. ແອັບພລິເຄຊັນທີ່ຜ່ານການອັບເດດຈະສາມາດເຂົ້າເຖິງ:</string>
+    <string name="install_confirm_question_update_system">ທ່ານຕ້ອງການທີ່ຈະຕິດຕັ້ງຊຸດອັບເດດສຳລັບແອັບຯນີ້ບໍ່? ຂໍ້ມູນທີ່ທ່ານມີຢູ່ຈະບໍ່ສູນຫາຍ. ການອັບເດດແອັບພລິເຄຊັນນີ້ຈະສາມາດເຂົ້າເຖິງ:</string>
+    <string name="install_confirm_question_update_no_perms">ທ່ານຕ້ອງການຕິດຕັ້ງອັບເດດໃສ່ແອັບພລິເຄຊັນນີ້ບໍ່? ຂໍ້ມູນຂອງທ່ານທີ່ມີຢູ່ກ່ອນແລ້ວຈະຍັງຄົງຢູ່ຄືເກົ່າ. ມັນບໍ່ຕ້ອງການສິດເຂົ້າເຖິງພິເສດໃດໆ.</string>
+    <string name="install_confirm_question_update_system_no_perms">ທ່ານຕ້ອງການຕິດຕັ້ງອັບເດດໃສ່ແອັບພລິເຄຊັນທີ່ມີມານຳນີ້ບໍ່? ຂໍ້ມູນຂອງທ່ານທີ່ມີຢູ່ກ່ອນແລ້ວຈະຍັງຄົງຢູ່ຄືເກົ່າ. ມັນບໍ່ຕ້ອງການສິດເຂົ້າເຖິງພິເສດໃດໆເລີຍ.</string>
+    <string name="install_failed">ບໍ່ໄດ້ຕິດຕັ້ງແອັບຯເທື່ອ.</string>
+    <string name="install_failed_invalid_apk">ແພັກເກດມີຄວາມເສຍຫາຍ.</string>
+    <string name="install_failed_inconsistent_certificates">ມີແພັກເກດທີ່ໃຊ້ຊື່ດຽວກັນ ແລະລາຍເຊັນທີ່ຂັດແຍ່ງກັນຕິດຕັ້ງຢູ່ກ່ອນແລ້ວ.</string>
+    <string name="install_failed_older_sdk">ແພັກເກດເຮັດວຽກໄດ້ສະເພາະ Android ເວີຊັນໃໝ່ກວ່າເທົ່ານັ້ນ.</string>
+    <string name="install_failed_cpu_abi_incompatible">ແອັບຯນີ້ບໍ່ສາມາດໃຊ້ໄດ້ກັບແທັບເລັດຂອງທ່ານ.</string>
+    <string name="install_failed_file_not_found">ແພັກເກດທີ່​ກໍາ​ນົດ​​ໄດ້ຖືກ​ລຶບ​ກ່ອນ​ການ​ຕິດ​ຕັ້ງຈະສຳເລັດ.</string>
+    <string name="install_failed_verify_failed">ແພັກເກດບໍ່ຜ່ານການຢືນຢັນ ແລະບໍ່ສາມາດຕິດຕັ້ງໄດ້.</string>
+    <string name="install_failed_verify_timeout">ເວລາໝົດໃນຂະນະທີ່ກຳລັງຢືນຢັນແພັກເກັດນີ້. ກະລຸນາລອງຕິດຕັ້ງມັນໃໝ່ອີກຄັ້ງພາຍຫຼັງ.</string>
+    <string name="install_failed_msg">ບໍ່ສາມາດຕິດຕັ້ງ %1$s ໃສ່ແທັບເລັດຂອງທ່ານໄດ້.</string>
+    <string name="launch">ເປີດ</string>
+    <string name="unknown_apps_dlg_title">ການຕິດຕັ້ງຖືກບລັອກໄວ້</string>
+    <string name="unknown_apps_dlg_text">ເພື່ອຄວາມປອດໄພ, ແທັບເລັດຂອງທ່ານ ຖືກຕັ້ງໃຫ້ບລັອກການຕິດຕັ້ງແອັບພລິເຄຊັນທີ່ມາຈາກແຫຼ່ງບໍ່ຮູ້ຈັກ.</string>
+    <string name="unknown_apps_admin_dlg_text">​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ຂອງ​ທ່ານ​ບໍ່​ອາ​ນຸ​ຍາດ​ໃຫ້​ຕິດ​ຕັ້ງ​ແອັບຯ​ທີ່​ໄດ້​ມາ​ຈາກ​ແຫຼ່ງ​ທີ່​ບໍ່​ຮູ້​ຈັກ.</string>
+    <string name="ok">ຕົກລົງ</string>
+    <string name="settings">ການຕັ້ງຄ່າ</string>
+    <string name="allow_source_dlg_title">ແຫຼ່ງຂໍ້ມູນໃໝ່ສຳລັບແອັບຯ</string>
+    <string name="allow_source_dlg_text">"%1$s ຕ້ອງການຕິດຕັ້ງແອັບຯອື່ນ.
+
+ອະນຸຍາດໃນຕອນນີ້ ແລະໃນອະນາຄົດບໍ່?"</string>
+    <string name="manage_applications">ຈັດການແອັບຯ</string>
+    <string name="dlg_app_replacement_title">ແທນທີ່ແອັບຯບໍ່?</string>
+    <string name="dlg_app_replacement_statement">"ແອັບຯທີ່ທ່ານກຳລັງຕິດຕັ້ງຈະທັບແອັບຯອື່ນ.
+
+ຂໍ້ມູນຜູ່ໃຊ້ທັງໝົດກ່ອນໜ້ານີ້ຂອງທ່ານຈະຖືກບັນທຶໄວ້."</string>
+    <string name="dlg_sys_app_replacement_statement">"ນີ້ແມ່ນແອັບຯຂອງລະບົບ.
+
+ຂໍ້ມູນຜູ່ໃຊ້ທັງໝົດກ່ອນໜ້ານີ້ຂອງທ່ານຈະຖືກບັນທຶໄວ້."</string>
+    <string name="out_of_space_dlg_title">ພື້ນທີ່ຫວ່າງບໍ່ພຽງພໍ</string>
+    <string name="out_of_space_dlg_text">ບໍ່ສາມາດຕິດຕັ້ງ %1$s ໄດ້. ກະລຸນາລຶບຂໍ້ມູນທີ່ບໍ່ຈຳເປັນອອກ ເພື່ອໃຫ້ມີບ່ອນຈັດເກັບຂໍ້ມູນຫວ່າງເພີ່ມຂຶ້ນ ແລ້ວລອງໃໝ່ອີກຄັ້ງ.</string>
+    <string name="dlg_ok">ຕົກລົງ</string>
+    <string name="app_not_found_dlg_title">ບໍ່ພົບເຫັນແອັບຯ</string>
+    <string name="app_not_found_dlg_text">ບໍ່ພົບແອັບຯໃນລາຍການຂອງແອັບຯທີ່ຕິດຕັ້ງແລ້ວ.</string>
+    <string name="uninstall_application_title">ຖອນ​ການ​ຕິດ​ຕັ້ງແອັບຯ</string>
+    <string name="uninstall_update_title">ຖອນ​ການ​ຕິດ​ຕັ້ງ​ອັບເດດ</string>
+    <string name="uninstall_activity_text">%1$s ແມ່ນ​ສ່ວນ​ນຶ່ງ​ຂອງແອັບຯຂ້າງລຸ່ມ:</string>
+    <string name="uninstall_application_text">ທ່ານຕ້ອງການຖອນການຕິດຕັ້ງແອັບຯນີ້ບໍ່?</string>
+    <string name="uninstall_application_text_all_users">ທ່ານຕ້ອງການທີ່ຈະຖອນການຕິດຕັ້ງແອັບຯນີ້ ສຳລັງຜູ່ໃຊ້<b>ທຸກຄົນ</b>ບໍ່? ແອັບພລິເຄຊັນ ແລະຂໍ້ມູນຂອງມັນຈະຖືກລຶບອອກ ຈາກຜູ່ໃຊ້<b>ທັງໝົດ</b>ໃນອຸປະກອນນີ້.</string>
+    <string name="uninstall_application_text_user">ທ່ານ​ຕ້ອງ​ການ​ຖອນ​ການ​ຕິດ​ຕັ້ງ​ແອັບຯ​ນີ້​ສຳ​ລັບ​ຜູ່​ໃຊ້ %1$s ບໍ່?</string>
+    <string name="uninstall_update_text">ທ່ານ​ຕ້ອງ​ການ​ແທນທີ່ແອັບຯນີ້​ດ້ວຍເວີຊັນທີ່ມາກັບ​ໂຮງ​ງານບໍ່​?</string>
+    <string name="uninstalling">ກຳລັງຖອນການຕິດຕັ້ງ...</string>
+    <string name="uninstall_done">ຖອນການຕິດຕັ້ງສຳເລັດແລ້ວ.</string>
+    <string name="uninstall_failed">ການຖອນການຕິດຕັ້ງບໍ່ສຳເລັດ.</string>
+    <string name="uninstall_failed_device_policy_manager">ບໍ່ສາມາດຖອດການຕິດຕັ້ງໄດ້ ເນື່ອງຈາກແພັກເກດນີ້ເປັນຂອງຜູ່ເບິ່ງແຍງລະບົບອຸປະກອນ.</string>
+    <string name="uninstall_blocked_profile_owner">ແອັບຯ​ນີ້​ຕ້ອງ​ໃຊ້​ໂດຍ​ໂປຣ​ໄຟລ໌ %1$s ຂອງ​ທ່ານ​ແລະ​ບໍ່​ສາ​ມາດ​ຖອນ​ການ​ຕິດ​ຕັ້ງ​ໄດ້.</string>
+    <string name="uninstall_blocked_device_owner">​ແອັບຯ​ນີ້​ຕ້ອງ​ໃຊ້​ໂດຍ​ຜູ່​ເບິ່ງ​ແຍງ​ລະ​ບົບ​ຂອງ​ທ່ານ ແລະ​ບໍ່​ສາ​ມາດ​ຖອນ​ການ​ຕິດ​ຕັ້ງ​ໄດ້.</string>
+    <string name="manage_device_administrators">ຈັດການຜູ່ເບິ່ງແຍງລະບົບອຸປະກອນ</string>
+    <string name="uninstall_failed_msg">%1$s ບໍ່ສາມາດຖອນອອກໄດ້.</string>
+    <string name="Parse_error_dlg_title">ການວິເຄາະຜິດພາດ</string>
+    <string name="Parse_error_dlg_text">ເກີດບັນຫາໃນການວິເຄາະແພັກເກດ.</string>
+    <string name="newPerms">ໃໝ່</string>
+    <string name="allPerms">ທັງໝົດ</string>
+    <string name="privacyPerms">ຄວາມ​ເປັນ​ສ່ວນ​ຕົວ</string>
+    <string name="devicePerms">ການເຂົ້າເຖິງອຸປະກອນ</string>
+    <string name="no_new_perms">ອັບເດດນີ້ບໍ່ຕ້ອງການການອະນຸຍາດໃໝ່.</string>
+    <string name="grant_confirm_question">ທ່ານຕ້ອງການອະນຸມັດສິ່ງຕໍ່ໄປນີ້ຫຼືບໍ່? ມັນຈະສາມາດເຂົ້າເຖິງ:</string>
+</resources>

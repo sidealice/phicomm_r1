@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paketiinstaller</string>
+    <string name="next">Järgmine</string>
+    <string name="install">Installi</string>
+    <string name="done">Valmis</string>
+    <string name="security_settings_desc">Lubage sel rakendusel teha järgmist.</string>
+    <string name="cancel">Tühista</string>
+    <string name="unknown">Tundmatu</string>
+    <string name="installing">Installimine ...</string>
+    <string name="install_done">Rakendus on installitud.</string>
+    <string name="install_confirm_question">Kas soovite rakenduse installida? See pääseb järgmiste üksuste juurde:</string>
+    <string name="install_confirm_question_no_perms">Kas soovite rakenduse installida? See ei nõua spetsiaalseid juurdepääsuõigusi.</string>
+    <string name="install_confirm_question_update">Kas soovite olemasoleva rakenduse värskenduse installida? Teie olemasolevad andmed jäävad alles. Värskendatud rakendus pääseb järgmiste funktsioonide juurde:</string>
+    <string name="install_confirm_question_update_system">Kas soovite sisseehitatud rakenduse värskenduse installida? Teie olemasolevad andmed jäävad alles. Värskendatud rakendus pääseb järgmiste funktsioonide juurde:</string>
+    <string name="install_confirm_question_update_no_perms">Kas soovite installida olemasoleva rakenduse värskenduse? Olemasolevad andmed ei lähe kaduma. See ei nõua erijuurdepääsu.</string>
+    <string name="install_confirm_question_update_system_no_perms">Kas soovite installida sisseehitatud rakenduse värskenduse? Olemasolevad andmed ei lähe kaduma. See ei nõua erijuurdepääsu.</string>
+    <string name="install_failed">Rakendus pole installitud.</string>
+    <string name="install_failed_invalid_apk">Pakett tundub olevat rikutud.</string>
+    <string name="install_failed_inconsistent_certificates">Sama nime ja vastuolus allkirjaga pakett on juba installitud.</string>
+    <string name="install_failed_older_sdk">Pakett töötab ainult Androidi uuemate versioonidega.</string>
+    <string name="install_failed_cpu_abi_incompatible">Rakendus ei ühildu teie tahvelarvutiga.</string>
+    <string name="install_failed_file_not_found">Määratud pakett kustutati enne, kui install lõpule jõudis.</string>
+    <string name="install_failed_verify_failed">Pakett ei läbinud kinnitamist ja seda ei saa installida.</string>
+    <string name="install_failed_verify_timeout">Paketi kinnitamisel ilmnes ajalõpp. Proovige hiljem uuesti installida.</string>
+    <string name="install_failed_msg">Rakendust %1$s ei saa teie tahvelarvutisse installida.</string>
+    <string name="launch">Ava</string>
+    <string name="unknown_apps_dlg_title">Install blokeeritud</string>
+    <string name="unknown_apps_dlg_text">Turvalisuse eesmärgil blokeerib tahvelarvuti tundmatutest allikatest pärit rakenduste installimise.</string>
+    <string name="unknown_apps_admin_dlg_text">Administraator ei luba installida tundmatutest allikatest pärinevaid rakendusi.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Seaded</string>
+    <string name="allow_source_dlg_title">Uus rakendusteallikas</string>
+    <string name="allow_source_dlg_text">"%1$s soovib installida muid rakendusi.
+
+Kas soovite selle praegu ja tulevikus lubada?"</string>
+    <string name="manage_applications">Rakenduste haldamine</string>
+    <string name="dlg_app_replacement_title">Kas asendada rakendus?</string>
+    <string name="dlg_app_replacement_statement">"Installitav rakendus asendab teise rakenduse.
+
+Kõik teie varasemad kasutajaandmed salvestatakse."</string>
+    <string name="dlg_sys_app_replacement_statement">"See on süsteemirakendus.
+
+Kõik teie varasemad kasutajaandmed salvestatakse."</string>
+    <string name="out_of_space_dlg_title">Pole ruumi</string>
+    <string name="out_of_space_dlg_text">Rakendust %1$s ei saa installida. Vabastage mälu ja proovige uuesti.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Rakendust ei leitud</string>
+    <string name="app_not_found_dlg_text">Rakendust ei leitud installitud rakenduste loendist.</string>
+    <string name="uninstall_application_title">Rakenduse desinstallimine</string>
+    <string name="uninstall_update_title">Värskenduse desinstallimine</string>
+    <string name="uninstall_activity_text">%1$s on osa järgmisest rakendusest:</string>
+    <string name="uninstall_application_text">Kas soovite selle rakenduse desinstallida?</string>
+    <string name="uninstall_application_text_all_users">Kas soovite desinstallida selle rakenduse <b>kõikidelt</b> kasutajatelt? Rakendus ja selle andmed eemaldatakse <b>kõikidelt</b> seadme kasutajatelt.</string>
+    <string name="uninstall_application_text_user">Kas soovite kasutaja %1$s puhul rakenduse desinstallida?</string>
+    <string name="uninstall_update_text">Kas soovite selle rakenduse asendada tehaseversiooniga?</string>
+    <string name="uninstalling">Desinstallimine ...</string>
+    <string name="uninstall_done">Desinstallimine on lõpetatud.</string>
+    <string name="uninstall_failed">Desinstallimine ebaõnnestus.</string>
+    <string name="uninstall_failed_device_policy_manager">Ei saa desinstallida, sest pakett on aktiivse seadme administraator.</string>
+    <string name="uninstall_blocked_profile_owner">Seda rakendust on vaja kasutaja %1$s profiili jaoks ja seda ei saa desinstallida.</string>
+    <string name="uninstall_blocked_device_owner">Seadme administraator vajab seda rakendust ja seda ei saa desinstallida.</string>
+    <string name="manage_device_administrators">Halda seadme ülemaid</string>
+    <string name="uninstall_failed_msg">Rakendust %1$s ei saanud desinstallida.</string>
+    <string name="Parse_error_dlg_title">Sõelumise viga</string>
+    <string name="Parse_error_dlg_text">Probleem paketi sõelumisel.</string>
+    <string name="newPerms">Uus</string>
+    <string name="allPerms">Kõik</string>
+    <string name="privacyPerms">Privaatsus</string>
+    <string name="devicePerms">Seadme juurdepääs</string>
+    <string name="no_new_perms">See värskendus ei nõua uusi lube.</string>
+    <string name="grant_confirm_question">Kas soovite anda järgmise loa? See annab juurdepääsu järgmisele:</string>
+</resources>

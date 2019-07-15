@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen android:key="pref0_screen"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/non_ssl_category" android:key="pref1_screen">
+        <EditTextPreference android:title="@string/pref_port_title" android:key="@string/pref_port_key" android:defaultValue="@string/pref_port_value" android:dialogTitle="@string/pref_port" />
+        <CheckBoxPreference android:id="@id/nio" android:title="@string/pref_nio_title" android:key="@string/pref_nio_key" android:defaultValue="@string/pref_nio_value" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/ssl_category" android:key="pref2_screen">
+        <CheckBoxPreference android:id="@id/ssl_nio" android:title="@string/pref_ssl_title" android:key="@string/pref_ssl_key" android:defaultValue="@string/pref_ssl_value" />
+        <CheckBoxPreference android:id="@id/ssl_nio_x" android:title="@string/pref_nio_title" android:key="@string/pref_ssl_nio_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_ssl_nio_value" />
+        <EditTextPreference android:title="@string/pref_ssl_port_title" android:key="@string/pref_ssl_port_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_ssl_port_value" android:dialogTitle="@string/pref_ssl_port" />
+        <EditTextPreference android:password="true" android:title="@string/pref_keystore_pwd_title" android:key="@string/pref_keystore_pwd_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_keystore_pwd_value" android:dialogTitle="@string/pref_keystore_pwd" />
+        <EditTextPreference android:password="true" android:title="@string/pref_keymgr_pwd_title" android:key="@string/pref_keymgr_pwd_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_keymgr_pwd_value" android:dialogTitle="@string/pref_keymgr_pwd" />
+        <EditTextPreference android:title="@string/pref_keystore_file_title" android:key="@string/pref_keystore_file_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_keystore_file_value" android:dialogTitle="@string/pref_keystore_file" />
+        <EditTextPreference android:title="@string/pref_truststore_file_title" android:key="@string/pref_truststore_file_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_truststore_file_value" android:dialogTitle="@string/pref_truststore_file" />
+        <EditTextPreference android:password="true" android:title="@string/pref_truststore_pwd_title" android:key="@string/pref_truststore_pwd_key" android:dependency="@string/pref_ssl_key" android:defaultValue="@string/pref_truststore_pwd_value" android:dialogTitle="@string/pref_truststore_pwd" />
+    </PreferenceCategory>
+</PreferenceScreen>

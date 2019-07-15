@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[î-Ĵéţţý one two]</string>
+    <string name="jetty_started">[Ĵéţţý šţåŕţéð one two three]</string>
+    <string name="jetty_starting">[Ĵéţţý šţåŕţîñĝ one two three]</string>
+    <string name="jetty_stopping">[Ĵéţţý šţöþþîñĝ one two three]</string>
+    <string name="jetty_not_started">[Ĵéţţý ñöţ šţåŕţéð one two three]</string>
+    <string name="jetty_already_started">[Ĵéţţý åļŕéåðý ŕûññîñĝ one two three]</string>
+    <string name="jetty_stopped">[Ĵéţţý šţöþþéð one two three]</string>
+    <string name="jetty_not_stopped">[Ĵéţţý ñöţ šţöþþéð one two three]</string>
+    <string name="jetty_not_running">[Ĵéţţý ñöţ ŕûññîñĝ one two three]</string>
+    <string name="manage_jetty">[Ḿåñåĝé Ĵéţţý one two]</string>
+    <string name="jetty_controller">[Šţåŕţ åñð Šţöþ Ĵéţţý one two three]</string>
+    <string name="jetty_downloader">[Éñţéŕ ÛŔĻ one two]</string>
+    <string name="start_jetty">[Šţåŕţ Ĵéţţý one two]</string>
+    <string name="stop_jetty">[Šţöþ Ĵéţţý one two]</string>
+    <string name="config_jetty">[Çöñƒîĝûŕé one two]</string>
+    <string name="start_download">[Ðöŵñļöåð one two]</string>
+    <string name="download_webapp">[Ðöŵñļöåð one two]</string>
+    <string name="retry">[Ŕéţŕý one two]</string>
+    <string name="url">[ÛŔĻ one]</string>
+    <string name="console">[Çöñšöļé one two]</string>
+    <string name="insert_error_message">[Îñšéŕţ Éŕŕöŕ Ḿéššåĝé Ĥéŕé one two three four]</string>
+    <string name="i_jetty_information">[î-ĵéţţý one two]</string>
+    <string name="non_ssl_category">[ĤŢŢÞ Çöññéçţöŕ one two three]</string>
+    <string name="ssl_category">[ĤŢŢÞŠ Çöññéçţöŕ one two three]</string>
+    <string name="console_category">[Çöñšöļé one two]</string>
+    <string name="pref_nio_value">[ţŕûé one]</string>
+    <string name="pref_nio_title">[Ûšé ÑÎÖ one two]</string>
+    <string name="pref_nio_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ_ñîö one two three four]</string>
+    <string name="pref_ssl_nio_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ_ššļ_ñîö one two three four]</string>
+    <string name="pref_ssl_nio_value">[ţŕûé one]</string>
+    <string name="pref_ssl_value">[ƒåļšé one two]</string>
+    <string name="pref_ssl_title">[Ûšé ŠŠĻ one two]</string>
+    <string name="pref_ssl_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ_ššļ one two three four]</string>
+    <string name="pref_ssl_port_title">[Éðîţ Þöŕţ one two]</string>
+    <string name="pref_ssl_port_value">[8443 one]</string>
+    <string name="pref_ssl_port_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ššļþöŕţ one two three four]</string>
+    <string name="pref_ssl_port">[Þöŕţ one]</string>
+    <string name="pref_port_value">[9090 one]</string>
+    <string name="pref_port">[Þöŕţ one]</string>
+    <string name="pref_port_title">[Éðîţ Þöŕţ one two]</string>
+    <string name="pref_port_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.þöŕţ one two three four]</string>
+    <string name="pref_keystore_pwd_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ķéýšţöŕé.þŵð one two three four five]</string>
+    <string name="pref_keystore_pwd">[Ķéýšţöŕé Þåššŵöŕð one two three]</string>
+    <string name="pref_keystore_pwd_title">[Éðîţ Þåššŵöŕð one two three]</string>
+    <string name="pref_keystore_pwd_value">[ÖβF:1Vñý1žļö1х8é1Vñŵ1Vñ61х8ĝ1žļû1Vñ4 one two three four five]</string>
+    <string name="pref_keymgr_pwd_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ķéýḿĝŕ.þŵð one two three four]</string>
+    <string name="pref_keymgr_pwd">[ĶéýŠţöŕéḾåñåĝéŕ Þåššŵöŕð one two three]</string>
+    <string name="pref_keymgr_pwd_title">[Éðîţ ĶéýšţöŕéḾåñåĝéŕ Þåššŵöŕð one two three four]</string>
+    <string name="pref_keymgr_pwd_value">[ÖβF:1û2û1ŵḿļ1ž7š1ž7å1ŵñļ1û2ĝ one two three four]</string>
+    <string name="pref_keystore_file_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ķéýšţöŕé.ƒîļé one two three four five]</string>
+    <string name="pref_keystore_file">[Ķéýšţöŕé Fîļéñåḿé one two three]</string>
+    <string name="pref_keystore_file_title">[Éðîţ Ķéýšţöŕé Fîļéñåḿé one two three]</string>
+    <string name="pref_keystore_file_value">[/šðçåŕð/ĵéţţý/éţç/ķéýšţöŕé one two three four]</string>
+    <string name="pref_truststore_pwd_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ţŕûšţšţöŕé.þŵð one two three four five]</string>
+    <string name="pref_truststore_pwd">[Ţŕûšţšţöŕé Þåššŵöŕð one two three]</string>
+    <string name="pref_truststore_pwd_title">[Éðîţ Ţŕûšţšţöŕé Þåššŵöŕð one two three]</string>
+    <string name="pref_truststore_pwd_value">[ÖβF:1Vñý1žļö1х8é1Vñŵ1Vñ61х8ĝ1žļû1Vñ4 one two three four five]</string>
+    <string name="pref_truststore_file_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.ţŕûšţšţöŕé.ƒîļé one two three four five]</string>
+    <string name="pref_truststore_file">[Ţŕûšţšţöŕé Fîļéñåḿé one two three]</string>
+    <string name="pref_truststore_file_title">[Éðîţ Ţŕûšţšţöŕé Fîļéñåḿé one two three]</string>
+    <string name="pref_truststore_file_value">[/šðçåŕð/ĵéţţý/éţç/ķéýšţöŕé one two three four]</string>
+    <string name="pref_console_pwd_value">[åðḿîñ one two]</string>
+    <string name="pref_console_pwd">[Çöñšöļé Þåššŵöŕð one two three]</string>
+    <string name="pref_console_pwd_title">[Éðîţ Çöñšöļé Þåššŵöŕð one two three]</string>
+    <string name="pref_console_pwd_key">[öŕĝ.ḿöŕţɓåý.îĵéţţý.þŕéƒ.þŵð one two three four]</string>
+    <string name="edit_preferences">[Éðîţ ÎĴéţţý Šéţţîñĝš one two three]</string>
+    <string name="connector_settings">[Çöññéçţöŕ šéţţîñĝš one two three]</string>
+    <string name="webapp_exists">[Åļŕéåðý Éхîšţš one two three]</string>
+    <string name="download_fail">[Ðöŵñļöåð Fåîļéð. one two three]</string>
+    <string name="download_success">[Ŵéɓ åþþ îñšţåļļéð. one two three]</string>
+    <string name="success">[Šûççéšš. one two]</string>
+    <string name="failure">[Fåîļûŕé one two]</string>
+    <string name="yes">[Ýéš one]</string>
+    <string name="no">[Ñö one]</string>
+    <string name="overwrite">[Ŕéþļåçé éхîšţîñĝ ƒîļé¿ one two three]</string>
+    <string name="loading">[Ļöåðîñĝ ... one two]</string>
+    <string name="context_path">[Çöñţéхţ Þåţĥ one two]</string>
+    <string name="header_sd_media">[<b>Éхţéŕñåļ Ḿéðîå ÛñåVåîļåɓļé</b>"
+
+Ţĥé ŠÐ Çåŕð îš å ŕéQûîŕéð þåŕţ öƒ î-ĵéţţý, åñð ñééðš ţö ɓé þŕéšéñţ, ƒöŕḿåţţéð, ḿöûñţéð, "<u>ñöţ</u>" ŕéåð-öñļý, åñð ŵîţĥ šûƒƒîçîéñţ šþåçé ţö ĥöļð ţĥé ţéḿþöŕåŕý ƒîļéš ţĥåţ î-ĵéţţý ñééðš.
+
+Þļéåšé çöŕŕéçţ ýöûŕ ŠÐ-Çåŕð šţåţé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twent]"</string>
+    <string name="sd_media_removed">[<b>ḾÉÐÎÅ_ŔÉḾÖνÉÐ</b>"
+
+Þļéåšé ŕéþļåçé ţĥé ŠÐ Çåŕð åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve]"</string>
+    <string name="sd_media_unmounted">[<b>ḾÉÐÎÅ_ÛÑḾÖÛÑŢÉÐ</b>"
+
+Ḿéðîå îš þŕéšéñţ, ɓûţ ñöţ ḿöûñţéð.
+Šéé ýöûŕ Šýšţéḿ Šéţţîñĝš > ŠÐ Çåŕð šçŕééñ ƒöŕ ḿöûñţîñĝ îñšţŕûçţîöñš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twent]"</string>
+    <string name="sd_media_checking">[<b>ḾÉÐÎÅ_ÇĤÉÇĶÎÑĜ</b>"
+
+Ḿéðîå îš þŕéšéñţ, ɓûţ îš ɓéîñĝ ðîšķ-çĥéçķéð ɓý ţĥé ÖŠ.
+Þļéåšé ŵåîţ å ƒéŵ ḿîñûţéš ƒöŕ ţĥîš þŕöçéšš ţö ƒîñîšĥ åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four]"</string>
+    <string name="sd_media_nofs">[<b>ḾÉÐÎÅ_ÑÖFŠ</b>"
+
+Ḿéðîå îš þŕéšéñţ, ɓûţ îš ɓļåñķ öŕ îš ûšîñĝ å ƒîļéšýšţéḿ ţýþé ţĥåţ îš ûñšûþþöŕţéð ɓý ţĥé Åñðŕöîð ÖŠ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen]"</string>
+    <string name="sd_media_mounted_read_only">[<b>ḾÉÐÎÅ_ḾÖÛÑŢÉÐ_ŔÉÅÐ_ÖÑĻÝ</b>"
+
+Ḿéðîå îš þŕéšéñţ, åñð ḿöûñţéð, ɓûţ îš ŕéåð-öñļý.
+Ĵéţţý ŕéQûîŕéš å ƒîļéšýšţéḿ ţĥåţ îţ çåñ ŵŕîţé ţö.
+
+Þļéåšé çöŕŕéçţ åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven]"</string>
+    <string name="sd_media_shared">[<b>ḾÉÐÎÅ_ŠĤÅŔÉÐ</b>"
+
+Ḿéðîå îš þŕéšéñţ, ɓûţ îš ûñåVåîļåɓļé ţö Ĵéţţý åš îţ îš çûŕŕéñţļý îñVöļVéð îñ ÛŠβ ḿåšš šţöŕåĝé ƒîļé šĥåŕîñĝ ŵîţĥ å ðéšķţöþ.
+Çöḿþļéţé ýöûŕ ÛŠβ ḿåšš šţöŕåĝé šĥåŕîñĝ åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="sd_media_bad_removal">[<b>ḾÉÐÎÅ_βÅÐ_ŔÉḾÖνÅĻ</b>"
+
+Ḿéðîå îš ñöţ þŕéšéñţ, åñð ţĥé Åñðŕöîð ÖŠ ŕéþöŕţš ţĥåţ îţ ŵåš ŕéḿöVéð ûñšåƒéļý.
+Þļéåšé ŕéþļåçé ḿéðîå, ļéţ Åñðŕöîð çĥéçķ îţ, åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight]"</string>
+    <string name="sd_media_unmountable">[<b>ḾÉÐÎÅ_ÛÑḾÖÛÑŢÅβĻÉ</b>"
+
+Ḿéðîå îš þŕéšéñţ, ɓûţ ţĥé Åñðŕöîð ÖŠ çåññöţ ḿöûñţ îţ.
+Ţĥîš ţýþîçåļļý ĥåþþéñš îƒ ţĥé ƒîļéšýšţéḿ öŕ ḿéðîå îš ɓåð öŕ çöŕŕûþţéð.
+Ŕéþļåçé ḿéðîå åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five six seven eight nine ten eleven]"</string>
+    <string name="sd_unknown">[<b>ÛÑĤÅÑÐĻÉÐ ÉŔŔÖŔ</b>"
+
+Ḿéðîå šţåţé çåññöţ ɓé ðéţéŕḿîñéð.
+Šţåţé ɓéîñĝ ŕéþöŕţéð ɓý Åñðŕöîð îš "<u>»%s«</u> one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="sd_not_available">[ŠÐ Ñöţ (ýéţ) ÅVåîļåɓļé one two three]</string>
+    <string name="account_has_not_been_configured">[Åççöûñţ ĥåš ñöţ ɓééñ çöñƒîĝûŕéð. one two three four five six seven eight]</string>
+    <string name="server_cannot_been_accessed">[ŠéŕVéŕ çåñ ñöţ ɓééñ åççéššéð. one two three four five six seven]</string>
+    <string name="server_error">[ŠéŕVéŕ éŕŕöŕ : one two three]</string>
+    <string name="account_has_been_used">[Åççöûñţ ĥåš ɓééñ ûšéð. one two three]</string>
+    <string name="illegal_account">[Çöñƒîĝûŕéð åççöûñţ îš îļļéĝåļ, ŵĥîçĥ ḿåý ɓé ñöţ å ţéŕḿîñåļ åççöûñţ. one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="ssl_handshake_exception">[ŠŠĻĤåñðšĥåķé éхçéþţîöñ çåûĝĥţ. Šýšţéḿ ţîḿé ḿåý ñöţ çöŕŕéçţ. one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="unexpected_exception">[Ûñéхþéçţéð éхçéþţîöñ çåûĝĥţ. one two three four]</string>
+    <string name="not_a_internet_edition">[Ñöţ å îñţéŕñéţ éðîţîöñ. one two three]</string>
+    <string name="go_to_sleep">[Ĝö ţö šļééþ. one two]</string>
+</resources>

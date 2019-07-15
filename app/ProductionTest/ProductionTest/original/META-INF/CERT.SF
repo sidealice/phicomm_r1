@@ -1,0 +1,19 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest: Sui2PiAfKbADhs4lF2mD03Njzm4PJfw2BBxSD/NQyPo=
+Created-By: 1.0 (Android SignApk)
+
+Name: AndroidManifest.xml
+SHA-256-Digest: K/SNlJi0d1HRCSq6t8+MTym064Yw79hdVW5VSz5Jz8U=
+
+Name: res/raw/aging_audio
+SHA-256-Digest: 3/7qQi9uDZgCkVIu2zO53pMl2pfpcKPa3CAeDjD+sNI=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: T7J2zTzAvA4qc9mpKb1Fb2OPdXX4/emAxfYEieoqyxk=
+
+Name: resources.arsc
+SHA-256-Digest: mU/FHoVMA2y4jXfqT7blhWdSbpP3PIQL2GvU7GJzoI4=
+
+Name: classes.dex
+SHA-256-Digest: QqQJqxWELdhaZtiueCn2svSRPTSlzflVgazI7F/VSaQ=
+

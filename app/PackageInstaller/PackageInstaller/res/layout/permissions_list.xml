@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.packageinstaller.CaffeinatedScrollView android:id="@id/scrollview" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/privacylist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+            <TextView android:text="@string/privacyPerms" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="?android:attr/listSeparatorTextViewStyle" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/devicelist" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:layout_marginBottom="4.0dip">
+            <TextView android:text="@string/devicePerms" android:layout_marginStart="16.0dip" android:layout_marginEnd="16.0dip" style="?android:attr/listSeparatorTextViewStyle" />
+        </LinearLayout>
+    </LinearLayout>
+</com.android.packageinstaller.CaffeinatedScrollView>

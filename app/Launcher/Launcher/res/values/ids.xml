@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="app_grid">false</item>
+    <item type="id" name="icon">false</item>
+    <item type="id" name="app_name">false</item>
+</resources>

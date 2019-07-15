@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Инсталатор на пакет</string>
+    <string name="next">Следно</string>
+    <string name="install">Инсталирај</string>
+    <string name="done">Готово</string>
+    <string name="security_settings_desc">Овозможи оваа апликација да:</string>
+    <string name="cancel">Откажи</string>
+    <string name="unknown">Непознато</string>
+    <string name="installing">Се инсталира...</string>
+    <string name="install_done">Апликацијата е инсталирана.</string>
+    <string name="install_confirm_question">Дали сакате да ја инсталирате оваа апликација? Ќе добие пристап до:</string>
+    <string name="install_confirm_question_no_perms">Дали сакате да ја инсталирате оваа апликација? Не бара никаков посебен пристап.</string>
+    <string name="install_confirm_question_update">Дали сакате да инсталирате надградба на оваа постоечка апликација? Вашите постоечки податоци нема да се изгубат. Ажурираната апликација ќе добие пристап до:</string>
+    <string name="install_confirm_question_update_system">Дали сакате да инсталирате надградба на оваа вградена апликација? Вашите постоечки податоци нема да се изгубат. Ажурираната апликација ќе добие пристап до:</string>
+    <string name="install_confirm_question_update_no_perms">Дали сакате да инсталирате надградба на оваа постоечка апликација? Вашите постоечки податоци нема да се изгубат. Таа не бара никаков посебен пристап.</string>
+    <string name="install_confirm_question_update_system_no_perms">Дали сакате да инсталирате надградба на оваа вградена апликација? Вашите постоечки податоци нема да се изгубат. Таа не бара никаков посебен пристап.</string>
+    <string name="install_failed">Апликацијата не е инсталирана.</string>
+    <string name="install_failed_invalid_apk">Се чини дека пакетот е оштетен.</string>
+    <string name="install_failed_inconsistent_certificates">Веќе има инсталирано пакет со истото име со противречен потпис.</string>
+    <string name="install_failed_older_sdk">Пакетот работи само на понови верзии на Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Оваа апликација не е компатибилна со вашиот таблет.</string>
+    <string name="install_failed_file_not_found">Одредениот пакет беше избришан пред да заврши инсталација.</string>
+    <string name="install_failed_verify_failed">Пакетот не ја помина верификацијата и не може да се инсталира.</string>
+    <string name="install_failed_verify_timeout">Истече времето при обид да се провери овој пакет. Обидете се да го инсталирате повторно подоцна.</string>
+    <string name="install_failed_msg">%1$s не можеше да се инсталира на вашиот таблет.</string>
+    <string name="launch">Отвори</string>
+    <string name="unknown_apps_dlg_title">Инсталирањето е блокирано</string>
+    <string name="unknown_apps_dlg_text">За безбедност, вашиот таблет е подесен да блокира инсталирање апликации добиени од непознати извори.</string>
+    <string name="unknown_apps_admin_dlg_text">Вашиот администратор не дозволува инсталација на апликации добиени од непознати извори.</string>
+    <string name="ok">Во ред</string>
+    <string name="settings">Подесувања</string>
+    <string name="allow_source_dlg_title">Нов извор за апликации</string>
+    <string name="allow_source_dlg_text">"%1$s сака да инсталира други апликации.
+
+Дозволи го ова сега и во иднина?"</string>
+    <string name="manage_applications">Управувај со апликации</string>
+    <string name="dlg_app_replacement_title">Замени апликација?</string>
+    <string name="dlg_app_replacement_statement">"Апликацијата што ја инсталирате ќе замени друга апликација.
+
+Сите ваши претходни податоци за корисникот ќе се зачуваат."</string>
+    <string name="dlg_sys_app_replacement_statement">"Ова е системска апликација.
+
+Сите ваши претходни податоци за корисникот ќе се зачуваат."</string>
+    <string name="out_of_space_dlg_title">Нема простор</string>
+    <string name="out_of_space_dlg_text">%1$s не можеше да се инсталира. Ослободете простор и обидете се повторно.</string>
+    <string name="dlg_ok">Во ред</string>
+    <string name="app_not_found_dlg_title">Апликацијата не е пронајдена</string>
+    <string name="app_not_found_dlg_text">Апликацијата не е пронајдена во списокот инсталирани апликации.</string>
+    <string name="uninstall_application_title">Деинсталирај апликација</string>
+    <string name="uninstall_update_title">Деинсталирај ажурирање</string>
+    <string name="uninstall_activity_text">%1$s е дел од следната апликација:</string>
+    <string name="uninstall_application_text">Дали сакате да ја деинсталирате оваа апликација?</string>
+    <string name="uninstall_application_text_all_users">Дали сакате да ја деинсталирате оваа апликација за <b>сите</b> корисници? Апликацијата и нејзините податоци ќе се отстранат од <b>сите</b> корисници на уредот.</string>
+    <string name="uninstall_application_text_user">Дали сакате да ја деинсталирате апликацијава за корисникот %1$s?</string>
+    <string name="uninstall_update_text">Дали сакате да ја замените оваа апликација со фабричката верзија?</string>
+    <string name="uninstalling">Се деинсталира...</string>
+    <string name="uninstall_done">Деинсталирањето заврши.</string>
+    <string name="uninstall_failed">Деинсталирањето е неуспешно.</string>
+    <string name="uninstall_failed_device_policy_manager">Не може да се деинсталира зашто овој пакет е активен администратор на уред.</string>
+    <string name="uninstall_blocked_profile_owner">Апликацијата е потребна за вашиот профил %1$s и не може да се деинсталира.</string>
+    <string name="uninstall_blocked_device_owner">Апликацијата ја бара администраторот на вашиот уред и не може да се деинсталира.</string>
+    <string name="manage_device_administrators">Управувај со администратори на уредот</string>
+    <string name="uninstall_failed_msg">%1$s не може да се деинсталира.</string>
+    <string name="Parse_error_dlg_title">Грешка при анализа</string>
+    <string name="Parse_error_dlg_text">Настана проблем при разложување на пакетот.</string>
+    <string name="newPerms">Ново</string>
+    <string name="allPerms">Сè</string>
+    <string name="privacyPerms">Приватност</string>
+    <string name="devicePerms">Пристап кон уредот</string>
+    <string name="no_new_perms">Ова ажурирање не бара нови дозволи.</string>
+    <string name="grant_confirm_question">Дали сакате да ги доделите следниве дозволи? Тоа ќе овозможи пристап кон:</string>
+</resources>

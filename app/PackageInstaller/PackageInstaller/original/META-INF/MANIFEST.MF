@@ -1,0 +1,51 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: res/drawable/ic_success_material.xml
+SHA-256-Digest: jy6tfP/PF+VMyy6Icm4porQd7Ke6bg6zi38luNJVmfk=
+
+Name: res/layout/label.xml
+SHA-256-Digest: Rpg1KC5NKt6jJqFLnBrfQD6LvInWLtNzbvv6ICAMypw=
+
+Name: res/drawable/ic_result_status.xml
+SHA-256-Digest: MvcbmHZNFP9lnVOQa++SXQw0QHxKId7Hh5kMmmdeTck=
+
+Name: res/drawable/ic_fail_material.xml
+SHA-256-Digest: Ax60TQuI3XlVv7dUkUK8I+veYT9tamyZF+LF5Zcoy/Y=
+
+Name: resources.arsc
+SHA-256-Digest: DmN+OvIpz3KoHtfmSNnvxwHWxrQNThb+BV35GzAhSW4=
+
+Name: classes.dex
+SHA-256-Digest: qKseLLB4aHmJkALVNlMb1vkIIFZ87mvz01GV6NFNd9o=
+
+Name: res/layout/uninstall_progress.xml
+SHA-256-Digest: A4E8h9hsCi+P2ENB8sSyj7ApEoqwmidg3rqoO2O2pQA=
+
+Name: res/layout/app_details.xml
+SHA-256-Digest: tb0oq5+Xyh9OmFD63KYr4IyhWoLP+j3V67K0g65Gpa8=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: DPMbAX3V9CRBb61Ecrs5P3JMkdctcct041bAoGliIss=
+
+Name: res/layout/install_confirm.xml
+SHA-256-Digest: 1JHATIjYKDxFLmstsUMei78ogdR7uAQe67hk2bh1OQY=
+
+Name: res/drawable-hdpi-v4/ic_success.png
+SHA-256-Digest: zgwWwlSBukMR3wFiu3Od8CYUxXCLUJu/pBU03268nlk=
+
+Name: res/layout/uninstall_confirm.xml
+SHA-256-Digest: v45YbglNqyTmyGyYGjZ5E28/qiixmyIqF41PbPL8PvY=
+
+Name: res/layout/op_progress.xml
+SHA-256-Digest: og/4OYJLUlu2nIJ0P8Xr4dlsYwR5QY+6a+dbVOJ7gR0=
+
+Name: res/layout/install_start.xml
+SHA-256-Digest: DEDiQUMu/iC9Giau39L+Y/xdU+fzlSNkpW5UgE1kdwg=
+
+Name: res/drawable-hdpi-v4/ic_fail.png
+SHA-256-Digest: qp5z0JlZlpK8sEpdgcIYpw7sIUnU8/Ki8uewSzZ0S8A=
+
+Name: res/layout/permissions_list.xml
+SHA-256-Digest: s1Nv9rikVHndnNG5yL6JfF9ZFp+E4O04aJsHMBA3MpM=
+

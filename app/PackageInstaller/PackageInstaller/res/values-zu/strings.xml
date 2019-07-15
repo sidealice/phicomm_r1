@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Isifaki sephakheji</string>
+    <string name="next">Okulandelayo</string>
+    <string name="install">Faka</string>
+    <string name="done">Kwenziwe</string>
+    <string name="security_settings_desc">Vumela le-app uku:</string>
+    <string name="cancel">Khansela</string>
+    <string name="unknown">Akwaziwa</string>
+    <string name="installing">Iyafaka...</string>
+    <string name="install_done">I-App ifakiwe.</string>
+    <string name="install_confirm_question">Ngabe ufuna ukufaka lolu hlelo lokusebenza? Lizothola ukufinyelela ku:</string>
+    <string name="install_confirm_question_no_perms">Ngabe ufuna ukufaka lolu hlelo lokusebenza? Alidingi ukufinyelela okukhethekile.</string>
+    <string name="install_confirm_question_update">Ngabe ufuna ukufaka isibuyekezo ohlelweni lokusebenza olukhona? Idatha yakho ekhona izolahleka. Uhlelo lokusebenza olubuyekeziwe lizothola ukufinyelela ku:</string>
+    <string name="install_confirm_question_update_system">Ngabe ufuna ukufaka isibuyekezo kulolu hlelo lokusebenza olakhelwe phakathi? Idatha yakho ekhona izolahleka. Uhlelo lokusebenza olubuyekeziwe luzothola ukufinyelela ku:</string>
+    <string name="install_confirm_question_update_no_perms">Ingabe ufuna ukufaka isibuyekezo kulolu hlelo lokusebenza olukhona? Idatha yakho ekhona ngeke ilahleke. Akudingi ukufinyelela okukhethekile.</string>
+    <string name="install_confirm_question_update_system_no_perms">Ungabe ufuna ukukhipha isibuyekezo kulolu hlelo lokusebenza olakhelwe ngaphakathi? Idatha yakho ekhona ngeke ilahleke. Akudingi ukufinyelela okukhethekile.</string>
+    <string name="install_failed">I-app ayifakiwe.</string>
+    <string name="install_failed_invalid_apk">Iphasela libonakala lonakalisiwe</string>
+    <string name="install_failed_inconsistent_certificates">" Iphakheji enegama elifanayo nesiginisha ephikisayo isivele ifakiwe."</string>
+    <string name="install_failed_older_sdk">Iphasela lisebenza kuphela kunguqulo entsha ye-Android</string>
+    <string name="install_failed_cpu_abi_incompatible">Lolu hlelo lokusebenza alihambelani nethebulethi yakho.</string>
+    <string name="install_failed_file_not_found">Iphakheji echaziwe yasuswa ngaphambi kokuba uhlelo lokufaka luqedelwe.</string>
+    <string name="install_failed_verify_failed">Iphakheji ayizange idlule ekuqinisekisweni ngakho angeke ifakwe.</string>
+    <string name="install_failed_verify_timeout">Kwenzeke isikhathi sokuvala kusaqinisekiswa le phakheji. Sicela uzame ukuyifaka futhi.</string>
+    <string name="install_failed_msg">I-%1$s ayikwazanga ukufakwa kuthebhulethi.</string>
+    <string name="launch">Vula</string>
+    <string name="unknown_apps_dlg_title">Ukufaka kuvimbelwe</string>
+    <string name="unknown_apps_dlg_text">Ngokuphepha, ithebhulethi yakho isethelwe ukuvimbela ukufakwa kwezinhlelo zokusebenza ezitholwa emithonjeni engaziwa.</string>
+    <string name="unknown_apps_admin_dlg_text">Umlawuli wakho akavumeli ukufakwa kwezinhlelo zokusebenza okutholwe kusukela kumithombo engaziwa.</string>
+    <string name="ok">KULUNGILE</string>
+    <string name="settings">Izilungiselelo</string>
+    <string name="allow_source_dlg_title">Umthombo omusha wama-apps</string>
+    <string name="allow_source_dlg_text">"%1$s ifuna ukufaka ezinye izisetshenziswa.
+
+Vumela lokhu manje kanye nasesikhathini esizayo?"</string>
+    <string name="manage_applications">Phatha izinhlelo zokusebenza</string>
+    <string name="dlg_app_replacement_title">Miselela i-app?</string>
+    <string name="dlg_app_replacement_statement">"I-app oyifakayo izomiselela enye i-app.
+
+Yonke idatha yakho yomsebenzisi yangaphambilini izogcinwa."</string>
+    <string name="dlg_sys_app_replacement_statement">"Le i-app yohlelo.
+
+Yonke idatha yakho yomsebenzisi yangaphambilini izogcinwa."</string>
+    <string name="out_of_space_dlg_title">Iphelelwe yisikhala</string>
+    <string name="out_of_space_dlg_text">I-%1$s ayikwazanga ukufakwa. Khulula isikhala bese uzama futhi.</string>
+    <string name="dlg_ok">KULUNGILE</string>
+    <string name="app_not_found_dlg_title">I-App ayitholakalanga</string>
+    <string name="app_not_found_dlg_text">Uhlelo lokusebenza alutholakalanga ohlwini lwezinhlelo zokusebenza ezifakiwe.</string>
+    <string name="uninstall_application_title">Khipha i-app</string>
+    <string name="uninstall_update_title">Khipha isibuyekezo</string>
+    <string name="uninstall_activity_text">I-%1$s ingxenye yohlelo lokusebenza olulandelayo:</string>
+    <string name="uninstall_application_text">Ufuna ukukhipha le-app?</string>
+    <string name="uninstall_application_text_all_users">Ingabe ufuna ukukhipha lolu hlelo lokusebenza kubo <b>bonke</b> abasebenzisi? Uhlelo lokusebenza nedatha yalo kuzosuswa kubo <b>bonke</b> abasebenzisi kudivayisi.</string>
+    <string name="uninstall_application_text_user">Ingabe ufuna ukukhiphela lolu hlelo lokusebenza kumsebenzisi ongu-%1$s?</string>
+    <string name="uninstall_update_text">Ufuna ukumiselela le app ngenguqulo yenkampani?</string>
+    <string name="uninstalling">Iyakhipha...</string>
+    <string name="uninstall_done">Ukukhipha kuqedile</string>
+    <string name="uninstall_failed">Ukukhipha akuphumelelanga.</string>
+    <string name="uninstall_failed_device_policy_manager">Ayikwazi ukukhupha: leliphasela liwumqondisi wedivayisi osebenzayo</string>
+    <string name="uninstall_blocked_profile_owner">Lolu hlelo lokusebenza luyadingeka kuphrofayela yakho ye-%1$s futhi alikwazi ukukhishwa.</string>
+    <string name="uninstall_blocked_device_owner">Lolu hlelo lokusebenza ludingwa umlawuli wedivayisi yakho futhi alukwazi ukukhishwa.</string>
+    <string name="manage_device_administrators">Phatha amadivayisi abaqondisi</string>
+    <string name="uninstall_failed_msg">I-%1$s ayikwazanga ukukhishwa</string>
+    <string name="Parse_error_dlg_title">Iphutha lokuhlwaya</string>
+    <string name="Parse_error_dlg_text">Kube nenkinga yokwehlukanisa iphakheji.</string>
+    <string name="newPerms">Okusha</string>
+    <string name="allPerms">Konke</string>
+    <string name="privacyPerms">Ubumfihlo</string>
+    <string name="devicePerms">Ukufinyelela kwedivayisi</string>
+    <string name="no_new_perms">Lesi sibuyekezo asidingi zimvume.</string>
+    <string name="grant_confirm_question">Ufuna ukunikeza lezi zimvume ezilandelayo? Izothola ukufinyelela ku-:</string>
+</resources>

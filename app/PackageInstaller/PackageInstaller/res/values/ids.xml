@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="app_snippet">false</item>
+    <item type="id" name="app_icon">false</item>
+    <item type="id" name="app_name">false</item>
+    <item type="id" name="top_divider">false</item>
+    <item type="id" name="progress_bar">false</item>
+    <item type="id" name="install_confirm_question">false</item>
+    <item type="id" name="divider">false</item>
+    <item type="id" name="filler">false</item>
+    <item type="id" name="tabscontainer">false</item>
+    <item type="id" name="pager">false</item>
+    <item type="id" name="leftSpacer">false</item>
+    <item type="id" name="cancel_button">false</item>
+    <item type="id" name="ok_button">false</item>
+    <item type="id" name="rightSpacer">false</item>
+    <item type="id" name="install_confirm_panel">false</item>
+    <item type="id" name="buttons_panel">false</item>
+    <item type="id" name="done_button">false</item>
+    <item type="id" name="launch_button">false</item>
+    <item type="id" name="center_text">false</item>
+    <item type="id" name="center_explanation">false</item>
+    <item type="id" name="scrollview">false</item>
+    <item type="id" name="privacylist">false</item>
+    <item type="id" name="devicelist">false</item>
+    <item type="id" name="activity_text">false</item>
+    <item type="id" name="uninstall_activity_snippet">false</item>
+    <item type="id" name="uninstall_confirm">false</item>
+    <item type="id" name="ok_panel">false</item>
+    <item type="id" name="uninstall_holder">false</item>
+    <item type="id" name="uninstalling_scrollview">false</item>
+    <item type="id" name="device_manager_button">false</item>
+</resources>

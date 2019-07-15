@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paket quraşdırıcı</string>
+    <string name="next">Növbəti</string>
+    <string name="install">Quraşdır</string>
+    <string name="done">Hazırdır</string>
+    <string name="security_settings_desc">Bu tətbiqə imkan verin:</string>
+    <string name="cancel">Ləğv et</string>
+    <string name="unknown">Naməlum</string>
+    <string name="installing">Quraşdırılır...</string>
+    <string name="install_done">Tətbiq quraşdırılıb.</string>
+    <string name="install_confirm_question">Bu tətbiqi quraşdırmaq istəyirsiniz? Tətbiq buraya giriş əldə edəcək:</string>
+    <string name="install_confirm_question_no_perms">Bu tətbiqi quraşdırmaq istəyirsiniz? Hər hansı bir xüsusi keçid tələb etmir.</string>
+    <string name="install_confirm_question_update">Bu cari tətbiq güncəllənməsini quraşdırmaq istəyirsiniz? Hazırki datanız itməyəcək. Güncəllənmiş tətbiq aşağıdakılara çıxış əldə edəcək:</string>
+    <string name="install_confirm_question_update_system">Daxili tətbiqdən yenilənməni quraşdırmaq istəyirsiniz? Hazırki datanız itməyəcək. Yenilənmiş tətbiq aşağıdakılara çıxış əldə edəcək:</string>
+    <string name="install_confirm_question_update_no_perms">Bu cari tətbiq güncəllənməsini quraşdırmaq istəyirsiniz? Hazırki datanız itməyəcək. O, xüsusi giriş tələb etmir.</string>
+    <string name="install_confirm_question_update_system_no_perms">Bu daxili tətbiq güncəllənməsini quraşdırmaq istəyirsiniz? Hazırki datanız itməyəcək. O, xüsusi giriş tələb etmir.</string>
+    <string name="install_failed">Tətbiq quraşdırılmayıb.</string>
+    <string name="install_failed_invalid_apk">Bu paket zədələnmiş kimi görünür.</string>
+    <string name="install_failed_inconsistent_certificates">Ziddiyyətli imzaya malik eyni adlı cari paket artıq quraşdırılıb.</string>
+    <string name="install_failed_older_sdk">Bu paket yalnız yeni Android versiyasında işləyir.</string>
+    <string name="install_failed_cpu_abi_incompatible">Bu tətbiq planşetinizə uyğun deyil.</string>
+    <string name="install_failed_file_not_found">Göstərilən paket quraşdırılma tamamlanmadan silindi.</string>
+    <string name="install_failed_verify_failed">Paket yoxlamanı keçə bilmədi və quraşdırılmadı.</string>
+    <string name="install_failed_verify_timeout">Paketi yoxlayarkən uzun fasilə oldu. Quraşdırmanı daha sonra bir daha yoxlayın.</string>
+    <string name="install_failed_msg">%1$s planşetinizə yüklənə bilmədi.</string>
+    <string name="launch">Aç</string>
+    <string name="unknown_apps_dlg_title">Quraşdırılma blok edilib</string>
+    <string name="unknown_apps_dlg_text">Təhlükəsizlik məqsədilə planşetiniz naməlum mənbələrdən əldə edilmiş tətbiq quraşdırılmasının qarşısını alıb.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Ayarlar</string>
+    <string name="allow_source_dlg_title">Tətbiqlər üçün yeni mənbə</string>
+    <string name="allow_source_dlg_text">"%1$s başqa tətbiqlər yükləmək istəyir.
+
+Buna indi və daha sonrası üçün icazə verilsin?"</string>
+    <string name="manage_applications">Tətbiqləri idarə et</string>
+    <string name="dlg_app_replacement_title">Tətbiq əvəz edilsin?</string>
+    <string name="dlg_app_replacement_statement">"Quraşdırdığınız tətbiq digər tətbiqi əvəz edəcək.
+
+Lakin bütün öncəki istifadəçi datanız qorunacaq."</string>
+    <string name="dlg_sys_app_replacement_statement">"Bu, sistem tətbiqidir.
+
+ Bütün öncəki istifadəçi datanız qorunacaq."</string>
+    <string name="out_of_space_dlg_title">Boş yer yoxdur</string>
+    <string name="out_of_space_dlg_text">%1$s quraşdırıla bilməz. Yaddaş üçün yer boşaldıb yenidən təkrar edin.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Tətbiq tapılmadı</string>
+    <string name="app_not_found_dlg_text">Tətbiq quraşdırılmış tətbiqlər siyahısında tapılmadı.</string>
+    <string name="uninstall_application_title">Tətbiqi qaldır</string>
+    <string name="uninstall_update_title">Güncəlləməni sil</string>
+    <string name="uninstall_activity_text">%1$s bu tətbiqin hissəsidir:</string>
+    <string name="uninstall_application_text">Bu tətbiqi aradan qaldırmaq istəyirsiniz mi?</string>
+    <string name="uninstall_application_text_all_users">Bu tətbiqi <b>bütün</b> istifadəçilər üçün silmək istəyirsiz? Tətbiq və onun datası cihazdakı <b>bütün</b> istifadəçilər üçün silinəcək.</string>
+    <string name="uninstall_update_text">Bu tətbiqi zavod versiyası ilə dəyişdirmək istəyirsiniz?</string>
+    <string name="uninstalling">Silinir...</string>
+    <string name="uninstall_done">Sistemdən silmə tamamlandı.</string>
+    <string name="uninstall_failed">Aradan qaldırılma uğursuz oldu.</string>
+    <string name="uninstall_failed_device_policy_manager">Bu paket aktiv cihaz administratoru olduğu üçün aradan qaldırıla bilməz.</string>
+    <string name="manage_device_administrators">Cihaz administratorlarını idarə edin</string>
+    <string name="uninstall_failed_msg">%1$s sistemdən silinə bilməz.</string>
+    <string name="Parse_error_dlg_title">Təhlil xətası</string>
+    <string name="Parse_error_dlg_text">Paketin təhlilində problem var idi.</string>
+    <string name="newPerms">Yeni</string>
+    <string name="allPerms">Hamısı</string>
+    <string name="privacyPerms">Məxfilik</string>
+    <string name="devicePerms">Qurğu icazəsi</string>
+    <string name="no_new_perms">Bu güncəlləmə heç bir yeni izn tələb etmir.</string>
+    <string name="grant_confirm_question">Aşağıdakı icazələri vermək istəyirsiz? Əldə ediləcək çıxışlar:</string>
+</resources>

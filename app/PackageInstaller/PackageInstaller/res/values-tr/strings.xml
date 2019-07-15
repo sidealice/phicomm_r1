@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paket yükleyici</string>
+    <string name="next">Sonraki</string>
+    <string name="install">Yükle</string>
+    <string name="done">Bitti</string>
+    <string name="security_settings_desc">Bu uygulamaya şu izni ver:</string>
+    <string name="cancel">İptal</string>
+    <string name="unknown">Bilinmiyor</string>
+    <string name="installing">Yükleniyor…</string>
+    <string name="install_done">Uygulama yüklendi.</string>
+    <string name="install_confirm_question">Bu uygulamayı yüklemek istiyor musunuz? Uygulama şunlara erişebilecektir:</string>
+    <string name="install_confirm_question_no_perms">Bu uygulamayı yüklemek istiyor musunuz? Herhangi bir özel erişim gerektirmez.</string>
+    <string name="install_confirm_question_update">Bu mevcut uygulamaya ait bir güncellemeyi yüklemek istiyor musunuz? Mevcut verileriniz silinmeyecektir. Güncellenen uygulama şunlara erişebilecektir:</string>
+    <string name="install_confirm_question_update_system">Bu yerleşik uygulamaya ait bir güncellemeyi yüklemek istiyor musunuz? Mevcut verileriniz silinmeyecektir. Güncellenen uygulama şunlara erişebilecektir:</string>
+    <string name="install_confirm_question_update_no_perms">Bu mevcut uygulamaya ait bir güncellemeyi yüklemek istiyor musunuz? Mevcut verileriniz kaybolacaktır. Herhangi bir özel erişim gerektirmez.</string>
+    <string name="install_confirm_question_update_system_no_perms">Bu yerleşik uygulamaya ait bir güncellemeyi yüklemek istiyor musunuz? Mevcut verileriniz kaybolacaktır. Herhangi bir özel erişim gerektirmez.</string>
+    <string name="install_failed">Uygulama yüklenmedi.</string>
+    <string name="install_failed_invalid_apk">Paket bozuk görünüyor.</string>
+    <string name="install_failed_inconsistent_certificates">Adı aynı olan, farklı imzaya sahip mevcut bir paket zaten yüklü.</string>
+    <string name="install_failed_older_sdk">"Paket yalnızca, Android'in daha yeni sürümlerinde çalışır."</string>
+    <string name="install_failed_cpu_abi_incompatible">Bu uygulama tabletinizle uyumlu değil.</string>
+    <string name="install_failed_file_not_found">Belirtilen paket, yükleme tamamlanamadan silindi.</string>
+    <string name="install_failed_verify_failed">Paket, doğrulamayı geçmedi ve yüklenemez.</string>
+    <string name="install_failed_verify_timeout">Bu paket doğrulanmaya çalışılırken zaman aşımı oluştu. Daha sonra tekrar yüklemeyi deneyin.</string>
+    <string name="install_failed_msg">%1$s bu tabletinize yüklenemedi.</string>
+    <string name="launch">Aç</string>
+    <string name="unknown_apps_dlg_title">Yükleme engellendi</string>
+    <string name="unknown_apps_dlg_text">Güvenlik amacıyla, tabletiniz bilinmeyen kaynaklardan alınan uygulamaların yüklenmesini engelleyecek şekilde ayarlandı.</string>
+    <string name="unknown_apps_admin_dlg_text">Yöneticiniz, bilinmeyen kaynaklardan edinilen uygulamaların yüklenmesine izin vermiyor.</string>
+    <string name="ok">Tamam</string>
+    <string name="settings">Ayarlar</string>
+    <string name="allow_source_dlg_title">Uygulamalar için yeni kaynak</string>
+    <string name="allow_source_dlg_text">"%1$s başka uygulamalar yüklemek istiyor .
+
+Buna şimdi ve gelecekte izin vermek istiyor musunuz?"</string>
+    <string name="manage_applications">Uygulamaları yönet</string>
+    <string name="dlg_app_replacement_title">Uygulama değiştirilsin mi?</string>
+    <string name="dlg_app_replacement_statement">"Yüklemekte olduğunuz uygulama, başka bir uygulamanın yerini alacak.
+
+Önceki kullanıcı verileriniz kaydedilecektir."</string>
+    <string name="dlg_sys_app_replacement_statement">"Bu bir sistem uygulamasıdır.
+
+Önceki tüm kullanıcı verileriniz kaydedilecektir."</string>
+    <string name="out_of_space_dlg_title">Yer kalmadı</string>
+    <string name="out_of_space_dlg_text">%1$s yüklenemedi. Boş alan açın ve yeniden deneyin.</string>
+    <string name="dlg_ok">Tamam</string>
+    <string name="app_not_found_dlg_title">Uygulama bulunamadı</string>
+    <string name="app_not_found_dlg_text">Uygulama, yüklü uygulamalar listesinde bulunamadı.</string>
+    <string name="uninstall_application_title">Uygulamayı kaldır</string>
+    <string name="uninstall_update_title">Güncelleme kaldırılsın mı?</string>
+    <string name="uninstall_activity_text">%1$s, şu uygulamanın bir parçasıdır:</string>
+    <string name="uninstall_application_text">Bu uygulamanın yüklemesini kaldırmak istiyor musunuz?</string>
+    <string name="uninstall_application_text_all_users">Bu uygulamanın yüklemesini <b>tüm</b> kullanıcılar için kaldırmak istiyor musunuz? Uygulama ve verileri cihazdan <b>tüm</b> kullanıcılar için kaldırılacaktır.</string>
+    <string name="uninstall_application_text_user">%1$s adlı kullanıcı için bu uygulamanın yüklemesini kaldırmak istiyor musunuz?</string>
+    <string name="uninstall_update_text">Bu uygulamayı fabrika sürümüyle değiştirmek istiyor musunuz?</string>
+    <string name="uninstalling">Kaldırılıyor…</string>
+    <string name="uninstall_done">Kaldırma işlemi tamamlandı.</string>
+    <string name="uninstall_failed">Yükleme kaldırılamadı.</string>
+    <string name="uninstall_failed_device_policy_manager">Bu paket, etkin bir cihaz yöneticisi olduğundan yüklemesi kaldırılamıyor.</string>
+    <string name="uninstall_blocked_profile_owner">Bu uygulama, %1$s profiliniz için gereklidir ve yüklemesi kaldırılamaz.</string>
+    <string name="uninstall_blocked_device_owner">Bu uygulama, cihazınızın yöneticisi için gereklidir ve yüklemesi kaldırılamaz.</string>
+    <string name="manage_device_administrators">Cihaz yöneticilerini yönet</string>
+    <string name="uninstall_failed_msg">%1$s kaldırılamadı.</string>
+    <string name="Parse_error_dlg_title">Ayrıştırma hatası</string>
+    <string name="Parse_error_dlg_text">Paketin ayrıştırılmasında bir sorun oluştu.</string>
+    <string name="newPerms">Yeni</string>
+    <string name="allPerms">Tümü</string>
+    <string name="privacyPerms">Gizlilik</string>
+    <string name="devicePerms">Cihaz Erişimi</string>
+    <string name="no_new_perms">Bu güncelleme yeni izin gerektirmiyor.</string>
+    <string name="grant_confirm_question">Aşağıdaki izinleri vermek istiyor musunuz? Şunlara erişebilecektir:</string>
+</resources>

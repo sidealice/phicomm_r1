@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA-256-Digest: ZScV+lxwDqRK85iqsYDdby4X4SkwF3JeoeACm7dgqs0=
+
+Name: res/raw/aging_audio
+SHA-256-Digest: IKh6a4SqQCNUqodWUlagCVPNczAiYDo9qlp/gH+zpk8=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: N/dER7xL8qmP74ftPgYgyhuQ0i3Ncws0v6iPev0bb+w=
+
+Name: resources.arsc
+SHA-256-Digest: XE+QBd9Tp6MVoyVHGdr8Hnm54AWMSk97Hb4hkYBkz9s=
+
+Name: classes.dex
+SHA-256-Digest: nAdOhwgsZ3opXj5wSVMzfIkROesDGpeo08nta+K3tYM=
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="info">false</item>
+    <item type="id" name="footer">false</item>
+    <item type="id" name="start">false</item>
+    <item type="id" name="stop">false</item>
+    <item type="id" name="config">false</item>
+    <item type="id" name="download">false</item>
+    <item type="id" name="console_heading">false</item>
+    <item type="id" name="consoleScroller">false</item>
+    <item type="id" name="console">false</item>
+    <item type="id" name="download_url">false</item>
+    <item type="id" name="context_path">false</item>
+    <item type="id" name="start_download">false</item>
+    <item type="id" name="progress">false</item>
+    <item type="id" name="loading">false</item>
+    <item type="id" name="message">false</item>
+    <item type="id" name="retry">false</item>
+    <item type="id" name="logo">false</item>
+    <item type="id" name="nio">false</item>
+    <item type="id" name="ssl">false</item>
+    <item type="id" name="ssl_nio">false</item>
+    <item type="id" name="ssl_nio_x">false</item>
+</resources>

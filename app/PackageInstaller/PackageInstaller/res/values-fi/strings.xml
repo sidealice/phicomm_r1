@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paketin asentaja</string>
+    <string name="next">Seuraava</string>
+    <string name="install">Asenna</string>
+    <string name="done">Valmis</string>
+    <string name="security_settings_desc">Salli tämän sovelluksen:</string>
+    <string name="cancel">Peruuta</string>
+    <string name="unknown">Tuntematon</string>
+    <string name="installing">Asennetaan…</string>
+    <string name="install_done">Sovellus on asennettu.</string>
+    <string name="install_confirm_question">Haluatko asentaa tämän sovelluksen? Se saa käyttöönsä seuraavat ominaisuudet:</string>
+    <string name="install_confirm_question_no_perms">Haluatko asentaa tämän sovelluksen? Se ei vaadi erityisiä käyttöoikeuksia.</string>
+    <string name="install_confirm_question_update">Haluatko asentaa päivityksen tähän olemassa olevaan sovellukseen? Olemassa olevat tiedot eivät katoa. Päivitetty sovellus saa käyttöönsä seuraavat ominaisuudet:</string>
+    <string name="install_confirm_question_update_system">Haluatko asentaa päivityksen tähän sisäiseen sovellukseen? Olemassa olevat tiedot eivät katoa. Päivitetty sovellus saa käyttöönsä seuraavat ominaisuudet:</string>
+    <string name="install_confirm_question_update_no_perms">Haluatko asentaa päivityksen tähän sovellukseen? Et menetä nykyisiä tietojasi. Päivitys ei edellytä erityisiä käyttöoikeuksia.</string>
+    <string name="install_confirm_question_update_system_no_perms">Haluatko asentaa päivityksen tähän laitteen mukana tulleeseen sovellukseen? Et menetä nykyisiä tietojasi. Päivitys ei edellytä erityisiä käyttöoikeuksia.</string>
+    <string name="install_failed">Sovellusta ei asennettu.</string>
+    <string name="install_failed_invalid_apk">Paketti vaikuttaa olevan vahingoittunut.</string>
+    <string name="install_failed_inconsistent_certificates">Olet jo asentanut samannimisen paketin, jonka allekirjoitus on ristiriidassa tämän paketin kanssa.</string>
+    <string name="install_failed_older_sdk">Paketti toimii vain uudemmissa Android-versioissa.</string>
+    <string name="install_failed_cpu_abi_incompatible">Tämä sovellus ei ole yhteensopiva tablet-laitteesi kanssa.</string>
+    <string name="install_failed_file_not_found">Määritetty paketti poistettiin ennen asennuksen suorittamista loppuun.</string>
+    <string name="install_failed_verify_failed">Paketti ei läpäissyt vahvistusta eikä sitä voida asentaa.</string>
+    <string name="install_failed_verify_timeout">Aikaraja täyttyi pakettia vahvistettaessa. Yritä asentaa se myöhemmin uudelleen.</string>
+    <string name="install_failed_msg">Sovelluksen %1$s asentaminen tähän tablet-laitteeseen epäonnistui.</string>
+    <string name="launch">Avaa</string>
+    <string name="unknown_apps_dlg_title">Asennus estetty</string>
+    <string name="unknown_apps_dlg_text">Turv.syistä tablet-laite on asetettu estämään tuntemattomista lähteistä hankittujen sovell. asennus.</string>
+    <string name="unknown_apps_admin_dlg_text">Järjestelmänvalvoja ei salli tuntemattomista lähteistä saatujen sovellusten asentamista.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Asetukset</string>
+    <string name="allow_source_dlg_title">Uusi lähde sovelluksille</string>
+    <string name="allow_source_dlg_text">"%1$s haluaa asentaa muita sovelluksia.
+
+Sallitaanko tämä nyt ja tulevaisuudessa?"</string>
+    <string name="manage_applications">Hallinnoi sovelluksia</string>
+    <string name="dlg_app_replacement_title">Korvataanko sovellus?</string>
+    <string name="dlg_app_replacement_statement">"Sovellus, jota olet asentamassa, korvaa toisen sovelluksen.
+
+Kaikki aikaisemmat käyttäjätiedot tallennetaan."</string>
+    <string name="dlg_sys_app_replacement_statement">"Tämä on järjestelmäsovellus.
+
+Kaikki aikaisemmat käyttäjätiedot tallennetaan."</string>
+    <string name="out_of_space_dlg_title">Tallennustila loppu</string>
+    <string name="out_of_space_dlg_text">Sovelluksen %1$s asentaminen epäonnistui. Vapauta tallennustilaa ja yritä uudelleen.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Sovellusta ei löydy</string>
+    <string name="app_not_found_dlg_text">Sovellusta ei löydy asennettujen sovelluksien luettelosta.</string>
+    <string name="uninstall_application_title">Poista sovellus</string>
+    <string name="uninstall_update_title">Poista päivitys</string>
+    <string name="uninstall_activity_text">%1$s on osa seuraavaa sovellusta:</string>
+    <string name="uninstall_application_text">Haluatko poistaa tämän sovelluksen?</string>
+    <string name="uninstall_application_text_all_users">Haluatko poistaa tämän sovelluksen <b>kaikilta</b> käyttäjiltä? Sovellus ja sen tiedot poistetaan <b>kaikilta</b> laitteen käyttäjiltä.</string>
+    <string name="uninstall_application_text_user">Haluatko poistaa tämän sovelluksen käyttäjältä %1$s?</string>
+    <string name="uninstall_update_text">Haluatko korvata tämän sovelluksen tehdasversiolla?</string>
+    <string name="uninstalling">Poistetaan...</string>
+    <string name="uninstall_done">Poisto valmis.</string>
+    <string name="uninstall_failed">Poisto epäonnistui.</string>
+    <string name="uninstall_failed_device_policy_manager">Pakettia ei voi poistaa, koska se on aktiivinen laitteen ylläpitäjä.</string>
+    <string name="uninstall_blocked_profile_owner">Käyttäjäprofiili %1$s tarvitsee tätä sovellusta eikä sitä voi poistaa.</string>
+    <string name="uninstall_blocked_device_owner">Laitteen järjestelmänvalvoja tarvitsee tätä sovellusta eikä sitä voi poistaa.</string>
+    <string name="manage_device_administrators">Hallinnoi laitteen ylläpitäjiä</string>
+    <string name="uninstall_failed_msg">Sovelluksen %1$s poistaminen epäonnistui</string>
+    <string name="Parse_error_dlg_title">Jäsennysvirhe</string>
+    <string name="Parse_error_dlg_text">Paketin jäsentämisessä esiintyi ongelma.</string>
+    <string name="newPerms">Uusi</string>
+    <string name="allPerms">Kaikki</string>
+    <string name="privacyPerms">Tietosuoja</string>
+    <string name="devicePerms">Laitteen käyttö</string>
+    <string name="no_new_perms">Tämä päivitys ei vaadi uusia käyttöoikeuksia.</string>
+    <string name="grant_confirm_question">Haluatko antaa seuraavat käyttöoikeudet? Sovellus saa käyttöönsä nämä kohteet:</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Trình cài đặt gói</string>
+    <string name="next">Tiếp theo</string>
+    <string name="install">Cài đặt</string>
+    <string name="done">Xong</string>
+    <string name="security_settings_desc">Cho phép ứng dụng này:</string>
+    <string name="cancel">Hủy</string>
+    <string name="unknown">Không xác định</string>
+    <string name="installing">Đang cài đặt…</string>
+    <string name="install_done">Ứng dụng đã được cài đặt.</string>
+    <string name="install_confirm_question">Bạn có muốn cài đặt ứng dụng này không? Ứng dụng sẽ có quyền truy cập vào:</string>
+    <string name="install_confirm_question_no_perms">Bạn có muốn cài đặt ứng dụng này không? Ứng dụng này không yêu cầu bất kỳ quyền truy cập đặc biệt nào.</string>
+    <string name="install_confirm_question_update">Bạn có muốn cài đặt bản cập nhật cho ứng dụng hiện tại này không? Dữ liệu hiện tại của bạn sẽ không bị mất. Ứng dụng đã cập nhật sẽ có quyền truy cập vào:</string>
+    <string name="install_confirm_question_update_system">Bạn có muốn cài đặt bản cập nhật cho ứng dụng được cài sẵn này không? Dữ liệu hiện tại của bạn sẽ không bị mất. Ứng dụng được cập nhật sẽ có quyền truy cập vào:</string>
+    <string name="install_confirm_question_update_no_perms">Bạn có muốn cài đặt bản cập nhật cho ứng dụng hiện có này không? Dữ liệu hiện có của bạn sẽ không bị mất. Việc cài đặt không yêu cầu bất kỳ quyền truy cập đặc biệt nào.</string>
+    <string name="install_confirm_question_update_system_no_perms">Bạn có muốn cài đặt bản cập nhật cho ứng dụng cài sẵn này không? Dữ liệu hiện có của bạn sẽ không bị mất. Việc cài đặt không yêu cầu quyền truy cập đặc biệt nào.</string>
+    <string name="install_failed">Ứng dụng chưa được cài đặt.</string>
+    <string name="install_failed_invalid_apk">Gói dường như bị hỏng.</string>
+    <string name="install_failed_inconsistent_certificates">Gói hiện có có cùng tên với chữ ký xung đột hiện đã được cài đặt.</string>
+    <string name="install_failed_older_sdk">Gói chỉ hoạt động trên các phiên bản mới hơn của Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Ứng dụng này không tương thích với máy tính bảng của bạn.</string>
+    <string name="install_failed_file_not_found">Gói đã chỉ định bị xóa trước khi cài đặt hoàn tất.</string>
+    <string name="install_failed_verify_failed">Gói không vượt qua xác minh và không thể được cài đặt.</string>
+    <string name="install_failed_verify_timeout">Đã hết thời gian chờ trong khi cố gắng xác minh gói này. Hãy cố gắng cài đặt lại sau.</string>
+    <string name="install_failed_msg">Không thể cài đặt %1$s trên máy tính bảng của bạn.</string>
+    <string name="launch">Mở</string>
+    <string name="unknown_apps_dlg_title">Cài đặt đã chặn</string>
+    <string name="unknown_apps_dlg_text">Để bảo mật, máy tính bảng của bạn được đặt để chặn cài đặt ứng dụng từ nguồn không xác định.</string>
+    <string name="unknown_apps_admin_dlg_text">Quản trị viên của bạn không cho phép cài đặt ứng dụng từ nguồn không xác định.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Cài đặt</string>
+    <string name="allow_source_dlg_title">Nguồn mới cho ứng dụng</string>
+    <string name="allow_source_dlg_text">"%1$s muốn cài đặt các ứng dụng khác.
+
+Cho phép điều này ngay bây giờ và trong tương lai?"</string>
+    <string name="manage_applications">Quản lý ứng dụng</string>
+    <string name="dlg_app_replacement_title">Thay thế ứng dụng?</string>
+    <string name="dlg_app_replacement_statement">"Ứng dụng bạn đang cài đặt sẽ thay thế một ứng dụng khác.
+
+Tất cả dữ liệu người dùng trước của bạn sẽ được lưu."</string>
+    <string name="dlg_sys_app_replacement_statement">"Đây là ứng dụng hệ thống.
+
+Tất cả dữ liệu người dùng trước của bạn sẽ được lưu."</string>
+    <string name="out_of_space_dlg_title">Hết dung lượng</string>
+    <string name="out_of_space_dlg_text">Không thể cài đặt %1$s. Hãy giải phóng dung lượng và thử lại.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Không tìm thấy ứng dụng</string>
+    <string name="app_not_found_dlg_text">Không tìm thấy ứng dụng trong danh sách các ứng dụng đã cài đặt.</string>
+    <string name="uninstall_application_title">Gỡ cài đặt ứng dụng</string>
+    <string name="uninstall_update_title">Gỡ cài đặt cập nhật</string>
+    <string name="uninstall_activity_text">%1$s là một phần của ứng dụng sau:</string>
+    <string name="uninstall_application_text">Bạn có muốn gỡ cài đặt ứng dụng này không?</string>
+    <string name="uninstall_application_text_all_users">Bạn có muốn gỡ cài đặt ứng dụng này cho <b>tất cả</b> người dùng không? Ứng dụng và dữ liệu của ứng dụng sẽ bị xóa khỏi <b>tất cả</b> người dùng trên thiết bị.</string>
+    <string name="uninstall_application_text_user">Bạn có muốn gỡ cài đặt ứng dụng này cho người dùng %1$s?</string>
+    <string name="uninstall_update_text">Bạn có muốn thay thế ứng dụng này bằng phiên bản gốc không?</string>
+    <string name="uninstalling">Đang gỡ cài đặt...</string>
+    <string name="uninstall_done">Gỡ cài đặt đã hoàn tất.</string>
+    <string name="uninstall_failed">Gỡ cài đặt không thành công.</string>
+    <string name="uninstall_failed_device_policy_manager">Không thể cài đặt vì gói này là của quản trị viên thiết bị đang hoạt động.</string>
+    <string name="uninstall_blocked_profile_owner">Ứng dụng này là cần thiết cho tiểu sử %1$s của bạn và không thể gỡ cài đặt.</string>
+    <string name="uninstall_blocked_device_owner">Ứng dụng này được quản trị viên thiết bị của bạn yêu cầu và không thể gỡ cài đặt.</string>
+    <string name="manage_device_administrators">Quản lý quản trị viên điện thoại</string>
+    <string name="uninstall_failed_msg">Không thể gỡ cài đặt %1$s</string>
+    <string name="Parse_error_dlg_title">Lỗi phân tích cú pháp</string>
+    <string name="Parse_error_dlg_text">Đã xảy ra sự cố khi phân tích cú pháp gói.</string>
+    <string name="newPerms">Mới</string>
+    <string name="allPerms">Tất cả</string>
+    <string name="privacyPerms">Bảo mật</string>
+    <string name="devicePerms">Truy cập thiết bị</string>
+    <string name="no_new_perms">Bản cập nhật này không yêu cầu quyền mới.</string>
+    <string name="grant_confirm_question">Bạn có muốn cấp quyền sau không? Ứng dụng sẽ có quyền truy cập:</string>
+</resources>

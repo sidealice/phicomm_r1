@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Փաթեթի տեղադրիչ</string>
+    <string name="next">Հաջորդը</string>
+    <string name="install">Տեղադրել</string>
+    <string name="done">Կատարված է</string>
+    <string name="security_settings_desc">Թույլատրել այս հավելվածին`</string>
+    <string name="cancel">Չեղարկել</string>
+    <string name="unknown">Անհայտ</string>
+    <string name="installing">Տեղադրվում է...</string>
+    <string name="install_done">Հավելվածը տեղադրված է:</string>
+    <string name="install_confirm_question">Ցանկանու՞մ եք տեղադրել այս ծրագիրը: Այն մուտքի հնարավորություն կունենա`</string>
+    <string name="install_confirm_question_no_perms">Ցանկանու՞մ եք տեղադրել այս հավելվածը: Այն հատուկ մուտք չի պահանջում:</string>
+    <string name="install_confirm_question_update">Ցանկանու՞մ եք այս առկա հավելվածում թարմացում տեղադրել: Ձեր ընթացիկ տվյալները չեն կորի: Նորացված հավելվածը կստանա մատչում`</string>
+    <string name="install_confirm_question_update_system">Ցանկանու՞մ եք այս ներկառուցված հավելվածում թարմացում տեղադրել: Ձեր առկա տվյալները չեն կորի: Նորացված հավելվածը կստանա մատչում `</string>
+    <string name="install_confirm_question_update_no_perms">Ցանկանու՞մ եք այս առկա հավելվածում թարմացում տեղադրել: Ձեր ընթացիկ տվյալները չեն կորի: Այն չի պահանջում որևէ հատուկ մուտք:</string>
+    <string name="install_confirm_question_update_system_no_perms">Ցանկանու՞մ եք այս ներկառուցված հավելվածում թարմացում տեղադրել: Ձեր ընթացիկ տվյալները չեն կորի: Այն չի պահանջում որևէ հատուկ մուտք:</string>
+    <string name="install_failed">Հավելվածը տեղադրված չէ:</string>
+    <string name="install_failed_invalid_apk">Փաթեթը կարծես թե վնասված է:</string>
+    <string name="install_failed_inconsistent_certificates">Նույն անունով առկա փաթեթը հակասական ստորագրությամբ արդեն տեղադրված է:</string>
+    <string name="install_failed_older_sdk">Փաթեթը աշխատում է միայն Android-ի ավելի նոր տարբերակներում:</string>
+    <string name="install_failed_cpu_abi_incompatible">Այս հավելվածը համատեղելի չէ ձեր գրասալիկի հետ:</string>
+    <string name="install_failed_file_not_found">Նշված փաթեթը ջնջված է նախքան տեղադրման ավարտը:</string>
+    <string name="install_failed_verify_failed">Փաթեթը հաստատում չի անցել և չի կարող տեղադրվել:</string>
+    <string name="install_failed_verify_timeout">Տեղի ունեցավ ժամանակի սպառում այս փաթեթի հաստատման փորձի ժամանակ: Մի փոքր ուշ կրկին փորձեք այն տեղադրել:</string>
+    <string name="install_failed_msg">%1$s-ը չհաջողվեց տեղադրել ձեր գրասալիկում:</string>
+    <string name="launch">Բացել</string>
+    <string name="unknown_apps_dlg_title">Տեղադրումը արգելափակված է</string>
+    <string name="unknown_apps_dlg_text">Անվտանգության նկատառումներով ձեր գրասալիկը կարգավորված է կասեցնել այն հավելվածների տեղադրումը, որոնք ձեռք են բերվել անհայտ աղբյուրներից:</string>
+    <string name="unknown_apps_admin_dlg_text">Ձեր ադմինիստրատորը թույլ չի տալիս տեղադրել հավելվածներ անհայտ աղբյուրներից:</string>
+    <string name="ok">Լավ</string>
+    <string name="settings">Կարգավորումներ</string>
+    <string name="allow_source_dlg_title">Հավելվածների նոր աղբյուր</string>
+    <string name="allow_source_dlg_text">"%1$s-ը ցանկանում է տեղադրել այլ հավելվածներ:
+ 
+Թույլատրե՞լ այն այժմ և հետագայում:"</string>
+    <string name="manage_applications">Կառավարել հավելվածները</string>
+    <string name="dlg_app_replacement_title">Փոխարինե՞լ հավելվածը:</string>
+    <string name="dlg_app_replacement_statement">"Ծրագիրը, որը դուք տեղադրում եք, կփոխարինի մեկ այլ ծրագրի:
+
+Ձեր բոլոր նախկին օգտվողի տվյալները կպահվեն:"</string>
+    <string name="dlg_sys_app_replacement_statement">"Սա համակարգային ծրագիր է:
+
+Ձեր բոլոր նախկին օգտվողի տվյալները կպահվեն:"</string>
+    <string name="out_of_space_dlg_title">Տարածքից դուրս</string>
+    <string name="out_of_space_dlg_text">%1$s-ը չհաջողվեց տեղադրել: Ազատեք որոշակի տարածք և կրկին փորձեք:</string>
+    <string name="dlg_ok">Լավ</string>
+    <string name="app_not_found_dlg_title">Հավելվածը չի գտնվել</string>
+    <string name="app_not_found_dlg_text">Հավելվածը չի գտնվել տեղադրված հավելվածների ցանկում:</string>
+    <string name="uninstall_application_title">Ապատեղադրել հավելվածը</string>
+    <string name="uninstall_update_title">Ապատեղադրել թարմացումը</string>
+    <string name="uninstall_activity_text">%1$s-ը հետևյալ հավելվածի մասն է`</string>
+    <string name="uninstall_application_text">Ցանկանու՞մ եք ապատեղադրել այս ծրագիրը:</string>
+    <string name="uninstall_application_text_all_users">Ցանկանու՞մ եք ապատեղադրել այս հավելվածը <b>բոլոր</b>" օգտվողների համար:  Հավելվածը և դրա տվյալները կհեռացվեն սարքի "<b>բոլոր</b> օգտվողներից:</string>
+    <string name="uninstall_application_text_user">Ցանկանում եք ապատեղադրե՞լ այս ծրագիրը %1$s օգտվողի համար:</string>
+    <string name="uninstall_update_text">Ցանկանու՞մ եք փոխարինել այս հավելվածը գործարանային տարբերակով:</string>
+    <string name="uninstalling">Ապատեղադրում է...</string>
+    <string name="uninstall_done">Ապատեղադրումը ավարտված է:</string>
+    <string name="uninstall_failed">Ապատեղադրումն անհաջող է:</string>
+    <string name="uninstall_failed_device_policy_manager">Հնարավոր չէ ապատեղադրել, քանի որ այս փաթեթն ակտիվ սարքի ադմինիստրատոր է:</string>
+    <string name="uninstall_blocked_profile_owner">Այս ծրագիրն անհրաժեշտ է ձեր %1$s պրոֆիլի համար և չի կարող հեռացվել:</string>
+    <string name="uninstall_blocked_device_owner">Ծրագիրը ձեր սարքի ադմինիստրատորի կողմից նշվել է որպես պարտադիր և չի կարող հեռացվել:</string>
+    <string name="manage_device_administrators">Կառավարել սարքի ադմինիստրատորներին</string>
+    <string name="uninstall_failed_msg">%1$s-ը չհաջողվեց ապատեղադրել:</string>
+    <string name="Parse_error_dlg_title">Վերլուծման սխալ</string>
+    <string name="Parse_error_dlg_text">Փաթեթը վերլուծելիս խնդիր առաջացավ:</string>
+    <string name="newPerms">Նոր</string>
+    <string name="allPerms">Բոլորը</string>
+    <string name="privacyPerms">Գաղտնիություն</string>
+    <string name="devicePerms">Սարքի մատչում</string>
+    <string name="no_new_perms">Այս թարմացումը պահանջում է, որ նոր թույլտվություններ չտրվեն:</string>
+    <string name="grant_confirm_question">Ցանկանու՞մ եք շնորհել հետևյալ թույլտվությունները: Այն կստանա մատչում`</string>
+</resources>

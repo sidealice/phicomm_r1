@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="4.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/jetty_downloader" android:layout_weight="0.0" />
+    <EditText android:id="@id/download_url" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0">
+        <requestFocus />
+    </EditText>
+    <TextView android:textStyle="bold" android:paddingBottom="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/context_path" android:layout_weight="0.0" />
+    <EditText android:id="@id/context_path" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.0" />
+    <Button android:id="@id/start_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/start_download" />
+    <ProgressBar android:id="@id/progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="100" />
+    <TextView android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/loading" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/loading" android:layout_weight="0.0" />
+</LinearLayout>

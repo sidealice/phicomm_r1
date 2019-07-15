@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pakkeinstallationsprogram</string>
+    <string name="next">Næste</string>
+    <string name="install">Installer</string>
+    <string name="done">Afslut</string>
+    <string name="security_settings_desc">Giv denne app tilladelse til at:</string>
+    <string name="cancel">Annuller</string>
+    <string name="unknown">Ukendt</string>
+    <string name="installing">Installerer...</string>
+    <string name="install_done">Appen er installeret.</string>
+    <string name="install_confirm_question">Vil du installere denne applikation? Den får adgang til følgende:</string>
+    <string name="install_confirm_question_no_perms">Vil du installere denne applikation? Den kræver ingen særlig adgang.</string>
+    <string name="install_confirm_question_update">Vil du installere en opdatering til den eksisterende app? Du mister ikke dine eksisterende data. Den opdaterede app kan gøre følgende:</string>
+    <string name="install_confirm_question_update_system">Vil du installere en opdatering til den indbyggede app? Du mister ikke dine eksisterende data. Den opdaterede app kan gøre følgende:</string>
+    <string name="install_confirm_question_update_no_perms">Vil du installere en opdatering til denne eksisterende applikation? Dine eksisterende data vil ikke gå tabt. Det kræver ikke nogen særlig adgang.</string>
+    <string name="install_confirm_question_update_system_no_perms">Vil du installere en opdatering til denne indbyggede applikation? Dine eksisterende data vil ikke gå tabt. Det kræver ikke nogen særlig adgang.</string>
+    <string name="install_failed">Appen blev ikke installeret.</string>
+    <string name="install_failed_invalid_apk">Pakken ser ud til at være beskadiget.</string>
+    <string name="install_failed_inconsistent_certificates">Der er allerede installeret en eksisterende pakke med det samme navn og en modstridende signatur.</string>
+    <string name="install_failed_older_sdk">Pakken virker kun på nyere versioner af Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Denne app er ikke kompatibel med din tablet.</string>
+    <string name="install_failed_file_not_found">Den angivne pakke blev slettet, før installationen var gennemført.</string>
+    <string name="install_failed_verify_failed">Pakken kunne ikke bekræftes og kan derfor ikke installeres.</string>
+    <string name="install_failed_verify_timeout">Der opstod timeout under forsøg på at bekræfte denne pakke. Prøv at installere den igen senere.</string>
+    <string name="install_failed_msg">%1$s kunne ikke installeres på din tablet.</string>
+    <string name="launch">Åbn</string>
+    <string name="unknown_apps_dlg_title">Installationen er blokeret</string>
+    <string name="unknown_apps_dlg_text">Din tablet er som sikkerhed indstillet til at blokere installation af apps fra ukendte kilder.</string>
+    <string name="unknown_apps_admin_dlg_text">Din administrator tillader ikke installation af apps, der hentes fra ukendte kilder.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Indstillinger</string>
+    <string name="allow_source_dlg_title">Ny kilde til apps</string>
+    <string name="allow_source_dlg_text">"%1$s ønsker at installere andre apps.
+
+Vil du tillade dette nu og i fremtiden?"</string>
+    <string name="manage_applications">Administrer apps</string>
+    <string name="dlg_app_replacement_title">Vil du udskifte appen?</string>
+    <string name="dlg_app_replacement_statement">"Den app, du installerer, vil afløse en anden app.
+
+Alle dine tidligere brugerdata vil blive gemt."</string>
+    <string name="dlg_sys_app_replacement_statement">"Dette er en systemapp.
+
+Alle dine tidligere brugerdata vil blive gemt."</string>
+    <string name="out_of_space_dlg_title">Der er ikke mere plads</string>
+    <string name="out_of_space_dlg_text">%1$s kunne ikke installeres. Frigør noget plads, og prøv igen.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Appen blev ikke fundet</string>
+    <string name="app_not_found_dlg_text">Appen blev ikke fundet på listen over installerede apps.</string>
+    <string name="uninstall_application_title">Afinstaller appen</string>
+    <string name="uninstall_update_title">Afinstaller opdatering</string>
+    <string name="uninstall_activity_text">%1$s er en del af følgende app:</string>
+    <string name="uninstall_application_text">Vil du afinstallere denne app?</string>
+    <string name="uninstall_application_text_all_users">Vil du afinstallere denne app for <b>alle</b> brugere? Applikationen og dens data vil blive fjernet fra <b>alle</b> brugere på denne enhed.</string>
+    <string name="uninstall_application_text_user">Vil du afinstallere denne app for brugeren %1$s?</string>
+    <string name="uninstall_update_text">Vil du erstatte denne app med fabriksversionen?</string>
+    <string name="uninstalling">Afinstallerer...</string>
+    <string name="uninstall_done">Afinstallationen er afsluttet.</string>
+    <string name="uninstall_failed">Afinstallationen mislykkedes.</string>
+    <string name="uninstall_failed_device_policy_manager">Der kan ikke afinstalleres, fordi denne pakke er en aktiv enhedsadministrator.</string>
+    <string name="uninstall_blocked_profile_owner">Denne app er nødvendig for din profil %1$s og kan ikke afinstalleres.</string>
+    <string name="uninstall_blocked_device_owner">Denne app er påkrævet af din enhedsadministrator og kan ikke afinstalleres.</string>
+    <string name="manage_device_administrators">Administrer enhedsadministratorer</string>
+    <string name="uninstall_failed_msg">%1$s kunne ikke afinstalleres.</string>
+    <string name="Parse_error_dlg_title">Parsingfejl</string>
+    <string name="Parse_error_dlg_text">Der opstod et problem med parsing af pakken.</string>
+    <string name="newPerms">Ny</string>
+    <string name="allPerms">Alle</string>
+    <string name="privacyPerms">Privatliv</string>
+    <string name="devicePerms">Adgang til enheden</string>
+    <string name="no_new_perms">Denne opdatering kræver ingen nye tilladelser.</string>
+    <string name="grant_confirm_question">Vil du give følgende tilladelser? Det vil få adgang til:</string>
+</resources>

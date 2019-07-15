@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Installer ng package</string>
+    <string name="next">Susunod</string>
+    <string name="install">Mag-install</string>
+    <string name="done">Tapos na</string>
+    <string name="security_settings_desc">Payagan ang app na ito na:</string>
+    <string name="cancel">Kanselahin</string>
+    <string name="unknown">Hindi Kilala</string>
+    <string name="installing">Nag-i-install…</string>
+    <string name="install_done">Na-install ang app.</string>
+    <string name="install_confirm_question">Nais mo bang i-install ang application na ito? Magkakaroon ito ng access sa:</string>
+    <string name="install_confirm_question_no_perms">Nais mo bang i-install ang application na ito? Hindi ito nangangailangan ng anumang espesyal na access.</string>
+    <string name="install_confirm_question_update">Nais mo bang mag-install ng update sa umiiral nang application na ito? Hindi mawawala ang iyong umiiral nang data. Magkakaroon ng access ang na-update na application sa:</string>
+    <string name="install_confirm_question_update_system">Nais mo bang mag-install ng update sa built-in na application na ito? Hindi mawawala ang iyong umiiral na data. Magkakaroon ng access ang na-update na application sa:</string>
+    <string name="install_confirm_question_update_no_perms">Nais mo bang mag-install ng update sa umiiral na application na ito? Hindi mawawala ang iyong umiiral na data. Hindi ito nangangailangan ng anumang espesyal na access.</string>
+    <string name="install_confirm_question_update_system_no_perms">Nais mo bang mag-install ng update sa built-in na application na ito? Hindi mawawala ang iyong umiiral na data. Hindi ito nangangailangan ng anumang espesyal na access.</string>
+    <string name="install_failed">Hindi na-install ang app.</string>
+    <string name="install_failed_invalid_apk">Lumilitaw na corrupt ang package.</string>
+    <string name="install_failed_inconsistent_certificates">Naka-install na ang isang umiiral na package na may parehong pangalan na may sumasalungat na lagda.</string>
+    <string name="install_failed_older_sdk">Gumagana lamang ang package sa mga mas bagong bersyon ng Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Hindi tugma ang app na ito sa iyong tablet.</string>
+    <string name="install_failed_file_not_found">Natanggal ang tinukoy na package bago makumpleto ang pag-install.</string>
+    <string name="install_failed_verify_failed">Ang package ay hindi pumasa sa pagpapatunay at hindi maaaring ma-install.</string>
+    <string name="install_failed_verify_timeout">May naganap na timeout habang sinusubukang i-verify ang package. Subukan itong i-install muli.</string>
+    <string name="install_failed_msg">Hindi ma-install ang %1$s sa iyong tablet.</string>
+    <string name="launch">Buksan</string>
+    <string name="unknown_apps_dlg_title">Naka-block ang pag-install</string>
+    <string name="unknown_apps_dlg_text">Pra sa seguridad, nka-set ang tablet mong i-block ang pag-install ng apps mula sa di-klalang source.</string>
+    <string name="unknown_apps_admin_dlg_text">Hindi pinapayagan ng iyong administrator ang pag-install ng mga app na nakuha mula sa mga hindi alam na pinagmulan.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Mga Setting</string>
+    <string name="allow_source_dlg_title">Bagong pinagmumulan para sa apps</string>
+    <string name="allow_source_dlg_text">"Gustong mag-install ng %1$s ng iba pang apps.
+
+Payagan ito ngayon at sa hinaharap?"</string>
+    <string name="manage_applications">Pamahalaan ang apps</string>
+    <string name="dlg_app_replacement_title">Palitan ang app?</string>
+    <string name="dlg_app_replacement_statement">"Papalitan ng app na iyong ini-install ang isa pang app.
+
+Mase-save ang lahat ng iyong nakaraang data ng user."</string>
+    <string name="dlg_sys_app_replacement_statement">"Isa itong app ng system.
+
+Mase-save ang lahat ng iyong nakaraang data ng user."</string>
+    <string name="out_of_space_dlg_title">Wala ng espasyo</string>
+    <string name="out_of_space_dlg_text">Hindi ma-install ang %1$s. Magbakante ng ilang espasyo at subukang muli.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Hindi makita ang app</string>
+    <string name="app_not_found_dlg_text">Hindi makita ang app sa listahan ng naka-install na apps.</string>
+    <string name="uninstall_application_title">I-uninstall ang app</string>
+    <string name="uninstall_update_title">I-uninstall ang update</string>
+    <string name="uninstall_activity_text">Bahagi ang %1$s ng sumusunod na app:</string>
+    <string name="uninstall_application_text">Nais mo bang i-uninstall ang app na ito?</string>
+    <string name="uninstall_application_text_all_users">Nais mo bang i-uninstall ang app na ito para sa <b>lahat</b> ng user? Aalisin ang application at ang data nito mula sa <b>lahat</b> ng user sa device.</string>
+    <string name="uninstall_application_text_user">Gusto mo bang i-uninstall ang app na ito para sa user na si %1$s?</string>
+    <string name="uninstall_update_text">Nais mo bang palitan ang app na ito ng bersyon ng factory?</string>
+    <string name="uninstalling">Ina-uninstall…</string>
+    <string name="uninstall_done">Natapos ang pag-uninstall.</string>
+    <string name="uninstall_failed">Di-matagumpay ang pag-uninstall.</string>
+    <string name="uninstall_failed_device_policy_manager">Hindi ma-uninstall dahil aktibong administrator ng device ang package na ito.</string>
+    <string name="uninstall_blocked_profile_owner">Kinakailangan ang app na ito para sa %1$s profile mo at hindi maaaring i-uninstall.</string>
+    <string name="uninstall_blocked_device_owner">Kinakailangan app na ito ng administrator ng device mo at di maaari i-uninstall.</string>
+    <string name="manage_device_administrators">Pamahalaan ang mga administrator ng device</string>
+    <string name="uninstall_failed_msg">Hindi ma-install ang %1$s.</string>
+    <string name="Parse_error_dlg_title">Error sa pag-parse</string>
+    <string name="Parse_error_dlg_text">Nagkaroon ng problema sa pag-parse sa package.</string>
+    <string name="newPerms">Bago</string>
+    <string name="allPerms">Lahat</string>
+    <string name="privacyPerms">Privacy</string>
+    <string name="devicePerms">Access sa Device</string>
+    <string name="no_new_perms">Walang kinakailangang mga bagong pagpapahintulot ang update na ito.</string>
+    <string name="grant_confirm_question">Gusto mo bang ibigay ang mga sumusunod na pahintulot? Magkakaroon ito ng access sa:</string>
+</resources>

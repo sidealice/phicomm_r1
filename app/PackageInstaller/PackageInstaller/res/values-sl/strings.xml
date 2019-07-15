@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Namestitveno orodje za paket</string>
+    <string name="next">Naprej</string>
+    <string name="install">Namesti</string>
+    <string name="done">Dokončano</string>
+    <string name="security_settings_desc">Dovoli, da ta aplikacija:</string>
+    <string name="cancel">Prekliči</string>
+    <string name="unknown">Neznano</string>
+    <string name="installing">Nameščanje …</string>
+    <string name="install_done">Aplikacija je nameščena.</string>
+    <string name="install_confirm_question">Ali želite namestiti to aplikacijo? Imela bo dostop do:</string>
+    <string name="install_confirm_question_no_perms">Ali želite namestiti to aplikacijo? Poseben dostop ni potreben.</string>
+    <string name="install_confirm_question_update">Ali želite namestiti posodobitev te obstoječe aplikacije? Obstoječi podatki ne bodo izgubljeni. Posodobljena aplikacija bo imela dostop do:</string>
+    <string name="install_confirm_question_update_system">Ali želite namestiti posodobitev za to vgrajeno aplikacijo? Obstoječi podatki ne bodo izgubljeni. Posodobljena aplikacija bo imela dostop do:</string>
+    <string name="install_confirm_question_update_no_perms">Ali želite namestiti posodobitev te obstoječe aplikacije? Obstoječi podatki ne bodo izgubljeni. Za namestitev ne potrebujete posebnega dostopa.</string>
+    <string name="install_confirm_question_update_system_no_perms">Ali želite namestiti posodobitev te vgrajene aplikacije? Obstoječi podatki ne bodo izgubljeni. Za namestitev ne potrebujete posebnega dostopa.</string>
+    <string name="install_failed">Aplikacija ni nameščena.</string>
+    <string name="install_failed_invalid_apk">Kaže, da je paket poškodovan.</string>
+    <string name="install_failed_inconsistent_certificates">Paket z istim imenom s podpisom v navzkrižju je že nameščen.</string>
+    <string name="install_failed_older_sdk">Paket deluje samo v novejših različicah Androida.</string>
+    <string name="install_failed_cpu_abi_incompatible">Ta aplikacija ni združljiva s tabličnim računalnikom.</string>
+    <string name="install_failed_file_not_found">Navedeni paket je bil izbrisan, preden je bilo mogoče končati namestitev.</string>
+    <string name="install_failed_verify_failed">Paket ni opravil preverjanja in ga ni mogoče namestiti.</string>
+    <string name="install_failed_verify_timeout">Pri preverjanju tega paketa je potekla časovna omejitev. Poskusite ga znova namestiti pozneje.</string>
+    <string name="install_failed_msg">Aplikacije %1$s ni bilo mogoče namestiti v tablični računalnik.</string>
+    <string name="launch">Odpri</string>
+    <string name="unknown_apps_dlg_title">Namestitev je blokirana</string>
+    <string name="unknown_apps_dlg_text">Tablični računal. je zaradi varnosti nastavljen, da blokira namestitev aplikacij iz neznanih virov.</string>
+    <string name="unknown_apps_admin_dlg_text">Skrbnik ne dovoli nameščanja aplikacij iz neznanih virov.</string>
+    <string name="ok">V redu</string>
+    <string name="settings">Nastavitve</string>
+    <string name="allow_source_dlg_title">Nov vir za aplikacije</string>
+    <string name="allow_source_dlg_text">"Aplikacija %1$s želi namestiti druge aplikacije.
+
+Želite to dovoliti zdaj in v prihodnosti?"</string>
+    <string name="manage_applications">Upravljaj aplikacije</string>
+    <string name="dlg_app_replacement_title">Ali želite zamenjati aplikacijo?</string>
+    <string name="dlg_app_replacement_statement">"Aplikacija, ki jo nameščate, bo nadomestila drugo. 
+ 
+Vsi prejšnji uporabniški podatki bodo shranjeni."</string>
+    <string name="dlg_sys_app_replacement_statement">"To je sistemska aplikacija.
+ 
+Vsi prejšnji uporabniški podatki bodo shranjeni."</string>
+    <string name="out_of_space_dlg_title">Zmanjkalo je prostora</string>
+    <string name="out_of_space_dlg_text">Aplikacije %1$s ni bilo mogoče namestiti. Sprostite prostor in poskusite znova.</string>
+    <string name="dlg_ok">V redu</string>
+    <string name="app_not_found_dlg_title">Aplikacije ni bilo mogoče najti</string>
+    <string name="app_not_found_dlg_text">Aplikacije ni bilo mogoče najti na seznamu nameščenih aplikacij.</string>
+    <string name="uninstall_application_title">Odstrani aplikacijo</string>
+    <string name="uninstall_update_title">Odstrani posodobitev</string>
+    <string name="uninstall_activity_text">%1$s je del te aplikacije:</string>
+    <string name="uninstall_application_text">Ali želite odstraniti to aplikacijo?</string>
+    <string name="uninstall_application_text_all_users">Ali želite odstraniti aplikacijo za <b>vse</b> uporabnike? Aplikacija in njeni podatki bodo odstranjeni iz <b>vseh</b> uporabnikov v napravi.</string>
+    <string name="uninstall_application_text_user">Ali želite to aplikacijo odstraniti za uporabnika %1$s?</string>
+    <string name="uninstall_update_text">Ali želite to aplikacijo nadomestiti s tovarniško različico?</string>
+    <string name="uninstalling">Odstranjevanje ...</string>
+    <string name="uninstall_done">Odstranitev je končana.</string>
+    <string name="uninstall_failed">Odstranitev ni uspela.</string>
+    <string name="uninstall_failed_device_policy_manager">Odstranitev ni mogoča, ker je ta paket aktivni skrbnik naprave.</string>
+    <string name="uninstall_blocked_profile_owner">Ta aplikacija je potrebna za profil %1$s in je ni mogoče odstraniti.</string>
+    <string name="uninstall_blocked_device_owner">To aplikacijo zahteva skrbnik naprave in je ni mogoče odstraniti.</string>
+    <string name="manage_device_administrators">Upravljanje skrbnikov naprav</string>
+    <string name="uninstall_failed_msg">Aplikacije %1$s ni bilo mogoče odstraniti.</string>
+    <string name="Parse_error_dlg_title">Napaka razčlenitve</string>
+    <string name="Parse_error_dlg_text">Težava pri razčlenjevanju paketa.</string>
+    <string name="newPerms">Novo</string>
+    <string name="allPerms">Vse</string>
+    <string name="privacyPerms">Zasebnost</string>
+    <string name="devicePerms">Dostop do naprave</string>
+    <string name="no_new_perms">Za to posodobitev niso potrebna nova dovoljenja.</string>
+    <string name="grant_confirm_question">Ali želite odobriti naslednja dovoljenja? S tem bo omogočen dostop do:</string>
+</resources>

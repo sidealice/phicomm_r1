@@ -1,0 +1,66 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: res/layout/no_transfers.xml
+SHA-256-Digest: wh1YGchl8aBr/5xVI49al/GgKkHUxMqjD/AW3dLpMb4=
+
+Name: res/drawable-hdpi-v4/ic_launcher_folder_bluetooth.png
+SHA-256-Digest: XrVqLdGJ3Az73i48Z9SU6p8Adr2FyDWKA5FyLdYTR5E=
+
+Name: res/layout/auth.xml
+SHA-256-Digest: toUSIB+xP0YROh2ApncIEStvvyu5mr1dN5voLvifLwY=
+
+Name: res/layout/bluetooth_transfers_page.xml
+SHA-256-Digest: 0XDWTlsIqJNS0hY6Bny76+8nWRkl6JO25QrhVsK4ikg=
+
+Name: res/layout/bluetooth_map_email_settings.xml
+SHA-256-Digest: QoRDcKGXhP5w84x731w5pkSu/FbrsXBofQBEln55uak=
+
+Name: res/drawable-hdpi-v4/bt_share.png
+SHA-256-Digest: f/wqbRaMkuFvuHtDlWKdgdZxwXqnW7zrwQOikd8pNl0=
+
+Name: res/layout/file_transfer.xml
+SHA-256-Digest: 1zPcg4OYJspzbRRv4H2Z2rNIqyneO2ws29Spsxy6BD0=
+
+Name: resources.arsc
+SHA-256-Digest: YbejZQgaaNoLEhGIvuGMWurl7I0v99fGRZkWfbSRP6Y=
+
+Name: classes.dex
+SHA-256-Digest: Z9FlnTM6ZhNN7GFv78j+LyrTim5Ma5EZdCo0Z6WUc+c=
+
+Name: res/menu/transferhistorycontextfinished.xml
+SHA-256-Digest: wgaytVuskIoxYpNVdgpPt8vTj18bjRFZ6qHfz6DMy1I=
+
+Name: res/layout/testactivity_main.xml
+SHA-256-Digest: s3QiLV85/8MZS7dYgq0feGH+ki4gjnibQzw51M02rwk=
+
+Name: res/layout/bluetooth_map_email_settings_account_item.xml
+SHA-256-Digest: ahlT9WOKymypUG9ETtm7d5jOqD+CE1fkhRgkq9mh9Is=
+
+Name: res/drawable-hdpi-v4/bt_incomming_file_notification.png
+SHA-256-Digest: dRSKxH31FYmyFlFj0DeTOyx0lI7Rx3UxTyyppidTE9o=
+
+Name: res/layout/bluetooth_transfer_item.xml
+SHA-256-Digest: r2QweCOQmzr5vVzAwpE9XycsJ0KzOWpM6DkcAHgDyjM=
+
+Name: res/layout/confirm_dialog.xml
+SHA-256-Digest: RZjMNmHpErj7K7PvXUo3N+HpSwqTtH1Dvu551Pv0s9o=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: GAt5frbybussBvmUAPnNIy7O4r6Kuu1DT5o7c+VHKo0=
+
+Name: res/menu/transferhistory.xml
+SHA-256-Digest: eVCU5dbr62wqiMic8qJ1/cf8HK8Iz26eDqT2KDwu07M=
+
+Name: res/menu/receivedfilescontextfinished.xml
+SHA-256-Digest: gYKsJSQMIwldXILY7rA4dzrWyDo+RDDoMzGyG5pMuOA=
+
+Name: res/layout/bluetooth_map_email_settings_account_group.xml
+SHA-256-Digest: AW9O9vxMaCNA9i9EM8eFyk+Xy/fjakeSVVwtIGwU6co=
+
+Name: res/layout/incoming_dialog.xml
+SHA-256-Digest: wvVuUDcTxjcw3ZZxgHOu273Gwq5etWphbzcsg8Tkyng=
+
+Name: res/layout/bt_enabling_progress.xml
+SHA-256-Digest: 7npWMTnVBZ2QhvX1lYkDcAVJJbvOjbGlKPLdb4kEHvA=
+

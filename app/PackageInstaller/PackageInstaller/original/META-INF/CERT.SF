@@ -1,0 +1,52 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest: tHNQ35gw5nvEyW+JkDda7N7v9fDDec5kmGIoWS4Qii8=
+Created-By: 1.0 (Android SignApk)
+
+Name: res/drawable/ic_success_material.xml
+SHA-256-Digest: /Xy9PLWq+c+NmPIxr5DduD0pQNRIpxiXKgd9YlObxaw=
+
+Name: res/layout/label.xml
+SHA-256-Digest: yRyAJ0ctAUD1xU4Yf1YjCUAW9DzL2dBVZD6XiA/I3b4=
+
+Name: res/drawable/ic_result_status.xml
+SHA-256-Digest: lOM0MdqtsBokWtXgDMZ4d2T47Wi1TZZyhDk2zZZgCLo=
+
+Name: res/drawable/ic_fail_material.xml
+SHA-256-Digest: SaMYyPdjn0R/Y047up77V9iVREBM7ReVh8qHR4TtcyU=
+
+Name: resources.arsc
+SHA-256-Digest: nrSLLJ6JbokQSo+KZ7qsyx6/d5VAOcE133YVDQIUUlY=
+
+Name: classes.dex
+SHA-256-Digest: KLgUjpFL6x2UDh2xtAVEsPkH3TZpG1ykomsLjcxNOSA=
+
+Name: res/layout/uninstall_progress.xml
+SHA-256-Digest: r8jOyEiXb5pTHreHrXiv7+l7JDCThnbX2cnzphbNVTI=
+
+Name: res/layout/app_details.xml
+SHA-256-Digest: i2PNKSb/zGGIvZ8VD130if7TCvT227OpuLUO2nRDXP4=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: BNF4/OvOgmmjZ9lFaIMgCr2Hnl8JQlQWoQc4rF//YQQ=
+
+Name: res/layout/install_confirm.xml
+SHA-256-Digest: /P1b9Gdzbxl6SyPgRdN9O9YJ/2JUVA7DyQJ35uk9qFk=
+
+Name: res/drawable-hdpi-v4/ic_success.png
+SHA-256-Digest: I5RuP3EAYEHw8ErNi2ui2rbtn+UNpzw5Mh81ISl0QLE=
+
+Name: res/layout/op_progress.xml
+SHA-256-Digest: Sf1ZaPxmS3OeW2DpluzRzJ90x2KkgZAUQjY+ZOLQEj8=
+
+Name: res/layout/uninstall_confirm.xml
+SHA-256-Digest: F7HB4cyYKte19Zwv+gfhEDWE5+xCPp8AMAnMsx8Ou1w=
+
+Name: res/layout/install_start.xml
+SHA-256-Digest: YqOzvTwgfUAxmYuiA6l9Pw16N+C6MbiumQyRVfQVTZE=
+
+Name: res/drawable-hdpi-v4/ic_fail.png
+SHA-256-Digest: /+wE1ipywhTm1z4Q8DH0ZJZukbs8VrCoRmaEW1IXy+8=
+
+Name: res/layout/permissions_list.xml
+SHA-256-Digest: 4Z93A4i76nm0bdCchEcPiZ84cCZDY8Hgd4z++7mq0Bg=
+

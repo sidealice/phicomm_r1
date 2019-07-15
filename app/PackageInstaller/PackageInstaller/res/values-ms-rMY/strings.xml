@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pemasang pakej</string>
+    <string name="next">Seterusnya</string>
+    <string name="install">Pasang</string>
+    <string name="done">Selesai</string>
+    <string name="security_settings_desc">Benarkan aplikasi ini untuk:</string>
+    <string name="cancel">Batal</string>
+    <string name="unknown">Tidak diketahui</string>
+    <string name="installing">Memasang...</string>
+    <string name="install_done">Aplikasi dipasang.</string>
+    <string name="install_confirm_question">Adakah anda mahu memasang aplikasi ini? Aplikasi ini akan mendapat akses kepada:</string>
+    <string name="install_confirm_question_no_perms">Adakah anda mahu memasang aplikasi ini? Aplikasi ini tidak memerlukan sebarang akses khas.</string>
+    <string name="install_confirm_question_update">Adakah anda mahu memasang kemas kini kepada aplikasi sedia ada ini? Data sedia ada anda tidak akan hilang. Aplikasi yang dikemaskinikan akan mendapat akses kepada:</string>
+    <string name="install_confirm_question_update_system">Adakah anda ingin memasang kemas kini kepada aplikasi terbina dalam ini? Data sedia ada anda tidak akan hilang. Aplikasi yang dikemaskinikan akan mendapat akses kepada:</string>
+    <string name="install_confirm_question_update_no_perms">Adakah anda mahu memasang kemas kini untuk aplikasi sedia ada ini? Data sedia ada anda tidak akan hilang. Hal ini tidak memerlukan sebarang akses khas.</string>
+    <string name="install_confirm_question_update_system_no_perms">Adakah anda mahu memasang kemas kini untuk aplikasi terbina dalam ini? Data sedia ada anda tidak akan hilang. Hal ini tidak memerlukan sebarang akses khas.</string>
+    <string name="install_failed">Aplikasi tidak dipasang.</string>
+    <string name="install_failed_invalid_apk">Pakej itu kelihatan seperti telah rosak.</string>
+    <string name="install_failed_inconsistent_certificates">Pakej sedia ada yang mempunyai nama yang sama dengan tandatangan yang bercanggah sudah pun dipasang.</string>
+    <string name="install_failed_older_sdk">Pakej ini hanya berfungsi pada Android versi terbaru.</string>
+    <string name="install_failed_cpu_abi_incompatible">Aplikasi ini tidak serasi dengan tablet anda.</string>
+    <string name="install_failed_file_not_found">Pakej yang dinyatakan telah dipadamkan sebelum pemasangan dapat dilengkapkan.</string>
+    <string name="install_failed_verify_failed">Pakej ini tidak lulus pengesahan dan tidak boleh dipasang.</string>
+    <string name="install_failed_verify_timeout">Tamat masa berlaku semasa cuba mengesahkan pakej ini. Cuba pasangkannya lagi nanti.</string>
+    <string name="install_failed_msg">%1$s tidak dapat dipasangkan pada tablet anda.</string>
+    <string name="launch">Buka</string>
+    <string name="unknown_apps_dlg_title">Pemasangan disekat</string>
+    <string name="unknown_apps_dlg_text">Untuk keselamatan, tetapan tablet anda menyekat pemasangan apl dari sumber yang tidak diketahui.</string>
+    <string name="unknown_apps_admin_dlg_text">Pentadbir anda tidak membenarkan pemasangan apl yang diperoleh dari sumber yang tidak diketahui.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Tetapan</string>
+    <string name="allow_source_dlg_title">Sumber baru untuk aplikasi</string>
+    <string name="allow_source_dlg_text">"%1$s mahu memasang aplikasi lain.
+
+Benarkan ini sekarang dan pada masa akan datang?"</string>
+    <string name="manage_applications">Urus aplikasi</string>
+    <string name="dlg_app_replacement_title">Ganti aplikasi?</string>
+    <string name="dlg_app_replacement_statement">"Aplikasi yang sedang anda pasang akan menggantikan aplikasi lain.
+
+Semua data pengguna anda sebelum ini akan disimpan ."</string>
+    <string name="dlg_sys_app_replacement_statement">"Ini satu aplikasi sistem. 
+ 
+ Semua data pengguna anda sebelumnya akan disimpan."</string>
+    <string name="out_of_space_dlg_title">Kehabisan ruang</string>
+    <string name="out_of_space_dlg_text">%1$s tidak dapat dipasang. Kosongkan sebahagian ruang dan cuba lagi.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Aplikasi tidak ditemui</string>
+    <string name="app_not_found_dlg_text">Aplikasi tidak ditemui dalam senarai aplikasi yang dipasang.</string>
+    <string name="uninstall_application_title">Nyahpasang aplikasi</string>
+    <string name="uninstall_update_title">Nyahpasang kemas kini</string>
+    <string name="uninstall_activity_text">%1$s merupakan sebahagian daripada aplikasi berikut:</string>
+    <string name="uninstall_application_text">Adakah anda mahu menyahpasang aplikasi ini?</string>
+    <string name="uninstall_application_text_all_users">Adakah anda mahu menyahpasang apl ini untuk <b>semua</b> pengguna? Aplikasi dan datanya akan dialih keluar daripada <b>semua</b> pengguna pada peranti.</string>
+    <string name="uninstall_application_text_user">Adakah anda ingin menyahpasang apl ini untuk pengguna %1$s?</string>
+    <string name="uninstall_update_text">Adakah anda mahu menggantikan aplikasi ini dengan versi kilang?</string>
+    <string name="uninstalling">Menyahpasang...</string>
+    <string name="uninstall_done">Nyahpasang selesai.</string>
+    <string name="uninstall_failed">Nyahpasang tidak berjaya.</string>
+    <string name="uninstall_failed_device_policy_manager">Tidak boleh menyahpasang kerana pakej ini adalah pentadbir peranti yang aktif.</string>
+    <string name="uninstall_blocked_profile_owner">Apl ini diperlukan untuk profil %1$s anda dan tidak boleh dinyahpasang.</string>
+    <string name="uninstall_blocked_device_owner">Apl ini diperlukan oleh pentadbir peranti anda dan tidak boleh dinyahpasang.</string>
+    <string name="manage_device_administrators">Urus pentadbir peranti</string>
+    <string name="uninstall_failed_msg">%1$s tidak dapat dinyahpasang.</string>
+    <string name="Parse_error_dlg_title">Ralat penghuraian</string>
+    <string name="Parse_error_dlg_text">Terdapat masalah menghuraikan pakej.</string>
+    <string name="newPerms">Baharu</string>
+    <string name="allPerms">Semua</string>
+    <string name="privacyPerms">Privasi</string>
+    <string name="devicePerms">Akses Peranti</string>
+    <string name="no_new_perms">Kemas kini ini tidak memerlukan kebenaran baharu.</string>
+    <string name="grant_confirm_question">Adakah anda ingin memberikan kebenaran berikut? Apl akan mendapat akses ke:</string>
+</resources>

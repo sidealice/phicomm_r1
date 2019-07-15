@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">កម្មវិធី​ដំឡើង​កញ្ចប់</string>
+    <string name="next">បន្ទាប់​</string>
+    <string name="install">ដំឡើង</string>
+    <string name="done">រួចរាល់</string>
+    <string name="security_settings_desc">ឲ្យ​កម្មវិធី​នេះ​៖</string>
+    <string name="cancel">បោះ​បង់​</string>
+    <string name="unknown">មិន​ស្គាល់</string>
+    <string name="installing">កំពុង​ដំឡើង...</string>
+    <string name="install_done">បាន​ដំឡើង​កម្មវិធី។</string>
+    <string name="install_confirm_question">តើ​អ្នក​ចង់​ដំឡើង​កម្មវិធី​នេះ? វា​នឹង​មាន​សិទ្ធិ​ចូល៖</string>
+    <string name="install_confirm_question_no_perms">តើ​អ្នក​ចង់​ដំឡើង​កម្មវិធី​នេះ? វា​មិន​ទាមទារ​សិទ្ធិ​ចូល​ពិសេស​ទេ។</string>
+    <string name="install_confirm_question_update">តើ​អ្នក​ចង់​ដំឡើង​បច្ចុប្បន្នភាព​កម្មវិធី​ដែល​មាន​ស្រាប់​នេះ? ទិន្នន័យ​ដែល​មាន​ស្រាប់​របស់​អ្នក​នឹង​មិន​បាត់បង់​ទេ។ កម្មវិធី​បាន​ធ្វើ​បច្ចុប្បន្នភាព​នឹង​ចូល​ដំណើរការ​ទៅ៖</string>
+    <string name="install_confirm_question_update_system">តើ​អ្នក​ចង់​ដំឡើង​បច្ចុប្បន្នភាព​កម្មវិធី​ដែល​ជាប់​ជា​មួយនេះ? ទិន្នន័យ​ដែល​មាន​ស្រាប់​របស់​អ្នក​នឹង​មិនបាត់បង់ទេ។ កម្មវិធី​បាន​ធ្វើ​បច្ចុប្បន្នភាពហើយ​នឹង​មានសិទ្ធិចូល​៖</string>
+    <string name="install_confirm_question_update_no_perms">តើ​អ្នក​ចង់​ដំឡើង​បច្ចុប្បន្នភាព​កម្មវិធី​ដែល​មាន​ស្រាប់​នេះ? ​ទិន្នន័យ​ដែល​មាន​ស្រាប់​របស់​អ្នក​នឹង​មិន​បាត់បង់​ទេ។ វា​មិន​ទាមទារ​ការ​ចូល​ដំណើរការ​ពិសេស​ណាមួយ​ទេ។</string>
+    <string name="install_confirm_question_update_system_no_perms">តើ​អ្នក​ចង់​ដំឡើង​បច្ចុប្បន្នភាព​កម្មវិធី​ដែល​ជាប់​ជា​មួយ? ​ទិន្នន័យ​ដែល​មាន​ស្រាប់​របស់​អ្នក​នឹង​មិន​បាត់បង់​ទេ។ វា​មិន​ទាមទារ​ការ​ចូល​ដំណើរការ​ពិសេស​ណាមួយ​ទេ។</string>
+    <string name="install_failed">មិន​បាន​ដំឡើង​កម្មវិធី។</string>
+    <string name="install_failed_invalid_apk">កញ្ចប់​បង្ហាញ​ថា​ខូច។</string>
+    <string name="install_failed_inconsistent_certificates">មាន​កញ្ចប់​ដែល​មាន​ឈ្មោះ​ដូច​គ្នា​​​ជាន់​​ហត្ថលេខា​ត្រូវ​បាន​ដំឡើង​រួច​ហើយ។</string>
+    <string name="install_failed_older_sdk">កញ្ចប់​​ដំណើរការ​តែ​នៅ​លើ​កំណែ​ថ្មីៗ​របស់​ Android ប៉ុណ្ណោះ ។</string>
+    <string name="install_failed_cpu_abi_incompatible">កម្មវិធី​នេះ​មិន​ត្រូវ​គ្នា​​​ជា​មួយ​កុំព្យូទ័រ​បន្ទះ​របស់​អ្នក​ទេ។</string>
+    <string name="install_failed_file_not_found">កញ្ចប់​បាន​បញ្ជាក់​ត្រូវ​បាន​លុប​មុន​ការ​​ដំឡើង​​បាន​បញ្ចប់។</string>
+    <string name="install_failed_verify_failed">កញ្ចប់​មិន​​ទាន់បាន​ផ្ទៀងផ្ទាត់ និង​មិន​អាច​ដំឡើង​បាន​ទេ។</string>
+    <string name="install_failed_verify_timeout">អស់​ពេល​ខណៈ​ដែល​កំពុង​ផ្ទៀងផ្ទាត់​កញ្ចប់​នេះ។ ព្យាយាម​ដំឡើង​វា​ម្ដង​ទៀត​ពេល​ក្រោយ។</string>
+    <string name="install_failed_msg">មិន​អាច​ដំឡើង %1$s ក្នុង​កុំព្យូទ័រ​បន្ទះ​របស់​អ្នក។</string>
+    <string name="launch">បើក</string>
+    <string name="unknown_apps_dlg_title">បាន​ទប់ស្កាត់​ការ​ដំឡើង</string>
+    <string name="unknown_apps_dlg_text">ដើម្បី​សុវត្ថិភាព ទូរស័ព្ទ​របស់​អ្នក​ត្រូវ​បាន​កំណត់ ដើម្បី​ទប់ស្កាត់​ការដំឡើង​កម្មវិធី​ដែល​បាន​មកពី​ប្រភព​មិន​ស្គាល់។</string>
+    <string name="unknown_apps_admin_dlg_text">អ្នក​គ្រប់គ្រង​របស់​អ្នក​មិន​អនុញ្ញាត​ឲ្យ​ដំឡើង​កម្មវិធី​ដែល​បាន​ទទួល​ពី​ប្រភព​មិន​ស្គាល់។</string>
+    <string name="ok">យល់​ព្រម​</string>
+    <string name="settings">ការ​កំណត់</string>
+    <string name="allow_source_dlg_title">ប្រភព​ថ្មី​សម្រាប់​កម្មវិធី</string>
+    <string name="allow_source_dlg_text">"%1$s ចង់​ដំឡើង​កម្មវិធី​ផ្សេង។
+
+អនុញ្ញាត​ឥឡូវ​ និង​ពេល​អនាគត?"</string>
+    <string name="manage_applications">គ្រប់គ្រង​កម្មវិធី</string>
+    <string name="dlg_app_replacement_title">ជំនួស​កម្មវិធី​?</string>
+    <string name="dlg_app_replacement_statement">"កម្មវិធី​ដែល​អ្នក​កំពុង​ដំឡើង​នឹង​ជំនួយ​កម្មវិធី​ផ្សេង។
+
+ទិន្នន័យ​អ្នក​ពី​មុន​របស់​អ្នក​ទាំងអស់​នឹង​ត្រូវ​បាន​រក្សាទុក។"</string>
+    <string name="dlg_sys_app_replacement_statement">"នេះ​ជា​កម្មវិធី​ប្រព័ន្ធ។
+
+ទិន្នន័យ​អ្នក​ប្រើ​ពី​មុន​របស់​អ្នក​ទាំងអស់​នឹង​ត្រូវ​បាន​រក្សាទុក។"</string>
+    <string name="out_of_space_dlg_title">អស់​ទំហំ</string>
+    <string name="out_of_space_dlg_text">មិន​អាច​ដំឡើង %1$s ។ លុប​ឯកសារ​ខ្លះ ហើយ​ព្យាយាម​ម្ដង​ទៀត។</string>
+    <string name="dlg_ok">យល់​ព្រម​</string>
+    <string name="app_not_found_dlg_title">រក​មិន​ឃើញ​កម្មវិធី</string>
+    <string name="app_not_found_dlg_text">រក​មិន​ឃើញ​កម្មវិធី​ក្នុង​បញ្ជី​កម្មវិធី​បាន​ដំឡើង។</string>
+    <string name="uninstall_application_title">លុប​កម្មវិធី</string>
+    <string name="uninstall_update_title">លុប​បច្ចុប្បន្នភាព</string>
+    <string name="uninstall_activity_text">%1$s​ ​ជា​ផ្នែក​មួយ​នៃ​កម្មវិធី​ដូច​ខាង​ក្រោម​នេះ​៖</string>
+    <string name="uninstall_application_text">តើ​អ្នក​ចង់​លុប​កម្មវិធី​នេះ​ឬ?</string>
+    <string name="uninstall_application_text_all_users">តើ​អ្នក​ចង់​លុប​កម្មវិធី​នេះ​សម្រាប់​អ្នកប្រើ <b>ទាំងអស់</b>? កម្មវិធី និង​ទិន្នន័យ​របស់​វា​នឹង​ត្រូវ​បាន​លុប​ចេញ​ពី​អ្នកប្រើ <b>ទាំងអស់</b> ក្នុង​ឧបករណ៍​នេះ។</string>
+    <string name="uninstall_application_text_user">តើ​អ្នក​ចង់​លុប​កម្មវិធី​នេះ​សម្រាប់​អ្នកប្រើ %1$s?</string>
+    <string name="uninstall_update_text">តើ​អ្នក​ចង់​ជំនួស​កម្មវិធី​នេះ​​ដោយ​កំណែ​រោងចក្រ​ឬ?</string>
+    <string name="uninstalling">កំពុង​លុប...</string>
+    <string name="uninstall_done">បាន​បញ្ចប់​ការ​លុប។</string>
+    <string name="uninstall_failed">ការ​លុប​បរាជ័យ។</string>
+    <string name="uninstall_failed_device_policy_manager">មិន​អាច​លុប​ព្រោះ​កញ្ចប់​នេះ​ជា​ឧបករណ៍​សកម្ម។</string>
+    <string name="uninstall_blocked_profile_owner">កម្មវិធី​នេះ​​​ចាំបាច់​សម្រាប់​ប្រវត្តិរូប %1$s របស់​អ្នក ហើយ​មិន​អាច​លុប​បាន​ទេ។</string>
+    <string name="uninstall_blocked_device_owner">កម្មវិធីនេះត្រូវបានទាមទារដោយអ្នកគ្រប់គ្រងឧបករណ៍របស់អ្នក ហើយមិនអាចលុប​ចេញបាន​ទេ។</string>
+    <string name="manage_device_administrators">គ្រប់គ្រង​អ្នក​គ្រប់គ្រង​ឧបករណ៍</string>
+    <string name="uninstall_failed_msg">មិន​អាច​លុប %1$s ។</string>
+    <string name="Parse_error_dlg_title">កំហុស​ញែក</string>
+    <string name="Parse_error_dlg_text">មាន​បញ្ហា​ក្នុង​ការ​ញែក​​កញ្ចប់។</string>
+    <string name="newPerms">ថ្មី</string>
+    <string name="allPerms">ទាំងអស់</string>
+    <string name="privacyPerms">ភាព​​ឯកជន</string>
+    <string name="devicePerms">ការ​ចូល​ដំណើរការ​ឧបករណ៍</string>
+    <string name="no_new_perms">បច្ចុប្បន្នភាព​នេះ​មិន​ទាមទារ​សិទ្ធិ​ថ្មី​ទេ។</string>
+    <string name="grant_confirm_question">តើ​អ្នក​ចង់​ផ្ដល់​សិទ្ធិ​ដូច​ខាងក្រោម? វា​នឹង​ចូល​ទៅ៖</string>
+</resources>

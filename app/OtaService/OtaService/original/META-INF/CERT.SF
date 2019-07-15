@@ -1,0 +1,107 @@
+Signature-Version: 1.0
+SHA-256-Digest-Manifest: EIQ8O31YGZhEo/+QeeKvPlzjWwNAX2Y9sR7GrVkGe1I=
+Created-By: 1.0 (Android SignApk)
+
+Name: org/eclipse/paho/client/mqttv3/persist/package.html
+SHA-256-Digest: bTMLvD0tjpAU6SlRyQuIC/yB5JhHfClL3CVNCs1uL3c=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ru.properti
+ es
+SHA-256-Digest: 8DBzGTV1Yt+SvGuGmQL8cvnqIi2uOexVd7gUc+z8Cik=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/logcat.properties
+SHA-256-Digest: Y6R727mLqAUiNJRPqpuLb52tAWX3fjCACrfZtpQBjsE=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_it.properti
+ es
+SHA-256-Digest: L9O3EHYPygDsPIOgXJWs5c2V2YGvKPkfDVlOIzwudVA=
+
+Name: res/raw/sweet_upgrade_done.wav
+SHA-256-Digest: 4ooMadBmBUMwnQpqls4Pbd63Ddj+RGq6txK7n2xJF+k=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ja.properti
+ es
+SHA-256-Digest: 4Ab3BMkHeC45L9fRat9yjqWiok354HwLgRc7Wbt2Sqc=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_pl.properti
+ es
+SHA-256-Digest: Hvf9Q9Ah3YJVhVeV8od3MSaV9/wqO0gNmRfzg710JGI=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_TW.prope
+ rties
+SHA-256-Digest: NACU4uedwinCveRBF4rzWAmOvt41w69VZb+P/Znnzaw=
+
+Name: resources.arsc
+SHA-256-Digest: XXF7CMGUhrLlvY6aqL0Bxjba3Dp3Lzs060VNXw+3uUg=
+
+Name: bundle.properties
+SHA-256-Digest: 35GRk1M0xy1t3Y62ptQXkhw5pztkSPaobLN+mvmQm9E=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_fr.properti
+ es
+SHA-256-Digest: IXeo4SCZmfh/T6HYOFjR+ppXseFB2phvUqLJXRpioBs=
+
+Name: org/eclipse/paho/client/mqttv3/package.html
+SHA-256-Digest: GIruL+6f7uN9uouGNxQVccweH7TlweEKWclcdOrqVlI=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: xbRbHqYt347LfC/ePpmZmFyetQbBcLUiRj+Bj8VfYXA=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: T7J2zTzAvA4qc9mpKb1Fb2OPdXX4/emAxfYEieoqyxk=
+
+Name: about.html
+SHA-256-Digest: VgyLjB2YHBFsp7jYXyxZ4UXTOb/YL3GmtKdKe1HVm1M=
+
+Name: org/eclipse/paho/client/mqttv3/logging/package.html
+SHA-256-Digest: +wQTlS520gsBmdQY6X7zJShs9NK0rRKrG5/lZ+WIOnc=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_de.properti
+ es
+SHA-256-Digest: 3MKsixBuLXJY5tTL+JINrJe7Zhs+d0sda4yo927lnsU=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_cs.properti
+ es
+SHA-256-Digest: Jq10qJJuMEJPHHUdwVvHBzixhzxO1Mdgrjtc8D8U3ME=
+
+Name: res/raw/downloadupgrade.wav
+SHA-256-Digest: f+B9iEI7mrVHXAgm6BegkzLjH1fbPIU3zudAjKMwpag=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages.properties
+SHA-256-Digest: A+jQhx1O4WTYwXuP5n0H5BM/KE9jgHIA5KcgREI9ndc=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_zh_CN.prope
+ rties
+SHA-256-Digest: pu56X1H0Twb9Mw7bmlmFlReqp5VKm8qUIpFXfwuL+0c=
+
+Name: org/eclipse/paho/client/mqttv3/util/package.html
+SHA-256-Digest: 2H5QKicTcniruMJjWrJgifvDMORD/yGjyO5Vg9ewCJI=
+
+Name: classes.dex
+SHA-256-Digest: o7UgK7eG9r3kBf72/PeerSbj0M0G1FC3MLFe62LAkVg=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_es.properti
+ es
+SHA-256-Digest: +O5cptLz6D0lTNQA2UluuH1lJz37bZgyO38RyW3/j7s=
+
+Name: org/eclipse/paho/client/mqttv3/logging/jsr47min.properties
+SHA-256-Digest: tzhQgtIJ9Mbr6Sfy5Y7LZRygz5HCfu97LaU15NNVMYw=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_hu.properti
+ es
+SHA-256-Digest: JNwHo8JzsBtMxlJ8v3UGvvfTWYCaifsV3HLfcIECWPE=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_ko.properti
+ es
+SHA-256-Digest: 4g+lXJQDEiY9DhkGUCvnE3ExTqaqrEXLoYKETURSVTM=
+
+Name: res/raw/beginupgrade.wav
+SHA-256-Digest: FcHIR5Bo0Pnual8uZ9vdqBipsv+qnkeQOqBtmEBDPSM=
+
+Name: res/raw/nowupgrade.wav
+SHA-256-Digest: hvpBbSyawKPZRYQj23EJmKjlw+1KYvYCcuOzvpKn+Lk=
+
+Name: org/eclipse/paho/client/mqttv3/internal/nls/messages_pt_BR.prope
+ rties
+SHA-256-Digest: w4afI7i0sFRS2oE+lIJ7TENEvgzqLKfLxCaqgIcL2EQ=
+

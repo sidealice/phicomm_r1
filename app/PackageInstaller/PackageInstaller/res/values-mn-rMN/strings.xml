@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Багц суулгагч</string>
+    <string name="next">Дараах</string>
+    <string name="install">Суулгах</string>
+    <string name="done">Дуусгах</string>
+    <string name="security_settings_desc">Энэ апп-д дараахыг зөвшөөрөх:</string>
+    <string name="cancel">Цуцлах</string>
+    <string name="unknown">Тодорхойгүй</string>
+    <string name="installing">Суулгаж байна…</string>
+    <string name="install_done">Апп суулгагдсан.</string>
+    <string name="install_confirm_question">Та энэ аппликешныг суулгамаар байна уу? Энэ дараахад хандах болно:</string>
+    <string name="install_confirm_question_no_perms">Та энэ аппликешныг суулгах уу? Энэ тусгай хандалт шаардахгүй.</string>
+    <string name="install_confirm_question_update">Та энэ аппликешны шинэчлэлтийг суулгах уу? Таны хуучин дата устах болно. Шинэчлэгдсэн аппликешн нь дараахад хандаж чадна:</string>
+    <string name="install_confirm_question_update_system">Та энэ үндсэн аппликешны шинэчлэлтийг суулгах уу? Таны хуучин дата устах болно. Шинэчлэгдсэн аппликешн нь дараахад хандаж чадна:</string>
+    <string name="install_confirm_question_update_no_perms">Та энэ аппликешны шинэчлэлтийг суулгах уу? Таны хуучин дата устах болно. Энэ ямар нэгэн тусгай эрх шаардахгүй.</string>
+    <string name="install_confirm_question_update_system_no_perms">Та энэ үндсэн аппликешны шинэчлэлтийг суулгах уу? Таны хуучин дата устах болно. Энэ ямар нэгэн тусгай эрх шаардахгүй.</string>
+    <string name="install_failed">Апп суулгагдаагүй.</string>
+    <string name="install_failed_invalid_apk">Багц эвдэрсэн гэж гарч байна.</string>
+    <string name="install_failed_inconsistent_certificates">Зөрчилтэй гарын үсэгтэй адил нэртэй хуучин багц урд нь суулгагдсан байна.</string>
+    <string name="install_failed_older_sdk">Багц Андройдын шинэ хувилбар дээр л ажиллана.</string>
+    <string name="install_failed_cpu_abi_incompatible">Энэ апп таны таблеттэй тохирохгүй.</string>
+    <string name="install_failed_file_not_found">Суулгаж дуусгахаас өмнө тодорхойлогдсон багц устгагдсан байна.</string>
+    <string name="install_failed_verify_failed">Багц тулгалтыг давж чадаагүй ба суулгах боломжгүй.</string>
+    <string name="install_failed_verify_timeout">Энэ багцийг тулгаж байхад хугацаа хэтрэв. Дараа дахин суулгана уу.</string>
+    <string name="install_failed_msg">%1$s таны таблет дээр суусангүй.</string>
+    <string name="launch">Нээх</string>
+    <string name="unknown_apps_dlg_title">Суулгалт хориглогдсон</string>
+    <string name="unknown_apps_dlg_text">Аюулгүй байдлын үүднээс таны таблет тодорхойгүй эх сурвалжаас авсан апп суулгахыг хориглохоор тохируулагдсан.</string>
+    <string name="unknown_apps_admin_dlg_text">Таны админ тодорхойгүй сурвалжаас татсан апп-г суулгахын зөвшөөрөөгүй.</string>
+    <string name="ok">Тийм</string>
+    <string name="settings">Тохиргоо</string>
+    <string name="allow_source_dlg_title">Апп-н шинэ эх сурвалж</string>
+    <string name="allow_source_dlg_text">"%1$s бусад апп-г суулгах шаардлагатай байна.
+
+Энийг одоо болон цаашиид зөвшөөрөх үү?"</string>
+    <string name="manage_applications">Апп удирдах</string>
+    <string name="dlg_app_replacement_title">Апп-г орлуулах уу?</string>
+    <string name="dlg_app_replacement_statement">"Таны суулгаж байгаа апп өөр апп-г орлох болно.
+
+Таны өмнөх хэрэглэгчийн дата бүгд хадгалагдах болно."</string>
+    <string name="dlg_sys_app_replacement_statement">"Энэ систем апп байна.
+
+Таны өмнөх хэрэглэгчийн дата бүгд хадгалагдах болно."</string>
+    <string name="out_of_space_dlg_title">Зай дутагдаж байна</string>
+    <string name="out_of_space_dlg_text">%1$s-г суулгаж чадсангүй. Зайг чөлөөлөөд дахин оролдоно уу.</string>
+    <string name="dlg_ok">Тийм</string>
+    <string name="app_not_found_dlg_title">Апп олдсонгүй</string>
+    <string name="app_not_found_dlg_text">Суулгасан апп-н жагсаалт дотроос апп олдсонгүй.</string>
+    <string name="uninstall_application_title">Апп устгах</string>
+    <string name="uninstall_update_title">Шинэчлэлийг устгах</string>
+    <string name="uninstall_activity_text">%1$s нь дараах апп-н хэсэг болно:</string>
+    <string name="uninstall_application_text">Та энэ апп-г устгамаар байна уу?</string>
+    <string name="uninstall_application_text_all_users">Та энэ апп-г <b>бүх</b> хэрэглэгчээс устгах уу? Аппикешн болон доторх дата нь төхөөрөмж дээрх <b>бүх</b> хэрэглэгчээс устгагдах болно.</string>
+    <string name="uninstall_application_text_user">Та энэ апп-г %1$s хэрэглэгчийн хувьд устгах уу?</string>
+    <string name="uninstall_update_text">Та энэ апп-г үйлдвэрийн хувилбараар нь орлуулах уу?</string>
+    <string name="uninstalling">Устгаж байна…</string>
+    <string name="uninstall_done">Устгаж дуусав.</string>
+    <string name="uninstall_failed">Устгалт амжилтгүй болов.</string>
+    <string name="uninstall_failed_device_policy_manager">Энэ багц нь идэвхтэй төхөөрөмжийн админ тул устгаж болохгүй.</string>
+    <string name="uninstall_blocked_profile_owner">Энэ апп таны %1$s профайлд шаардлагатай бөгөөд устгах боломжгүй.</string>
+    <string name="uninstall_blocked_device_owner">Энэ апп нь таны төхөөрөмжийн админд шаардлагатай бөгөөд устгах боломжгүй.</string>
+    <string name="manage_device_administrators">Төхөөрөмжийн админуудыг удирдах</string>
+    <string name="uninstall_failed_msg">%1$s-г устгаж чадсангүй.</string>
+    <string name="Parse_error_dlg_title">Задлах алдаа</string>
+    <string name="Parse_error_dlg_text">Багцийг задлахад алдаа гарав.</string>
+    <string name="newPerms">Шинэ</string>
+    <string name="allPerms">Бүгд</string>
+    <string name="privacyPerms">Нууцлал</string>
+    <string name="devicePerms">Төхөөрөмжид хандах</string>
+    <string name="no_new_perms">Энэ шинэчлэл шинэ зөвшөөрөл шаардахгүй.</string>
+    <string name="grant_confirm_question">Та дараах зөвшөөрлийг олгох уу? Энэ нь дараахд хандах боломжтой:</string>
+</resources>

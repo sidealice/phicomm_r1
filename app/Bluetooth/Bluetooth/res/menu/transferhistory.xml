@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@android:drawable/ic_menu_cut_holo_dark" android:id="@id/transfer_menu_clear_all" android:title="@string/transfer_menu_clear_all" />
+</menu>

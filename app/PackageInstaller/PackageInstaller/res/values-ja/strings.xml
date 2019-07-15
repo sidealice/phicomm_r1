@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">パッケージインストーラ</string>
+    <string name="next">次へ</string>
+    <string name="install">インストール</string>
+    <string name="done">完了</string>
+    <string name="security_settings_desc">このアプリに許可する権限:</string>
+    <string name="cancel">キャンセル</string>
+    <string name="unknown">不明</string>
+    <string name="installing">インストール中...</string>
+    <string name="install_done">アプリをインストールしました。</string>
+    <string name="install_confirm_question">このアプリケーションをインストールしてもよろしいですか？このアプリケーションは下記にアクセスする場合があります:</string>
+    <string name="install_confirm_question_no_perms">このアプリケーションをインストールしてもよろしいですか？このアプリケーションは特別なアクセス許可を必要としません。</string>
+    <string name="install_confirm_question_update">この既存のアプリケーションへのアップデートをインストールしてもよろしいですか？既存のデータは失われません。アップデート後のアプリケーションは下記にアクセスする場合があります:</string>
+    <string name="install_confirm_question_update_system">この内蔵アプリケーションへのアップデートをインストールしてもよろしいですか？既存のデータは失われません。アップデート後のアプリケーションは下記にアクセスする場合があります:</string>
+    <string name="install_confirm_question_update_no_perms">この既存のアプリにアップデートをインストールしますか？既存のデータが失われることはありません。特別なアクセス権も必要ありません。</string>
+    <string name="install_confirm_question_update_system_no_perms">この内蔵アプリにアップデートをインストールしますか？既存のデータが失われることはありません。特別なアクセス権も必要ありません。</string>
+    <string name="install_failed">アプリはインストールされていません。</string>
+    <string name="install_failed_invalid_apk">パッケージが破損しているようです。</string>
+    <string name="install_failed_inconsistent_certificates">名前が同じで、署名が競合するパッケージが既にインストールされています。</string>
+    <string name="install_failed_older_sdk">このパッケージは新しいバージョンのAndroidでのみ機能します。</string>
+    <string name="install_failed_cpu_abi_incompatible">このアプリはお使いのタブレットに対応していません。</string>
+    <string name="install_failed_file_not_found">インストールが完了する前に指定されたパッケージが削除されました。</string>
+    <string name="install_failed_verify_failed">パッケージの検証に失敗したため、インストールできませんでした。</string>
+    <string name="install_failed_verify_timeout">このパッケージを検証している間にタイムアウトが発生しました。後で再度インストールしてください。</string>
+    <string name="install_failed_msg">%1$sをタブレットにインストールできませんでした。</string>
+    <string name="launch">開く</string>
+    <string name="unknown_apps_dlg_title">インストールはブロックされました</string>
+    <string name="unknown_apps_dlg_text">タブレットのセキュリティ上の設定で、提供元不明のアプリのインストールをブロックしています。</string>
+    <string name="unknown_apps_admin_dlg_text">不明なソースから取得したアプリをインストールすることは、管理者により禁止されています。</string>
+    <string name="ok">OK</string>
+    <string name="settings">設定</string>
+    <string name="allow_source_dlg_title">アプリのための新しいソース</string>
+    <string name="allow_source_dlg_text">"%1$sが他のアプリをインストールしようとしています。
+
+今後この操作を許可しますか？"</string>
+    <string name="manage_applications">アプリを管理</string>
+    <string name="dlg_app_replacement_title">アプリを更新しますか？</string>
+    <string name="dlg_app_replacement_statement">"このアプリは既存のアプリを上書きします。
+
+過去のユーザーデータはすべて保存されます。"</string>
+    <string name="dlg_sys_app_replacement_statement">"これはシステムアプリです。
+
+過去のユーザーデータはすべて保存されます。"</string>
+    <string name="out_of_space_dlg_title">容量不足です</string>
+    <string name="out_of_space_dlg_text">%1$sをインストールできませんでした。空き容量を増やしてもう一度お試しください。</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">アプリが見つかりません</string>
+    <string name="app_not_found_dlg_text">インストール済みアプリのリストに、このアプリはありません。</string>
+    <string name="uninstall_application_title">アプリをアンインストール</string>
+    <string name="uninstall_update_title">アップデートをアンインストール</string>
+    <string name="uninstall_activity_text">%1$sは次のアプリの一部です:</string>
+    <string name="uninstall_application_text">このアプリをアンインストールしますか？</string>
+    <string name="uninstall_application_text_all_users">このアプリを<b>すべての</b>ユーザーからアンインストールしますか？このアプリとそのデータは端末の<b>すべての</b>ユーザーから削除されます。</string>
+    <string name="uninstall_application_text_user">%1$sさんのアプリをアンインストールしますか？</string>
+    <string name="uninstall_update_text">アプリを出荷時の状態に更新しますか？</string>
+    <string name="uninstalling">アンインストール中...</string>
+    <string name="uninstall_done">アンインストールが完了しました。</string>
+    <string name="uninstall_failed">アンインストールできませんでした。</string>
+    <string name="uninstall_failed_device_policy_manager">このパッケージは現在デバイスを管理しているため、アンインストールできません。</string>
+    <string name="uninstall_blocked_profile_owner">このアプリは%1$sさんのプロフィールに必要なため、アンインストールできません。</string>
+    <string name="uninstall_blocked_device_owner">このアプリは端末管理者が必要としているため、アンインストールできません。</string>
+    <string name="manage_device_administrators">デバイス管理者を管理</string>
+    <string name="uninstall_failed_msg">%1$sをアンインストールできませんでした。</string>
+    <string name="Parse_error_dlg_title">解析エラー</string>
+    <string name="Parse_error_dlg_text">パッケージの解析中に問題が発生しました。</string>
+    <string name="newPerms">New</string>
+    <string name="allPerms">すべて</string>
+    <string name="privacyPerms">プライバシー</string>
+    <string name="devicePerms">端末アクセス</string>
+    <string name="no_new_perms">このアップデートでは新たな許可は必要ありません。</string>
+    <string name="grant_confirm_question">次の権限を許可してもよろしいですか？許可すると、次にアクセスされます:</string>
+</resources>

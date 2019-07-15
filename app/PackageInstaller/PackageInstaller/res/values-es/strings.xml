@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Instalador de paquetes</string>
+    <string name="next">Siguiente</string>
+    <string name="install">Instalar</string>
+    <string name="done">Listo</string>
+    <string name="security_settings_desc">Permitir que esta aplicación:</string>
+    <string name="cancel">Cancelar</string>
+    <string name="unknown">Desconocida</string>
+    <string name="installing">Instalando…</string>
+    <string name="install_done">Aplicación instalada</string>
+    <string name="install_confirm_question">¿Quieres instalar esta aplicación? Podrá acceder a:</string>
+    <string name="install_confirm_question_no_perms">¿Quieres instalar esta aplicación? No requiere accesos especiales.</string>
+    <string name="install_confirm_question_update">¿Quieres instalar una actualización de la aplicación? Tus datos no se perderán. La aplicación actualizada podrá acceder a:</string>
+    <string name="install_confirm_question_update_system">¿Quieres instalar una actualización de esta aplicación integrada? Tus datos no se perderán. La aplicación actualizada podrá acceder a:</string>
+    <string name="install_confirm_question_update_no_perms">¿Quieres instalar una actualización de esta aplicación? Tus datos no se perderán. No requiere ningún acceso especial.</string>
+    <string name="install_confirm_question_update_system_no_perms">¿Quieres instalar una actualización de esta aplicación integrada? Tus datos no se perderán. No requiere ningún acceso especial.</string>
+    <string name="install_failed">Aplicación no instalada</string>
+    <string name="install_failed_invalid_apk">Parece que el paquete está dañado.</string>
+    <string name="install_failed_inconsistent_certificates">Ya se ha instalado un paquete con el mismo nombre con una firma en conflicto.</string>
+    <string name="install_failed_older_sdk">Este paquete solo funciona en las versiones más recientes de Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Esta aplicación no es compatible con el tablet.</string>
+    <string name="install_failed_file_not_found">El paquete especificado se ha eliminado antes de que se completara la instalación.</string>
+    <string name="install_failed_verify_failed">El paquete no ha superado el proceso de verificación y no se puede instalar.</string>
+    <string name="install_failed_verify_timeout">Se ha agotado el tiempo de espera al intentar verificar este paquete. Prueba a instalarlo más tarde.</string>
+    <string name="install_failed_msg">No se ha podido instalar %1$s en el tablet.</string>
+    <string name="launch">Abrir</string>
+    <string name="unknown_apps_dlg_title">Instalación bloqueada</string>
+    <string name="unknown_apps_dlg_text">Por seguridad, el tablet se ha configurado para bloquear aplicaciones de orígenes desconocidos.</string>
+    <string name="unknown_apps_admin_dlg_text">Tu administrador no permite la instalación de aplicaciones obtenidas de fuentes desconocidas.</string>
+    <string name="ok">Aceptar</string>
+    <string name="settings">Ajustes</string>
+    <string name="allow_source_dlg_title">Nueva fuente de aplicaciones</string>
+    <string name="allow_source_dlg_text">"%1$s quiere instalar otras aplicaciones.
+
+¿Quieres permitirlo ahora y en el futuro?"</string>
+    <string name="manage_applications">Administrar aplicaciones</string>
+    <string name="dlg_app_replacement_title">¿Sustituir aplicación?</string>
+    <string name="dlg_app_replacement_statement">"La aplicación que estás instalando sustituirá a otra aplicación.
+
+Se guardarán todos los datos de usuario anteriores."</string>
+    <string name="dlg_sys_app_replacement_statement">"Es una aplicación del sistema.
+
+Se guardarán todos los datos de usuario anteriores."</string>
+    <string name="out_of_space_dlg_title">Sin espacio</string>
+    <string name="out_of_space_dlg_text">No se ha podido instalar la aplicación %1$s. Libera espacio y vuelve a intentarlo.</string>
+    <string name="dlg_ok">Aceptar</string>
+    <string name="app_not_found_dlg_title">Aplicación no encontrada</string>
+    <string name="app_not_found_dlg_text">No se ha encontrado la aplicación en la lista de aplicaciones instaladas.</string>
+    <string name="uninstall_application_title">Desinstalar aplicación</string>
+    <string name="uninstall_update_title">Desinstalar actualización</string>
+    <string name="uninstall_activity_text">%1$s forma parte de esta aplicación:</string>
+    <string name="uninstall_application_text">¿Quieres desinstalar esta aplicación?</string>
+    <string name="uninstall_application_text_all_users">¿Quieres desinstalar esta aplicación para <b>todos</b> los usuarios? La aplicación y sus datos se eliminarán de <b>todos</b> los usuarios del dispositivo.</string>
+    <string name="uninstall_application_text_user">¿Quieres desinstalar esta aplicación para el usuario %1$s?</string>
+    <string name="uninstall_update_text">¿Quieres sustituir esta aplicación con la versión de fábrica?</string>
+    <string name="uninstalling">Desinstalando...</string>
+    <string name="uninstall_done">Desinstalación completada</string>
+    <string name="uninstall_failed">Desinstalación correcta</string>
+    <string name="uninstall_failed_device_policy_manager">No se puede desinstalar porque este paquete es un administrador de dispositivos activo.</string>
+    <string name="uninstall_blocked_profile_owner">Esta aplicación es necesaria para el perfil de %1$s y no se puede desinstalar.</string>
+    <string name="uninstall_blocked_device_owner">Esta aplicación es necesaria para el administrador de tu dispositivo y no se puede desinstalar.</string>
+    <string name="manage_device_administrators">Gestionar administradores de dispositivos</string>
+    <string name="uninstall_failed_msg">No se ha podido desinstalar %1$s.</string>
+    <string name="Parse_error_dlg_title">Error de análisis</string>
+    <string name="Parse_error_dlg_text">Se ha producido un error al analizar el paquete.</string>
+    <string name="newPerms">Nuevo</string>
+    <string name="allPerms">Todos</string>
+    <string name="privacyPerms">Privacidad</string>
+    <string name="devicePerms">Acceso dispositivo</string>
+    <string name="no_new_perms">Esta actualización no requiere permisos nuevos.</string>
+    <string name="grant_confirm_question">¿Quieres conceder los siguientes permisos? Podrá acceder a:</string>
+</resources>

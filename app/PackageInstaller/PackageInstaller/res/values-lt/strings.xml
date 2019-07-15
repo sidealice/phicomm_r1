@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paketo įdiegimo programa</string>
+    <string name="next">Kitas</string>
+    <string name="install">Įdiegti</string>
+    <string name="done">Atlikta</string>
+    <string name="security_settings_desc">Leisti šiai programai:</string>
+    <string name="cancel">Atšaukti</string>
+    <string name="unknown">Nežinomas</string>
+    <string name="installing">Diegiama...</string>
+    <string name="install_done">Programa įdiegta.</string>
+    <string name="install_confirm_question">Ar norite įdiegti šią programą? Jai bus suteikta prieiga prie:</string>
+    <string name="install_confirm_question_no_perms">Ar norite įdiegti šią programą? Jai nereikalinga jokia speciali prieiga.</string>
+    <string name="install_confirm_question_update">Ar norite įdiegti šios esamos programos naujinį? Neprarasite esamų duomenų. Atnaujinus programą bus suteikta prieiga prie:</string>
+    <string name="install_confirm_question_update_system">Ar norite įdiegti šios integruotos programos naujinį? Neprarasite esamų duomenų. Atnaujinus programą bus suteikta prieiga prie:</string>
+    <string name="install_confirm_question_update_no_perms">Ar norite įdiegti šios esamos programos naujinį? Neprarasite esamų duomenų. Nereikia jokios specialios prieigos.</string>
+    <string name="install_confirm_question_update_system_no_perms">Ar norite įdiegti šios integruotos programos naujinį? Neprarasite esamų duomenų. Nereikia jokios specialios prieigos.</string>
+    <string name="install_failed">Programa neįdiegta.</string>
+    <string name="install_failed_invalid_apk">Paketas sugadintas.</string>
+    <string name="install_failed_inconsistent_certificates">Jau įdiegtas esamas paketas tuo pačiu pavadinimu su prieštaringu parašu.</string>
+    <string name="install_failed_older_sdk">Paketas veikia tik naujesnėse „Android“ versijose.</string>
+    <string name="install_failed_cpu_abi_incompatible">Ši programa nesuderinama su jūsų planšetiniu kompiuteriu.</string>
+    <string name="install_failed_file_not_found">Nurodytas paketas ištrintas prieš baigiant diegti.</string>
+    <string name="install_failed_verify_failed">Patikrinus nustatyta, kad paketas netinkamas, todėl jo įdiegti negalima.</string>
+    <string name="install_failed_verify_timeout">Bandant patikrinti šį paketą baigėsi skirtasis laikas. Vėliau bandykite jį įdiegti dar kartą.</string>
+    <string name="install_failed_msg">Jūsų planšetiniame kompiuteryje nepavyko įdiegti „%1$s“.</string>
+    <string name="launch">Atidaryti</string>
+    <string name="unknown_apps_dlg_title">Diegimas užblokuotas</string>
+    <string name="unknown_apps_dlg_text">Saugumo sumetimais planš. komp. nustatytas progr., įsigytų iš nežinomų šaltinių, diegimo blokavimas.</string>
+    <string name="unknown_apps_admin_dlg_text">Jūsų administratorius neleidžia diegti programų, gautų iš nežinomų šaltinių.</string>
+    <string name="ok">Gerai</string>
+    <string name="settings">Nustatymai</string>
+    <string name="allow_source_dlg_title">Naujas programų šaltinis</string>
+    <string name="allow_source_dlg_text">"%1$s nori įdiegti kitas programas.
+
+Ar leisti tai dabar ir ateityje?"</string>
+    <string name="manage_applications">Tvarkyti programas</string>
+    <string name="dlg_app_replacement_title">Pakeisti programą?</string>
+    <string name="dlg_app_replacement_statement">"Diegiama programa pakeis kitą programą.
+
+Bus išsaugoti visi ankstesni naudotojo duomenys."</string>
+    <string name="dlg_sys_app_replacement_statement">"Tai sistemos programa.
+
+Bus išsaugoti visi ankstesni naudotojo duomenys."</string>
+    <string name="out_of_space_dlg_title">Nėra vietos</string>
+    <string name="out_of_space_dlg_text">Nepavyko įdiegti „%1$s“. Atlaisvinkite vietos ir bandykite dar kartą.</string>
+    <string name="dlg_ok">Gerai</string>
+    <string name="app_not_found_dlg_title">Programa nerasta</string>
+    <string name="app_not_found_dlg_text">Programa nerasta įdiegtų programų sąraše.</string>
+    <string name="uninstall_application_title">Pašalinti programą</string>
+    <string name="uninstall_update_title">Pašalinti naujinį</string>
+    <string name="uninstall_activity_text">„%1$s“ yra šios programos dalis:</string>
+    <string name="uninstall_application_text">Ar norite pašalinti šią programą?</string>
+    <string name="uninstall_application_text_all_users">Ar norite pašalinti šią programą <b>visiems</b> naudotojams? Programa ir jos duomenys bus pašalinti iš <b>visų</b> naudotojų įrenginyje.</string>
+    <string name="uninstall_application_text_user">Ar norite pašalinti šią naudotojo %1$s programą?</string>
+    <string name="uninstall_update_text">Ar norite šią programą pakeisti gamykline versija?</string>
+    <string name="uninstalling">Pašalinama...</string>
+    <string name="uninstall_done">Pašalinimas baigtas.</string>
+    <string name="uninstall_failed">Nepavyko pašalinti.</string>
+    <string name="uninstall_failed_device_policy_manager">Negalima pašalinti, nes šis paketas yra aktyvus įrenginio administratorius.</string>
+    <string name="uninstall_blocked_profile_owner">Ši programa reikalinga jūsų %1$s profiliui ir jos negalima pašalinti.</string>
+    <string name="uninstall_blocked_device_owner">Ši programa reikalinga jūsų įrenginio administratoriui ir jos negalima pašalinti.</string>
+    <string name="manage_device_administrators">Valdyti įrenginio administratorius</string>
+    <string name="uninstall_failed_msg">Nepavyko pašalinti „%1$s“.</string>
+    <string name="Parse_error_dlg_title">Analizės klaida</string>
+    <string name="Parse_error_dlg_text">Analizuojant paketą iškilo problema.</string>
+    <string name="newPerms">Naujiena</string>
+    <string name="allPerms">Visi</string>
+    <string name="privacyPerms">Privatumas</string>
+    <string name="devicePerms">Prieiga prie įreng.</string>
+    <string name="no_new_perms">Šiam naujiniui nereikalingi nauji leidimai.</string>
+    <string name="grant_confirm_question">Ar norite suteikti šiuos leidimus? Bus suteikta prieiga prie:</string>
+</resources>

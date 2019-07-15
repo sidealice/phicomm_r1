@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">প্যাকেজ ইনস্টলার</string>
+    <string name="next">পরবর্তী</string>
+    <string name="install">ইনস্টল করুন</string>
+    <string name="done">সম্পন্ন হয়েছে</string>
+    <string name="security_settings_desc">এই অ্যাপ্লিকেশানটিকে এতে অনুমোদিত করুন:</string>
+    <string name="cancel">বাতিল করুন</string>
+    <string name="unknown">অজানা</string>
+    <string name="installing">ইনস্টল করা হচ্ছে…</string>
+    <string name="install_done">অ্যাপ্লিকেশান ইনস্টল করা হয়েছে৷</string>
+    <string name="install_confirm_question">আপনি কি এই অ্যাপ্লিকেশানটি ইনস্টল করতে চান? এর মাধ্যমে যেসব জিনিস অ্যাক্সেস করার সুবিধা পাবেন সেগুলি হল:</string>
+    <string name="install_confirm_question_no_perms">আপনি কি এই অ্যাপ্লিকেশানটি ইনস্টল করতে চান? এর জন্য কোনো বিশেষ অ্যাক্সেসের প্রয়োজন নেই৷</string>
+    <string name="install_confirm_question_update">আপনি কি এই বিদ্যমান অ্যাপ্লিকেশানের একটি আপডেট ইনস্টল করতে চান? আপনার বিদ্যমান ডেটাগুলি একই রকম থাকবে৷ এই আপডেট হওয়া অ্যাপ্লিকেশানটির মাধ্যমে যেসব জিনিস অ্যাক্সেস করার সুবিধা পাবেন সেগুলি হল:</string>
+    <string name="install_confirm_question_update_system">আপনি কি এই ভেতরে থাকা অ্যাপ্লিকেশানের একটি আপডেট ইনস্টল করতে চান? আপনার বিদ্যমান ডেটাগুলি একই রকম থাকবে৷ এই আপডেট হওয়া অ্যাপ্লিকেশানটির মাধ্যমে যেসব জিনিস অ্যাক্সেস করার সুবিধা পাবেন সেগুলি হল:</string>
+    <string name="install_confirm_question_update_no_perms">আপনি কি এই বিদ্যমান অ্যাপ্লিকেশানের একটি আপডেট ইনস্টল করতে চান? আপনার বিদ্যমান ডেটাগুলি একই রকম থাকবে৷ এর জন্য কোনো বিশেষ অ্যাক্সেসের প্রয়োজন নেই৷</string>
+    <string name="install_confirm_question_update_system_no_perms">আপনি কি ভেতরে থাকা অ্যাপ্লিকেশানের একটি আপডেট ইনস্টল করতে চান? আপনার বিদ্যমান ডেটাগুলি একই রকম থাকবে৷ এর জন্য কোনো বিশেষ অ্যাক্সেসের প্রয়োজন নেই৷</string>
+    <string name="install_failed">অ্যাপ্লিকেশান ইনস্টল করা হয়নি৷</string>
+    <string name="install_failed_invalid_apk">প্যাকেজটি ক্ষতিগ্রস্ত বলে মনে হচ্ছে৷</string>
+    <string name="install_failed_inconsistent_certificates">একটি বিবাদী স্বাক্ষর সহ একই নামের একটি বিদ্যমান প্যাকেজ ইতিমধ্যেই ইনস্টল রয়েছে৷</string>
+    <string name="install_failed_older_sdk">প্যাকেজটি শুধুমাত্র Android এর নতুন সংস্করণে কাজ করে৷</string>
+    <string name="install_failed_cpu_abi_incompatible">এই অ্যাপ্লিকেশানটি আপনার ট্যাবলেটের জন্য উপযুক্ত নয়৷</string>
+    <string name="install_failed_file_not_found">ইনস্টলেশান প্রক্রিয়া সম্পন্ন হওয়ার পূর্বে উল্লিখিত প্যাকেজ মুছে ফেলা হয়েছে৷</string>
+    <string name="install_failed_verify_failed">প্যাকেজটি যাচাইকরণে উত্তীর্ণ হয়নি এবং ইনস্টল করা যাবে না৷</string>
+    <string name="install_failed_verify_timeout">এই প্যাকেজটিকে যাচাই করার জন্য নির্ধারিত সময়কালের মেয়াদ ফুরিয়ে গেছে৷ এটিকে পরে আবার ইনস্টল করার চেষ্টা করুন৷</string>
+    <string name="install_failed_msg">%1$s আপনার ট্যাবলেটে ইনস্টল করা যায়নি৷</string>
+    <string name="launch">খুলুন</string>
+    <string name="unknown_apps_dlg_title">ইনস্টল করা অবরুদ্ধ করা হয়েছে</string>
+    <string name="unknown_apps_dlg_text">সুরক্ষা জনিত কারণে, অজানা উৎসগুলি থেকে প্রাপ্ত অ্যাপ্লিকেশানগুলির আপনার ট্যাবলেটে ইনস্টল হওয়াকে অবরুদ্ধ করে রাখা হয়েছে৷</string>
+    <string name="unknown_apps_admin_dlg_text">আপনার প্রশাসক অজানা উৎসগুলি থেকে প্রাপ্ত অ্যাপ্লিকেশানগুলি ইনস্টল করাকে মঞ্জুর করে না৷</string>
+    <string name="ok">ঠিক আছে</string>
+    <string name="settings">সেটিংস</string>
+    <string name="allow_source_dlg_title">অ্যাপ্লিকেশানগুলির নতুন উৎস</string>
+    <string name="allow_source_dlg_text">"%1$s অন্যান্য অ্যাপ্লিকেশানগুলিকে ইনস্টল করতে চায়৷
+
+এটিকে কি এখন বা ভবিষ্যতে মঞ্জুরি দেবেন?"</string>
+    <string name="manage_applications">অ্যাপ্লিকেশানগুলির পরিচালনা করুন</string>
+    <string name="dlg_app_replacement_title">অ্যাপ্লিকেশান প্রতিস্থাপন করতে চান?</string>
+    <string name="dlg_app_replacement_statement">"আপনি যে অ্যাপ্লিকেশানটি ইনস্টল করছেন তা অন্য একটি অ্যাপ্লিকেশানকে প্রতিস্থাপিত করবে৷
+
+আপনার সমস্ত পূর্ববর্তী ব্যবহারকারী ডেটা সংরক্ষিত হবে৷"</string>
+    <string name="dlg_sys_app_replacement_statement">"এটি হল একটি সিস্টেম অ্যাপ্লিকেশান৷
+
+আপনার সমস্ত পূর্ববর্তী ব্যবহারকারী ডেটা সংরক্ষিত হবে৷"</string>
+    <string name="out_of_space_dlg_title">পর্যাপ্ত স্থান খালি নেই</string>
+    <string name="out_of_space_dlg_text">%1$s ইনস্টল করা যায়নি৷ কিছু পরিমাণ জায়গা খালি করে আবার চেষ্টা করুন৷</string>
+    <string name="dlg_ok">ঠিক আছে</string>
+    <string name="app_not_found_dlg_title">অ্যাপ্লিকেশান পাওয়া যায়নি</string>
+    <string name="app_not_found_dlg_text">অ্যাপ্লিকেশানটিকে ইনস্টল করা অ্যাপ্লিকেশানের তালিকাতে পাওয়া যায়নি৷</string>
+    <string name="uninstall_application_title">অ্যাপ্লিকেশানটিকে আনইনস্টল করুন</string>
+    <string name="uninstall_update_title">আপডেট আনইনস্টল করুন</string>
+    <string name="uninstall_activity_text">%1$s হল নিম্নলিখিত অ্যাপ্লিকেশানগুলির অংশ বিশেষ:</string>
+    <string name="uninstall_application_text">আপনি কি এই অ্যাপ্লিকেশানটিকে আনইনস্টল করতে চান?</string>
+    <string name="uninstall_application_text_all_users">আপনি কি <b>সমস্ত</b> ব্যবহারকারীর জন্য এই অ্যাপ্লিকেশানটিকে আনইনস্টল করতে চান? এই ডিভাইসের <b>সমস্ত</b> ব্যবহারকারীর কাছ থেকে অ্যাপ্লিকেশানটি ও এর ডেটা হারিয়ে যাবে৷</string>
+    <string name="uninstall_application_text_user">আপনি কি ব্যবহারকারী %1$s এর জন্য এই অ্যাপ্লিকেশানটি আনইনস্টল করতে চান?</string>
+    <string name="uninstall_update_text">আপনি কি ফ্যাক্টরি সংস্করণের মাধ্যমে এই অ্যাপ্লিকেশানটি প্রতিস্থাপন করতে চান?</string>
+    <string name="uninstalling">আনইনস্টল করা হচ্ছে ...</string>
+    <string name="uninstall_done">আনইনস্টল সমাপ্ত হয়েছে৷</string>
+    <string name="uninstall_failed">আনইনস্টল সফল হয়নি৷</string>
+    <string name="uninstall_failed_device_policy_manager">আনইনস্টল করা যায়নি কারণ এই প্যাকেজটি হল একটি সক্রিয় ডিভাইস প্রশাসক৷</string>
+    <string name="uninstall_blocked_profile_owner">আপনার %1$s প্রোফাইলের জন্য এই অ্যাপ্লিকেশানটি প্রয়োজন এবং এটি আনইনস্টল করা যাবে না।</string>
+    <string name="uninstall_blocked_device_owner">আপনার ডিভাইস প্রশাসকের চাহিদা অনুযায়ী এই অ্যাপ্লিকেশানটি আবশ্যক এবং এটি আনইনস্টল করা যাবে না।</string>
+    <string name="manage_device_administrators">ডিভাইস প্রশাসকদের পরিচালনা করুন</string>
+    <string name="uninstall_failed_msg">%1$s আনইনস্টল করা যায়নি৷</string>
+    <string name="Parse_error_dlg_title">বিশ্লেষণ ত্রুটি</string>
+    <string name="Parse_error_dlg_text">প্যাকেজটি বিশ্লেষণ করার ক্ষেত্রে একটি সমস্যা হয়েছে৷</string>
+    <string name="newPerms">নতুন</string>
+    <string name="allPerms">সমস্ত</string>
+    <string name="privacyPerms">গোপনীয়তা</string>
+    <string name="devicePerms">ডিভাইসের অ্যাক্সেস</string>
+    <string name="no_new_perms">এই আপডেটের জন্য কোনো নতুন অনুমতির প্রয়োজন নেই৷</string>
+    <string name="grant_confirm_question">আপনি কি নিম্নলিখিত অনুমতিগুলি প্রদান করতে চান? এটি এতে অ্যাক্সেস করার সুযোগ পাবে:</string>
+</resources>

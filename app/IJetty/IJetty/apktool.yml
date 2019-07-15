@@ -1,0 +1,81 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: IJetty.apk
+compressionType: false
+doNotCompress:
+- arsc
+- png
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '22'
+sharedLibrary: false
+sparseResources: true
+unknownFiles:
+  about.html: '8'
+  jetty-dir.css: '8'
+  org/eclipse/jetty/favicon.ico: '8'
+  org/eclipse/jetty/http/useragents: '0'
+  org/eclipse/jetty/http/encoding.properties: '8'
+  org/eclipse/jetty/http/mime.properties: '8'
+  org/eclipse/jetty/deploy/lifecycle-bindings.txt: '8'
+  org/eclipse/jetty/deploy/jmx/ContextDeployer-mbean.properties: '8'
+  org/eclipse/jetty/deploy/jmx/DeploymentManager-mbean.properties: '8'
+  org/eclipse/jetty/deploy/jmx/WebAppDeployer-mbean.properties: '8'
+  org/eclipse/jetty/deploy/providers/jmx/ContextProvider-mbean.properties: '8'
+  org/eclipse/jetty/deploy/providers/jmx/ScanningAppProvider-mbean.properties: '8'
+  org/eclipse/jetty/deploy/providers/jmx/WebAppProvider-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/AbstractHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/ContextHandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerCollection-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/HandlerWrapper-mbean.properties: '8'
+  org/eclipse/jetty/server/handler/jmx/StatisticsHandler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/AbstractConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Connector-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Handler-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/HandlerContainer-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/NCSARequestLog-mbean.properties: '8'
+  org/eclipse/jetty/server/jmx/Server-mbean.properties: '8'
+  org/eclipse/jetty/server/nio/jmx/SelectChannelConnector-mbean.properties: '8'
+  org/eclipse/jetty/server/session/jmx/AbstractSessionManager-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/FilterMapping-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/Holder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletContextHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHandler-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletHolder-mbean.properties: '8'
+  org/eclipse/jetty/servlet/jmx/ServletMapping-mbean.properties: '8'
+  org/eclipse/jetty/webapp/webdefault.xml: '8'
+  org/eclipse/jetty/webapp/jmx/WebAppContext-mbean.properties: '8'
+  org/eclipse/jetty/xml/configure_6_0.dtd: '8'
+  org/eclipse/jetty/xml/configure_7_6.dtd: '8'
+  javax/servlet/LocalStrings.properties: '8'
+  javax/servlet/LocalStrings_fr.properties: '8'
+  javax/servlet/LocalStrings_ja.properties: '8'
+  javax/servlet/http/LocalStrings.properties: '8'
+  javax/servlet/http/LocalStrings_es.properties: '8'
+  javax/servlet/http/LocalStrings_fr.properties: '8'
+  javax/servlet/http/LocalStrings_ja.properties: '8'
+  javax/servlet/resources/XMLSchema.dtd: '8'
+  javax/servlet/resources/datatypes.dtd: '8'
+  javax/servlet/resources/j2ee_1_4.xsd: '8'
+  javax/servlet/resources/j2ee_web_services_client_1_1.xsd: '8'
+  javax/servlet/resources/javaee_5.xsd: '8'
+  javax/servlet/resources/javaee_web_services_client_1_2.xsd: '8'
+  javax/servlet/resources/jsp_2_0.xsd: '8'
+  javax/servlet/resources/jsp_2_1.xsd: '8'
+  javax/servlet/resources/web-app_2_2.dtd: '8'
+  javax/servlet/resources/web-app_2_3.dtd: '8'
+  javax/servlet/resources/web-app_2_4.xsd: '8'
+  javax/servlet/resources/web-app_2_5.xsd: '8'
+  javax/servlet/resources/xml.xsd: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.3.4
+versionInfo:
+  versionCode: '22'
+  versionName: 5.1.1-3448

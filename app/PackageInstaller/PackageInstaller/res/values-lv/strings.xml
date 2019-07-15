@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pakotnes instalēšanas programma</string>
+    <string name="next">Tālāk</string>
+    <string name="install">Instalēt</string>
+    <string name="done">Gatavs</string>
+    <string name="security_settings_desc">Atļaut šai lietotnei:</string>
+    <string name="cancel">Atcelt</string>
+    <string name="unknown">Nezināms</string>
+    <string name="installing">Notiek instalēšana...</string>
+    <string name="install_done">Lietotne ir instalēta.</string>
+    <string name="install_confirm_question">Vai vēlaties instalēt šo lietojumprogrammu? Tā iegūs piekļuvi:</string>
+    <string name="install_confirm_question_no_perms">Vai vēlaties instalēt šo lietojumprogrammu? Tai nav nepieciešamas īpašas piekļuves atļaujas.</string>
+    <string name="install_confirm_question_update">Vai vēlaties instalēt šīs lietojumprogrammas atjauninājumu? Esošie dati netiks zaudēti. Atjauninātajai lietojumprogrammai būs piekļuve:</string>
+    <string name="install_confirm_question_update_system">Vai vēlaties instalēt šīs iebūvētās lietojumprogrammas atjauninājumu? Esošie dati netiks zaudēti. Atjauninātajai lietojumprogrammai būs piekļuve:</string>
+    <string name="install_confirm_question_update_no_perms">Vai vēlaties instalēt šīs lietojumprogrammas atjauninājumu? Esošie dati netiks zaudēti. Tam nav nepieciešama īpaša piekļuves atļauja.</string>
+    <string name="install_confirm_question_update_system_no_perms">Vai vēlaties instalēt šīs iebūvētās lietojumprogrammas atjauninājumu? Esošie dati netiks zaudēti. Tam nav nepieciešama īpaša piekļuves atļauja.</string>
+    <string name="install_failed">Lietotne nav instalēta.</string>
+    <string name="install_failed_invalid_apk">Šķiet, ka pakotne ir bojāta.</string>
+    <string name="install_failed_inconsistent_certificates">Esoša pakotne ar tādu pašu nosaukumu un konfliktējošu parakstu jau ir instalēta.</string>
+    <string name="install_failed_older_sdk">Šī pakotne darbojas tikai jaunākās operētājsistēmas Android versijās.</string>
+    <string name="install_failed_cpu_abi_incompatible">Šī lietotne nav saderīga ar jūsu planšetdatoru.</string>
+    <string name="install_failed_file_not_found">Norādītā pakotne tika izdzēsta pirms instalēšanas pabeigšanas.</string>
+    <string name="install_failed_verify_failed">Pakotnes verificēšana neizdevās. Pakotni nevar instalēt.</string>
+    <string name="install_failed_verify_timeout">Mēģinot verificēt šo pakotni, iestājās noildze. Vēlāk mēģiniet to instalēt vēlreiz.</string>
+    <string name="install_failed_msg">Lietotni %1$s nevarēja instalēt planšetdatorā.</string>
+    <string name="launch">Atvērt</string>
+    <string name="unknown_apps_dlg_title">Instalēšana ir bloķēta</string>
+    <string name="unknown_apps_dlg_text">Drošības dēļ planšetdatorā tiek bloķēta to lietotņu instalēšana, kas iegūtas no nezināmiem avotiem.</string>
+    <string name="unknown_apps_admin_dlg_text">Jūsu administrators neļauj instalēt lietotnes, kas iegūtas no nezināmiem avotiem.</string>
+    <string name="ok">Labi</string>
+    <string name="settings">Iestatījumi</string>
+    <string name="allow_source_dlg_title">Jauns lietotņu avots</string>
+    <string name="allow_source_dlg_text">"%1$s vēlas instalēt citas lietotnes.
+
+Vai atļaut to darīt tagad un arī turpmāk?"</string>
+    <string name="manage_applications">Pārvaldīt lietotnes</string>
+    <string name="dlg_app_replacement_title">Vai aizstāt lietotni?</string>
+    <string name="dlg_app_replacement_statement">"Ar instalējamo lietotni tiks aizstāta cita lietotne.
+
+Visi jūsu iepriekšējie lietotāja dati tiks saglabāti."</string>
+    <string name="dlg_sys_app_replacement_statement">"Šī ir sistēmas lietotne.
+
+Visi jūsu iepriekšējie lietotāja dati tiks saglabāti."</string>
+    <string name="out_of_space_dlg_title">Nav brīvas vietas</string>
+    <string name="out_of_space_dlg_text">Lietotni %1$s nevarēja instalēt. Atbrīvojiet vietu un mēģiniet vēlreiz.</string>
+    <string name="dlg_ok">Labi</string>
+    <string name="app_not_found_dlg_title">Lietotne nav atrasta</string>
+    <string name="app_not_found_dlg_text">Šī lietotne netika atrasta instalēto lietotņu sarakstā.</string>
+    <string name="uninstall_application_title">Atinstalēt lietotni</string>
+    <string name="uninstall_update_title">Atinstalēt atjauninājumu</string>
+    <string name="uninstall_activity_text">%1$s ir daļa no šādas lietotnes:</string>
+    <string name="uninstall_application_text">Vai vēlaties atinstalēt šo lietotni?</string>
+    <string name="uninstall_application_text_all_users">Vai vēlaties atinstalēt šo lietotni <b>visiem</b> lietotājiem? Šī lietojumprogramma un tās dati tiks noņemti no <b>visiem</b> ierīces lietotāju kontiem.</string>
+    <string name="uninstall_application_text_user">Vai vēlaties atinstalēt šo lietotni lietotājam %1$s?</string>
+    <string name="uninstall_update_text">Vai vēlaties aizstāt šo lietotni ar tās rūpnīcas versiju?</string>
+    <string name="uninstalling">Notiek atinstalēšana...</string>
+    <string name="uninstall_done">Atinstalēšana ir pabeigta.</string>
+    <string name="uninstall_failed">Atinstalēšana neizdevās.</string>
+    <string name="uninstall_failed_device_policy_manager">Nevar atinstalēt, jo ar šo pakotni tiek veikta ierīces administrēšana.</string>
+    <string name="uninstall_blocked_profile_owner">Šī lietotne ir nepieciešama jūsu %1$s profilam, un to nevar atinstalēt.</string>
+    <string name="uninstall_blocked_device_owner">Ierīces administrators ir noteicis, ka lietotne ir obligāta un to nevar atinstalēt.</string>
+    <string name="manage_device_administrators">Pārvaldīt ierīces administratorus</string>
+    <string name="uninstall_failed_msg">Lietotni %1$s nevarēja atinstalēt.</string>
+    <string name="Parse_error_dlg_title">Parsēšanas kļūda</string>
+    <string name="Parse_error_dlg_text">Parsējot pakotni, radās problēma.</string>
+    <string name="newPerms">Jauna!</string>
+    <string name="allPerms">Visas</string>
+    <string name="privacyPerms">Konfidencialitāte</string>
+    <string name="devicePerms">Piekļuve ierīcei</string>
+    <string name="no_new_perms">Šim atjauninājumam nav nepieciešamas jaunas atļaujas.</string>
+    <string name="grant_confirm_question">Vai vēlaties piešķirt tālāk norādītās atļaujas? Tiks piešķirta šāda piekļuve:</string>
+</resources>

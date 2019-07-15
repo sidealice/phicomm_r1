@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: AndroidManifest.xml
+SHA-256-Digest: xUNH15pM0Q76qvNzaupHaFMafSruDWx8wAFUyawWifQ=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: N/dER7xL8qmP74ftPgYgyhuQ0i3Ncws0v6iPev0bb+w=
+
+Name: resources.arsc
+SHA-256-Digest: fxxzrQmOIeXcuQrrmRX6sXglYtiPxSdPd0oVxfqHXgw=
+
+Name: classes.dex
+SHA-256-Digest: Q1NRB7f/sNRtzdAoFQqL+BLac+l/Jz0C52ZQbO1Snwk=
+

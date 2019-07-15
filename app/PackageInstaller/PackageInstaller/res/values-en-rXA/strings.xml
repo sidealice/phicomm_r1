@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">[Þåçķåĝé îñšţåļļéŕ one two three]</string>
+    <string name="next">[Ñéхţ one]</string>
+    <string name="install">[Îñšţåļļ one two]</string>
+    <string name="done">[Ðöñé one]</string>
+    <string name="security_settings_desc">[Åļļöŵ ţĥîš åþþ ţö: one two three]</string>
+    <string name="cancel">[Çåñçéļ one two]</string>
+    <string name="unknown">[Ûñķñöŵñ one two]</string>
+    <string name="installing">[Îñšţåļļîñĝ… one two]</string>
+    <string name="install_done">[Åþþ îñšţåļļéð. one two three]</string>
+    <string name="install_confirm_question">[Ðö ýöû ŵåñţ ţö îñšţåļļ ţĥîš åþþļîçåţîöñ¿ Îţ ŵîļļ ĝéţ åççéšš ţö: one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="install_confirm_question_no_perms">[Ðö ýöû ŵåñţ ţö îñšţåļļ ţĥîš åþþļîçåţîöñ¿ Îţ ðöéš ñöţ ŕéQûîŕé åñý šþéçîåļ åççéšš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="install_confirm_question_update">[Ðö ýöû ŵåñţ ţö îñšţåļļ åñ ûþðåţé ţö ţĥîš éхîšţîñĝ åþþļîçåţîöñ¿ Ýöûŕ éхîšţîñĝ ðåţå ŵîļļ ñöţ ɓé ļöšţ. Ţĥé ûþðåţéð åþþļîçåţîöñ ŵîļļ ĝéţ åççéšš ţö: one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five]</string>
+    <string name="install_confirm_question_update_system">[Ðö ýöû ŵåñţ ţö îñšţåļļ åñ ûþðåţé ţö ţĥîš ɓûîļţ-îñ åþþļîçåţîöñ¿ Ýöûŕ éхîšţîñĝ ðåţå ŵîļļ ñöţ ɓé ļöšţ. Ţĥé ûþðåţéð åþþļîçåţîöñ ŵîļļ ĝéţ åççéšš ţö: one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four five]</string>
+    <string name="install_confirm_question_update_no_perms">[Ðö ýöû ŵåñţ ţö îñšţåļļ åñ ûþðåţé ţö ţĥîš éхîšţîñĝ åþþļîçåţîöñ¿ Ýöûŕ éхîšţîñĝ ðåţå ŵîļļ ñöţ ɓé ļöšţ. Îţ ðöéš ñöţ ŕéQûîŕé åñý šþéçîåļ åççéšš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four]</string>
+    <string name="install_confirm_question_update_system_no_perms">[Ðö ýöû ŵåñţ ţö îñšţåļļ åñ ûþðåţé ţö ţĥîš ɓûîļţ-îñ åþþļîçåţîöñ¿ Ýöûŕ éхîšţîñĝ ðåţå ŵîļļ ñöţ ɓé ļöšţ. Îţ ðöéš ñöţ ŕéQûîŕé åñý šþéçîåļ åççéšš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one two three four]</string>
+    <string name="install_failed">[Åþþ ñöţ îñšţåļļéð. one two three]</string>
+    <string name="install_failed_invalid_apk">[Ţĥé þåçķåĝé åþþéåŕš ţö ɓé çöŕŕûþţ. one two three four five six seven eight]</string>
+    <string name="install_failed_inconsistent_certificates">[Åñ éхîšţîñĝ þåçķåĝé ɓý ţĥé šåḿé ñåḿé ŵîţĥ å çöñƒļîçţîñĝ šîĝñåţûŕé îš åļŕéåðý îñšţåļļéð. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="install_failed_older_sdk">[Ţĥé þåçķåĝé öñļý ŵöŕķš öñ ñéŵéŕ Véŕšîöñš öƒ Åñðŕöîð. one two three four five six seven eight nine ten eleven]</string>
+    <string name="install_failed_cpu_abi_incompatible">"[Ţĥîš åþþ îšñ'ţ çöḿþåţîɓļé ŵîţĥ ýöûŕ ţåɓļéţ. one two three four five six seven eight nine ten]"</string>
+    <string name="install_failed_file_not_found">[Ţĥé þåçķåĝé šþéçîƒîéð ŵåš ðéļéţéð ɓéƒöŕé îñšţåļļåţîöñ çöûļð ɓé çöḿþļéţéð. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+    <string name="install_failed_verify_failed">[Ţĥé þåçķåĝé ðîð ñöţ þåšš Véŕîƒîçåţîöñ åñð çåññöţ ɓé îñšţåļļéð. one two three four five six seven eight nine ten eleven twelve thirteen]</string>
+    <string name="install_failed_verify_timeout">[Å ţîḿéöûţ öççûŕŕéð ŵĥîļé ţŕýîñĝ ţö Véŕîƒý ţĥîš þåçķåĝé. Ţŕý ţö îñšţåļļ îţ åĝåîñ ļåţéŕ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]</string>
+    <string name="install_failed_msg">"[%1$s çöûļðñ'ţ ɓé îñšţåļļéð öñ ýöûŕ ţåɓļéţ. one two three four five six seven eight nine]"</string>
+    <string name="launch">[Öþéñ one]</string>
+    <string name="unknown_apps_dlg_title">[Îñšţåļļ ɓļöçķéð one two three]</string>
+    <string name="unknown_apps_dlg_text">[Föŕ šéçûŕîţý, ýöûŕ ţåɓļéţ îš šéţ ţö ɓļöçķ îñšţåļļåţîöñ öƒ åþþš öɓţåîñéð ƒŕöḿ ûñķñöŵñ šöûŕçéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]</string>
+    <string name="unknown_apps_admin_dlg_text">"[Ýöûŕ åðḿîñîšţŕåţöŕ ðöéšñ'ţ åļļöŵ îñšţåļļåţîöñ öƒ åþþš öɓţåîñéð ƒŕöḿ ûñķñöŵñ šöûŕçéš. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen]"</string>
+    <string name="ok">[ÖĶ one]</string>
+    <string name="settings">[Šéţţîñĝš one two]</string>
+    <string name="allow_source_dlg_title">[Ñéŵ šöûŕçé ƒöŕ åþþš one two three]</string>
+    <string name="allow_source_dlg_text">"[%1$s ŵåñţš ţö îñšţåļļ öţĥéŕ åþþš.
+
+Åļļöŵ ţĥîš ñöŵ åñð îñ ţĥé ƒûţûŕé¿ one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="manage_applications">[Ḿåñåĝé åþþš one two]</string>
+    <string name="dlg_app_replacement_title">[Ŕéþļåçé åþþ¿ one two]</string>
+    <string name="dlg_app_replacement_statement">"[Ţĥé åþþ ýöû'ŕé îñšţåļļîñĝ ŵîļļ ŕéþļåçé åñöţĥéŕ åþþ.
+
+Åļļ ýöûŕ þŕéVîöûš ûšéŕ ðåţå ŵîļļ ɓé šåVéð. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen]"</string>
+    <string name="dlg_sys_app_replacement_statement">"[Ţĥîš îš å šýšţéḿ åþþ.
+
+Åļļ ýöûŕ þŕéVîöûš ûšéŕ ðåţå ŵîļļ ɓé šåVéð. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="out_of_space_dlg_title">[Öûţ öƒ šþåçé one two]</string>
+    <string name="out_of_space_dlg_text">"[%1$s çöûļðñ'ţ ɓé îñšţåļļéð. Fŕéé ûþ šöḿé šþåçé åñð ţŕý åĝåîñ. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="dlg_ok">[ÖĶ one]</string>
+    <string name="app_not_found_dlg_title">[Åþþ ñöţ ƒöûñð one two three]</string>
+    <string name="app_not_found_dlg_text">"[ Ţĥé åþþ ŵåšñ'ţ ƒöûñð îñ ţĥé ļîšţ öƒ îñšţåļļéð åþþš. one two three four five six seven eight nine ten eleven]"</string>
+    <string name="uninstall_application_title">[Ûñîñšţåļļ åþþ one two three]</string>
+    <string name="uninstall_update_title">[Ûñîñšţåļļ ûþðåţé one two three]</string>
+    <string name="uninstall_activity_text">[%1$s îš þåŕţ öƒ ţĥé ƒöļļöŵîñĝ åþþ: one two three four five six seven eight]</string>
+    <string name="uninstall_application_text">[Ðö ýöû ŵåñţ ţö ûñîñšţåļļ ţĥîš åþþ¿ one two three four five six seven eight]</string>
+    <string name="uninstall_application_text_all_users">[Ðö ýöû ŵåñţ ţö ûñîñšţåļļ ţĥîš åþþ ƒöŕ <b>åļļ</b> ûšéŕš¿ Ţĥé åþþļîçåţîöñ åñð îţš ðåţå ŵîļļ ɓé ŕéḿöVéð ƒŕöḿ <b>åļļ</b> ûšéŕš öñ ţĥé ðéVîçé. one two three four five six seven eight nine ten eleven twelve thirteen fourteen fiveteen sixteen seventeen nineteen twenty one]</string>
+    <string name="uninstall_application_text_user">[Ðö ýöû ŵåñţ ţö ûñîñšţåļļ ţĥîš åþþ ƒöŕ ţĥé ûšéŕ %1$s¿ one two three four five six seven eight nine ten eleven]</string>
+    <string name="uninstall_update_text">[Ðö ýöû ŵåñţ ţö ŕéþļåçé ţĥîš åþþ ŵîţĥ ţĥé ƒåçţöŕý Véŕšîöñ¿ one two three four five six seven eight nine ten eleven twelve]</string>
+    <string name="uninstalling">[Ûñîñšţåļļîñĝ… one two three]</string>
+    <string name="uninstall_done">[Ûñîñšţåļļ ƒîñîšĥéð. one two three]</string>
+    <string name="uninstall_failed">[Ûñîñšţåļļ ûñšûççéššƒûļ. one two three]</string>
+    <string name="uninstall_failed_device_policy_manager">"[Çåñ'ţ ûñîñšţåļļ ɓéçåûšé ţĥîš þåçķåĝé îš åñ åçţîVé ðéVîçé åðḿîñîšţŕåţöŕ. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]"</string>
+    <string name="uninstall_blocked_profile_owner">"[Ţĥîš åþþ îš ñééðéð ƒöŕ ýöûŕ %1$s þŕöƒîļé åñð çåñ'ţ ɓé ûñîñšţåļļéð. one two three four five six seven eight nine ten eleven twelve thirteen]"</string>
+    <string name="uninstall_blocked_device_owner">"[Ţĥîš åþþ îš ŕéQûîŕéð ɓý ýöûŕ ðéVîçé åðḿîñîšţŕåţöŕ åñð çåñ'ţ ɓé ûñîñšţåļļéð. one two three four five six seven eight nine ten eleven twelve thirteen fourteen]"</string>
+    <string name="manage_device_administrators">[Ḿåñåĝé ðéVîçé åðḿîñîšţŕåţöŕš one two three four]</string>
+    <string name="uninstall_failed_msg">"[%1$s çöûļðñ'ţ ɓé ûñîñšţåļļéð. one two three four]"</string>
+    <string name="Parse_error_dlg_title">[Þåŕšé éŕŕöŕ one two]</string>
+    <string name="Parse_error_dlg_text">[Ţĥéŕé ŵåš å þŕöɓļéḿ þåŕšîñĝ ţĥé þåçķåĝé. one two three four five six seven eight nine]</string>
+    <string name="newPerms">[Ñéŵ one]</string>
+    <string name="allPerms">[Åļļ one]</string>
+    <string name="privacyPerms">[ÞŕîVåçý one two]</string>
+    <string name="devicePerms">[ÐéVîçé Åççéšš one two three]</string>
+    <string name="no_new_perms">[Ţĥîš ûþðåţé ŕéQûîŕéš ñö ñéŵ þéŕḿîššîöñš. one two three four five six seven eight nine]</string>
+    <string name="grant_confirm_question">[Ðö ýöû ŵåñţ ţö ĝŕåñţ ţĥé ƒöļļöŵîñĝ þéŕḿîššîöñš¿ Îţ ŵîļļ ĝéţ åççéšš ţö: one two three four five six seven eight nine ten eleven twelve thirteen fourteen]</string>
+</resources>

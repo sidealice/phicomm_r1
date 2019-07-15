@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Paket o‘rnatuvchisi</string>
+    <string name="next">Keyingi</string>
+    <string name="install">O‘rnatish</string>
+    <string name="done">Tayyor</string>
+    <string name="security_settings_desc">Ushbu ilovaga quyidagi amallar uchun ruxsat berish:</string>
+    <string name="cancel">Bekor qilish</string>
+    <string name="unknown">Noma’lum</string>
+    <string name="installing">O‘rnatilmoqda…</string>
+    <string name="install_done">Ilova o‘rnatildi.</string>
+    <string name="install_confirm_question">Ushbu ilova o‘rnatilsinmi? U quyidagilardan foydalana oladi:</string>
+    <string name="install_confirm_question_no_perms">Ushbu ilova o‘rnatilsinmi? U hech qanday maxsus ruxsat talab qilmaydi.</string>
+    <string name="install_confirm_question_update">Ushbu mavjud ilovaga yangilanish o‘rnatilsinmi? Mavjud ma’lumotlaringiz o‘chib ketmaydi. Yangilangan ilova quyidagilardan foydalana oladi:</string>
+    <string name="install_confirm_question_update_system">Ushbu tizim ilovasiga yangilanish o‘rnatilsinmi? Mavjud ma’lumotlaringiz o‘chib ketmaydi. Yangilangan ilova quyidagilardan foydalana oladi:</string>
+    <string name="install_confirm_question_update_no_perms">Ushbu mavjud ilovaga yangilanish o‘rnatilsinmi? Mavjud ma’lumotlaringiz o‘chib ketmaydi. U hech qanday maxsus ruxsat talab qilmaydi.</string>
+    <string name="install_confirm_question_update_system_no_perms">Ushbu tizim ilovasiga yangilanish o‘rnatilsinmi? Mavjud ma’lumotlaringiz o‘chib ketmaydi. U hech qanday maxsus ruxsat talab qilmaydi.</string>
+    <string name="install_failed">Ilova o‘rnatilmadi.</string>
+    <string name="install_failed_invalid_apk">Paket buzilganga o‘xshaydi.</string>
+    <string name="install_failed_inconsistent_certificates">Xuddi shu nomdagi mavjud paket farqli imzo bilan allaqachon o‘rnatilgan.</string>
+    <string name="install_failed_older_sdk">Paket faqatgina \"Android\"ning yangi versiyalarida ishlay oladi.</string>
+    <string name="install_failed_cpu_abi_incompatible">Ushbu ilova planshetingizga mos kelmaydi.</string>
+    <string name="install_failed_file_not_found">Ko‘rsatilgan paket o‘rnatish jarayoni tugamasdan o‘chirib tashlangan.</string>
+    <string name="install_failed_verify_failed">Paket tekshirishdan o‘tmadi, shuning uchun uni o‘rnatib bo‘lmaydi.</string>
+    <string name="install_failed_verify_timeout">Ushbu paketni tekshirish jarayonida kutish vaqti tugadi. Keyinroq qayta o‘rnatib ko‘ring.</string>
+    <string name="install_failed_msg">%1$s planshetingizga o‘rnatilmadi.</string>
+    <string name="launch">Ochish</string>
+    <string name="unknown_apps_dlg_title">O‘rnatish to‘xtatildi</string>
+    <string name="unknown_apps_dlg_text">Xavfsizlik yuzasidan planshetingizga begona manbalardan olingan ilovalarni o‘rnatish taqiqlangan.</string>
+    <string name="unknown_apps_admin_dlg_text">Administratoringiz begona manbalardan olingan ilovalarni o‘rnatishga ruxsat bermagan.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Sozlamalar</string>
+    <string name="allow_source_dlg_title">Ilovalar uchun yangi manba</string>
+    <string name="allow_source_dlg_text">"%1$s boshqa ilova dasturlarni o‘rnatishni so‘rayapti.
+
+ Bunga hozir va kelajak uchun ruxsat berilsinmi?"</string>
+    <string name="manage_applications">Ilovalarni boshqarish</string>
+    <string name="dlg_app_replacement_title">Ilova almashtirilsinmi?</string>
+    <string name="dlg_app_replacement_statement">"Siz o‘rnatayotgan ilova boshqa ilovaning o‘rnini almashtiradi.
+
+Barcha eski ma’lumotlaringiz saqlanib qoladi."</string>
+    <string name="dlg_sys_app_replacement_statement">"Bu tizim ilovasi.
+
+Barcha eski ma’lumotlaringiz saqlanib qoladi."</string>
+    <string name="out_of_space_dlg_title">Joy qolmadi</string>
+    <string name="out_of_space_dlg_text">%1$s o‘rnatilmadi. Xotiradan biroz joy bo‘shating va qaytadan urinib ko‘ring.</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Ilova topilmadi</string>
+    <string name="app_not_found_dlg_text">Ilova o‘rnatilgan ilovalar ro‘yxatidan topilmadi.</string>
+    <string name="uninstall_application_title">Ilovani o‘chirish</string>
+    <string name="uninstall_update_title">Yangilanishni o‘chirish</string>
+    <string name="uninstall_activity_text">%1$s quyidagi ilovaning bir qismidir:</string>
+    <string name="uninstall_application_text">Ushbu ilova o‘chirilsinmi?</string>
+    <string name="uninstall_application_text_all_users">Ushbu ilova <b>barcha</b> foydalanuvchilar uchun o‘chirilsinmi? Ilova va uning ma’lumotlari qurilmadagi <b>barcha</b> foydalanuvchilardan o‘chib ketadi.</string>
+    <string name="uninstall_application_text_user">Haqiqatdan ham %1$s foydalanuvchi uchun ushbu ilovani olib tashlamoqchimisiz?</string>
+    <string name="uninstall_update_text">Ushbu ilovani dastlabki versiyasi bilan almashtirmoqchimisiz?</string>
+    <string name="uninstalling">O‘chirilmoqda…</string>
+    <string name="uninstall_done">O‘chirish yakunlandi.</string>
+    <string name="uninstall_failed">O‘chirish muvaffaqiyatsizlikka uchradi.</string>
+    <string name="uninstall_failed_device_policy_manager">O‘chirib bo‘lmadi, chunki ushbu paket faol qurilma administratoridir.</string>
+    <string name="uninstall_blocked_profile_owner">"Bu ilova sizning %1$s profilingiz uchun kerak va uni olib tashlab bo'lmaydi."</string>
+    <string name="uninstall_blocked_device_owner">"Ushbu ilova qurilmangiz ma'muri tomonidan ishlatiladi, shuning uchun uni olib tashlab bo'lmaydi."</string>
+    <string name="manage_device_administrators">Qurilma administratorlarini boshqarish</string>
+    <string name="uninstall_failed_msg">%1$s o‘chirilmadi.</string>
+    <string name="Parse_error_dlg_title">Ajratishda xato</string>
+    <string name="Parse_error_dlg_text">Paketni tahlil qilishda muammo yuz berdi.</string>
+    <string name="newPerms">Yangi</string>
+    <string name="allPerms">Barchasi</string>
+    <string name="privacyPerms">Maxfiylik</string>
+    <string name="devicePerms">Qurilmalardan foydalanish</string>
+    <string name="no_new_perms">Ushbu yangilanish hech qanday yangi ruxsatlarni talab qilmaydi.</string>
+    <string name="grant_confirm_question">Quyidagi ruxsatlar berilishiga rozimisiz? U quyidagilarga ruxsat beradi:</string>
+</resources>

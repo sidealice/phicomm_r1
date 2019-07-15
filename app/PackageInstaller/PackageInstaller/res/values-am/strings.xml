@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ጥቅል ጫኝ</string>
+    <string name="next">ቀጣይ</string>
+    <string name="install">ጫን</string>
+    <string name="done">ተከናውኗል</string>
+    <string name="security_settings_desc">ይሄን መተግበሪያ ይፈቅዳል ወደ፡-</string>
+    <string name="cancel">ይቅር</string>
+    <string name="unknown">ያልታወቀ</string>
+    <string name="installing">በመጫን ላይ…</string>
+    <string name="install_done">መተግበሪያ ተጭኗል፡፡</string>
+    <string name="install_confirm_question">ይህንን መተግበሪያ መጫን ይፈልጋሉ? ወደዚህ መዳረሻ ያገኛል፦</string>
+    <string name="install_confirm_question_no_perms">ይህንን መተግበሪያ መጫን ይፈልጋሉ? ምንም የተለየ መዳረሻ አይጠይቅም።</string>
+    <string name="install_confirm_question_update">ለእዚህ ነባር መተግበሪያ ማዘመኛ መጫን ይፈልጋሉ? የነበረው ውሂብህ አይጠፋም። የዘመነው መተግበሪያ ወደዚህ መዳረሻ ያገኛል፦</string>
+    <string name="install_confirm_question_update_system">ለእዚህ አብሮ ለተሰራ መተግበሪያ ማዘመኛ መጫን ይፈልጋሉ? የነበረው ውሂብዎ አይጠፋም። የዘመነው መተግበሪያ ወደዚህ መዳረሻ ያገኛል፦</string>
+    <string name="install_confirm_question_update_no_perms">ለዚህ ነባር መተግበሪያ ዝማኔ መጫን ይፈልጋሉ? ነባር ውሂብዎ አይጠፉም። ምንም የተለየ መዳረሻ አይፈልግም።</string>
+    <string name="install_confirm_question_update_system_no_perms">ለዚህ አብሮ ለተሰራ መተግበሪያ ዝማኔ መጫን ይፈልጋሉ? ነባር ውሂብዎ አይጠፉም። ምንም የተለየ መዳረሻ አይፈልግም።</string>
+    <string name="install_failed">ትግበራ አልተጫነም።</string>
+    <string name="install_failed_invalid_apk">ፓኬጁ ብልሹ ሆኖ ተገኝቷል።</string>
+    <string name="install_failed_inconsistent_certificates">በተመሳሳይ ስም ያለፓኬጅ በሚያምታታ ፊርማ አስቀድሞ ተጭኗል።</string>
+    <string name="install_failed_older_sdk">ፓኬጁ በአዲሱ የAndroid ሥሪቶች ላይ ብቻ ይሰራል።</string>
+    <string name="install_failed_cpu_abi_incompatible">ይህ ትግበራ ከእርስዎ ጡባዊ ተኮ ጋር ተኳኋኝ አይደለም።</string>
+    <string name="install_failed_file_not_found">የተጠቀሰው ፓኬጅ ጫን መጠናቀቅ ከመቻሉ በፊት ተሰርዞ ነበር።</string>
+    <string name="install_failed_verify_failed">ፓኬጁ ማረጋገጫውን አላለፈም እና መጫን አይችልም።</string>
+    <string name="install_failed_verify_timeout">"ይህን እሽግ በማረጋገጥ ወቅት ጊዜ ማብቃት ችግር አጋጥሟል::  በኋላ ላይ እንደገና ለመጫን ሞክር::"</string>
+    <string name="install_failed_msg">%1$s በዚህ ስልክ ላይ መጫን አልተቻለም።</string>
+    <string name="launch">ክፈት</string>
+    <string name="unknown_apps_dlg_title">ጫን ታግዷል</string>
+    <string name="unknown_apps_dlg_text">ለደህንነት ሲባል ጡባዊ ቱኮህ ካልታወቁ ምንጮች የመጡ መተግበሪያዎች እንዳይጭን ታግዷል።</string>
+    <string name="unknown_apps_admin_dlg_text">የእርስዎ አስተዳዳሪ ካልታወቁ ምንጮች የመጡ መተግበሪያዎች እንዲጫኑ አይፈቅዱም።</string>
+    <string name="ok">እሺ</string>
+    <string name="settings">ቅንብሮች</string>
+    <string name="allow_source_dlg_title">ለትግበራዎች አዲስ ምንጭ</string>
+    <string name="allow_source_dlg_text">"%1$s ሌሎች መተግበሪያዎች ለመጫን ይፈልጋል።
+
+ ይህን ለአሁን እና ለወደፊት ይፈቀድ?"</string>
+    <string name="manage_applications">መተግበሪያዎች አስተዳድር</string>
+    <string name="dlg_app_replacement_title">መተግበሪያ ይለውጥ?</string>
+    <string name="dlg_app_replacement_statement">"እየጫኑት ያለው መተግበሪያ ሌላ መተግበሪያን ይለውጣል። 
+
+ሁሉም የቀድሞ የተጠቃሚ ውሂብዎ ይቀመጣል።"</string>
+    <string name="dlg_sys_app_replacement_statement">"ይሄ የስርዓት መተግበሪያ ነው። 
+
+ሁሉም የቀድሞ የተጠቃሚ ውሂብዎ ይቀመጣል።"</string>
+    <string name="out_of_space_dlg_title">ቦታ ሞልቷል</string>
+    <string name="out_of_space_dlg_text">%1$sለመጫን አልቻለም። ትንሽ ቦታ አስለቅቅ እና እንደገና ሞክር፡፡</string>
+    <string name="dlg_ok">እሺ</string>
+    <string name="app_not_found_dlg_title">ትግበራ አልተገኘም</string>
+    <string name="app_not_found_dlg_text">መተግበሪያው በተጫኑ መተግበሪያዎች ዝርዝር ውስጥ አልተገኘም።</string>
+    <string name="uninstall_application_title">ትግበራ አራግፍ</string>
+    <string name="uninstall_update_title">ማዘመን አራግፍ</string>
+    <string name="uninstall_activity_text">%1$sየሚከተለው ትግበራ አካል ነው፡</string>
+    <string name="uninstall_application_text">ይሄን መተግበሪያ ማራገፍ ይፈልጋሉ?</string>
+    <string name="uninstall_application_text_all_users">ይህን መተግበሪያ <b>ለሁሉም</b> ተጠቃሚዎች መጫን ይፈልጋሉ? መተግበሪያው እና ውሂቡ በመሣሪያው ላይ ካሉ <b>ሁሉም</b> ተጠቃሚዎች ይሰረዛሉ።</string>
+    <string name="uninstall_application_text_user">ይህን መተግበሪያ ለተጠቃሚ %1$s ማራገፍ ይፈልጋሉ?</string>
+    <string name="uninstall_update_text">ከፋብሪካ ስሪት ጋር ይሄን መተግበሪያ መለወጥ ትፈልጋለህ?</string>
+    <string name="uninstalling">ባለመጫንላይ</string>
+    <string name="uninstall_done">አራግፍ ተጠናቋል</string>
+    <string name="uninstall_failed">ማራገፍ አልተሳካም፡፡</string>
+    <string name="uninstall_failed_device_policy_manager">ማራገፍ አልተቻለም፡ ይህ ፓኬጅ የገባሪ መሣሪያ አስተዳዳሪ ነው።</string>
+    <string name="uninstall_blocked_profile_owner">ይህ መተግበሪያ ለ%1$s መገለጫዎ የሚያስፈልግና ሊራገፍ የማይችል ነው።</string>
+    <string name="uninstall_blocked_device_owner">ይህ መተግበሪያ በመሣሪያዎ አስተዳዳሪ የሚፈለግ እና ሊራገፍ የማይችል ነው።</string>
+    <string name="manage_device_administrators">የመሣሪያ አስተዳዳሪዎችን አደራጅ</string>
+    <string name="uninstall_failed_msg">%1$sማራገፍ አልተቻለም</string>
+    <string name="Parse_error_dlg_title">ስህተት ተንትን</string>
+    <string name="Parse_error_dlg_text">አካታቹን መተንተን ችግር ነበረ።</string>
+    <string name="newPerms">አዲስ</string>
+    <string name="allPerms">ሁሉም</string>
+    <string name="privacyPerms">ግላዊነት</string>
+    <string name="devicePerms">የመሳሪያ መዳረሻ</string>
+    <string name="no_new_perms">ይህ ዝማኔ ምንም አዲስ ፈቃድ አያስፈልገውም።</string>
+    <string name="grant_confirm_question">የሚከተሉት ፍቃዶችን መስጠት ይፈልጋሉ? የእነዚህ መዳረሻዎችን ይሰጣል፦</string>
+</resources>

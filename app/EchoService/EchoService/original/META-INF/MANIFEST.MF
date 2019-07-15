@@ -1,0 +1,39 @@
+Manifest-Version: 1.0
+Created-By: 1.7.0_131 (Oracle Corporation)
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: 0gAHxXK7nKDZCF3RGPf3wb3Hhja9M5DEL8o+ilqP1Oo=
+
+Name: res/mipmap-mdpi-v4/ic_launcher_round.png
+SHA-256-Digest: YkxJCIWMxlL6TsVrZcsE3FB+cS69I8dmdbX+2dL68xI=
+
+Name: res/mipmap-xxxhdpi-v4/ic_launcher.png
+SHA-256-Digest: qcolc1AOgHluvdUwHG10fmN5ltEw+mjNrvHNn+iwsXA=
+
+Name: AndroidManifest.xml
+SHA-256-Digest: klXLxzt4KEYQCvVYlMqKhobHCER6GfNukDbkyCyiqiw=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: 3KCRr3lsiVJ4JGjyGfHhvnA+KviMnqm9+RhRCeO8Qz0=
+
+Name: res/mipmap-hdpi-v4/ic_launcher.png
+SHA-256-Digest: Q4TZ5OXV6ySqLOSNIdSGZZ0xT97LZavZpsLuSphwKF0=
+
+Name: res/mipmap-xxhdpi-v4/ic_launcher.png
+SHA-256-Digest: 066Qkoe9BdpXZpT99qIIGymPCbqsULWw1ZEIMkSpzrw=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher.png
+SHA-256-Digest: 0sV+9EypI3S3bJJJQJfo66nLewOVwC6M4qPIyrpRwXo=
+
+Name: res/mipmap-mdpi-v4/ic_launcher.png
+SHA-256-Digest: N/dER7xL8qmP74ftPgYgyhuQ0i3Ncws0v6iPev0bb+w=
+
+Name: resources.arsc
+SHA-256-Digest: QB1tNtIHRDu2UtroKvLctVMoIONTOTtqdLDtjwLirBE=
+
+Name: res/mipmap-xhdpi-v4/ic_launcher_round.png
+SHA-256-Digest: TqSLlb6Se4QNgyFkJQhmgdjz+qa2n5BIbpRLFHJYl/4=
+
+Name: classes.dex
+SHA-256-Digest: xvh9D6Y3zmoJC0QgU3l/wntArR85yerj8vb9dSBEeGc=
+

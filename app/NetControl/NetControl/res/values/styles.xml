@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" />
+    <style name="H1">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">#ff000000</item>
+    </style>
+    <style name="small">
+        <item name="android:textSize">10.0dip</item>
+        <item name="android:textColor">@color/translucent_dark</item>
+    </style>
+    <style name="footer">
+        <item name="android:textSize">10.0dip</item>
+    </style>
+</resources>

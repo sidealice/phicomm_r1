@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Pakketinstalleerder</string>
+    <string name="next">Volgende</string>
+    <string name="install">Installeer</string>
+    <string name="done">Klaar</string>
+    <string name="security_settings_desc">Laat hierdie program toe om:</string>
+    <string name="cancel">Kanselleer</string>
+    <string name="unknown">Onbekend</string>
+    <string name="installing">Installeer tans…</string>
+    <string name="install_done">Program geïnstalleer.</string>
+    <string name="install_confirm_question">Wil jy hierdie program installeer? Dit sal kan ingaan by:</string>
+    <string name="install_confirm_question_no_perms">Wil jy hierdie program installeer? Dit vereis nie enige spesiale toegang nie.</string>
+    <string name="install_confirm_question_update">"Wil jy 'n opdatering vir die bestaande program installeer? Jou bestaande data sal nie verlore gaan nie. Die opgedateerde program sal kan ingaan by:"</string>
+    <string name="install_confirm_question_update_system">"Wil jy 'n opdatering vir hierdie ingeboude program installeer? Jou bestaande data sal nie verlore gaan nie. Die opgedateerde program sal kan ingaan by:"</string>
+    <string name="install_confirm_question_update_no_perms">"Wil jy 'n opdatering na hierdie bestaande program installeer? Jou bestaande data sal nie verlore raak nie. Dit vereis nie enige spesiale toegang nie."</string>
+    <string name="install_confirm_question_update_system_no_perms">"Wil jy 'n opdatering na hierdie ingeboude program installeer? Jou bestaande data sal nie verlore raak nie. Dit vereis nie enige spesiale toegang nie."</string>
+    <string name="install_failed">Program nie geïnstalleer nie.</string>
+    <string name="install_failed_invalid_apk">Dit lyk asof die pakket korrup is.</string>
+    <string name="install_failed_inconsistent_certificates">"'n Bestaande pakket met dieselfde naam en 'n botsende handtekening is reeds geïnstalleer."</string>
+    <string name="install_failed_older_sdk">Die pakket werk net op jonger weergawes van Android.</string>
+    <string name="install_failed_cpu_abi_incompatible">Hierdie program werk nie op jou tablet nie.</string>
+    <string name="install_failed_file_not_found">Die gespesifiseerde pakkie is uitgevee voordat installasie voltooi kon word.</string>
+    <string name="install_failed_verify_failed">Die pakkie het nie verifikasie geslaag nie en kan nie geïnstalleer word nie.</string>
+    <string name="install_failed_verify_timeout">"'n Uittel het plaasgevind tydens verifiëring van hierdie pakket. Probeer dit later weer installeer."</string>
+    <string name="install_failed_msg">%1$s kon nie op jou tablet geïnstalleer word nie.</string>
+    <string name="launch">Open</string>
+    <string name="unknown_apps_dlg_title">Installering geblokkeer</string>
+    <string name="unknown_apps_dlg_text">Om veiligheidsredes, is jou tablet gestel om installering van programme van onbekende bronne te blokkeer.</string>
+    <string name="unknown_apps_admin_dlg_text">Jou administrateur laat nie toe dat programme van onbekende bronne af geïnstalleer word nie.</string>
+    <string name="ok">OK</string>
+    <string name="settings">Instellings</string>
+    <string name="allow_source_dlg_title">Nuwe bron vir programme</string>
+    <string name="allow_source_dlg_text">"%1$s wil ander programme installeer. 
+
+ Laat dit nou en in die toekoms toe?"</string>
+    <string name="manage_applications">Bestuur programme</string>
+    <string name="dlg_app_replacement_title">Vervang program?</string>
+    <string name="dlg_app_replacement_statement">"Die program wat jy installeer, sal 'n ander program vervang.
+
+Al jou vorige gebruikerdata sal gestoor word."</string>
+    <string name="dlg_sys_app_replacement_statement">"Dit is 'n stelselprogram.
+
+Al jou vorige gebruikerdata sal gestoor word."</string>
+    <string name="out_of_space_dlg_title">Geen spasie oor nie</string>
+    <string name="out_of_space_dlg_text">"%1$s kon nie geïnstalleer word nie. Maak 'n bietjie plek en probeer weer."</string>
+    <string name="dlg_ok">OK</string>
+    <string name="app_not_found_dlg_title">Program nie gevind nie</string>
+    <string name="app_not_found_dlg_text">Die program is nie in die lys van geïnstalleerde programme gevind nie.</string>
+    <string name="uninstall_application_title">Deïnstalleer program</string>
+    <string name="uninstall_update_title">Deïnstalleer opdatering</string>
+    <string name="uninstall_activity_text">%1$s is deel van die volgende program:</string>
+    <string name="uninstall_application_text">Wil jy hierdie program deïnstalleer?</string>
+    <string name="uninstall_application_text_all_users">Wil jy hierdie program vir <b>alle</b> gebruikers deïnstalleer? Die program en sy data sal vir <b>alle</b> gebruikers op hierdie toestel verwyder word.</string>
+    <string name="uninstall_application_text_user">Wil jy hierdie program vir die gebruiker %1$s deïnstalleer?</string>
+    <string name="uninstall_update_text">Wil jy hierdie program vervang met die fabrieksweergawe?</string>
+    <string name="uninstalling">Deïnstalleer tans…</string>
+    <string name="uninstall_done">Deïnstallering klaar.</string>
+    <string name="uninstall_failed">Deïnstallasie onsuksesvol.</string>
+    <string name="uninstall_failed_device_policy_manager">"Kan nie deïnstalleer nie omdat hierdie pakket 'n aktiewe toesteladministrateur is."</string>
+    <string name="uninstall_blocked_profile_owner">Hierdie program is nodig vir jou %1$s-profiel en kan nie gedeïnstalleer word nie.</string>
+    <string name="uninstall_blocked_device_owner">Jou toesteladministrateur vereis die program; dit kan nie deïnstalleer word nie.</string>
+    <string name="manage_device_administrators">Bestuur toesteladministrateurs</string>
+    <string name="uninstall_failed_msg">%1$s kon nie deïnstalleer word nie.</string>
+    <string name="Parse_error_dlg_title">Ontledingsfout</string>
+    <string name="Parse_error_dlg_text">Kon nie die pakket ontleed nie.</string>
+    <string name="newPerms">Nuut</string>
+    <string name="allPerms">Alle</string>
+    <string name="privacyPerms">Privaatheid</string>
+    <string name="devicePerms">Toesteltoegang</string>
+    <string name="no_new_perms">Hierdie opdatering vereis geen nuwe toestemmings nie.</string>
+    <string name="grant_confirm_question">Wil jy die volgende toestemmings toestaan? Dit sal toegang kry tot:</string>
+</resources>

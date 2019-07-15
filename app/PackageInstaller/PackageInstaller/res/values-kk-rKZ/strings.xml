@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Жинақ орнатқыш</string>
+    <string name="next">Келесі</string>
+    <string name="install">Орнату</string>
+    <string name="done">Орындалды</string>
+    <string name="security_settings_desc">Бұл қолданбаға келесі нәрселереге рұқсат беріңіз:</string>
+    <string name="cancel">Бас тарту</string>
+    <string name="unknown">Белгісіз</string>
+    <string name="installing">Орнатуда…</string>
+    <string name="install_done">Қолданба орнатылды.</string>
+    <string name="install_confirm_question">Бұл қолданбаны орнатуды қалайсыз ба? Оның келесі нәрселерге қол жетімділігі болады:</string>
+    <string name="install_confirm_question_no_perms">Бұл қолданбаны орнатуды қалайсыз ба? Ол ерекше қол жетімділікті қажет етпейді.</string>
+    <string name="install_confirm_question_update">Бұл қолданбаның жаңартылған нұсқасын орнатуды қалайсыз ба? Деректеріңіз жоғалмайды. Жаңартылған қолданбаның келесі нәрселерге қол жетімділігі болады:</string>
+    <string name="install_confirm_question_update_system">Бұл орнатылған қолданбаның жаңартылған нұсқасын орнатуды қалайсыз ба? Деректеріңіз жоғалмайды. Жаңартылған қолданбаның келесі нәрселерге қол жетімділігі болады:</string>
+    <string name="install_confirm_question_update_no_perms">Бұл қолданбаның жаңартылған нұсқасын орнатуды қалайсыз ба? Деректеріңіз жоғалмайды. Ол ерекше қол жетімділікті қажет етпейді.</string>
+    <string name="install_confirm_question_update_system_no_perms">Бұл орнатылған қолданбаның жаңартылған нұсқасын орнатуды қалайсыз ба? Деректеріңіз жоғалмайды. Ол ерекше қол жетімділікті қажет етпейді.</string>
+    <string name="install_failed">Қолданба орнатылмады.</string>
+    <string name="install_failed_invalid_apk">Жинақ жарамсыз.</string>
+    <string name="install_failed_inconsistent_certificates">Дәл сондай атауы бар, қол таңбасы сәйкес емес жинақ бұрын орнатылған.</string>
+    <string name="install_failed_older_sdk">Жинақ Android жүйесінің жаңа нұсқаларымен ғана жұмыс істейді.</string>
+    <string name="install_failed_cpu_abi_incompatible">Бұл қолданба планшетіңізбен үйлесімді емес.</string>
+    <string name="install_failed_file_not_found">Белгіленген жинақ орнату аяқталғанға дейін жойылды.</string>
+    <string name="install_failed_verify_failed">Жинақ растаудан өтпеді және орнату мүмкін емес.</string>
+    <string name="install_failed_verify_timeout">Бұл жинақты растау барысында жұмыс мезгілі аяқталды. Кейінірек қайта әрекеттеніп көріңіз.</string>
+    <string name="install_failed_msg">%1$s қолданбасын планшетіңізге орнату мүмкін емес</string>
+    <string name="launch">Ашу</string>
+    <string name="unknown_apps_dlg_title">Орнату бөгелген</string>
+    <string name="unknown_apps_dlg_text">Қауіпсіздік мақсатында планшетіңіз белгісіз дереккөздерден алынған қолданба орнатуларын бөгеуге реттелген.</string>
+    <string name="unknown_apps_admin_dlg_text">Әкімші белгісіз көздерден алынған қолданбаларды орнатуға рұқсат етпейді.</string>
+    <string name="ok">Жарайды</string>
+    <string name="settings">Параметрлер</string>
+    <string name="allow_source_dlg_title">Қолданбаларға арналған жаңа дереккөз</string>
+    <string name="allow_source_dlg_text">"%1$s басқа қолданбаларды орнатуды қалайды.
+
+Қазір және болашақта рұқсат берілсін бе?"</string>
+    <string name="manage_applications">Қолданбаларды басқару</string>
+    <string name="dlg_app_replacement_title">Қолданбаны алмастырсын ба?</string>
+    <string name="dlg_app_replacement_statement">"Сіз орнатып жатқан қолданба басқа қолданбаны алмастырады.
+
+Сіздің бұрынғы пайдаланушы деректеріңіз сақталады."</string>
+    <string name="dlg_sys_app_replacement_statement">"Бұл - жүйе қолданбасы.
+
+Сіздің бұрынғы пайдаланушы деректеріңіз сақталады."</string>
+    <string name="out_of_space_dlg_title">Орнында емес</string>
+    <string name="out_of_space_dlg_text">%1$s қолданбасын орнату мүмкін болмады. Орын босатып, қайта әрекеттеніп көріңіз.</string>
+    <string name="dlg_ok">Жарайды</string>
+    <string name="app_not_found_dlg_title">Қолданба табылмады</string>
+    <string name="app_not_found_dlg_text">Қолданба орнатылған қолданбалар тізімінен табылмады.</string>
+    <string name="uninstall_application_title">Қолданбаны алып тастау</string>
+    <string name="uninstall_update_title">Жаңартуды алып тастау</string>
+    <string name="uninstall_activity_text">%1$s келесі қолданбаның бөлігі:</string>
+    <string name="uninstall_application_text">Бұл қолданбаны алып тастауды қалайсыз ба?</string>
+    <string name="uninstall_application_text_all_users">Бұл қолданбаны <b>барлық</b> пайдаланушылар үшін алып тастауды қалайсыз ба? Қолданба және оның деректері құрылғыдағы <b>барлық</b> пайдаланушылардан алынады.</string>
+    <string name="uninstall_application_text_user">Пайдаланушы %1$s үшін осы қолданбаны жою керек пе?</string>
+    <string name="uninstall_update_text">Бұл қолданбаның зауыттық нұсқасын қайтаруды қалайсыз ба?</string>
+    <string name="uninstalling">Алып тастау орындалуда...</string>
+    <string name="uninstall_done">Алып тастау аяқталды.</string>
+    <string name="uninstall_failed">Алып тастау сәтсіздікке ұшырады.</string>
+    <string name="uninstall_failed_device_policy_manager">Алып тастау мүмкін емес, себебі бұл жинақ құрылғының қосылып тұрған әкімшісі.</string>
+    <string name="uninstall_blocked_profile_owner">Бұл қолданба %1$s профиліңіз үшін қажет және оны жою мүмкін емес.</string>
+    <string name="uninstall_blocked_device_owner">Әкімші осы қолданбаны талап етеді және оны жою мүмкін емес.</string>
+    <string name="manage_device_administrators">Құрылғы әкімшілерін басқару</string>
+    <string name="uninstall_failed_msg">%1$s қолданбасын алып тастау мүмкін емес.</string>
+    <string name="Parse_error_dlg_title">Қателікті сараптау</string>
+    <string name="Parse_error_dlg_text">Жинақты сараптау кезінде мәселе орын алды.</string>
+    <string name="newPerms">Жаңа</string>
+    <string name="allPerms">Барлық</string>
+    <string name="privacyPerms">Құпиялық</string>
+    <string name="devicePerms">Құралға кіру</string>
+    <string name="no_new_perms">Бұл қолданба жаңа рұқсаттарды қажет етпейді.</string>
+    <string name="grant_confirm_question">Келесі нәрселерге рұқсат бересіз бе? Мыналар қол жетіміді болады:</string>
+</resources>
